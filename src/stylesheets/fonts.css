@@ -1,4 +1,9 @@
 @font-face {
-  font-family: 'Antract';
-  src: url('../fonts/Antract.ttf');
+  font-family: 'Impact';
+  src: url('../fonts/Impact.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_Medium.ttf');
 }
