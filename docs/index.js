@@ -18,7 +18,7 @@ function drawNoiseFrame() {
   var imageData = ctx.createImageData(w, h);
   var buffer = imageData.data;
   for (var i = 0; i < buffer.length; i += 4) {
-    var shade = 160 + Math.random() * 130;
+    var shade = 120 + Math.random() * 130;
     buffer[i] = shade;
     buffer[i + 1] = shade;
     buffer[i + 2] = shade;
@@ -37,20 +37,37 @@ function animate(time) {
 drawNoiseFrame();
 requestAnimationFrame(animate);
 
-// шейп растет на странице о нас
+// шейпы растут
 
-var shape = document.querySelector('.shape-1');
+var lShapes = document.querySelectorAll('.l-shape');
 var maxScale = 1.15;
 var growthSpeed = 0.0001;
-function onScroll() {
+function onScrollLeft() {
   var scrollY = window.scrollY;
-  var scale = 1 + scrollY * growthSpeed;
-  if (scale > maxScale) {
-    scale = maxScale;
-  }
-  shape.style.transform = "scale(".concat(scale, ")");
+  lShapes.forEach(function (shape) {
+    var scale = 1 + scrollY * growthSpeed;
+    if (scale > maxScale) {
+      scale = maxScale;
+    }
+    shape.style.transformOrigin = 'top right';
+    shape.style.transform = "scale(".concat(scale, ")");
+  });
 }
-window.addEventListener('scroll', onScroll);
-onScroll();
+window.addEventListener('scroll', onScrollLeft);
+onScrollLeft();
+var rShapes = document.querySelectorAll('.r-shape');
+function onScrollRight() {
+  var scrollY = window.scrollY;
+  rShapes.forEach(function (shape) {
+    var scale = 1 + scrollY * growthSpeed;
+    if (scale > maxScale) {
+      scale = maxScale;
+    }
+    shape.style.transformOrigin = 'top left';
+    shape.style.transform = "scale(".concat(scale, ")");
+  });
+}
+window.addEventListener('scroll', onScrollRight);
+onScrollRight();
 /******/ })()
 ;
