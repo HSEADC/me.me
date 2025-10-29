@@ -9,10 +9,8 @@ function createPages(template, filename) {
 
 const htmlPages = [
   createPages('./src/index.html', './index.html'),
-  createPages('./src/pages/articles.html', './pages/articles.html'),
-  createPages('./src/pages/tests.html', './pages/tests.html'),
-  createPages('./src/pages/articles/t.html', './pages/articles/t.html'),
-  createPages('./src/pages/tests/test1.html', './pages/tests/test1.html')
+  createPages('./src/pages/about.html', './pages/about.html'),
+  createPages('./src/pages/splash.html', './pages/splash.html')
 ]
 
 module.exports = htmlPages
