@@ -12,6 +12,17 @@ const htmlPages = [
   createPages("./src/index.html", "./index.html", ["index"]),
   createPages("./src/pages/about.html", "./pages/about.html", ["index"]),
   createPages("./src/pages/splash.html", "./pages/splash.html", ["index"]),
+  createPages("./src/pages/articles.html", "./pages/articles.html", ["index"]),
+  createPages(
+    "./src/pages/articles/art-1.html",
+    "./pages/articles/art-1.html",
+    ["index"]
+  ),
+  createPages(
+    "./src/pages/articles/art-2.html",
+    "./pages/articles/art-2.html",
+    ["index"]
+  ),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
 ];
 
