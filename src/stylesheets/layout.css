@@ -32,7 +32,7 @@ body {
 }
 
 p {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: #fff;
   font-size: 40rem;
   font-style: normal;
@@ -43,7 +43,7 @@ p {
 }
 
 h1 {
-  font-family: 'Impact';
+  font-family: "Impact";
   color: #fff;
   font-size: 50rem;
   font-style: normal;
@@ -59,7 +59,7 @@ button {
   width: 252.363rem;
   height: 70.042rem;
   position: absolute;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 33.789rem;
   color: white;
   background: #ff00a0;
@@ -212,7 +212,7 @@ nav {
 .footer-link {
   position: absolute;
   bottom: 55rem;
-  font-family: 'Impact';
+  font-family: "Impact";
   font-size: 40.477rem;
   color: #ffffff;
   text-decoration: none;
@@ -278,7 +278,7 @@ nav {
 }
 
 .abt-image-1::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -389,7 +389,7 @@ nav {
 }
 
 .abt-image-2::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -479,7 +479,7 @@ nav {
 }
 
 .abt-image-3::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -587,7 +587,7 @@ nav {
 }
 
 .abt-image-4::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -615,7 +615,7 @@ nav {
 }
 
 .abt-image-5::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -710,7 +710,7 @@ nav {
 }
 
 .spl-image::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
@@ -746,7 +746,7 @@ nav {
   position: absolute;
   bottom: 423rem;
   left: 144rem;
-  background-image: url('../images/splash/form-back.svg');
+  background-image: url("../images/splash/form-back.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -761,7 +761,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 33.781rem;
   color: #fff;
   background: transparent;
@@ -782,7 +782,7 @@ nav {
   right: 35rem;
   background-color: #ff00a0;
   color: #fff;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 33.781rem;
   font-weight: 500;
   line-height: 1;
@@ -798,7 +798,7 @@ nav {
   position: absolute;
   top: 120%;
   left: 0;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16rem;
   color: #ff00a0;
   margin: 8rem 0 0 0;

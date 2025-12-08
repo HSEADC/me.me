@@ -1,0 +1,27 @@
+.test-h {
+  position: absolute;
+  font-size: 10vw;
+  top: 20vw;
+  left: 10vw;
+  color: #000000;
+}
+
+.test-a {
+  font-family: "Impact";
+  position: absolute;
+  font-size: 9vw;
+  top: 40vw;
+  left: 10vw;
+  color: #ff00a0;
+  cursor: pointer;
+}
+
+.test-a-bt {
+  font-family: "Impact";
+  position: absolute;
+  font-size: 7vw;
+  top: 50vw;
+  left: 10vw;
+  color: #2d2d2d;
+  cursor: pointer;
+}

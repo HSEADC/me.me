@@ -1,9 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 
-<<<<<<< HEAD
-console.log('hello');
-=======
 
 // белый шум на фоне
 
@@ -56,11 +53,6 @@ function onScrollLeft() {
     shape.style.transform = "scale(".concat(scale, ")");
   });
 }
-<<<<<<< HEAD
-window.addEventListener('scroll', onScroll);
-onScroll();
->>>>>>> main
-=======
 window.addEventListener('scroll', onScrollLeft);
 onScrollLeft();
 var rShapes = document.querySelectorAll('.r-shape');
@@ -77,6 +69,5 @@ function onScrollRight() {
 }
 window.addEventListener('scroll', onScrollRight);
 onScrollRight();
->>>>>>> main
 /******/ })()
 ;
