@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Скоро тут будут мемы!</title>
-    <link rel="icon" href="../images/logo.ico" rel="icon" />
-  </head>
-  <body>
-    <canvas id="noise"></canvas>
 
-    <section class="splash">
-      <div class="splash-container">
-        <img src="../images/logo.svg" class="spl-logo" alt="ME.ME" />
-        <img
-          src="../images/splash/shape-1.svg"
-          class="spl-shape-1"
-          alt="shape"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Скоро тут будут мемы!</title>
+  <meta name="title" content="Медиа о мемах ME.ME!" />
+  <meta name="description"
+    content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!" />
 
-      <h1 class="spl-header">
-        <pre>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:local" content="ru_RU">
+  <meta property="og:site_name" content="ME.ME">
+  <meta property="og:url" content="https://hseadc.github.io/me.me/index.html" />
+  <meta property="og:title" content="Медиа о мемах ME.ME!" />
+  <meta property="og:description"
+    content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!" />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/HSEADC/me.me/refs/heads/main/src/images/meta/og_index.png" />
+
+  <!-- X (Twitter) -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://hseadc.github.io/me.me/index.html" />
+  <meta property="twitter:title" content="Медиа о мемах ME.ME!" />
+  <meta property="twitter:description"
+    content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!" />
+  <meta property="twitter:image"
+    content="https://raw.githubusercontent.com/HSEADC/me.me/refs/heads/main/src/images/meta/og_index.png" />
+
+  <link rel="icon" href="../images/logo.ico" rel="icon" />
+</head>
+
+<body>
+  <canvas id="noise"></canvas>
+
+  <section class="splash">
+    <div class="splash-container">
+      <img src="../images/logo.svg" class="spl-logo" alt="ME.ME" />
+      <img src="../images/splash/shape-1.svg" class="spl-shape-1" alt="shape" />
+    </div>
+
+    <h1 class="spl-header">
+      <pre>
   Мы - медиа о мемах! Пока мы работаем, <br> чтобы вы смеялись, подпишитесь<br> на наши мега соц-сети </pre>
-      </h1>
-      <img src="../images/splash/shape-2.svg" class="spl-shape-2" alt="shape" />
-      <div class="images spl-image"></div>
+    </h1>
+    <img src="../images/splash/shape-2.svg" class="spl-shape-2" alt="shape" />
+    <div class="images spl-image"></div>
 
-      <form
-        id="spl-form"
-        action="https://formspree.io/f/xzzkgbon"
-        method="POST"
-      >
-        <input
-          type="email"
-          name="email"
-          placeholder="example@gmail.com"
-          class="form-input"
-          required
-        />
+    <form id="spl-form" action="https://formspree.io/f/xzzkgbon" method="POST">
+      <input type="email" name="email" placeholder="example@gmail.com" class="form-input" required />
 
-        <button type="submit" class="spl-form-button">отправить</button>
+      <button type="submit" class="spl-form-button">отправить</button>
 
-        <p id="spl-form-status"></p>
-      </form>
+      <p id="spl-form-status"></p>
+    </form>
 
-      <a href="https://t.me/memememememememememememememeemem">
-        <button class="spl-button-1"><span>наш ТГК</span></button></a
-      >
-      <a href="./about.html"
-        ><button class="spl-button-2"><span>о нас</span></button></a
-      >
-    </section>
+    <a href="https://t.me/memememememememememememememeemem">
+      <button class="spl-button-1"><span>наш ТГК</span></button></a>
+    <a href="./about.html"><button class="spl-button-2"><span>о нас</span></button></a>
+  </section>
 
-    <script>
-      var form = document.getElementById('spl-form')
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('spl-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
+  <script>
+    var form = document.getElementById('spl-form')
+    async function handleSubmit(event) {
+      event.preventDefault()
+      var status = document.getElementById('spl-form-status')
+      var data = new FormData(event.target)
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+        .then((response) => {
+          if (response.ok) {
+            status.innerHTML = 'Спасибо за подписку!'
+            form.reset()
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data['errors']
+                  .map((error) => error['message'])
+                  .join(', ')
+              } else {
+                status.innerHTML = 'Ой! Ух ты! Что-то не так.. Простите!'
+              }
+            })
           }
         })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Спасибо за подписку!'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML = 'Ой! Ух ты! Что-то не так.. Простите!'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Ой! Ух ты! Что-то не так.. Простите!'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
-  </body>
+        .catch((error) => {
+          status.innerHTML = 'Ой! Ух ты! Что-то не так.. Простите!'
+        })
+    }
+    form.addEventListener('submit', handleSubmit)
+  </script>
+</body>
+
 </html>
