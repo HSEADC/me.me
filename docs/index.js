@@ -1,9 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 
-<<<<<<< HEAD
-console.log('hello');
-=======
 
 // белый шум на фоне
 
