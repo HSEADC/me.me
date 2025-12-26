@@ -1,19 +1,5 @@
 @import "reset.css";
 @import "fonts.css";
-
-html {
-  width: 100vw;
-  overflow-x: hidden;
-  position: relative;
-  font-size: calc(1vw / 19.2);
-}
-
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 1px;
-  }
-}
-
 body {
   background-color: #555555;
   overflow-x: hidden;
