@@ -13,14 +13,14 @@ body {
   pointer-events: none;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 28px #000;
+  -webkit-text-stroke: 28rem #000;
 }
 
 h1 {
   color: var(--White, #fff);
   text-align: center;
   font-family: "Inter";
-  font-size: 96px;
+  font-size: 96rem;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -46,7 +46,7 @@ h1.hd::after {
   text-transform: inherit;
   white-space: pre-wrap;
   color: transparent;
-  -webkit-text-stroke: 18px #000;
+  -webkit-text-stroke: 18rem #000;
 }
 
 h2 {
@@ -62,7 +62,7 @@ h2 {
 h3 {
   color: var(--White, #fff);
   font-family: "Inter";
-  font-size: 48px;
+  font-size: 48rem;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 48px */
@@ -71,8 +71,8 @@ h3 {
 
 p {
   color: var(--White, #fff);
-  font-family: Inter;
-  font-size: 20px;
+  font-family: "Inter";
+  font-size: 20rem;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 22px */
@@ -101,7 +101,7 @@ p {
 
 .styleguide-2 {
   width: 100vw;
-  height: 4511px;
+  height: 4511rem;
   position: relative;
   margin-top: 0;
 }
@@ -169,7 +169,7 @@ p {
 .txt-2,
 .txt-3 {
   margin-top: 12vh;
-  width: 350px;
+  width: 350rem;
 }
 
 .ab-1,
@@ -193,22 +193,22 @@ p {
 }
 
 .txt-4 {
-  width: 586px;
+  width: 586rem;
   top: 57vh;
   left: 27vw;
 }
 
 .logo-1 {
-  width: 581.333px;
-  height: 248.681px;
+  width: 581.333rem;
+  height: 248.681rem;
   position: absolute;
   top: 70vh;
   left: 27vw;
 }
 
 .logo-2 {
-  width: 581.333px;
-  height: 248.681px;
+  width: 581.333rem;
+  height: 248.681rem;
   position: absolute;
   top: 70vh;
   right: 7vw;
@@ -220,7 +220,7 @@ p {
 }
 
 .logos {
-  width: 1243px;
+  width: 1243rem;
   position: absolute;
   top: 110vh;
   left: 27vw;
@@ -232,13 +232,13 @@ p {
 }
 
 .txt-5 {
-  width: 697px;
+  width: 697rem;
   top: 144vh;
   left: 27vw;
 }
 
 .palette {
-  width: 663px;
+  width: 663rem;
   position: absolute;
   top: 155vh;
   left: 27vw;
@@ -250,13 +250,13 @@ p {
 }
 
 .txt-6 {
-  width: 365px;
+  width: 365rem;
   top: 234vh;
   left: 27vw;
 }
 
 .txt-7 {
-  width: 421px;
+  width: 421rem;
   top: 234vh;
   left: 62vw;
 }
@@ -271,7 +271,7 @@ p {
 }
 
 .fonts {
-  width: 1050px;
+  width: 1050rem;
   position: absolute;
   top: 245vh;
   left: 27vw;
@@ -283,13 +283,13 @@ p {
 }
 
 .txt-10 {
-  width: 437px;
+  width: 437rem;
   top: 290vh;
   left: 27vw;
 }
 
 .grid {
-  width: 775px;
+  width: 775rem;
   position: absolute;
   top: 305vh;
   left: 27vw;
@@ -301,13 +301,13 @@ p {
 }
 
 .txt-11 {
-  width: 358px;
+  width: 358rem;
   top: 373vh;
   left: 27vw;
 }
 
 .pics {
-  width: 956px;
+  width: 956rem;
   position: absolute;
   top: 387vh;
   left: 27vw;
