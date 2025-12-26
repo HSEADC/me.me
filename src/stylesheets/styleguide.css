@@ -1,5 +1,314 @@
 @import "reset.css";
 @import "fonts.css";
 body {
-    background-color: #ff00a0;
+  background-color: #555555;
+  overflow-x: hidden;
+}
+
+.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 28px #000;
+}
+
+h1 {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+  left: 27vw;
+}
+
+h1.hd {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+h1.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  color: transparent;
+  -webkit-text-stroke: 18px #000;
+}
+
+h2 {
+  font-family: "Impact";
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  position: absolute;
+}
+
+h3 {
+  color: var(--White, #fff);
+  font-family: "Inter";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+  position: absolute;
+}
+
+p {
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+  position: absolute;
+}
+
+/* ( 1 ) */
+
+.styleguide-1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  background-image: url(../images/styleguide/back.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.articles-title {
+  top: 22vh;
+}
+
+/* ( 2 ) */
+
+.styleguide-2 {
+  width: 100vw;
+  height: 4511px;
+  position: relative;
+  margin-top: 0;
+}
+
+.style-nav {
+  position: sticky;
+  top: 3vh;
+}
+
+.st-nav-1,
+.st-nav-2,
+.st-nav-3,
+.st-nav-4,
+.st-nav-5,
+.st-nav-6 {
+  margin-left: 3vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.st-nav-1:hover,
+.st-nav-2:hover,
+.st-nav-3:hover,
+.st-nav-4:hover,
+.st-nav-5:hover,
+.st-nav-6:hover {
+  opacity: 0.6;
+}
+
+.st-nav-1 {
+  margin-top: 4vh;
+}
+
+.st-nav-2 {
+  margin-top: 10vh;
+}
+
+.st-nav-3 {
+  margin-top: 16vh;
+}
+
+.st-nav-4 {
+  margin-top: 22vh;
+}
+
+.st-nav-5 {
+  margin-top: 28vh;
+}
+
+.st-nav-6 {
+  margin-top: 34vh;
+}
+
+.st-hd-1 {
+  top: 4vh;
+}
+
+.ab-1,
+.ab-2,
+.ab-3 {
+  margin-top: 6vh;
+}
+
+.txt-1,
+.txt-2,
+.txt-3 {
+  margin-top: 12vh;
+  width: 350px;
+}
+
+.ab-1,
+.txt-1 {
+  left: 27vw;
+}
+
+.ab-2,
+.txt-2 {
+  left: 47vw;
+}
+
+.ab-3,
+.txt-3 {
+  left: 67vw;
+}
+
+.st-hd-2 {
+  top: 44vh;
+  left: 2vw;
+}
+
+.txt-4 {
+  width: 586px;
+  top: 57vh;
+  left: 27vw;
+}
+
+.logo-1 {
+  width: 581.333px;
+  height: 248.681px;
+  position: absolute;
+  top: 70vh;
+  left: 27vw;
+}
+
+.logo-2 {
+  width: 581.333px;
+  height: 248.681px;
+  position: absolute;
+  top: 70vh;
+  right: 7vw;
+}
+
+.lg-1 {
+  top: 100vh;
+  left: 27vw;
+}
+
+.logos {
+  width: 1243px;
+  position: absolute;
+  top: 110vh;
+  left: 27vw;
+}
+
+.st-hd-3 {
+  top: 130vh;
+  left: -13vw;
+}
+
+.txt-5 {
+  width: 697px;
+  top: 144vh;
+  left: 27vw;
+}
+
+.palette {
+  width: 663px;
+  position: absolute;
+  top: 155vh;
+  left: 27vw;
+}
+
+.st-hd-4 {
+  top: 220vh;
+  left: -37vw;
+}
+
+.txt-6 {
+  width: 365px;
+  top: 234vh;
+  left: 27vw;
+}
+
+.txt-7 {
+  width: 421px;
+  top: 234vh;
+  left: 62vw;
+}
+
+.txt-8 {
+  top: 253vh;
+  left: 27vw;
+}
+.txt-9 {
+  top: 265vh;
+  left: 27vw;
+}
+
+.fonts {
+  width: 1050px;
+  position: absolute;
+  top: 245vh;
+  left: 27vw;
+}
+
+.st-hd-5 {
+  top: 267vh;
+  left: 27vw;
+}
+
+.txt-10 {
+  width: 437px;
+  top: 290vh;
+  left: 27vw;
+}
+
+.grid {
+  width: 775px;
+  position: absolute;
+  top: 305vh;
+  left: 27vw;
+}
+
+.st-hd-6 {
+  top: 350vh;
+  left: 10vw;
+}
+
+.txt-11 {
+  width: 358px;
+  top: 373vh;
+  left: 27vw;
+}
+
+.pics {
+  width: 956px;
+  position: absolute;
+  top: 387vh;
+  left: 27vw;
 }

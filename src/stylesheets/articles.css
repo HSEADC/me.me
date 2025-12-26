@@ -1,27 +1,167 @@
-.test-h {
-  position: absolute;
-  font-size: 10vw;
-  top: 20vw;
-  left: 10vw;
-  color: #000000;
+.list-articles {
+  width: 100vw;
+  height: 1431rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.test-a {
-  font-family: "Impact";
+.articles-title {
+  width: 1400rem;
   position: absolute;
-  font-size: 9vw;
-  top: 40vw;
-  left: 10vw;
-  color: #ff00a0;
-  cursor: pointer;
+  top: 200rem;
+  left: 160rem;
+  color: #fff;
 }
 
-.test-a-bt {
-  font-family: "Impact";
+.a-prev-1 {
   position: absolute;
-  font-size: 7vw;
-  top: 50vw;
-  left: 10vw;
-  color: #2d2d2d;
-  cursor: pointer;
+  top: 400rem;
+  left: 300rem;
+}
+
+.a-prev-2 {
+  position: absolute;
+  top: 400rem;
+  right: 950rem;
+}
+
+.articles-text {
+  width: 400rem;
+  position: absolute;
+  bottom: 200rem;
+  left: 720rem;
+}
+
+/* сами статьи */
+
+.article-body {
+  height: 2500rem;
+}
+
+.art-hd {
+  width: 1050rem;
+  text-align: center;
+  position: absolute;
+  top: 200rem;
+  left: 400rem;
+}
+
+.art-frame-1 {
+  width: 923rem;
+  height: 933rem;
+  position: absolute;
+  top: 450rem;
+  left: 70rem;
+  z-index: 0;
+}
+
+.art-img {
+  width: 667rem;
+  height: 663rem;
+  position: absolute;
+  top: 605rem;
+  left: 200rem;
+  z-index: 1;
+}
+
+.aimg-1 {
+  background-image: url(../images/articles/article-1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aimg-2 {
+  background-image: url(../images/articles/article-2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.art-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  mix-blend-mode: color;
+}
+
+.art-img:hover::after {
+  opacity: 0.7;
+}
+
+.art-title-1 {
+  width: 775rem;
+  position: absolute;
+  top: 610rem;
+  left: 1081rem;
+}
+
+.art-text-1 {
+  width: 775rem;
+  position: absolute;
+  top: 772rem;
+  left: 1081rem;
+}
+
+.art-text-2 {
+  width: 775rem;
+  position: absolute;
+  top: 1032rem;
+  left: 1081rem;
+}
+
+.art-title-2 {
+  width: 841rem;
+  position: absolute;
+  top: 1546rem;
+  left: 67rem;
+}
+
+.art-text-3 {
+  width: 900rem;
+  position: absolute;
+  top: 1740rem;
+  left: 67rem;
+}
+
+.art-text-4 {
+  width: 748rem;
+  position: absolute;
+  top: 1956rem;
+  left: 67rem;
+}
+
+.art-text-5 {
+  width: 806rem;
+  position: absolute;
+  top: 1616rem;
+  left: 67rem;
+}
+
+.art-text-6 {
+  width: 748rem;
+  position: absolute;
+  top: 1964rem;
+  left: 67rem;
+}
+
+.tik-tok-video {
+  width: 669.716rem;
+  height: 845.065rem;
+  background: linear-gradient(180deg, #fff -35.67%, #ff65a6 100%);
+  border: 48rem solid transparent;
+  border-image: linear-gradient(180deg, #fff -35.67%, #ff65a6 100%);
+  border-image-slice: 1;
+  position: absolute;
+  bottom: 282rem;
+  right: 119rem;
+}
+
+.art-back {
+  bottom: 282rem;
+  left: 67rem;
 }

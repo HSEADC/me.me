@@ -1,10 +1,10 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const htmlPages = require('./webpack.pages.js')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const htmlPages = require("./webpack.pages.js");
 
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
   entry: {
@@ -37,7 +37,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",

@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 function createPages(template, filename, chunks) {
   return new HtmlWebpackPlugin({
@@ -13,6 +13,10 @@ const htmlPages = [
   createPages("./src/pages/about.html", "./pages/about.html", ["index"]),
   createPages("./src/pages/splash.html", "./pages/splash.html", ["index"]),
   createPages("./src/pages/articles.html", "./pages/articles.html", ["index"]),
+  createPages("./src/pages/random.html", "./pages/random.html", ["index"]),
+  createPages("./src/pages/constructor.html", "./pages/constructor.html", [
+    "index",
+  ]),
   createPages(
     "./src/pages/articles/art-1.html",
     "./pages/articles/art-1.html",
@@ -26,4 +30,4 @@ const htmlPages = [
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
 ];
 
-module.exports = htmlPages
+module.exports = htmlPages;
