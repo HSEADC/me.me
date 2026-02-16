@@ -11,3 +11,4 @@ yarn-error.log
 /dev_build/*.gif
 /dev_build/*.svg
 /dev_build/*/*.*
+Add-Content .gitignore "`n# ignore broken filenames in docs`ndocs/fonts/* .ttf*`ndocs/images/* .webp*`ndocs/images/* .svg*`n*.rar"
