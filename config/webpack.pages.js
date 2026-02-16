@@ -20,13 +20,16 @@ const htmlPages = [
   createPages(
     "./src/pages/articles/art-1.html",
     "./pages/articles/art-1.html",
-    ["index"]
+    ["index"],
   ),
   createPages(
     "./src/pages/articles/art-2.html",
     "./pages/articles/art-2.html",
-    ["index"]
+    ["index"],
   ),
+  createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", [
+    "test1",
+  ]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
 ];
 

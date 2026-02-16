@@ -10,11 +10,14 @@ module.exports = {
   entry: {
     index: "./src/javascripts/index.js",
     styleguide: "./src/javascripts/styleguide.js",
+    test1: "./src/javascripts/test1.js",
+    tests: "./src/javascripts/tests.js",
   },
   output: {
     filename: "[name].js",
     path: path.resolve(".", "docs"),
   },
+
   module: {
     rules: [
       {

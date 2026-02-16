@@ -1,8 +1,8 @@
 @media (max-width: 440px) {
-  /*  index, about */
+  /* about */
 
   p {
-    font-size: 11rem;
+    font-size: 60rem;
   }
 
   .txt::after {
@@ -14,341 +14,91 @@
   }
 
   h1 {
-    font-size: 32rem;
+    font-size: 132rem;
   }
 
   h1.hd::after {
-    -webkit-text-stroke: 6rem #000;
-  }
-
-  p.hd {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-  }
-
-  p.hd::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    font: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
-    white-space: pre-wrap;
-    color: transparent;
-    -webkit-text-stroke: 30rem #000;
+    -webkit-text-stroke: 28rem #000;
   }
 
   h2 {
-    font-family: "Impact";
-    color: #fff;
-    font-size: 50rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-  }
-
-  img {
-    display: block;
+    font-size: 70rem;
   }
 
   button {
-    width: 314rem;
-    height: 55rem;
-    padding: 10rem 30rem;
-    position: absolute;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    border: none;
-  }
-
-  button:hover {
-    color: #ffffff;
-    background: #ff65a6;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .images {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 514rem;
+    height: 155rem;
+    font-size: 50rem;
   }
 
   .txt-img {
     display: inline-block;
     position: absolute;
-    width: 48rem;
-    height: 48rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 60rem;
+    height: 60rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
   }
 
   .hd-img {
-    display: inline-block;
-    position: absolute;
     width: 106rem;
     height: 106rem;
     margin-left: 24rem;
     margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   /* header */
 
   nav {
     width: 100vw;
-    height: 105rem;
-    top: 0;
-    left: 0;
-    position: fixed;
-    opacity: 0.93;
-    background: #ff65a6;
-    z-index: 1000;
+    height: 125rem;
   }
 
   .logo-img {
-    width: 179.196rem;
-    height: 76.252rem;
-    margin-left: 162rem;
-    margin-right: 200rem;
+    width: 279.196rem;
+    height: 176.252rem;
+    margin-left: 142rem;
+    margin-right: 150rem;
   }
-
-  .nav_items {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-
-  .nav_items > a:not(:first-child) {
-    margin-right: 80rem;
-  }
-
-  .nav_items > a {
-    color: #fff;
-    font-family: Impact;
-    font-size: 40.668rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-decoration: none;
-    text-align: right;
-    padding: 4rem 2rem;
-    padding-bottom: 8rem;
-  }
-
-  .nav_items > a:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .nav_items > a.nv {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-  }
-
-  .nav_items > a.nv::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    color: transparent;
-    -webkit-text-stroke: 25rem #000;
-
-    font: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
-    white-space: pre;
-  }
-
-  .nav_items > a.nv[class*="-cur"] {
-    color: #ff65a6 !important;
-  }
-
-  .nav_items > a.nv[class*="-cur"]::after {
-    -webkit-text-stroke: 25rem #fff;
-  }
-
-  .nav_items > a {
-    will-change: transform;
-  }
-
-  /* footer */
-
-  .footer {
-    height: 160rem;
-    width: 100vw;
-    position: relative;
-    bottom: -20rem;
-    opacity: 1;
-    background: #000000;
-    z-index: 10;
-  }
-
-  .footer-container {
-    display: flex;
-    height: 100%;
-  }
-
-  .footer-logo-img {
-    width: 179.196rem;
-    height: 76.253rem;
-    position: absolute;
-    bottom: 34.49rem;
-    left: 862rem;
-  }
-
-  .footer-logo-img:hover {
-    scale: 1.05;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .footer-link {
-    position: absolute;
-    bottom: 55rem;
-    font-family: "Impact";
-    font-size: 40.477rem;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .link-1 {
-    left: 190rem;
-  }
-
-  .link-2 {
-    right: 190rem;
-  }
-
-  .footer-link:hover {
-    color: #ff65a6;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-
-  /* о нас */
 
   /* блок про нас */
 
   .about-us {
-    width: 100vw;
-    height: 2000rem;
-    position: relative;
-    overflow: hidden;
-    margin-top: 0;
+    height: 2300rem;
   }
 
   .about-title {
-    width: 700rem;
-    position: absolute;
-    top: 200rem;
-    left: 450rem;
-    color: #fff;
+    left: 500rem;
   }
 
   .abt-image-1 {
-    width: 540rem;
-    height: 429rem;
-    position: absolute;
-    top: 324rem;
-    right: 200rem;
-    z-index: 2;
-    background-image: url(../images/about/img-1.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .abt-image-1::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
+    width: 640rem;
+    height: 529rem;
+    top: 364rem;
+    right: 140rem;
   }
 
   .abt-frame-1 {
-    width: 820rem;
-    height: 829rem;
-    position: absolute;
-    top: 114rem;
-    right: 53rem;
-    pointer-events: none;
-  }
-
-  .abt-image-1:hover::after {
-    opacity: 0.7;
+    width: 920rem;
+    height: 929rem;
+    top: 154rem;
+    right: 3rem;
   }
 
   .abt-header {
-    width: 600rem;
-    height: 68.371rem;
-    position: absolute;
-    top: 342rem;
-    left: 170rem;
-  }
-
-  .timg-1 {
-    background-image: url(../images/about/sp3.webp);
-  }
-
-  .timg-2 {
-    background-image: url(../images/about/sp2.webp);
-  }
-
-  .timg-non-1 {
-    position: absolute;
-    top: 200rem;
-    left: 400rem;
-    background-image: url(../images/about/sp2.webp);
-  }
-
-  .timg-3 {
-    background-image: url(../images/about/sp1.webp);
-  }
-
-  .timg-4 {
-    background-image: url(../images/about/sp4.webp);
-  }
-
-  .abt-text-1 {
-    width: 700.289rem;
-    position: absolute;
-    top: 451rem;
-    left: 170rem;
+    width: 800rem;
   }
 
   .abt-text-2 {
     width: 900rem;
     position: absolute;
-    top: 656rem;
+    top: 906rem;
     left: 170rem;
   }
 
   .shape {
     position: absolute;
-    top: 900rem;
+    top: 1300rem;
     left: -100rem;
     width: 1300rem;
     max-width: 100%;
@@ -366,52 +116,24 @@
   /* блок что такое мем */
 
   .what {
-    width: 100vw;
     height: 900rem;
-    position: relative;
-    overflow: hidden;
-    margin-top: 0;
   }
 
   .abt-image-2 {
     width: 500rem;
     height: 500rem;
-    position: absolute;
     top: 145rem;
     left: 185rem;
-    z-index: 2;
-    background-image: url(../images/about/img-2.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .abt-frame-2 {
     width: 750rem;
-    height: auto;
-    position: absolute;
     top: 4rem;
     left: 53rem;
-    pointer-events: none;
-  }
-
-  .abt-image-2::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
-  }
-
-  .abt-image-2:hover::after {
-    opacity: 0.7;
   }
 
   .abt-header-2-1 {
-    width: 275rem;
+    width: 475rem;
     position: absolute;
     top: 110rem;
     right: 622rem;
@@ -421,44 +143,28 @@
     width: 275rem;
     position: absolute;
     top: 110rem;
-    right: 342rem;
+    right: 442rem;
   }
 
   .abt-header-2-3 {
     width: 275rem;
     position: absolute;
     top: 110rem;
-    right: 72rem;
+    right: 82rem;
   }
 
   .timg-1-abt {
-    display: inline-block;
-    position: absolute;
-    width: 48rem;
-    height: 48rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 115rem;
-    right: 605rem;
-    background-image: url(../images/about/sp1.webp);
+    width: 60rem;
+    height: 60rem;
+    top: 120rem;
+    right: 705rem;
   }
 
   .timg-2-abt {
-    display: inline-block;
-    position: absolute;
-    width: 48rem;
-    height: 48rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 115rem;
-    right: 335rem;
-    background-image: url(../images/about/sp2.webp);
+    width: 60rem;
+    height: 60rem;
+    top: 120rem;
+    right: 345rem;
   }
 
   .txt-img {
@@ -478,531 +184,398 @@
   /* блок от меня что требуется */
 
   .info {
-    width: 100vw;
-    height: 2531rem;
-    position: relative;
-    overflow: hidden;
-    margin-top: -320rem;
+    height: 2831rem;
   }
 
   .abt-image-3 {
-    width: 609rem;
-    height: 420rem;
-    position: absolute;
+    width: 709rem;
+    height: 500rem;
     top: 335rem;
-    right: 150rem;
-    z-index: 3;
-    background-image: url(../images/about/img-3.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    right: 110rem;
   }
 
   .abt-frame-3 {
-    width: 820rem;
-    height: 829rem;
-    position: absolute;
+    width: 920rem;
+    height: 929rem;
     top: 114rem;
-    right: 53rem;
-    pointer-events: none;
-  }
-
-  .abt-image-3::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
-  }
-
-  .abt-image-3:hover::after {
-    opacity: 0.7;
+    right: 13rem;
   }
 
   .abt-header-3-1 {
     width: 516.693rem;
-    position: absolute;
     top: 320rem;
     left: 170rem;
-    z-index: 2;
   }
 
   .abt-header-3-2 {
-    width: 370rem;
-    position: absolute;
+    width: 470rem;
     top: 320rem;
-    left: 510rem;
+    left: 610rem;
     z-index: 2;
   }
 
   .timg-3-abt {
-    display: inline-block;
-    position: absolute;
-    width: 48rem;
-    height: 48rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 60rem;
+    height: 60rem;
     top: 325rem;
-    left: 417rem;
-    background-image: url(../images/about/sp2.webp);
-    z-index: 15;
+    left: 510rem;
   }
 
   .shape-2 {
-    position: absolute;
-    top: 900rem;
-    right: -100rem;
-    width: 1300rem;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transform: scaleX(-1);
-    transform-origin: center;
-  }
-
-  .shape__video-2 {
-    width: 100%;
-    height: 97%;
-    object-fit: cover;
-    display: block;
-    transform: scaleX(-1);
-    transform-origin: center;
+    top: 1000rem;
   }
 
   .abt-text-4 {
-    width: 550rem;
-    position: absolute;
-    top: 460rem;
-    left: 170rem;
+    width: 750rem;
   }
 
   .abt-header-4-1 {
     width: 430.937rem;
-    position: absolute;
     bottom: 630rem;
     left: 995rem;
-    z-index: 2;
   }
 
   .abt-header-4-2 {
-    width: 430.937rem;
+    width: 500.937rem;
     position: absolute;
     bottom: 630rem;
-    right: 130rem;
+    right: -50rem;
     z-index: 2;
   }
 
   .timg-4-abt {
-    display: inline-block;
-    position: absolute;
-    width: 48rem;
-    height: 48rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 60rem;
+    height: 60rem;
     bottom: 630rem;
-    right: 570rem;
-    background-image: url(../images/about/sp2.webp);
-    z-index: 15;
-  }
-
-  .abt-image-4 {
-    width: 555rem;
-    height: 400rem;
-    position: absolute;
-    bottom: 238rem;
-    left: 170rem;
-    z-index: 2;
-    background-image: url(../images/about/img-4.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .abt-image-4::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
-  }
-
-  .abt-frame-4 {
-    width: 820rem;
-    height: 829rem;
-    position: absolute;
-    bottom: 35rem;
-    left: 40rem;
-    pointer-events: none;
-  }
-
-  .abt-image-4:hover::after {
-    opacity: 0.7;
+    right: 450rem;
   }
 
   .abt-text-5 {
     width: 750rem;
     position: absolute;
-    bottom: 440rem;
+    bottom: 240rem;
     right: 170rem;
   }
 
   .abt-button-1 {
-    bottom: 300rem;
-    left: 995rem;
+    bottom: 1rem;
+    left: 195rem;
   }
 
   .abt-button-2 {
-    bottom: 300rem;
+    bottom: 1rem;
     right: 170rem;
   }
 
   .abt-button-3 {
-    top: 700rem;
+    top: 800rem;
     left: 170rem;
   }
 
   /* главная главарь головная */
 
-  .hero-main {
-    width: 100vw;
-    height: 731rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .huge {
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    font-family: "Inter";
-    font-size: 128.681rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    text-transform: uppercase;
-  }
-
-  .title-1 {
-    top: 200rem;
-    left: 460rem;
-    z-index: 3;
-  }
-
-  .title-2 {
-    top: 315rem;
-    right: 620rem;
-    z-index: 3;
-  }
-
-  .title-3 {
-    top: 170rem;
-    left: 680rem;
-    z-index: 3;
-  }
-
-  .title-4 {
-    top: 140rem;
-    left: 450rem;
-    z-index: 3;
-  }
-
-  .huge-img-1 {
-    display: inline-block;
-    position: absolute;
-    width: 116rem;
-    height: 116rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 210rem;
-    right: 410rem;
-  }
-
-  .huge-img-2 {
-    display: inline-block;
-    position: absolute;
-    width: 116rem;
-    height: 116rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 320rem;
-    left: 530rem;
-  }
-
-  .huge-img-3 {
-    display: inline-block;
-    position: absolute;
-    width: 116rem;
-    height: 116rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 435rem;
-    right: 300rem;
-    z-index: 0;
-  }
-
-  .huge-img-4 {
-    display: inline-block;
-    position: absolute;
-    width: 116rem;
-    height: 116rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 440rem;
-    left: 310rem;
-  }
-
-  .indx-btn-1 {
-    top: 580rem;
-    left: 270rem;
-  }
-
-  .indx-btn-2 {
-    top: 580rem;
-    right: 325rem;
-  }
-
   .indx-articles {
-    width: 100vw;
-    height: 1231rem;
-    position: relative;
-    overflow: hidden;
+    height: 1331rem;
   }
 
   .main-title-1 {
-    position: absolute;
     top: 120rem;
-    left: 680rem;
+    left: 700rem;
   }
 
   .main-title-2 {
-    position: absolute;
-    top: 120rem;
-    left: 900rem;
+    left: 970rem;
   }
 
   .ind-img-1 {
-    position: absolute;
-    top: 20rem;
-    left: 20rem;
-    display: inline-block;
-    position: absolute;
-    width: 74rem;
-    height: 74rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: 110rem;
-    left: 1100rem;
+    left: 1250rem;
   }
 
   .ind-img-2 {
-    position: absolute;
-    top: 20rem;
-    left: 20rem;
-    display: inline-block;
-    position: absolute;
-    width: 74rem;
-    height: 74rem;
-    margin-left: 24rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: 110rem;
-    left: 790rem;
-  }
-
-  .a-prev-index-1 {
-    position: absolute;
-    top: 300rem;
-    left: 200rem;
-  }
-
-  .a-prev-index-2 {
-    position: absolute;
-    top: 300rem;
-    right: 800rem;
+    left: 860rem;
   }
 
   .art-prev-frame {
-    width: 554.692rem;
-    height: 658rem;
+    width: 854.692rem;
+    height: 858rem;
     position: absolute;
     pointer-events: none;
     z-index: 0;
   }
 
+  .a-prev-index-1 {
+    left: 100rem;
+  }
+
+  .a-prev-index-2 {
+    right: 1000rem;
+  }
+
   .a-prev-img-1 {
-    position: absolute;
-    top: 70rem;
-    left: 70rem;
-    height: 413.886rem;
-    width: 413.886rem;
-    background-image: url(../images/articles/article-1.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
+    top: 100rem;
+    left: 170rem;
+    height: 513.886rem;
+    width: 513.886rem;
   }
 
   .a-prev-img-2 {
-    position: absolute;
-    top: 70rem;
-    left: 70rem;
-    height: 413.886rem;
-    width: 413.886rem;
-    background-image: url(../images/articles/article-2.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
-  .a-prev-img-1::after,
-  .a-prev-img-2::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
-  }
-
-  .a-prev-img-1:hover::after,
-  .a-prev-img-2:hover::after {
-    opacity: 0.7;
-  }
-
-  .art-text {
-    width: 413.886rem;
-    height: 100rem;
-    position: absolute;
-    color: #ffffff;
-    text-align: center;
-    font-family: Impact;
-    font-size: 48rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-transform: lowercase;
-  }
-
-  .art-text:hover {
-    color: #ff65a6;
+    top: 100rem;
+    left: 170rem;
+    height: 513.886rem;
+    width: 513.886rem;
   }
 
   .a-1 {
-    top: 500rem;
-    left: 110rem;
+    top: 650rem;
+    left: 250rem;
   }
 
   .a-2 {
-    top: 500rem;
-    left: 240rem;
+    top: 650rem;
+    left: 390rem;
   }
 
   .indx-random {
     width: 100vw;
-    height: 1231rem;
+    height: 1931rem;
     position: relative;
     overflow: hidden;
   }
 
   .main-title-3 {
-    position: absolute;
     top: 120rem;
-    left: 760rem;
+    left: 700rem;
   }
 
   .ind-img-3 {
-    position: absolute;
-    top: 20rem;
-    left: 20rem;
-    display: inline-block;
-    position: absolute;
-    width: 74rem;
-    height: 74rem;
-    margin-left: -40rem;
-    margin-right: 24rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 110rem;
-    left: 1100rem;
+    top: 115rem;
+    left: 1140rem;
   }
 
   .ind-rand-container {
-    width: 867.106rem;
-    height: 690.467rem;
-    position: absolute;
     top: 300rem;
-    left: 120rem;
+    left: 280rem;
   }
 
   .ind-rand-txt {
     width: 650rem;
     position: absolute;
-    top: 500rem;
-    right: 120rem;
+    top: 1350rem;
+    right: 620rem;
   }
 
   .indx-rand-frame {
-    width: 867.106rem;
-    height: 690.467rem;
+    width: 1267.106rem;
+    height: 1090.467rem;
   }
 
   .ind-rand-btn {
-    top: 700rem;
-    right: 465rem;
+    top: 1650rem;
+    right: 730rem;
   }
 
   .ind-rand {
-    width: 600rem !important;
-    height: 450rem !important;
-    top: 130rem !important;
-    left: 130rem !important;
+    width: 900rem !important;
+    height: 650rem !important;
+    top: 230rem !important;
+    left: 200rem !important;
   }
 
-  .ind-rand::after {
-    content: "";
+  /* статьи */
+
+  .list-articles {
+    height: 96vh;
+  }
+
+  .a-prev-1 {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
+    top: 700rem;
+    left: 180rem;
+    transform: scale(1.4);
   }
 
-  .ind-rand:hover::after {
-    opacity: 0.7;
+  .a-prev-2 {
+    position: absolute;
+    top: 2000rem;
+    right: 1400rem;
+    transform: scale(1.4);
+  }
+
+  .articles-text {
+    width: 600rem;
+    position: absolute;
+    bottom: 400rem;
+    left: 700rem;
+  }
+
+  /* сами статьи */
+
+  .article-body {
+    height: 96vh;
+  }
+
+  .art-hd {
+    width: 1450rem;
+    left: 250rem;
+  }
+
+  .art-frame-1 {
+    top: 550rem;
+  }
+
+  .art-img {
+    top: 705rem;
+  }
+
+  .art-text-2 {
+    top: 1390rem;
+  }
+
+  .art-title-2 {
+    top: 1946rem;
+    left: 167rem;
+  }
+
+  .art-text-3 {
+    width: 850rem;
+    top: 2180rem;
+    left: 167rem;
+  }
+
+  .art-text-4 {
+    top: 2756rem;
+    left: 167rem;
+  }
+
+  .art-text-5 {
+    width: 820rem;
+    position: absolute;
+    top: 2116rem;
+    left: 167rem;
+  }
+
+  .art-text-6 {
+    width: 850rem;
+    position: absolute;
+    top: 2864rem;
+    left: 167rem;
+  }
+
+  .tik-tok-video {
+    width: 669.716rem;
+    height: 845.065rem;
+    bottom: 850rem;
+    right: 119rem;
+  }
+
+  .art-back {
+    bottom: 402rem;
+    left: 700rem;
+  }
+
+  /* конструкто */
+
+  .create-meme-page {
+    height: 91vh;
+  }
+
+  .create-title {
+    width: 1200rem;
+    top: 300rem;
+    left: 250rem;
+  }
+
+  .timg-non-1 {
+    position: absolute;
+    top: 410rem;
+    left: 350rem;
+  }
+
+  .mb-stage {
+    top: 730rem;
+    left: 490rem;
+    width: 1000rem;
+    height: 1000rem;
+  }
+
+  .mb-panel {
+    top: 2008rem;
+    right: 200rem;
+    width: 1500rem;
+    height: 1455rem;
+  }
+
+  .const-pick {
+    top: 200rem;
+    left: 55rem;
+    position: absolute;
+    width: 560rem;
+    font-size: 72rem;
+  }
+
+  .mb-upload-wide {
+    top: 200rem;
+    right: 55rem;
+    cursor: pointer;
+  }
+
+  .mb-presets {
+    top: 425rem;
+    left: 40rem;
+    width: 1420rem;
+    column-gap: 90rem;
+    row-gap: 50rem;
+  }
+
+  .mb-input {
+    font-size: 50rem;
+  }
+
+  .mb-download-wide {
+    position: static;
+    margin-top: auto;
+    cursor: pointer;
+    width: 1500rem;
+  }
+
+  /* рандомный мем ура */
+
+  .random-section {
+    height: 91vh;
+  }
+
+  .rand-image {
+    width: 1020rem;
+    height: 1020rem;
+    top: 830rem;
+    left: 470rem;
+  }
+
+  .rnd-frame {
+    width: 1500rem;
+    height: 1500rem;
+    top: 570rem;
+    left: 235rem;
+  }
+
+  .rnd-black {
+    width: 1100rem;
+    height: 1100rem;
+    top: 800rem;
+    left: 365rem;
+  }
+
+  .rand-title {
+    width: 700rem;
+    bottom: 1550rem;
+    right: 500rem;
+  }
+  .rand-btn {
+    bottom: 1000rem;
+    right: 470rem;
+    width: 900rem;
+    height: 250rem;
   }
 }
