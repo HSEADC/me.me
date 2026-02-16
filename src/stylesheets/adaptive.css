@@ -1,0 +1,1008 @@
+@media (max-width: 440px) {
+  /*  index, about */
+
+  p {
+    font-size: 11rem;
+  }
+
+  .txt::after {
+    -webkit-text-stroke: 14rem #000;
+  }
+
+  .hd::after {
+    -webkit-text-stroke: 14rem #000;
+  }
+
+  h1 {
+    font-size: 32rem;
+  }
+
+  h1.hd::after {
+    -webkit-text-stroke: 6rem #000;
+  }
+
+  p.hd {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  p.hd::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    white-space: pre-wrap;
+    color: transparent;
+    -webkit-text-stroke: 30rem #000;
+  }
+
+  h2 {
+    font-family: "Impact";
+    color: #fff;
+    font-size: 50rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  img {
+    display: block;
+  }
+
+  button {
+    width: 314rem;
+    height: 55rem;
+    padding: 10rem 30rem;
+    position: absolute;
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: none;
+  }
+
+  button:hover {
+    color: #ffffff;
+    background: #ff65a6;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .images {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .txt-img {
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hd-img {
+    display: inline-block;
+    position: absolute;
+    width: 106rem;
+    height: 106rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* header */
+
+  nav {
+    width: 100vw;
+    height: 105rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.93;
+    background: #ff65a6;
+    z-index: 1000;
+  }
+
+  .logo-img {
+    width: 179.196rem;
+    height: 76.252rem;
+    margin-left: 162rem;
+    margin-right: 200rem;
+  }
+
+  .nav_items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .nav_items > a:not(:first-child) {
+    margin-right: 80rem;
+  }
+
+  .nav_items > a {
+    color: #fff;
+    font-family: Impact;
+    font-size: 40.668rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    text-align: right;
+    padding: 4rem 2rem;
+    padding-bottom: 8rem;
+  }
+
+  .nav_items > a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav_items > a.nv {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  .nav_items > a.nv::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    color: transparent;
+    -webkit-text-stroke: 25rem #000;
+
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    white-space: pre;
+  }
+
+  .nav_items > a.nv[class*="-cur"] {
+    color: #ff65a6 !important;
+  }
+
+  .nav_items > a.nv[class*="-cur"]::after {
+    -webkit-text-stroke: 25rem #fff;
+  }
+
+  .nav_items > a {
+    will-change: transform;
+  }
+
+  /* footer */
+
+  .footer {
+    height: 160rem;
+    width: 100vw;
+    position: relative;
+    bottom: -20rem;
+    opacity: 1;
+    background: #000000;
+    z-index: 10;
+  }
+
+  .footer-container {
+    display: flex;
+    height: 100%;
+  }
+
+  .footer-logo-img {
+    width: 179.196rem;
+    height: 76.253rem;
+    position: absolute;
+    bottom: 34.49rem;
+    left: 862rem;
+  }
+
+  .footer-logo-img:hover {
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .footer-link {
+    position: absolute;
+    bottom: 55rem;
+    font-family: "Impact";
+    font-size: 40.477rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .link-1 {
+    left: 190rem;
+  }
+
+  .link-2 {
+    right: 190rem;
+  }
+
+  .footer-link:hover {
+    color: #ff65a6;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  /* о нас */
+
+  /* блок про нас */
+
+  .about-us {
+    width: 100vw;
+    height: 2000rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  .about-title {
+    width: 700rem;
+    position: absolute;
+    top: 200rem;
+    left: 450rem;
+    color: #fff;
+  }
+
+  .abt-image-1 {
+    width: 540rem;
+    height: 429rem;
+    position: absolute;
+    top: 324rem;
+    right: 200rem;
+    z-index: 2;
+    background-image: url(../images/about/img-1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .abt-image-1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .abt-frame-1 {
+    width: 820rem;
+    height: 829rem;
+    position: absolute;
+    top: 114rem;
+    right: 53rem;
+    pointer-events: none;
+  }
+
+  .abt-image-1:hover::after {
+    opacity: 0.7;
+  }
+
+  .abt-header {
+    width: 600rem;
+    height: 68.371rem;
+    position: absolute;
+    top: 342rem;
+    left: 170rem;
+  }
+
+  .timg-1 {
+    background-image: url(../images/about/sp3.webp);
+  }
+
+  .timg-2 {
+    background-image: url(../images/about/sp2.webp);
+  }
+
+  .timg-non-1 {
+    position: absolute;
+    top: 200rem;
+    left: 400rem;
+    background-image: url(../images/about/sp2.webp);
+  }
+
+  .timg-3 {
+    background-image: url(../images/about/sp1.webp);
+  }
+
+  .timg-4 {
+    background-image: url(../images/about/sp4.webp);
+  }
+
+  .abt-text-1 {
+    width: 700.289rem;
+    position: absolute;
+    top: 451rem;
+    left: 170rem;
+  }
+
+  .abt-text-2 {
+    width: 900rem;
+    position: absolute;
+    top: 656rem;
+    left: 170rem;
+  }
+
+  .shape {
+    position: absolute;
+    top: 900rem;
+    left: -100rem;
+    width: 1300rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .shape__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* блок что такое мем */
+
+  .what {
+    width: 100vw;
+    height: 900rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  .abt-image-2 {
+    width: 500rem;
+    height: 500rem;
+    position: absolute;
+    top: 145rem;
+    left: 185rem;
+    z-index: 2;
+    background-image: url(../images/about/img-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .abt-frame-2 {
+    width: 750rem;
+    height: auto;
+    position: absolute;
+    top: 4rem;
+    left: 53rem;
+    pointer-events: none;
+  }
+
+  .abt-image-2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .abt-image-2:hover::after {
+    opacity: 0.7;
+  }
+
+  .abt-header-2-1 {
+    width: 275rem;
+    position: absolute;
+    top: 110rem;
+    right: 622rem;
+  }
+
+  .abt-header-2-2 {
+    width: 275rem;
+    position: absolute;
+    top: 110rem;
+    right: 342rem;
+  }
+
+  .abt-header-2-3 {
+    width: 275rem;
+    position: absolute;
+    top: 110rem;
+    right: 72rem;
+  }
+
+  .timg-1-abt {
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 115rem;
+    right: 605rem;
+    background-image: url(../images/about/sp1.webp);
+  }
+
+  .timg-2-abt {
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 115rem;
+    right: 335rem;
+    background-image: url(../images/about/sp2.webp);
+  }
+
+  .txt-img {
+    display: inline-block;
+    position: static;
+    margin: 0 24rem;
+    vertical-align: middle;
+  }
+
+  .abt-text-3 {
+    width: 775rem;
+    position: absolute;
+    top: 240rem;
+    right: 120rem;
+  }
+
+  /* блок от меня что требуется */
+
+  .info {
+    width: 100vw;
+    height: 2531rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: -320rem;
+  }
+
+  .abt-image-3 {
+    width: 609rem;
+    height: 420rem;
+    position: absolute;
+    top: 335rem;
+    right: 150rem;
+    z-index: 3;
+    background-image: url(../images/about/img-3.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .abt-frame-3 {
+    width: 820rem;
+    height: 829rem;
+    position: absolute;
+    top: 114rem;
+    right: 53rem;
+    pointer-events: none;
+  }
+
+  .abt-image-3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .abt-image-3:hover::after {
+    opacity: 0.7;
+  }
+
+  .abt-header-3-1 {
+    width: 516.693rem;
+    position: absolute;
+    top: 320rem;
+    left: 170rem;
+    z-index: 2;
+  }
+
+  .abt-header-3-2 {
+    width: 370rem;
+    position: absolute;
+    top: 320rem;
+    left: 510rem;
+    z-index: 2;
+  }
+
+  .timg-3-abt {
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 325rem;
+    left: 417rem;
+    background-image: url(../images/about/sp2.webp);
+    z-index: 15;
+  }
+
+  .shape-2 {
+    position: absolute;
+    top: 900rem;
+    right: -100rem;
+    width: 1300rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+
+  .shape__video-2 {
+    width: 100%;
+    height: 97%;
+    object-fit: cover;
+    display: block;
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+
+  .abt-text-4 {
+    width: 550rem;
+    position: absolute;
+    top: 460rem;
+    left: 170rem;
+  }
+
+  .abt-header-4-1 {
+    width: 430.937rem;
+    position: absolute;
+    bottom: 630rem;
+    left: 995rem;
+    z-index: 2;
+  }
+
+  .abt-header-4-2 {
+    width: 430.937rem;
+    position: absolute;
+    bottom: 630rem;
+    right: 130rem;
+    z-index: 2;
+  }
+
+  .timg-4-abt {
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 630rem;
+    right: 570rem;
+    background-image: url(../images/about/sp2.webp);
+    z-index: 15;
+  }
+
+  .abt-image-4 {
+    width: 555rem;
+    height: 400rem;
+    position: absolute;
+    bottom: 238rem;
+    left: 170rem;
+    z-index: 2;
+    background-image: url(../images/about/img-4.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .abt-image-4::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .abt-frame-4 {
+    width: 820rem;
+    height: 829rem;
+    position: absolute;
+    bottom: 35rem;
+    left: 40rem;
+    pointer-events: none;
+  }
+
+  .abt-image-4:hover::after {
+    opacity: 0.7;
+  }
+
+  .abt-text-5 {
+    width: 750rem;
+    position: absolute;
+    bottom: 440rem;
+    right: 170rem;
+  }
+
+  .abt-button-1 {
+    bottom: 300rem;
+    left: 995rem;
+  }
+
+  .abt-button-2 {
+    bottom: 300rem;
+    right: 170rem;
+  }
+
+  .abt-button-3 {
+    top: 700rem;
+    left: 170rem;
+  }
+
+  /* главная главарь головная */
+
+  .hero-main {
+    width: 100vw;
+    height: 731rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .huge {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 128.681rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  .title-1 {
+    top: 200rem;
+    left: 460rem;
+    z-index: 3;
+  }
+
+  .title-2 {
+    top: 315rem;
+    right: 620rem;
+    z-index: 3;
+  }
+
+  .title-3 {
+    top: 170rem;
+    left: 680rem;
+    z-index: 3;
+  }
+
+  .title-4 {
+    top: 140rem;
+    left: 450rem;
+    z-index: 3;
+  }
+
+  .huge-img-1 {
+    display: inline-block;
+    position: absolute;
+    width: 116rem;
+    height: 116rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 210rem;
+    right: 410rem;
+  }
+
+  .huge-img-2 {
+    display: inline-block;
+    position: absolute;
+    width: 116rem;
+    height: 116rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 320rem;
+    left: 530rem;
+  }
+
+  .huge-img-3 {
+    display: inline-block;
+    position: absolute;
+    width: 116rem;
+    height: 116rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 435rem;
+    right: 300rem;
+    z-index: 0;
+  }
+
+  .huge-img-4 {
+    display: inline-block;
+    position: absolute;
+    width: 116rem;
+    height: 116rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 440rem;
+    left: 310rem;
+  }
+
+  .indx-btn-1 {
+    top: 580rem;
+    left: 270rem;
+  }
+
+  .indx-btn-2 {
+    top: 580rem;
+    right: 325rem;
+  }
+
+  .indx-articles {
+    width: 100vw;
+    height: 1231rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-title-1 {
+    position: absolute;
+    top: 120rem;
+    left: 680rem;
+  }
+
+  .main-title-2 {
+    position: absolute;
+    top: 120rem;
+    left: 900rem;
+  }
+
+  .ind-img-1 {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    display: inline-block;
+    position: absolute;
+    width: 74rem;
+    height: 74rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 110rem;
+    left: 1100rem;
+  }
+
+  .ind-img-2 {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    display: inline-block;
+    position: absolute;
+    width: 74rem;
+    height: 74rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 110rem;
+    left: 790rem;
+  }
+
+  .a-prev-index-1 {
+    position: absolute;
+    top: 300rem;
+    left: 200rem;
+  }
+
+  .a-prev-index-2 {
+    position: absolute;
+    top: 300rem;
+    right: 800rem;
+  }
+
+  .art-prev-frame {
+    width: 554.692rem;
+    height: 658rem;
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .a-prev-img-1 {
+    position: absolute;
+    top: 70rem;
+    left: 70rem;
+    height: 413.886rem;
+    width: 413.886rem;
+    background-image: url(../images/articles/article-1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .a-prev-img-2 {
+    position: absolute;
+    top: 70rem;
+    left: 70rem;
+    height: 413.886rem;
+    width: 413.886rem;
+    background-image: url(../images/articles/article-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .a-prev-img-1::after,
+  .a-prev-img-2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .a-prev-img-1:hover::after,
+  .a-prev-img-2:hover::after {
+    opacity: 0.7;
+  }
+
+  .art-text {
+    width: 413.886rem;
+    height: 100rem;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    font-family: Impact;
+    font-size: 48rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: lowercase;
+  }
+
+  .art-text:hover {
+    color: #ff65a6;
+  }
+
+  .a-1 {
+    top: 500rem;
+    left: 110rem;
+  }
+
+  .a-2 {
+    top: 500rem;
+    left: 240rem;
+  }
+
+  .indx-random {
+    width: 100vw;
+    height: 1231rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-title-3 {
+    position: absolute;
+    top: 120rem;
+    left: 760rem;
+  }
+
+  .ind-img-3 {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    display: inline-block;
+    position: absolute;
+    width: 74rem;
+    height: 74rem;
+    margin-left: -40rem;
+    margin-right: 24rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 110rem;
+    left: 1100rem;
+  }
+
+  .ind-rand-container {
+    width: 867.106rem;
+    height: 690.467rem;
+    position: absolute;
+    top: 300rem;
+    left: 120rem;
+  }
+
+  .ind-rand-txt {
+    width: 650rem;
+    position: absolute;
+    top: 500rem;
+    right: 120rem;
+  }
+
+  .indx-rand-frame {
+    width: 867.106rem;
+    height: 690.467rem;
+  }
+
+  .ind-rand-btn {
+    top: 700rem;
+    right: 465rem;
+  }
+
+  .ind-rand {
+    width: 600rem !important;
+    height: 450rem !important;
+    top: 130rem !important;
+    left: 130rem !important;
+  }
+
+  .ind-rand::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: color;
+  }
+
+  .ind-rand:hover::after {
+    opacity: 0.7;
+  }
+}

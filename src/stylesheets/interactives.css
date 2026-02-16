@@ -1,0 +1,224 @@
+body.constructor {
+  background-image: url(../images/interactives/background.webp);
+}
+
+.create-meme-page {
+  margin: 100rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 800rem;
+}
+
+.create-title {
+  width: 700rem;
+  position: absolute;
+  top: 100rem;
+  left: 450rem;
+  color: #fff;
+}
+
+.mb-stage {
+  position: absolute;
+  top: 330rem;
+  left: 90rem;
+  width: 600rem;
+  height: 600rem;
+  padding: 14rem;
+  box-sizing: border-box;
+}
+
+.mb-preview {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 4rem solid #ff65a6;
+  background: #000000;
+}
+
+.mb-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: grayscale(1);
+}
+
+.mb-panel {
+  position: absolute;
+  top: 308rem;
+  right: 90rem;
+  width: 1000rem;
+  height: 655rem;
+  background: transparent;
+  padding: 40rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.const-pick {
+  top: 160rem;
+  left: 55rem;
+  position: absolute;
+  width: 497rem;
+  font-size: 32rem;
+}
+
+.mb-upload-wide {
+  top: 150rem;
+  right: 55rem;
+  cursor: pointer;
+}
+
+.mb-presets {
+  position: absolute;
+  top: 225rem;
+  left: 40rem;
+  width: 910rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 100rem;
+  row-gap: 10rem;
+}
+
+.mb-preset {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+.mb-preset:hover {
+  outline: 3rem solid #ffffff;
+}
+
+.preset-1 {
+  background-image: url("../images/interactives/img-1.webp");
+}
+
+.preset-2 {
+  background-image: url("../images/interactives/img-2.webp");
+}
+
+.preset-3 {
+  background-image: url("../images/interactives/img-3.webp");
+}
+
+.preset-4 {
+  background-image: url("../images/interactives/img-4.webp");
+}
+
+.preset-5 {
+  background-image: url("../images/interactives/img-5.webp");
+}
+
+.preset-6 {
+  background-image: url("../images/interactives/img-6.webp");
+}
+
+.preset-7 {
+  background-image: url("../images/interactives/img-7.webp");
+}
+
+.preset-8 {
+  background-image: url("../images/interactives/img-8.webp");
+}
+
+.mb-text-row {
+  position: static;
+  width: 100%;
+  border: 3px solid #ff65a6;
+  background: #ffffff;
+  padding: 12rem 12rem;
+  box-sizing: border-box;
+}
+
+.mb-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000;
+  font-family: "Inter";
+  font-size: 24rem;
+}
+
+.mb-input::placeholder {
+  color: #000000;
+  -webkit-text-fill-color: #000000;
+}
+
+.mb-download-wide {
+  position: static;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+/* рандомный мем ура */
+
+.random-section {
+  margin: 100rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 1100rem;
+}
+.rand-image {
+  width: 620rem;
+  height: 620rem;
+  position: absolute;
+  top: 450rem;
+  left: 170rem;
+  background-image: url(../images/blck.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 220ms ease;
+  opacity: 1;
+}
+
+.rand-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  mix-blend-mode: color;
+}
+
+.rand-image:hover::after {
+  opacity: 0.7;
+}
+.rnd-frame {
+  width: 900rem;
+  height: 900rem;
+  position: absolute;
+  bottom: 270rem;
+  left: 25rem;
+  pointer-events: none;
+}
+.rnd-black {
+  width: 650rem;
+  height: 600rem;
+  position: absolute;
+  bottom: 400rem;
+  left: 155rem;
+  pointer-events: none;
+  z-index: -1;
+}
+.rand-title {
+  width: 500rem;
+  position: absolute;
+  bottom: 950rem;
+  right: 270rem;
+  z-index: 2;
+}
+.rand-btn {
+  bottom: 770rem;
+  right: 470rem;
+}
