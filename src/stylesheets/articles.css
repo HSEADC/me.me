@@ -1,6 +1,6 @@
 .list-articles {
   width: 100vw;
-  height: 1431rem;
+  height: 1831rem;
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@
 .articles-text {
   width: 400rem;
   position: absolute;
-  bottom: 200rem;
+  bottom: 60rem;
   left: 720rem;
 }
 

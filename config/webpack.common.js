@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: "./src/javascripts/index.js",
     styleguide: "./src/javascripts/styleguide.js",
+    articles: "./src/javascripts/articles.js",
     test1: "./src/javascripts/test1.js",
     tests: "./src/javascripts/tests.js",
   },

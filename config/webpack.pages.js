@@ -12,7 +12,9 @@ const htmlPages = [
   createPages("./src/index.html", "./index.html", ["index"]),
   createPages("./src/pages/about.html", "./pages/about.html", ["index"]),
   createPages("./src/pages/splash.html", "./pages/splash.html", ["index"]),
-  createPages("./src/pages/articles.html", "./pages/articles.html", ["index"]),
+  createPages("./src/pages/articles.html", "./pages/articles.html", [
+    "articles",
+  ]),
   createPages("./src/pages/random.html", "./pages/random.html", ["index"]),
   createPages("./src/pages/constructor.html", "./pages/constructor.html", [
     "index",
@@ -20,13 +22,29 @@ const htmlPages = [
   createPages(
     "./src/pages/articles/art-1.html",
     "./pages/articles/art-1.html",
-    ["index"],
+    ["articles"],
   ),
   createPages(
     "./src/pages/articles/art-2.html",
     "./pages/articles/art-2.html",
-    ["index"],
+    ["articles"],
   ),
+  createPages(
+    "./src/pages/articles/art-3.html",
+    "./pages/articles/art-3.html",
+    ["articles"],
+  ),
+  createPages(
+    "./src/pages/articles/art-4.html",
+    "./pages/articles/art-4.html",
+    ["articles"],
+  ),
+  createPages(
+    "./src/pages/articles/art-5.html",
+    "./pages/articles/art-5.html",
+    ["articles"],
+  ),
+
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", [
     "test1",
   ]),

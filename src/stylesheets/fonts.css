@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Impact';
-  src: url('../fonts/Impact.ttf');
+  font-family: "Impact";
+  src: url("../fonts/Impact.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter_Medium.ttf');
+  font-family: "Inter";
+  src: url("../fonts/Inter_Medium.ttf") format("truetype");
 }
