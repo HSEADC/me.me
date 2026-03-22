@@ -23,7 +23,7 @@ function drawNoiseFrame() {
     buffer[i] = shade;
     buffer[i + 1] = shade;
     buffer[i + 2] = shade;
-    buffer[i + 3] = 200;
+    buffer[i + 3] = 150;
   }
 
   ctx.putImageData(imageData, 0, 0);
@@ -44,7 +44,7 @@ requestAnimationFrame(animate);
 
 // обводка на типографике
 
-document.querySelectorAll(".txt, .hd, .nv").forEach((el) => {
+document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach((el) => {
   el.setAttribute("data-text", el.textContent.trim());
 });
 
@@ -62,9 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const downloadBtn = document.getElementById("mbDownloadBtn");
 
   const presetsWrap = document.querySelector(".mb-presets");
-  const presetItems = presetsWrap
-    ? Array.from(presetsWrap.querySelectorAll(".mb-preset"))
-    : [];
+  const presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".mb-preset")) : [];
 
   const W = canvas.width;
   const H = canvas.height;
@@ -248,8 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function grayscale(c, w, h) {
     const d = c.getImageData(0, 0, w, h);
     for (let i = 0; i < d.data.length; i += 4) {
-      const g =
-        d.data[i] * 0.2126 + d.data[i + 1] * 0.7152 + d.data[i + 2] * 0.0722;
+      const g = d.data[i] * 0.2126 + d.data[i + 1] * 0.7152 + d.data[i + 2] * 0.0722;
       d.data[i] = d.data[i + 1] = d.data[i + 2] = g;
     }
     c.putImageData(d, 0, 0);
@@ -272,18 +269,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // рандомный мем уррраааа рандом
 document.addEventListener("DOMContentLoaded", () => {
-  const box = document.querySelector(".rand-image");
+  const box = document.querySelector(".Q_RandContent ");
   const btn = document.querySelector(".rand-btn");
   if (!box) return;
 
   box.style.transition = "opacity 220ms ease";
   box.style.opacity = "1";
 
-  const req = require.context(
-    "../images/random",
-    false,
-    /^\.\/rnd-\d+\.webp$/i
-  );
+  const req = require.context("../images/random", false, /^\.\/rnd-\d+\.webp$/i);
 
   const urls = req.keys().map((k) => req(k));
   if (!urls.length) {
@@ -334,4 +327,24 @@ document.addEventListener("DOMContentLoaded", () => {
   setRandom();
 
   if (btn) btn.addEventListener("click", setRandom);
+});
+
+// инлайн-картинки разные-преразные рандомно проставляющиеся
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imageBlocks = document.querySelectorAll(
+    ".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat",
+  );
+  if (!imageBlocks.length) return;
+
+  const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
+
+  const urls = req.keys().map((k) => req(k));
+
+  const shuffledImages = [...urls].sort(() => Math.random() - 0.5);
+
+  imageBlocks.forEach((block, index) => {
+    const imageUrl = shuffledImages[index % shuffledImages.length];
+    block.style.backgroundImage = `url("${imageUrl}")`;
+  });
 });

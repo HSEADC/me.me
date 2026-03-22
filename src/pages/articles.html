@@ -49,18 +49,27 @@
 
   <body class="about-us-page">
     <canvas id="noise"></canvas>
-    <nav>
-      <div class="nav_items">
-        <a href="../index.html">
-          <img src="../images/logo.svg" class="logo-img" />
+
+    <nav class="O_Header">
+      <a href="../index.html">
+        <img src="../images/logo.svg" class="A_Logo" />
+      </a>
+      <div class="W_Header_all_links">
+        <a href="../index.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">главная</h3>
         </a>
-        <a href="../index.html" class="nv nav-1"> главная </a>
-        <a href="./about.html" class="nv nav-2"> о нас </a>
-        <a href="./articles.html" class="nv nav-3-cur"> статьи </a>
-        <a href="./random.html" class="nv nav-4"> рандом мем </a>
-        <a href="./constructor.html" class="nv nav-5"> создать мем </a>
+        <a href="./about.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">о нас</h3>
+        </a>
+        <a href="./articles.html" class="hd A_HeaderLinkCurrent">
+          <h3 class="Q_HeaderLink">статьи</h3>
+        </a>
+        <a href="./interactives.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">интерактивы</h3>
+        </a>
       </div>
     </nav>
+
     <section class="list-articles">
       <h1 class="hd articles-title">
         о чем хотите узнать
@@ -86,28 +95,26 @@
 
       <p class="txt articles-text">Скоро будут новые!</p>
     </section>
-    <footer class="footer">
-      <div class="footer-container">
+
+    <footer class="O_Footer">
+      <div class="W_Footer_all_links">
         <a
           href="https://t.me/memememememememememememememeemem"
-          class="footer-link link-1"
-          >телеграм-канал</a
+          class="A_FooterLink"
+          >тг-канал</a
         >
-        <a href="../index.html" class="footer-logo">
-          <img
-            src="../images/logo-pink.svg"
-            alt="logo"
-            class="footer-logo-img"
-          />
+        <a href="../index.html">
+          <img src="../images/logo-pink.svg" alt="logo" class="A_FooterLogo" />
         </a>
         <a
           href="https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe"
-          class="footer-link link-2"
+          class="A_FooterLink"
         >
           тик ток
         </a>
       </div>
     </footer>
+
     <script type="module" src="../javascripts/articles.js"></script>
   </body>
 </html>

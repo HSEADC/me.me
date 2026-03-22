@@ -1,0 +1,187 @@
+/* header */
+
+.A_Logo {
+  width: 179.196rem;
+  height: 76.252rem;
+  margin-left: 90rem;
+  margin-right: 400rem;
+}
+
+.A_Logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.A_HeaderLink {
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.A_HeaderLink:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.A_HeaderLinkCurrent {
+  color: #ff65a6 !important;
+}
+
+.A_HeaderLinkCurrent:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.A_HeaderLinkCurrent::after {
+  -webkit-text-stroke: 25rem #fff;
+}
+
+/* Footer */
+
+.A_FooterLogo {
+  width: 179.196rem;
+  height: 76.253rem;
+}
+
+.A_FooterLogo:hover {
+  scale: 1.05;
+  transition: all 0.2s ease-in-out;
+}
+
+.A_FooterLink {
+  font-family: "Impact";
+  font-size: 40.477rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.A_FooterLink:hover {
+  color: #ff65a6;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* main */
+
+.A_HeaderPart {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0 20rem;
+  gap: 15rem;
+}
+
+.A_Button {
+  width: 314rem;
+  height: 55rem;
+  padding: 10rem 30rem;
+  font-family: Impact;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border: none;
+}
+
+.A_Button:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.A_Header2Part {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0 20rem;
+  gap: 15rem;
+}
+
+.A_TextBlock {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  display: block;
+}
+
+.A_ButtonMainReadBlock {
+  width: 314rem;
+  height: 55rem;
+  padding: 10rem 30rem;
+  font-family: Impact;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border: none;
+  position: absolute;
+  left: 80rem;
+  top: 360rem;
+}
+
+.A_ButtonMainReadBlock:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.A_ArticleCardIndex {
+  width: 469.692rem;
+  height: 557.169rem;
+  background-image: url(../../images/index/ArticleCardStroke.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  cursor: pointer;
+}
+
+.A_MainRandImage {
+  width: 700rem;
+  height: 700rem;
+  background-image: url(../../images/index/ImageStroke.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  cursor: pointer;
+}
+
+.A_ButtonMainRandBlock {
+  width: 314rem;
+  height: 55rem;
+  padding: 10rem 30rem;
+  font-family: Impact;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border: none;
+  position: absolute;
+  right: 205rem;
+  top: 410rem;
+}
+
+.A_ButtonMainRandBlock:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Здесь можно прикалываться</title>
+    <meta name="title" content="Медиа о мемах ME.ME!" />
+    <meta
+      name="description"
+      content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:local" content="ru_RU" />
+    <meta property="og:site_name" content="ME.ME" />
+    <meta
+      property="og:url"
+      content="https://hseadc.github.io/me.me/index.html"
+    />
+    <meta property="og:title" content="Медиа о мемах ME.ME!" />
+    <meta
+      property="og:description"
+      content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/HSEADC/me.me/refs/heads/main/src/images/meta/og_index.png"
+    />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://hseadc.github.io/me.me/index.html"
+    />
+    <meta property="twitter:title" content="Медиа о мемах ME.ME!" />
+    <meta
+      property="twitter:description"
+      content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/HSEADC/me.me/refs/heads/main/src/images/meta/og_index.png"
+    />
+
+    <link rel="icon" href="../images/logo.ico" rel="icon" />
+  </head>
+
+  <body class="about-us-page">
+    <canvas id="noise"></canvas>
+
+    <nav class="O_Header">
+      <a href="../index.html">
+        <img src="../images/logo.svg" class="A_Logo" />
+      </a>
+      <div class="W_Header_all_links">
+        <a href="../index.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">главная</h3>
+        </a>
+        <a href="./about.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">о нас</h3>
+        </a>
+        <a href="./articles.html" class="hd A_HeaderLink">
+          <h3 class="Q_HeaderLink">статьи</h3>
+        </a>
+        <a href="./interactives.html" class="hd A_HeaderLinkCurrent">
+          <h3 class="Q_HeaderLink">интерактивы</h3>
+        </a>
+      </div>
+    </nav>
+
+    <section class="list-articles">
+      <h1 class="hd articles-title">
+        о чем хотите узнать
+        <span class="hd-img timg-1" aria-hidden="true"></span>
+      </h1>
+
+      <!-- <a href="../pages/articles/art-1.html">
+        <div class="a-prev-1">
+          <div class="a-prev-img-1"></div>
+          <img src="../images/indx-frame.svg" class="art-prev-frame" />
+          <p class="art-text a-1">Тун Тун Тун Сахур <br />и брейнрот-хаос</p>
+        </div>
+      </a>
+
+      <a href="../pages/articles/art-2.html">
+        <div class="a-prev-2">
+          <div class="a-prev-img-2"></div>
+          <img src="../images/indx-frame.svg" class="art-prev-frame" />
+          <p class="art-text a-2">окак</p>
+        </div>
+      </a> -->
+      <div id="articlesTeasers"></div>
+
+      <p class="txt articles-text">Скоро будут новые!</p>
+    </section>
+
+    <footer class="O_Footer">
+      <div class="W_Footer_all_links">
+        <a
+          href="https://t.me/memememememememememememememeemem"
+          class="A_FooterLink"
+          >тг-канал</a
+        >
+        <a href="../index.html">
+          <img src="../images/logo-pink.svg" alt="logo" class="A_FooterLogo" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe"
+          class="A_FooterLink"
+        >
+          тик ток
+        </a>
+      </div>
+    </footer>
+
+    <script type="module" src="../javascripts/articles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+/* Header */
+
+.Q_HeaderLink > a.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-stroke: 25rem #000;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: pre;
+}
+
+/* Heading */
+
+.Q_ImageInHeader {
+  display: inline-block;
+  width: 116rem;
+  height: 116rem;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.Q_HeaderText {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 128.681rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+/* H2 */
+
+.Q_Header2Text {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 120rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+/* Small images */
+
+.Q_ImageBigFloat {
+  position: absolute;
+  width: 116rem;
+  height: 116rem;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.Q_ImageSmallFloat {
+  position: absolute;
+  width: 102rem;
+  height: 102rem;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Article Cards */
+
+.Q_ArticleCardIndexImage {
+  height: 350rem;
+  width: 350rem;
+  margin-top: 62rem;
+  margin-left: 60rem;
+  z-index: 10;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Q_IndexCardPrev-1 {
+  background-image: url(../../images/articles_covers/article-4.webp);
+}
+
+.Q_IndexCardPrev-2 {
+  background-image: url(../../images/articles_covers/article-2.webp);
+}
+
+.Q_IndexCardPrev-3 {
+  background-image: url(../../images/articles_covers/article-1.webp);
+}
+
+.Q_ArticleCardIndexCaption {
+  width: 301.948rem;
+  color: #ff65a6;
+  text-align: center;
+  font-family: Impact;
+  font-size: 40.645rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40.645px */
+  text-transform: lowercase;
+  margin: 0 auto;
+}
+
+.Q_RandContent {
+  height: 500rem;
+  width: 500rem;
+  margin-top: 110rem;
+  margin-left: 110rem;
+  z-index: 10;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Q_RandContent::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  mix-blend-mode: color;
+}
+
+.Q_RandContent:hover::after {
+  opacity: 0.7;
+}

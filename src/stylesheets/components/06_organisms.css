@@ -1,0 +1,67 @@
+/* header */
+
+.O_Header {
+  display: flex;
+  width: 100%;
+  height: 120rem;
+  padding: 1rem 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 200rem;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.93;
+  background: #ff65a6;
+  z-index: 1000;
+}
+
+/* Footer */
+
+.O_Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160rem;
+  width: 100%;
+  background: #000000;
+  z-index: 10;
+  position: relative;
+  bottom: 0;
+}
+
+/* Main */
+
+.O_MainHead {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.O_MainReadBlock {
+  position: relative;
+  width: 100%;
+  min-height: 420rem;
+  margin-bottom: 72rem;
+}
+
+.O_MainArticlesCards {
+  display: flex;
+  width: 93%;
+  justify-content: space-between;
+  align-items: center;
+  height: 600rem;
+  margin: auto;
+}
+
+.O_MainRandBlock {
+  position: relative;
+  width: 100%;
+  min-height: 420rem;
+  margin-bottom: 80rem;
+}

@@ -44,6 +44,9 @@ const htmlPages = [
     "./pages/articles/art-5.html",
     ["articles"],
   ),
+  createPages("./src/pages/interactives.html", "./pages/interactives.html", [
+    "index",
+  ]),
 
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", [
     "test1",

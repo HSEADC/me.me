@@ -1,0 +1,19 @@
+/* Main */
+
+.S_MainRead {
+  position: relative;
+  width: 100%;
+  height: 1100rem;
+  margin-top: 200rem;
+  gap: 72rem;
+}
+
+.S_MainRand {
+  display: flex;
+  width: 100%;
+  height: 850rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 72rem;
+  margin-top: 200rem;
+}
