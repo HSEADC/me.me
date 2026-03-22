@@ -1188,7 +1188,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // рандомный мем уррраааа рандом
 document.addEventListener("DOMContentLoaded", function () {
-  var box = document.querySelector(".rand-image");
+  var box = document.querySelector(".Q_RandContent ");
   var btn = document.querySelector(".rand-btn");
   if (!box) return;
   box.style.transition = "opacity 220ms ease";
