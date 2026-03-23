@@ -17,3 +17,12 @@
   gap: 72rem;
   margin-top: 200rem;
 }
+
+/* interactives */
+
+.S_InteractivesPromo {
+  position: relative;
+  width: 100%;
+  height: 1300rem;
+  gap: 72rem;
+}

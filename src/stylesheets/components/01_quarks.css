@@ -118,8 +118,8 @@
 .Q_RandContent {
   height: 500rem;
   width: 500rem;
-  margin-top: 110rem;
-  margin-left: 110rem;
+  margin-top: 115rem;
+  margin-left: 100rem;
   z-index: 10;
   position: relative;
   background-position: center;
@@ -140,4 +140,96 @@
 
 .Q_RandContent:hover::after {
   opacity: 0.7;
+}
+
+/* interactives */
+
+.Q_InteractiveCardImage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.A_InteractiveCardSmall .Q_InteractiveCardImage {
+  width: 360em;
+  height: 360em;
+  top: 80rem;
+}
+
+.A_InteractiveCardBig .Q_InteractiveCardImage {
+  width: 400rem;
+  height: 400rem;
+  top: 110rem;
+}
+
+.Q_InteractiveCardPrev-1 {
+  background-image: url(../../images/interactives/Tests-Preview.webp);
+}
+
+.Q_InteractiveCardPrev-2 {
+  background-image: url(../../images/interactives/Constructor-Preview.webp);
+}
+
+.Q_InteractiveCardPrev-3 {
+  background-image: url(../../images/interactives/Rendom-Preview.webp);
+}
+
+.Q_InteractiveCardCaption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  width: 380rem;
+}
+
+.A_InteractiveCardSmall .Q_InteractiveCardCaption {
+  top: 290rem;
+  left: 320rem;
+  font-size: 36rem;
+  z-index: 5;
+}
+
+.A_InteractiveCardBig .Q_InteractiveCardCaption {
+  top: 360rem;
+  left: 360rem;
+  font-size: 40rem;
+  z-index: 10;
+}
+
+.Q_InteractiveCardText {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.A_InteractiveCardSmall .Q_InteractiveCardText {
+  top: 48rem;
+  width: 300rem;
+  font-size: 24rem;
+}
+
+.A_InteractiveCardBig .Q_InteractiveCardText {
+  top: 30rem;
+  width: 320rem;
+  font-size: 30rem;
 }

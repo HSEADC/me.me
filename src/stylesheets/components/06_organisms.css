@@ -65,3 +65,22 @@
   min-height: 420rem;
   margin-bottom: 80rem;
 }
+
+/* Interactives */
+
+.O_InteractivesDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 180rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.O_InteractiveCards {
+  position: relative;
+  width: 1720rem;
+  height: 760rem;
+  margin: 0 auto 0;
+}

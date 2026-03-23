@@ -185,3 +185,54 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+/* interactives */
+
+.A_InteractiveCard {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.A_InteractiveCardSmall {
+  width: 500rem;
+  height: 500rem;
+  background-image: url(../../images/index/ImageStroke.svg);
+}
+
+.A_InteractiveCardBig {
+  width: 600rem;
+  height: 600rem;
+  background-image: url(../../images/index/ImageStroke.svg);
+}
+
+.O_InteractiveCards .A_InteractiveCardSmall:first-child {
+  left: 0;
+  top: 140rem;
+}
+
+.O_InteractiveCards .A_InteractiveCardBig {
+  left: 560rem;
+  top: 40rem;
+}
+
+.O_InteractiveCards .A_InteractiveCardSmall:last-child {
+  right: 0;
+  top: 140rem;
+}
+
+.A_InteractiveCard .A_Button {
+  width: 230rem;
+  height: 50rem;
+  padding: 8rem 20rem;
+  font-size: 28rem;
+  line-height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150rem;
+  z-index: 10;
+}

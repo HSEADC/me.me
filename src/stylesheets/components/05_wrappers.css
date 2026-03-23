@@ -105,3 +105,41 @@
   top: 230rem;
   right: -64rem;
 }
+
+/* Interactives */
+
+.W_InteractivesText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 24rem;
+}
+
+.W_InteractivesText .A_TextBlock {
+  width: 1200rem;
+  text-align: center;
+  margin: 0;
+}
+
+.W_InteractiveCardInfo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  background: #000;
+}
+
+.A_InteractiveCardSmall .W_InteractiveCardInfo {
+  width: 350rem;
+  height: 180rem;
+  top: 300rem;
+  left: 320rem;
+}
+
+.A_InteractiveCardBig .W_InteractiveCardInfo {
+  width: 380rem;
+  height: 180rem;
+  top: 380rem;
+  left: 360rem;
+}
