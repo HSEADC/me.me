@@ -18,4 +18,19 @@
   margin-left: 64rem;
 }
 
-/* Interactives */
+/* Random */
+
+.M_RandomHeading {
+  margin: 0 auto;
+}
+
+.M_RandomPageDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64rem;
+  padding: 200rem 120rem;
+  margin-left: 500rem;
+  width: 720rem;
+  height: 500rem;
+}

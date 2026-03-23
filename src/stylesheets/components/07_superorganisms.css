@@ -26,3 +26,17 @@
   height: 1300rem;
   gap: 72rem;
 }
+
+/* Random */
+
+.S_RandomAll {
+  display: flex;
+  width: 1800rem;
+  height: 1100rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 100rem;
+  padding-top: 180rem;
+  margin: auto;
+  position: relative;
+}

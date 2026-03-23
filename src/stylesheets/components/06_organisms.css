@@ -84,3 +84,11 @@
   height: 760rem;
   margin: 0 auto 0;
 }
+
+/* Random */
+
+.O_RandomPageContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

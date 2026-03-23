@@ -1,3 +1,5 @@
+/* Main Floating */
+
 .Float-1 {
   top: 5rem;
   right: 130rem;
@@ -95,5 +97,182 @@
   100% {
     top: 480rem;
     right: 64rem;
+  }
+}
+
+/* Random Page Floating */
+
+.Float-5 {
+  top: 480rem;
+  left: 890rem;
+  animation: AnimFloat-5 2.2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-5 {
+  0% {
+    top: 480rem;
+    left: 890rem;
+  }
+  50% {
+    top: 470rem;
+    left: 900rem;
+  }
+  75% {
+    top: 486rem;
+    left: 896rem;
+  }
+  100% {
+    top: 480rem;
+    left: 890rem;
+  }
+}
+
+.Float-6 {
+  top: 400rem;
+  right: 600rem;
+  animation: AnimFloat-6 2.4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-6 {
+  0% {
+    top: 400rem;
+    right: 600rem;
+  }
+  50% {
+    top: 390rem;
+    right: 615rem;
+  }
+  75% {
+    top: 406rem;
+    right: 608rem;
+  }
+  100% {
+    top: 400rem;
+    right: 600rem;
+  }
+}
+
+.Float-7 {
+  top: 490rem;
+  right: 400rem;
+  animation: AnimFloat-7 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-7 {
+  0% {
+    top: 490rem;
+    right: 400rem;
+  }
+  50% {
+    top: 482rem;
+    right: 410rem;
+  }
+  75% {
+    top: 496rem;
+    right: 404rem;
+  }
+  100% {
+    top: 490rem;
+    right: 400rem;
+  }
+}
+
+.Float-8 {
+  top: 660rem;
+  right: 250rem;
+  animation: AnimFloat-8 2.6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-8 {
+  0% {
+    top: 660rem;
+    right: 250rem;
+  }
+  50% {
+    top: 648rem;
+    right: 268rem;
+  }
+  75% {
+    top: 668rem;
+    right: 258rem;
+  }
+  100% {
+    top: 660rem;
+    right: 250rem;
+  }
+}
+
+.Float-9 {
+  top: 860rem;
+  right: 400rem;
+  animation: AnimFloat-9 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-9 {
+  0% {
+    top: 860rem;
+    right: 400rem;
+  }
+  50% {
+    top: 850rem;
+    right: 414rem;
+  }
+  75% {
+    top: 866rem;
+    right: 406rem;
+  }
+  100% {
+    top: 860rem;
+    right: 400rem;
+  }
+}
+
+.Float-10 {
+  bottom: 240rem;
+  right: 600rem;
+  animation: AnimFloat-10 2.3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-10 {
+  0% {
+    bottom: 240rem;
+    right: 600rem;
+  }
+  50% {
+    bottom: 252rem;
+    right: 614rem;
+  }
+  75% {
+    bottom: 244rem;
+    right: 606rem;
+  }
+  100% {
+    bottom: 240rem;
+    right: 600rem;
+  }
+}
+
+.Float-11 {
+  bottom: 220rem;
+  right: 785rem;
+  animation: AnimFloat-11 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-11 {
+  0% {
+    bottom: 220rem;
+    right: 785rem;
+  }
+  50% {
+    bottom: 230rem;
+    right: 796rem;
+  }
+  75% {
+    bottom: 224rem;
+    right: 790rem;
+  }
+  100% {
+    bottom: 220rem;
+    right: 785rem;
   }
 }

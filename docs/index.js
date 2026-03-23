@@ -1189,7 +1189,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // рандомный мем уррраааа рандом
 document.addEventListener("DOMContentLoaded", function () {
   var box = document.querySelector(".Q_RandContent ");
-  var btn = document.querySelector(".rand-btn");
+  var btn = document.querySelector(".A_RandomPageButton");
   if (!box) return;
   box.style.transition = "opacity 220ms ease";
   box.style.opacity = "1";
