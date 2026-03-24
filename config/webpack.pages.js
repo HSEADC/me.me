@@ -11,7 +11,6 @@ function createPages(template, filename, chunks) {
 const htmlPages = [
   createPages("./src/index.html", "./index.html", ["index"]),
   createPages("./src/pages/about.html", "./pages/about.html", ["index"]),
-  createPages("./src/pages/splash.html", "./pages/splash.html", ["index"]),
   createPages("./src/pages/articles.html", "./pages/articles.html", ["articles"]),
   createPages("./src/pages/random.html", "./pages/random.html", ["index"]),
   createPages("./src/pages/constructor.html", "./pages/constructor.html", ["index"]),

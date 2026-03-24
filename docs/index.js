@@ -1003,15 +1003,15 @@ document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach(function (el)
 // эх конструктор эх мемов эх
 
 document.addEventListener("DOMContentLoaded", function () {
-  var canvas = document.getElementById("mbCanvas");
+  var canvas = document.querySelector(".Q_ConstructorCanvas");
   if (!canvas) return;
   var ctx = canvas.getContext("2d");
-  var uploadBtn = document.getElementById("mbUploadBtn");
-  var fileInput = document.getElementById("mbFile");
-  var textEl = document.getElementById("mbText");
-  var downloadBtn = document.getElementById("mbDownloadBtn");
-  var presetsWrap = document.querySelector(".mb-presets");
-  var presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".mb-preset")) : [];
+  var uploadBtn = document.querySelector(".A_ConstructorButtonUpload");
+  var fileInput = document.querySelector(".A_ConstructorFileInput");
+  var textEl = document.querySelector(".A_ConstructorInputRow");
+  var downloadBtn = document.querySelector(".A_ConstructorButtonDownload");
+  var presetsWrap = document.querySelector(".M_ConstructorPresets");
+  var presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".A_ConstructorPreset")) : [];
   var W = canvas.width;
   var H = canvas.height;
   var FONT = "900 64px Arial Black, Arial, sans-serif";
@@ -1080,7 +1080,9 @@ document.addEventListener("DOMContentLoaded", function () {
       fileInput.value = "";
     });
   }
-  if (textEl) textEl.addEventListener("input", render);
+  if (textEl) {
+    textEl.addEventListener("input", render);
+  }
   if (downloadBtn) {
     downloadBtn.addEventListener("click", function () {
       var out = document.createElement("canvas");
@@ -1170,7 +1172,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     c.putImageData(d, 0, 0);
   }
-  if (textEl && !textEl.value) textEl.value = "Введи свой прикольчик";
+  if (textEl && !textEl.value) {
+    textEl.value = "";
+  }
   if (presetItems[0]) {
     var firstUrl = getBgUrl(presetItems[0]);
     if (firstUrl) {

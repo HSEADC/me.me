@@ -101,3 +101,10 @@ p.hd {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 28rem #000;
 }
+
+button:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}

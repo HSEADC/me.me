@@ -3831,41 +3831,12 @@ module.exports = Airtable;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-
-// EXTERNAL MODULE: ./node_modules/airtable/lib/airtable.umd.js
-var airtable_umd = __webpack_require__(997);
-var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
-;// ./src/images/indx-frame.svg
-const indx_frame_namespaceObject = __webpack_require__.p + "images/fdde3ad96e2a1dd0bd52.svg";
-;// ./src/javascripts/articles.js
-
+/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(airtable__WEBPACK_IMPORTED_MODULE_0__);
 
 
 document.querySelectorAll(".txt, .hd, .nv").forEach(function (el) {
@@ -3874,11 +3845,11 @@ document.querySelectorAll(".txt, .hd, .nv").forEach(function (el) {
 var token = "pat70c6PN6XNA8kY1.6dd7f89f94bc50a552d3db45f1c33cbafb9676f4881896b0b29e4935d6bcbae8";
 var baseId = "apptbuydEGESibGer";
 var tableName = "articles-list";
-airtable_umd_default().configure({
+airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
   endpointUrl: "https://api.airtable.com",
   apiKey: token
 });
-var base = airtable_umd_default().base(baseId);
+var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base(baseId);
 getArticlesTeasers().then(function (content) {
   updateInfo(content);
 });
@@ -3937,7 +3908,7 @@ function createArticleTeaserCard(stroke, index) {
     imgDiv.style.backgroundRepeat = "no-repeat";
   }
   var frame = document.createElement("img");
-  frame.src = indx_frame_namespaceObject;
+  frame.src = frameUrl;
   frame.classList.add("art-prev-frame");
   frame.alt = "";
   var p = document.createElement("p");

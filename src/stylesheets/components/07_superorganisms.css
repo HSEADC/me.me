@@ -40,3 +40,17 @@
   margin: auto;
   position: relative;
 }
+
+/* Constructor */
+
+.S_Constructor {
+  display: flex;
+  width: 1800rem;
+  height: 1100rem;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 65rem;
+  padding-top: 180rem;
+  margin: auto;
+  position: relative;
+}

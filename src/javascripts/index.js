@@ -51,18 +51,20 @@ document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach((el) => {
 // эх конструктор эх мемов эх
 
 document.addEventListener("DOMContentLoaded", () => {
-  const canvas = document.getElementById("mbCanvas");
+  const canvas = document.querySelector(".Q_ConstructorCanvas");
   if (!canvas) return;
 
   const ctx = canvas.getContext("2d");
 
-  const uploadBtn = document.getElementById("mbUploadBtn");
-  const fileInput = document.getElementById("mbFile");
-  const textEl = document.getElementById("mbText");
-  const downloadBtn = document.getElementById("mbDownloadBtn");
+  const uploadBtn = document.querySelector(".A_ConstructorButtonUpload");
+  const fileInput = document.querySelector(".A_ConstructorFileInput");
+  const textEl = document.querySelector(".A_ConstructorInputRow");
+  const downloadBtn = document.querySelector(".A_ConstructorButtonDownload");
 
-  const presetsWrap = document.querySelector(".mb-presets");
-  const presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".mb-preset")) : [];
+  const presetsWrap = document.querySelector(".M_ConstructorPresets");
+  const presetItems = presetsWrap
+    ? Array.from(presetsWrap.querySelectorAll(".A_ConstructorPreset"))
+    : [];
 
   const W = canvas.width;
   const H = canvas.height;
@@ -144,7 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (textEl) textEl.addEventListener("input", render);
+  if (textEl) {
+    textEl.addEventListener("input", render);
+  }
 
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
@@ -199,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
     c.font = FONT;
     c.textBaseline = "top";
     c.lineJoin = "round";
-
     c.textAlign = "center";
 
     const lines = wrap(c, t, MAX_W);
@@ -239,6 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
         line = words[i];
       }
     }
+
     if (line) lines.push(line);
     return lines;
   }
@@ -252,7 +256,9 @@ document.addEventListener("DOMContentLoaded", () => {
     c.putImageData(d, 0, 0);
   }
 
-  if (textEl && !textEl.value) textEl.value = "Введи свой прикольчик";
+  if (textEl && !textEl.value) {
+    textEl.value = "";
+  }
 
   if (presetItems[0]) {
     const firstUrl = getBgUrl(presetItems[0]);

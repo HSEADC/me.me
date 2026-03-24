@@ -153,3 +153,22 @@
   width: 620rem;
   height: 600rem;
 }
+
+/* constructor */
+
+.W_ConstructorLeft {
+  flex: 0 0 760rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.W_ConstructorRight {
+  flex: 1 1 auto;
+  max-width: 920rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36rem;
+}

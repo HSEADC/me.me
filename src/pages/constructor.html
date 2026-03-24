@@ -13,10 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:local" content="ru_RU" />
     <meta property="og:site_name" content="ME.ME" />
-    <meta
-      property="og:url"
-      content="https://hseadc.github.io/me.me/index.html"
-    />
+    <meta property="og:url" content="https://hseadc.github.io/me.me/index.html" />
     <meta property="og:title" content="О медиа о мемах ME.ME!" />
     <meta
       property="og:description"
@@ -28,10 +25,7 @@
     />
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://hseadc.github.io/me.me/index.html"
-    />
+    <meta property="twitter:url" content="https://hseadc.github.io/me.me/index.html" />
     <meta property="twitter:title" content="О медиа о мемах ME.ME!" />
     <meta
       property="twitter:description"
@@ -43,7 +37,7 @@
     />
     <link rel="icon" href="../images/logo.ico" rel="icon" />
   </head>
-  <body class="constructor">
+  <body>
     <canvas id="noise"></canvas>
 
     <nav class="O_Header">
@@ -66,67 +60,60 @@
       </div>
     </nav>
 
-    <section class="create-meme-page">
-      <span class="hd-img timg-non-1" aria-hidden="true"></span>
-      <h1 class="hd create-title">
-        создай мем <span class="hd-img timg-3" aria-hidden="true"></span>
-      </h1>
-      <section class="meme-builder" id="memeBuilder">
-        <div class="mb-stage">
-          <div class="mb-preview">
-            <canvas
-              class="mb-canvas"
-              id="mbCanvas"
-              width="1200"
-              height="900"
-            ></canvas>
+    <section class="S_Constructor">
+      <div class="M_ConstructorHeading">
+        <div class="A_HeaderPart">
+          <h1 class="hd Q_HeaderText">создай мем</h1>
+          <span class="Q_ImageInHeader" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="O_ConstructorContent">
+        <div class="W_ConstructorLeft">
+          <div class="A_ConstructorPreview">
+            <canvas class="Q_ConstructorCanvas" width="900" height="900"></canvas>
           </div>
         </div>
-        <div class="mb-panel">
-          <h2 class="hd const-pick">выбери картинку или загрузи свою</h2>
-          <button class="mb-upload-wide" id="mbUploadBtn" type="button">
-            загрузить фото
-          </button>
-          <div class="mb-presets">
-            <div class="mb-preset preset-1"></div>
-            <div class="mb-preset preset-2"></div>
-            <div class="mb-preset preset-3"></div>
-            <div class="mb-preset preset-4"></div>
-            <div class="mb-preset preset-5"></div>
-            <div class="mb-preset preset-6"></div>
-            <div class="mb-preset preset-7"></div>
-            <div class="mb-preset preset-8"></div>
+
+        <div class="W_ConstructorRight">
+          <p class="hd A_TextBlock">выбери картинку или загрузи свою</p>
+          <div class="M_ConstructorPresets">
+            <div class="A_ConstructorPreset Preset-1"></div>
+            <div class="A_ConstructorPreset Preset-2"></div>
+            <div class="A_ConstructorPreset Preset-3"></div>
+            <div class="A_ConstructorPreset Preset-4"></div>
+            <div class="A_ConstructorPreset Preset-5"></div>
+            <div class="A_ConstructorPreset Preset-6"></div>
+            <div class="A_ConstructorPreset Preset-7"></div>
+            <div class="A_ConstructorPreset Preset-8"></div>
           </div>
-          <div class="mb-text-row">
-            <input
-              class="mb-input"
-              id="mbText"
-              type="text"
-              placeholder="Введите текст для мема"
-            />
-          </div>
-          <button class="mb-download-wide" id="mbDownloadBtn" type="button">
-            скачать мой мем
+
+          <button class="A_ConstructorButtonUpload">
+            <span class="Q_ArrowUp"></span>
+            <span class="Q_UploadText">загрузить фото</span>
           </button>
-          <input id="mbFile" type="file" accept="image/*" hidden />
+
+          <div class="M_ConstructorInput">
+            <p class="hd A_TextBlock">введи смешную подпись к картинке</p>
+            <input class="A_ConstructorInputRow" type="text" placeholder="Введите текст для мема" />
+          </div>
+
+          <button class="A_ConstructorButtonDownload">
+            <span class="Q_ArrowDown"></span>
+            <span class="Q_UploadText">сохранить мем</span>
+          </button>
+          <input class="A_ConstructorFileInput" type="file" accept="image/*" hidden />
         </div>
-      </section>
+      </div>
     </section>
 
     <footer class="O_Footer">
       <div class="W_Footer_all_links">
-        <a
-          href="https://t.me/memememememememememememememeemem"
-          class="A_FooterLink"
-          >тг-канал</a
-        >
+        <a href="https://t.me/memememememememememememememeemem" class="A_FooterLink">тг-канал</a>
         <a href="../index.html">
           <img src="../images/logo-pink.svg" alt="logo" class="A_FooterLogo" />
         </a>
-        <a
-          href="https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe"
-          class="A_FooterLink"
-        >
+        <a href="https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe" class="A_FooterLink">
           тик ток
         </a>
       </div>

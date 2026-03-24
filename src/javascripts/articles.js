@@ -1,13 +1,11 @@
 import Airtable from "airtable";
 import "../stylesheets/style.css";
-import frameUrl from "../images/indx-frame.svg";
 
 document.querySelectorAll(".txt, .hd, .nv").forEach((el) => {
   el.setAttribute("data-text", el.textContent.trim());
 });
 
-const token =
-  "pat70c6PN6XNA8kY1.6dd7f89f94bc50a552d3db45f1c33cbafb9676f4881896b0b29e4935d6bcbae8";
+const token = "pat70c6PN6XNA8kY1.6dd7f89f94bc50a552d3db45f1c33cbafb9676f4881896b0b29e4935d6bcbae8";
 const baseId = "apptbuydEGESibGer";
 const tableName = "articles-list";
 
@@ -32,8 +30,7 @@ function getArticlesTeasers() {
       .then((records) => {
         records.forEach((record) => {
           const f = record.fields || {};
-          const imageUrl =
-            Array.isArray(f.images) && f.images[0] ? f.images[0].url : "";
+          const imageUrl = Array.isArray(f.images) && f.images[0] ? f.images[0].url : "";
 
           content.push({
             id: record.id,

@@ -233,3 +233,32 @@
   width: 320rem;
   font-size: 30rem;
 }
+
+/* Constructor */
+
+.Q_ConstructorCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  filter: grayscale(1);
+}
+
+.Q_ArrowDown,
+.Q_ArrowUp {
+  width: 26rem;
+  height: 26rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10rem;
+}
+
+.Q_ArrowUp {
+  background-image: url(../../images/index/arrow-up.svg);
+}
+
+.Q_ArrowDown {
+  background-image: url(../../images/index/arrow-down.svg);
+}
