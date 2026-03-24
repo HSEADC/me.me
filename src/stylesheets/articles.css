@@ -1,37 +1,3 @@
-.list-articles {
-  width: 100vw;
-  height: 1831rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.articles-title {
-  width: 1400rem;
-  position: absolute;
-  top: 200rem;
-  left: 160rem;
-  color: #fff;
-}
-
-.a-prev-1 {
-  position: absolute;
-  top: 400rem;
-  left: 300rem;
-}
-
-.a-prev-2 {
-  position: absolute;
-  top: 400rem;
-  right: 950rem;
-}
-
-.articles-text {
-  width: 400rem;
-  position: absolute;
-  bottom: 60rem;
-  left: 720rem;
-}
-
 /* сами статьи */
 
 .article-body {

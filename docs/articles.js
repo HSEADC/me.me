@@ -1,8 +1,8 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 997
-(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 997:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 (function(f){if(true){module.exports=f()}else // removed by dead control flow
 { var g; }})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=undefined;if(!f&&c)return require(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u=undefined,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
@@ -3761,7 +3761,7 @@ module.exports = Airtable;
 });
 
 
-/***/ }
+/***/ })
 
 /******/ 	});
 /************************************************************************/
@@ -3837,11 +3837,60 @@ module.exports = Airtable;
 "use strict";
 /* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var airtable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(airtable__WEBPACK_IMPORTED_MODULE_0__);
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
+
+
+// белый шум на фоне
+
+var canvas = document.getElementById("noise");
+var ctx = canvas.getContext("2d");
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+if (canvas && ctx) {
+  var drawNoiseFrame = function drawNoiseFrame() {
+    var w = canvas.width;
+    var h = canvas.height;
+    var imageData = ctx.createImageData(w, h);
+    var buffer = imageData.data;
+    for (var i = 0; i < buffer.length; i += 4) {
+      var shade = 120 + Math.random() * 130;
+      buffer[i] = shade;
+      buffer[i + 1] = shade;
+      buffer[i + 2] = shade;
+      buffer[i + 3] = 150;
+    }
+    ctx.putImageData(imageData, 0, 0);
+  };
+  var _animate = function animate(time) {
+    if (time - lastFrameTime > 60) {
+      drawNoiseFrame();
+      lastFrameTime = time;
+    }
+    requestAnimationFrame(_animate);
+  };
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+  var lastFrameTime = 0;
+  drawNoiseFrame();
+  requestAnimationFrame(_animate);
+}
+
+// типографика обводка фолбэк
 
 document.querySelectorAll(".txt, .hd, .nv").forEach(function (el) {
   el.setAttribute("data-text", el.textContent.trim());
 });
+
+// airtable
+
 var token = "pat70c6PN6XNA8kY1.6dd7f89f94bc50a552d3db45f1c33cbafb9676f4881896b0b29e4935d6bcbae8";
 var baseId = "apptbuydEGESibGer";
 var tableName = "articles-list";
@@ -3850,8 +3899,28 @@ airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
   apiKey: token
 });
 var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base(baseId);
+
+// статьи по фильтрам фильтры по статьям
+
+var articleFiltersMap = {
+  "art-1": ["Filter-1", "Filter-2"],
+  "art-2": ["Filter-3", "Filter-4"],
+  "art-3": ["Filter-3", "Filter-5", "Filter-6"],
+  "art-4": ["Filter-1", "Filter-2", "Filter-3"],
+  "art-5": ["Filter-2", "Filter-3", "Filter-5"],
+  "art-6": ["Filter-3", "Filter-5", "Filter-7"],
+  "art-7": ["Filter-6", "Filter-7"],
+  "art-8": ["Filter-1", "Filter-2"],
+  "art-9": ["Filter-1", "Filter-2"],
+  "art-10": ["Filter-4", "Filter-6", "Filter-7"]
+};
 getArticlesTeasers().then(function (content) {
   updateInfo(content);
+  initArticlesFilter();
+  initArticlesSearch();
+  applyArticlesFilterAndSearch();
+})["catch"](function (error) {
+  console.error("Ошибка загрузки карточек статей:", error);
 });
 function getArticlesTeasers() {
   return new Promise(function (resolve, reject) {
@@ -3861,15 +3930,18 @@ function getArticlesTeasers() {
     }).firstPage().then(function (records) {
       records.forEach(function (record) {
         var f = record.fields || {};
-        var imageUrl = Array.isArray(f.images) && f.images[0] ? f.images[0].url : "";
+        var imageUrl = Array.isArray(f.images) && f.images[0] && f.images[0].url ? f.images[0].url : "";
         content.push({
           id: record.id,
-          title: f.title,
-          description: f.description,
+          title: f.title || "без названия",
+          description: f.description || "",
           tags: Array.isArray(f.tags) ? f.tags : [],
           image: imageUrl,
-          url: f.url
+          url: f.url || "#"
         });
+      });
+      content.sort(function (a, b) {
+        return getArticleOrder(a.url) - getArticleOrder(b.url);
       });
       resolve(content);
     })["catch"](function (err) {
@@ -3877,48 +3949,174 @@ function getArticlesTeasers() {
     });
   });
 }
-function updateInfo(content) {
-  var root = document.getElementById("articlesTeasers");
-  if (!root) return;
-  root.innerHTML = "";
-  content.forEach(function (item, index) {
-    root.appendChild(createArticleTeaserCard(item, index));
+function getArticleSlug(url) {
+  var match = String(url).match(/(art-\d+)\.html/i);
+  return match ? match[1].toLowerCase() : "";
+}
+function getArticleOrder(url) {
+  var match = String(url).match(/art-(\d+)\.html/i);
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+}
+function getArticleFilterClasses(url) {
+  var slug = getArticleSlug(url);
+  return articleFiltersMap[slug] || [];
+}
+function normalizeSearchText(value) {
+  return String(value || "").toLowerCase().replace(/ё/g, "е").replace(/й/g, "и").replace(/[^a-zа-я0-9\s-]/gi, " ").replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+}
+function getSearchTokens(value) {
+  var normalized = normalizeSearchText(value);
+  if (!normalized) return [];
+  return normalized.split(" ").filter(Boolean);
+}
+function getTrigrams(value) {
+  var normalized = "  ".concat(normalizeSearchText(value), "  ");
+  var trigrams = new Set();
+  if (normalized.trim().length < 2) {
+    return trigrams;
+  }
+  for (var i = 0; i < normalized.length - 2; i += 1) {
+    trigrams.add(normalized.slice(i, i + 3));
+  }
+  return trigrams;
+}
+function getTrigramSimilarity(a, b) {
+  var aTrigrams = getTrigrams(a);
+  var bTrigrams = getTrigrams(b);
+  if (!aTrigrams.size || !bTrigrams.size) {
+    return 0;
+  }
+  var intersection = 0;
+  aTrigrams.forEach(function (item) {
+    if (bTrigrams.has(item)) {
+      intersection += 1;
+    }
+  });
+  return 2 * intersection / (aTrigrams.size + bTrigrams.size);
+}
+function getActiveFilterNames() {
+  var activeTags = document.querySelectorAll(".A_ArticlesFilter.active");
+  var selectedFilters = [];
+  activeTags.forEach(function (tag) {
+    var classList = tag.className.split(" ");
+    classList.forEach(function (className) {
+      if (/^Filter-\d+$/i.test(className)) {
+        selectedFilters.push(className);
+      }
+    });
+  });
+  return _toConsumableArray(new Set(selectedFilters));
+}
+function matchesActiveFilters(card, selectedFilters) {
+  if (!selectedFilters.length) return true;
+  return selectedFilters.every(function (filterName) {
+    return card.classList.contains(filterName);
   });
 }
-function createArticleTeaserCard(stroke, index) {
-  var title = stroke.title,
-    image = stroke.image,
-    url = stroke.url;
+function matchesSearchQuery(card, query) {
+  var normalizedQuery = normalizeSearchText(query);
+  if (!normalizedQuery) return true;
+  var searchText = card.dataset.search || "";
+  if (!searchText) return false;
+  if (searchText.includes(normalizedQuery)) {
+    return true;
+  }
+  var queryTokens = getSearchTokens(normalizedQuery);
+  if (queryTokens.length) {
+    var allTokensMatch = queryTokens.every(function (token) {
+      return searchText.includes(token);
+    });
+    if (allTokensMatch) {
+      return true;
+    }
+  }
+  var titleText = card.dataset.titleSearch || "";
+  var similarityWithTitle = getTrigramSimilarity(titleText, normalizedQuery);
+  var similarityWithAllText = getTrigramSimilarity(searchText, normalizedQuery);
+  var similarity = Math.max(similarityWithTitle, similarityWithAllText);
+  if (normalizedQuery.length <= 3) {
+    return similarity >= 0.55;
+  }
+  if (normalizedQuery.length <= 6) {
+    return similarity >= 0.42;
+  }
+  return similarity >= 0.32;
+}
+function applyArticlesFilterAndSearch() {
+  var cards = document.querySelectorAll(".M_ArticleCardLink");
+  var selectedFilters = getActiveFilterNames();
+  var input = document.querySelector(".Q_ArticlesSearchInput");
+  var searchQuery = input ? input.value : "";
+  cards.forEach(function (card) {
+    var filtersMatch = matchesActiveFilters(card, selectedFilters);
+    var searchMatch = matchesSearchQuery(card, searchQuery);
+    card.style.display = filtersMatch && searchMatch ? "" : "none";
+  });
+}
+function updateInfo(content) {
+  var root = document.querySelector(".C_ArticlesTeasers");
+  if (!root) return;
+  root.innerHTML = "";
+  content.forEach(function (item) {
+    root.appendChild(createArticleTeaserCard(item));
+  });
+}
+function createArticleTeaserCard(article) {
+  var _link$classList;
+  var title = article.title,
+    image = article.image,
+    url = article.url;
+  var filterClasses = getArticleFilterClasses(url);
   var link = document.createElement("a");
   link.href = url || "#";
-  var wrap = document.createElement("div");
-  var row = Math.floor(index / 2);
-  var col = index % 2;
-  wrap.classList.add(col === 0 ? "a-prev-1" : "a-prev-2");
-  var baseTop = 400;
-  var rowStep = 650;
-  wrap.style.top = "".concat(baseTop + row * rowStep, "rem");
-  wrap.style.marginBottom = "120rem";
+  link.classList.add("M_ArticleCardLink");
+  (_link$classList = link.classList).add.apply(_link$classList, _toConsumableArray(filterClasses));
+  var titleSearch = normalizeSearchText(title || "");
+  link.dataset.titleSearch = titleSearch;
+  link.dataset.search = titleSearch;
+  var card = document.createElement("div");
+  card.classList.add("A_ArticleCard");
   var imgDiv = document.createElement("div");
-  imgDiv.classList.add(col === 0 ? "a-prev-img-1" : "a-prev-img-2");
+  imgDiv.classList.add("toned", "Q_ArticleCardImage");
   if (image) {
     imgDiv.style.backgroundImage = "url(\"".concat(image, "\")");
     imgDiv.style.backgroundSize = "cover";
     imgDiv.style.backgroundPosition = "center";
     imgDiv.style.backgroundRepeat = "no-repeat";
   }
-  var frame = document.createElement("img");
-  frame.src = frameUrl;
-  frame.classList.add("art-prev-frame");
-  frame.alt = "";
-  var p = document.createElement("p");
-  p.classList.add("art-text", col === 0 ? "a-1" : "a-2");
-  p.innerHTML = title || "без названия";
-  wrap.appendChild(imgDiv);
-  wrap.appendChild(frame);
-  wrap.appendChild(p);
-  link.appendChild(wrap);
+  var titleEl = document.createElement("h3");
+  titleEl.classList.add("Q_ArticleCardCaption");
+  titleEl.textContent = title || "без названия";
+  card.appendChild(imgDiv);
+  card.appendChild(titleEl);
+  link.appendChild(card);
   return link;
+}
+
+// фильтрация ах фильтрация
+
+function initArticlesFilter() {
+  var tags = document.querySelectorAll(".A_ArticlesFilter");
+  if (!tags.length) return;
+  tags.forEach(function (tag) {
+    tag.addEventListener("click", function () {
+      tag.classList.toggle("active");
+      applyArticlesFilterAndSearch();
+    });
+  });
+}
+function initArticlesSearch() {
+  var input = document.querySelector(".Q_ArticlesSearchInput");
+  if (!input) return;
+  input.addEventListener("input", function () {
+    applyArticlesFilterAndSearch();
+  });
+}
+function filterArticlesByTag() {
+  applyArticlesFilterAndSearch();
+}
+function filterAllArticles() {
+  applyArticlesFilterAndSearch();
 }
 })();
 

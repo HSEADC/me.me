@@ -2,8 +2,8 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 9076
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ 9076:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   I: () => (/* binding */ chooseAnswer),
@@ -81,7 +81,7 @@ function showResult(results) {
 }
 
 
-/***/ }
+/***/ })
 
 /******/ 	});
 /************************************************************************/

@@ -54,3 +54,21 @@
   flex-direction: column;
   gap: 24rem;
 }
+
+/* Articles Page */
+
+.M_ArticlesPageHeading {
+  margin: 0 auto;
+}
+
+.M_ArticleCardLink {
+  text-decoration: none;
+  display: block;
+}
+
+.M_ArticlesSearchFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+  align-items: flex-start;
+}

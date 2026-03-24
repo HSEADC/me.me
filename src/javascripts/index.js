@@ -1,4 +1,5 @@
 import "../stylesheets/style.css";
+import "../javascripts/articles";
 
 // белый шум на фоне
 
