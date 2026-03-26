@@ -351,3 +351,23 @@ function filterArticlesByTag() {
 function filterAllArticles() {
   applyArticlesFilterAndSearch();
 }
+
+// инлайн-картинки другой путь отдельно для статей
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imageBlocks = document.querySelectorAll(
+    ".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat",
+  );
+  if (!imageBlocks.length) return;
+
+  const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
+
+  const urls = req.keys().map((k) => req(k));
+
+  const shuffledImages = [...urls].sort(() => Math.random() - 0.5);
+
+  imageBlocks.forEach((block, index) => {
+    const imageUrl = shuffledImages[index % shuffledImages.length];
+    block.style.backgroundImage = `url("${imageUrl}")`;
+  });
+});

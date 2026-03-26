@@ -367,3 +367,32 @@
   box-shadow: none;
   border: none;
 }
+
+/* Article Content */
+
+.Q_ArticleImageContent {
+  width: 500rem;
+  aspect-ratio: 1/1;
+  margin-top: 128rem;
+}
+
+.Q_ArticleVideo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.Q_ArticleHeader2Text {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 64rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.Q_ArticleHeader2Text {
+  margin: 0;
+  width: 100%;
+}

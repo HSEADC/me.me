@@ -67,3 +67,18 @@
   margin: auto;
   position: relative;
 }
+
+/* Articles Content */
+
+.S_ArticleLefty,
+.S_ArticleRighty {
+  width: 1700rem;
+  height: 972rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 180rem;
+  gap: 72rem;
+}

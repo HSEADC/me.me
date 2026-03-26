@@ -276,3 +276,178 @@
     right: 785rem;
   }
 }
+
+.Float-12 {
+  top: 313rem;
+  left: 770rem;
+  animation: AnimFloat-12 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-12 {
+  0% {
+    top: 313rem;
+    left: 770rem;
+  }
+  50% {
+    top: 483rem;
+    left: 770rem;
+  }
+  75% {
+    top: 403rem;
+    left: 750rem;
+  }
+  100% {
+    top: 313rem;
+    left: 770rem;
+  }
+}
+
+.Float-13 {
+  top: 580rem;
+  right: 0rem;
+  animation: AnimFloat-13 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-13 {
+  0% {
+    top: 580rem;
+    right: 0rem;
+  }
+  50% {
+    top: 580rem;
+    right: 20rem;
+  }
+  75% {
+    top: 580rem;
+    right: 15rem;
+  }
+  100% {
+    top: 580rem;
+    right: 0rem;
+  }
+}
+
+.Float-15 {
+  top: 320rem;
+  left: 30rem;
+  animation: AnimFloat-15 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-15 {
+  0% {
+    top: 320rem;
+    left: 30rem;
+  }
+  50% {
+    top: 330rem;
+    left: 10rem;
+  }
+  75% {
+    top: 360rem;
+    left: 30rem;
+  }
+  100% {
+    top: 320rem;
+    left: 30rem;
+  }
+}
+
+.Float-16 {
+  bottom: 500rem;
+  left: 620rem;
+  animation: AnimFloat-16 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-16 {
+  0% {
+    bottom: 500rem;
+    left: 620rem;
+  }
+  50% {
+    bottom: 500rem;
+    left: 580rem;
+  }
+  75% {
+    bottom: 510rem;
+    left: 610rem;
+  }
+  100% {
+    bottom: 500rem;
+    left: 620rem;
+  }
+}
+
+.Float-17 {
+  top: 530rem;
+  left: 80rem;
+  animation: AnimFloat-17 1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-17 {
+  0% {
+    top: 530rem;
+    left: 80rem;
+  }
+  50% {
+    top: 535rem;
+    left: 85rem;
+  }
+  75% {
+    top: 527rem;
+    left: 80rem;
+  }
+  100% {
+    top: 530rem;
+    left: 80rem;
+  }
+}
+
+.Float-18 {
+  bottom: 80rem;
+  right: 820rem;
+  animation: AnimFloat-18 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-18 {
+  0% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+  50% {
+    bottom: 100rem;
+    right: 790rem;
+  }
+  75% {
+    bottom: 80rem;
+    right: 805rem;
+  }
+  100% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+}
+
+.Float-14 {
+  bottom: 80rem;
+  right: 820rem;
+  animation: AnimFloat-14 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-14 {
+  0% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+  50% {
+    bottom: 40rem;
+    right: 720rem;
+  }
+  75% {
+    bottom: 80rem;
+    right: 710rem;
+  }
+  100% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+}

@@ -3887,7 +3887,7 @@ module.exports = __webpack_require__.p + "images/7e66d7ef99ad9e45b9e3.webp";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/4e17b7931f9544474185.webp";
+module.exports = __webpack_require__.p + "images/42ba1c357524a99d6190.webp";
 
 /***/ }),
 
@@ -4103,7 +4103,7 @@ module.exports = __webpack_require__.p + "images/17f2adaafd75c5b019ab.webp";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/42ba1c357524a99d6190.webp";
+module.exports = __webpack_require__.p + "images/4e17b7931f9544474185.webp";
 
 /***/ }),
 
@@ -4144,7 +4144,7 @@ module.exports = __webpack_require__.p + "images/541853868941a952f8f0.webp";
 
 var map = {
 	"./inlined-1.webp": 248,
-	"./inlined-10.webp": 1763,
+	"./inlined-10.webp": 4144,
 	"./inlined-11.webp": 7187,
 	"./inlined-12.webp": 2290,
 	"./inlined-13.webp": 4205,
@@ -4495,7 +4495,7 @@ var map = {
 	"./rnd-52.webp": 1689,
 	"./rnd-53.webp": 1966,
 	"./rnd-54.webp": 6355,
-	"./rnd-55.webp": 4144,
+	"./rnd-55.webp": 1763,
 	"./rnd-56.webp": 8397,
 	"./rnd-57.webp": 5634,
 	"./rnd-58.webp": 4199,
@@ -4886,6 +4886,24 @@ function filterAllArticles() {
   applyArticlesFilterAndSearch();
 }
 
+// инлайн-картинки другой путь отдельно для статей
+
+document.addEventListener("DOMContentLoaded", function () {
+  var imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
+  if (!imageBlocks.length) return;
+  var req = __webpack_require__(4357);
+  var urls = req.keys().map(function (k) {
+    return req(k);
+  });
+  var shuffledImages = _toConsumableArray(urls).sort(function () {
+    return Math.random() - 0.5;
+  });
+  imageBlocks.forEach(function (block, index) {
+    var imageUrl = shuffledImages[index % shuffledImages.length];
+    block.style.backgroundImage = "url(\"".concat(imageUrl, "\")");
+  });
+});
+
 /***/ }),
 
 /***/ 9526:
@@ -5023,7 +5041,7 @@ module.exports = __webpack_require__.p + "images/1ac444997a3a309d0376.webp";
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _javascripts_articles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9462);
+/* harmony import */ var _javascripts_articles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9462);
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
