@@ -343,3 +343,31 @@
   gap: 24rem;
   padding-top: 14rem;
 }
+
+/* About Us */
+
+.W_AboutUsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.W_AboutUsRightReverse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36rem;
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 260rem;
+}
+
+.W_AboutUsLeftReverse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24rem;
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 120rem;
+}

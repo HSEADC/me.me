@@ -82,3 +82,29 @@
   padding-top: 180rem;
   gap: 72rem;
 }
+
+/* About Us i hate this page */
+
+.S_AboutUs {
+  width: 1700rem;
+  height: 1400rem;
+  display: grid;
+  grid-template-columns: 1fr 700rem;
+  margin: 180rem auto;
+  column-gap: 40rem;
+  row-gap: 60rem;
+  align-items: start;
+  position: relative;
+}
+
+.S_AboutUsReverse {
+  width: 1700rem;
+  margin: 140rem auto 0;
+  display: grid;
+  grid-template-columns: 700rem 1fr;
+  column-gap: 70rem;
+  row-gap: 40rem;
+  align-items: start;
+  position: relative;
+  min-height: 1500rem;
+}

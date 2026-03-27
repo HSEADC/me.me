@@ -451,3 +451,105 @@
     right: 820rem;
   }
 }
+
+/* about us */
+
+.Float-19 {
+  top: 420rem;
+  left: 500rem;
+  animation: AnimFloat-19 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-19 {
+  0% {
+    top: 420rem;
+    left: 500rem;
+  }
+  50% {
+    top: 400rem;
+    left: 520rem;
+  }
+  75% {
+    top: 420rem;
+    left: 510rem;
+  }
+  100% {
+    top: 420rem;
+    left: 500rem;
+  }
+}
+
+.Float-20 {
+  bottom: 380rem;
+  right: 220rem;
+  animation: AnimFloat-20 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-20 {
+  0% {
+    bottom: 380rem;
+    right: 220rem;
+  }
+  50% {
+    bottom: 360rem;
+    right: 200rem;
+  }
+  75% {
+    bottom: 370rem;
+    right: 200rem;
+  }
+  100% {
+    bottom: 380rem;
+    right: 220rem;
+  }
+}
+
+.Float-21 {
+  bottom: 80rem;
+  right: 180rem;
+  animation: AnimFloat-21 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-21 {
+  0% {
+    bottom: 80rem;
+    right: 180rem;
+  }
+  50% {
+    bottom: 30rem;
+    right: 100rem;
+  }
+  75% {
+    bottom: 50rem;
+    right: 180rem;
+  }
+  100% {
+    bottom: 80rem;
+    right: 180rem;
+  }
+}
+
+.Float-22 {
+  bottom: 80rem;
+  right: 820rem;
+  animation: AnimFloat-22 1.9s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes AnimFloat-22 {
+  0% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+  50% {
+    bottom: 40rem;
+    right: 720rem;
+  }
+  75% {
+    bottom: 80rem;
+    right: 710rem;
+  }
+  100% {
+    bottom: 80rem;
+    right: 820rem;
+  }
+}

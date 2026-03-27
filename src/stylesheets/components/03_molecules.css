@@ -140,3 +140,12 @@
   gap: 28rem;
   padding-top: 10rem;
 }
+
+/* About Us */
+
+.M_AboutH2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rem;
+}

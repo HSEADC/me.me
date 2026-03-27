@@ -16,7 +16,8 @@ body {
   width: 100%;
   margin: 0;
   display: block;
-  background-image: url(../images/about/background.webp);
+  background-image: url(../images/index/BackgroundBig.webp);
+  background-color: #aaaaaa;
 }
 
 #noise {
@@ -31,6 +32,17 @@ body {
 
 ::selection {
   background-color: #ff65a6;
+}
+
+.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 28rem #000;
 }
 
 h1.hd,

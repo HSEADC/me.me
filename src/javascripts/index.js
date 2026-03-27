@@ -63,9 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const downloadBtn = document.querySelector(".A_ConstructorButtonDownload");
 
   const presetsWrap = document.querySelector(".M_ConstructorPresets");
-  const presetItems = presetsWrap
-    ? Array.from(presetsWrap.querySelectorAll(".A_ConstructorPreset"))
-    : [];
+  const presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".A_ConstructorPreset")) : [];
 
   const W = canvas.width;
   const H = canvas.height;
@@ -339,9 +337,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // инлайн-картинки разные-преразные рандомно проставляющиеся
 
 document.addEventListener("DOMContentLoaded", () => {
-  const imageBlocks = document.querySelectorAll(
-    ".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat",
-  );
+  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
   if (!imageBlocks.length) return;
 
   const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);

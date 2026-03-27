@@ -737,3 +737,41 @@
   background: #ff65a6;
   transition: all 0.3s ease-in-out;
 }
+
+/* About Us */
+
+.W_AboutUsLeft .A_Header2Part {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12rem 20rem;
+  width: 100%;
+}
+
+.W_AboutUsLeft .Q_Header2Text {
+  margin-left: 0;
+  line-height: 0.95;
+}
+
+.W_AboutUsLeft .A_TextBlock {
+  max-width: 1100rem;
+  margin: 0;
+}
+
+.M_AboutH2Reverse .A_Header2Part {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18rem 20rem;
+  width: 100%;
+}
+
+.W_AboutUsLeftReverse .Q_Header2Text {
+  margin: 0;
+  line-height: 0.95;
+}
+
+.A_AboutTextReverse {
+  max-width: 620rem;
+  margin: 0;
+}
