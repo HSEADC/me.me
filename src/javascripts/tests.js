@@ -7,7 +7,7 @@ function initTest(stages) {
   const question = document.querySelector(".A_Question");
   const answers = document.querySelectorAll(".A_AnswerText");
 
-  numberOfQuestion.innerText = `вопрос ${currentStage + 1} из ${stages.length}`;
+  numberOfQuestion.innerText = `${currentStage + 1}/${stages.length}`;
 
   question.innerText = stages[currentStage].question;
 
@@ -48,39 +48,39 @@ function showResult(results) {
   testContainer.innerHTML = "";
 
   const resultWrapper = document.createElement("div");
-  resultWrapper.classList.add("M_TestResult");
+  resultWrapper.classList.add("W_TestQuestion");
 
   const resultCnt = document.createElement("p");
-  resultCnt.classList.add("A_TestResultCount");
+  resultCnt.classList.add("A_TestResultCount", "hd");
   resultCnt.innerText = `итого: ${resultCount}`;
 
   const resultHeader = document.createElement("h2");
-  resultHeader.classList.add("A_TestResultHeader");
+  resultHeader.classList.add("A_TestResultHeader", "hd");
 
   const resultParagraph = document.createElement("p");
-  resultParagraph.classList.add("A_TestResultParagraph");
+  resultParagraph.classList.add("A_TestResultParagraph", "hd");
 
-  const resultImage = document.createElement("img");
-  resultImage.classList.add("A_TestResultImage");
+  const resultButton = document.createElement("a");
+  resultButton.classList.add("A_TestResultButton");
+
+  resultButton.innerText = "вернуться к тестам";
+  resultButton.href = "../tests.html";
 
   if (resultCount == 4) {
     resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
-    resultImage.src = results[0].image;
   } else if (resultCount == 3 || resultCount == 2) {
     resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
-    resultImage.src = results[1].image;
   } else {
     resultHeader.innerText = results[2].header;
     resultParagraph.innerText = results[2].paragraph;
-    resultImage.src = results[2].image;
   }
 
   resultWrapper.appendChild(resultCnt);
   resultWrapper.appendChild(resultHeader);
   resultWrapper.appendChild(resultParagraph);
-  resultWrapper.appendChild(resultImage);
+  resultWrapper.appendChild(resultButton);
 
   testContainer.appendChild(resultWrapper);
 }

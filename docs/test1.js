@@ -1,10 +1,264 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ 248:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/238a27873a673bc44a50.webp";
+
+/***/ }),
+
+/***/ 478:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1f14a30a97b2adb7d35a.webp";
+
+/***/ }),
+
+/***/ 712:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6e51bbdab3b4c358fa47.webp";
+
+/***/ }),
+
+/***/ 1542:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/e282a71d80c4bfb61634.webp";
+
+/***/ }),
+
+/***/ 2290:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/351ac147c1da4a6a8f78.webp";
+
+/***/ }),
+
+/***/ 2784:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/c2018354c4483de531fe.webp";
+
+/***/ }),
+
+/***/ 3066:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/90a31fb31867de19cd4f.webp";
+
+/***/ }),
+
+/***/ 3252:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b431329603607ac29fa0.webp";
+
+/***/ }),
+
+/***/ 3355:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b91e63c489ca955f9d4c.webp";
+
+/***/ }),
+
+/***/ 3617:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/57c9f72acdfdee621664.webp";
+
+/***/ }),
+
+/***/ 3727:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/984ddecb13cd99df1a01.webp";
+
+/***/ }),
+
+/***/ 4144:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4e17b7931f9544474185.webp";
+
+/***/ }),
+
+/***/ 4205:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2a6cb5cad88c6bd6f8c3.webp";
+
+/***/ }),
+
+/***/ 4263:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/541853868941a952f8f0.webp";
+
+/***/ }),
+
+/***/ 4357:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./inlined-1.webp": 248,
+	"./inlined-10.webp": 4144,
+	"./inlined-11.webp": 7187,
+	"./inlined-12.webp": 2290,
+	"./inlined-13.webp": 4205,
+	"./inlined-14.webp": 5484,
+	"./inlined-15.webp": 3727,
+	"./inlined-16.webp": 478,
+	"./inlined-17.webp": 5161,
+	"./inlined-18.webp": 5416,
+	"./inlined-19.webp": 3355,
+	"./inlined-2.webp": 7701,
+	"./inlined-20.webp": 5435,
+	"./inlined-21.webp": 712,
+	"./inlined-22.webp": 7237,
+	"./inlined-23.webp": 3066,
+	"./inlined-24.webp": 4263,
+	"./inlined-25.webp": 3252,
+	"./inlined-26.webp": 3617,
+	"./inlined-3.webp": 9850,
+	"./inlined-4.webp": 8919,
+	"./inlined-5.webp": 5908,
+	"./inlined-6.webp": 5169,
+	"./inlined-7.webp": 1542,
+	"./inlined-8.webp": 8547,
+	"./inlined-9.webp": 2784
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 4357;
+
+/***/ }),
+
+/***/ 5161:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/a361a3663193e87a3290.webp";
+
+/***/ }),
+
+/***/ 5169:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/71cdf0f3b8ca3deeaf93.webp";
+
+/***/ }),
+
+/***/ 5416:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/17f2adaafd75c5b019ab.webp";
+
+/***/ }),
+
+/***/ 5435:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2ec2bf70dd350e2f2c3a.webp";
+
+/***/ }),
+
+/***/ 5484:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/18fa2acc935344ed3d81.webp";
+
+/***/ }),
+
+/***/ 5908:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/7c17f46875ca0e0710aa.webp";
+
+/***/ }),
+
+/***/ 7187:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/01a0aee8d93dad52e608.webp";
+
+/***/ }),
+
+/***/ 7237:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/42ba1c357524a99d6190.webp";
+
+/***/ }),
+
+/***/ 7701:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cc36c4d545d9dcfd6f65.webp";
+
+/***/ }),
+
+/***/ 8547:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6a6b6452a9f1e31065cb.webp";
+
+/***/ }),
+
+/***/ 8919:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/aa5b27f0dc116a918621.webp";
+
+/***/ }),
 
 /***/ 9076:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   I: () => (/* binding */ chooseAnswer),
 /* harmony export */   v: () => (/* binding */ initTest)
@@ -16,7 +270,7 @@ function initTest(stages) {
   var numberOfQuestion = document.querySelector(".A_NumberOfQuestion");
   var question = document.querySelector(".A_Question");
   var answers = document.querySelectorAll(".A_AnswerText");
-  numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
+  numberOfQuestion.innerText = "".concat(currentStage + 1, "/").concat(stages.length);
   question.innerText = stages[currentStage].question;
   for (var i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text;
@@ -50,36 +304,43 @@ function showResult(results) {
   var testContainer = document.querySelector(".O_Test");
   testContainer.innerHTML = "";
   var resultWrapper = document.createElement("div");
-  resultWrapper.classList.add("M_TestResult");
+  resultWrapper.classList.add("W_TestQuestion");
   var resultCnt = document.createElement("p");
-  resultCnt.classList.add("A_TestResultCount");
+  resultCnt.classList.add("A_TestResultCount", "hd");
   resultCnt.innerText = "\u0438\u0442\u043E\u0433\u043E: ".concat(resultCount);
   var resultHeader = document.createElement("h2");
-  resultHeader.classList.add("A_TestResultHeader");
+  resultHeader.classList.add("A_TestResultHeader", "hd");
   var resultParagraph = document.createElement("p");
-  resultParagraph.classList.add("A_TestResultParagraph");
-  var resultImage = document.createElement("img");
-  resultImage.classList.add("A_TestResultImage");
+  resultParagraph.classList.add("A_TestResultParagraph", "hd");
+  var resultButton = document.createElement("a");
+  resultButton.classList.add("A_TestResultButton");
+  resultButton.innerText = "вернуться к тестам";
+  resultButton.href = "../tests.html";
   if (resultCount == 4) {
     resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
-    resultImage.src = results[0].image;
   } else if (resultCount == 3 || resultCount == 2) {
     resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
-    resultImage.src = results[1].image;
   } else {
     resultHeader.innerText = results[2].header;
     resultParagraph.innerText = results[2].paragraph;
-    resultImage.src = results[2].image;
   }
   resultWrapper.appendChild(resultCnt);
   resultWrapper.appendChild(resultHeader);
   resultWrapper.appendChild(resultParagraph);
-  resultWrapper.appendChild(resultImage);
+  resultWrapper.appendChild(resultButton);
   testContainer.appendChild(resultWrapper);
 }
 
+
+/***/ }),
+
+/***/ 9850:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1ac444997a3a309d0376.webp";
 
 /***/ })
 
@@ -164,20 +425,17 @@ function showResult(results) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-
-// EXTERNAL MODULE: ./src/javascripts/tests.js
-var tests = __webpack_require__(9076);
-;// ./src/images/random/rnd-12.webp
-const rnd_12_namespaceObject = __webpack_require__.p + "images/018321c3fff21551b576.webp";
-;// ./src/images/random/rnd-16.webp
-const rnd_16_namespaceObject = __webpack_require__.p + "images/f85129d77649d7977941.webp";
-;// ./src/images/random/rnd-39.webp
-const rnd_39_namespaceObject = __webpack_require__.p + "images/ded15b7c1305630d3bf4.webp";
-;// ./src/javascripts/test1.js
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+(() => {
+"use strict";
+/* harmony import */ var _tests_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9076);
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 console.clear;
-
-
-
 
 
 
@@ -218,75 +476,134 @@ requestAnimationFrame(animate);
 
 // обводка на типографике
 
-document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach(function (el) {
-  el.setAttribute("data-text", el.textContent.trim());
+function syncOutlinedText() {
+  document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart, .A_Question, .A_NumberOfQuestion").forEach(function (el) {
+    el.setAttribute("data-text", el.textContent.trim());
+  });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  syncOutlinedText();
+
+  // это чтобы обводка ставилась после того как проставится текст
+  var observer = new MutationObserver(function () {
+    syncOutlinedText();
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true
+  });
+});
+
+// инлайн-картинки
+
+document.addEventListener("DOMContentLoaded", function () {
+  var imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
+  if (!imageBlocks.length) return;
+  var req = __webpack_require__(4357);
+  var urls = req.keys().map(function (k) {
+    return req(k);
+  });
+  var shuffledImages = _toConsumableArray(urls).sort(function () {
+    return Math.random() - 0.5;
+  });
+  imageBlocks.forEach(function (block, index) {
+    var imageUrl = shuffledImages[index % shuffledImages.length];
+    block.style.backgroundImage = "url(\"".concat(imageUrl, "\")");
+  });
 });
 
 // логика тестов
 
 var stages = [{
-  question: "Что означает подпись «corecore опять вернулся»?",
+  question: "кого называют NPC?",
   answers: [{
-    text: "Новый фитнес-тренд",
+    text: "персонаж из игры без личности",
     count: 0
   }, {
-    text: "Нарезку из странных видео под тревожную музыку",
+    text: "человек, без своего мнения",
     count: 1
   }, {
-    text: "Эстетику минимализма",
+    text: "бот в комментариях",
+    count: 0
+  }, {
+    text: "человек без эмоций",
     count: 0
   }]
 }, {
-  question: "Если в видео внезапно появляется фраза «bro is NOT surviving», это обычно",
+  question: "я дурею с этой прикормки — что означает эта фраза",
   answers: [{
-    text: "Поддержка",
+    text: "рыбацкая хитрость",
     count: 0
   }, {
-    text: "Ироничный комментарий",
+    text: "про вкусную еду",
+    count: 0
+  }, {
+    text: "зависимость от чего-то",
     count: 1
   }, {
-    text: "Реальная новость",
+    text: "реклама",
     count: 0
   }]
 }, {
-  question: "Когда в комментариях массово пишут «chat, is this real?», это:",
+  question: "gyatt чаще всего используется как",
   answers: [{
-    text: "Вопрос стримеру",
-    count: 0
-  }, {
-    text: "Новый челлендж",
+    text: "реакция на что-то впечатляющее",
     count: 1
   }, {
-    text: "Мемная реакция на абсурдную ситуацию",
+    text: "ругательство",
+    count: 0
+  }, {
+    text: "приветствие",
+    count: 0
+  }, {
+    text: "просто звук",
     count: 0
   }]
 }, {
-  question: "Если видео выглядит максимально бессмысленным, с резкими склейками и странным звуком, это:",
+  question: "что такое свага?",
   answers: [{
-    text: "Это специально сделанный абсурдный формат",
-    count: 1
-  }, {
-    text: "Автор не умеет монтировать",
+    text: "трендовое движение",
     count: 0
   }, {
-    text: "Это реклама",
+    text: "брендовая одежда",
+    count: 0
+  }, {
+    text: "название тусовки",
+    count: 0
+  }, {
+    text: "стиль и вайб",
+    count: 1
+  }]
+}, {
+  question: "выбери любое число",
+  answers: [{
+    text: "47",
+    count: 0
+  }, {
+    text: "11",
+    count: 0
+  }, {
+    text: "67",
+    count: 1
+  }, {
+    text: "23",
     count: 0
   }]
 }];
 var results = [{
-  header: "отлично!!",
-  paragraph: "вы и правда шарите, ученик превзошёл учителя",
-  image: "".concat(rnd_12_namespaceObject)
+  header: "человек-мем",
+  paragraph: "ученик превзошёл учителя! вы очень хорошо разбираетесь в мемах! не хотите написать нам пару статей и дать интервью? или отложить тик ток и потрогать траву?"
 }, {
-  header: "не так уж и плохо!",
-  paragraph: "но советуем на досуге посидеть в тик токе подтянуть свои знания",
-  image: "".concat(rnd_16_namespaceObject)
+  header: "работяга",
+  paragraph: "вы уверенно ориентируетесь в мемах! но на досуге советуем отложить все дела и посидеть в соцсетях часов эдак 6-8, чтобы подтянуть знания!"
 }, {
-  header: "ай-ай-ай",
-  paragraph: "в мемах вы не разбираетесь, но ничего! почитайте наши статьи и вы всё поймёте!",
-  image: "".concat(rnd_39_namespaceObject)
+  header: "первый день в интернете",
+  paragraph: "в мемах вы не разбираетесь, но ничего! почитайте наши статьи и вы всё поймёте!"
 }];
-(0,tests/* initTest */.v)(stages);
-(0,tests/* chooseAnswer */.I)(stages, results);
+(0,_tests_js__WEBPACK_IMPORTED_MODULE_0__/* .initTest */ .v)(stages);
+(0,_tests_js__WEBPACK_IMPORTED_MODULE_0__/* .chooseAnswer */ .I)(stages, results);
+})();
+
 /******/ })()
 ;

@@ -256,3 +256,90 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.W_TestQuestion {
+  display: flex;
+  width: 1400rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48rem;
+  padding: 0 110rem;
+}
+
+/* Test 2 */
+
+.W_PuzzleGame {
+  width: 1700rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 140rem;
+  box-sizing: border-box;
+}
+
+.W_PuzzleBoardZone {
+  width: 1700rem;
+  min-height: 1120rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.W_PuzzlePiecesLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
+
+/* Test 3 */
+
+.W_TestGuessQuestion {
+  display: flex;
+  width: 1700rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48rem;
+  padding: 0 60rem;
+  box-sizing: border-box;
+}
+
+.W_TestGuessMain {
+  display: grid;
+  grid-template-columns: 420rem 1fr;
+  column-gap: 80rem;
+  align-items: start;
+  width: 100%;
+}
+
+.W_TestGuessSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28rem;
+  padding-top: 18rem;
+}
+
+.W_TestGuessAnswers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18rem;
+  width: 100%;
+}
+
+.W_TestGuessResultMain {
+  display: grid;
+  grid-template-columns: 420rem 1fr;
+  column-gap: 80rem;
+  align-items: start;
+  width: 100%;
+}
+
+.W_TestGuessResultSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24rem;
+  padding-top: 14rem;
+}

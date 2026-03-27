@@ -31,7 +31,7 @@ function initTest(stages) {
   var numberOfQuestion = document.querySelector(".A_NumberOfQuestion");
   var question = document.querySelector(".A_Question");
   var answers = document.querySelectorAll(".A_AnswerText");
-  numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
+  numberOfQuestion.innerText = "".concat(currentStage + 1, "/").concat(stages.length);
   question.innerText = stages[currentStage].question;
   for (var i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text;
@@ -65,33 +65,32 @@ function showResult(results) {
   var testContainer = document.querySelector(".O_Test");
   testContainer.innerHTML = "";
   var resultWrapper = document.createElement("div");
-  resultWrapper.classList.add("M_TestResult");
+  resultWrapper.classList.add("W_TestQuestion");
   var resultCnt = document.createElement("p");
-  resultCnt.classList.add("A_TestResultCount");
+  resultCnt.classList.add("A_TestResultCount", "hd");
   resultCnt.innerText = "\u0438\u0442\u043E\u0433\u043E: ".concat(resultCount);
   var resultHeader = document.createElement("h2");
-  resultHeader.classList.add("A_TestResultHeader");
+  resultHeader.classList.add("A_TestResultHeader", "hd");
   var resultParagraph = document.createElement("p");
-  resultParagraph.classList.add("A_TestResultParagraph");
-  var resultImage = document.createElement("img");
-  resultImage.classList.add("A_TestResultImage");
+  resultParagraph.classList.add("A_TestResultParagraph", "hd");
+  var resultButton = document.createElement("a");
+  resultButton.classList.add("A_TestResultButton");
+  resultButton.innerText = "вернуться к тестам";
+  resultButton.href = "../tests.html";
   if (resultCount == 4) {
     resultHeader.innerText = results[0].header;
     resultParagraph.innerText = results[0].paragraph;
-    resultImage.src = results[0].image;
   } else if (resultCount == 3 || resultCount == 2) {
     resultHeader.innerText = results[1].header;
     resultParagraph.innerText = results[1].paragraph;
-    resultImage.src = results[1].image;
   } else {
     resultHeader.innerText = results[2].header;
     resultParagraph.innerText = results[2].paragraph;
-    resultImage.src = results[2].image;
   }
   resultWrapper.appendChild(resultCnt);
   resultWrapper.appendChild(resultHeader);
   resultWrapper.appendChild(resultParagraph);
-  resultWrapper.appendChild(resultImage);
+  resultWrapper.appendChild(resultButton);
   testContainer.appendChild(resultWrapper);
 }
 

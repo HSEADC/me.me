@@ -1,3 +1,27 @@
+@media (max-width: 1500px) {
+  .W_PuzzleGame {
+    width: 100%;
+    padding: 0 24rem 140rem;
+  }
+
+  .W_PuzzleBoardZone {
+    width: 100%;
+    min-height: 1180rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .W_PuzzleBoardZone {
+    min-height: 1280rem;
+  }
+
+  .A_PuzzleBackButton,
+  .A_PuzzleWinButton {
+    margin-top: 90rem;
+    margin-bottom: 100rem;
+  }
+}
+
 @media (max-width: 440px) {
   /* about */
 

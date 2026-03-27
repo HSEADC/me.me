@@ -2,9 +2,6 @@ console.clear;
 
 import { initTest, chooseAnswer } from "./tests.js";
 import "../stylesheets/style.css";
-import imgGood from "../images/random/rnd-12.webp";
-import imgOk from "../images/random/rnd-16.webp";
-import imgBad from "../images/random/rnd-39.webp";
 
 // белый шум на фоне
 
@@ -17,6 +14,7 @@ function resizeCanvas() {
 }
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
+
 function drawNoiseFrame() {
   const w = canvas.width;
   const h = canvas.height;
@@ -50,98 +48,105 @@ requestAnimationFrame(animate);
 
 // обводка на типографике
 
-document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach((el) => {
-  el.setAttribute("data-text", el.textContent.trim());
+function syncOutlinedText() {
+  document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart, .A_Question, .A_NumberOfQuestion").forEach((el) => {
+    el.setAttribute("data-text", el.textContent.trim());
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  syncOutlinedText();
+
+  // это чтобы обводка ставилась после того как проставится текст
+  const observer = new MutationObserver(() => {
+    syncOutlinedText();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+  });
+});
+
+// инлайн-картинки
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
+  if (!imageBlocks.length) return;
+
+  const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
+  const urls = req.keys().map((k) => req(k));
+  const shuffledImages = [...urls].sort(() => Math.random() - 0.5);
+
+  imageBlocks.forEach((block, index) => {
+    const imageUrl = shuffledImages[index % shuffledImages.length];
+    block.style.backgroundImage = `url("${imageUrl}")`;
+  });
 });
 
 // логика тестов
 
 const stages = [
   {
-    question: "Что означает подпись «corecore опять вернулся»?",
+    question: "кого называют NPC?",
     answers: [
-      {
-        text: "Новый фитнес-тренд",
-        count: 0,
-      },
-      {
-        text: "Нарезку из странных видео под тревожную музыку",
-        count: 1,
-      },
-      {
-        text: "Эстетику минимализма",
-        count: 0,
-      },
+      { text: "персонаж из игры без личности", count: 0 },
+      { text: "человек, без своего мнения", count: 1 },
+      { text: "бот в комментариях", count: 0 },
+      { text: "человек без эмоций", count: 0 },
     ],
   },
   {
-    question: "Если в видео внезапно появляется фраза «bro is NOT surviving», это обычно",
+    question: "я дурею с этой прикормки — что означает эта фраза",
     answers: [
-      {
-        text: "Поддержка",
-        count: 0,
-      },
-      {
-        text: "Ироничный комментарий",
-        count: 1,
-      },
-      {
-        text: "Реальная новость",
-        count: 0,
-      },
+      { text: "рыбацкая хитрость", count: 0 },
+      { text: "про вкусную еду", count: 0 },
+      { text: "зависимость от чего-то", count: 1 },
+      { text: "реклама", count: 0 },
     ],
   },
   {
-    question: "Когда в комментариях массово пишут «chat, is this real?», это:",
+    question: "gyatt чаще всего используется как",
     answers: [
-      {
-        text: "Вопрос стримеру",
-        count: 0,
-      },
-      {
-        text: "Новый челлендж",
-        count: 1,
-      },
-      {
-        text: "Мемная реакция на абсурдную ситуацию",
-        count: 0,
-      },
+      { text: "реакция на что-то впечатляющее", count: 1 },
+      { text: "ругательство", count: 0 },
+      { text: "приветствие", count: 0 },
+      { text: "просто звук", count: 0 },
     ],
   },
   {
-    question: "Если видео выглядит максимально бессмысленным, с резкими склейками и странным звуком, это:",
+    question: "что такое свага?",
     answers: [
-      {
-        text: "Это специально сделанный абсурдный формат",
-        count: 1,
-      },
-      {
-        text: "Автор не умеет монтировать",
-        count: 0,
-      },
-      {
-        text: "Это реклама",
-        count: 0,
-      },
+      { text: "трендовое движение", count: 0 },
+      { text: "брендовая одежда", count: 0 },
+      { text: "название тусовки", count: 0 },
+      { text: "стиль и вайб", count: 1 },
+    ],
+  },
+  {
+    question: "выбери любое число",
+    answers: [
+      { text: "47", count: 0 },
+      { text: "11", count: 0 },
+      { text: "67", count: 1 },
+      { text: "23", count: 0 },
     ],
   },
 ];
 
 const results = [
   {
-    header: "отлично!!",
-    paragraph: "вы и правда шарите, ученик превзошёл учителя",
-    image: `${imgGood}`,
+    header: "человек-мем",
+    paragraph: "ученик превзошёл учителя! вы очень хорошо разбираетесь в мемах! не хотите написать нам пару статей и дать интервью? или отложить тик ток и потрогать траву?",
   },
   {
-    header: "не так уж и плохо!",
-    paragraph: "но советуем на досуге посидеть в тик токе подтянуть свои знания",
-    image: `${imgOk}`,
+    header: "работяга",
+    paragraph: "вы уверенно ориентируетесь в мемах! но на досуге советуем отложить все дела и посидеть в соцсетях часов эдак 6-8, чтобы подтянуть знания!",
   },
   {
-    header: "ай-ай-ай",
+    header: "первый день в интернете",
     paragraph: "в мемах вы не разбираетесь, но ничего! почитайте наши статьи и вы всё поймёте!",
-    image: `${imgBad}`,
   },
 ];
 

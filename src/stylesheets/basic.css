@@ -102,6 +102,22 @@ p.hd {
   -webkit-text-stroke: 28rem #000;
 }
 
+.A_Question.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 18rem #000;
+}
+
 button:hover {
   color: #ffffff;
   background: #ff65a6;

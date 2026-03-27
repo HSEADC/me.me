@@ -112,3 +112,29 @@
   align-items: center;
   gap: 40rem;
 }
+
+/* Test 1 */
+
+.O_Test {
+  width: 100%;
+  height: 800rem;
+  padding-top: 100rem;
+}
+
+/* Test 2 */
+
+.O_PuzzleGame {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100rem;
+  min-height: 1250rem;
+}
+
+/* Test 3 */
+
+.O_TestGuess {
+  width: 100%;
+  min-height: 920rem;
+  padding-top: 100rem;
+}

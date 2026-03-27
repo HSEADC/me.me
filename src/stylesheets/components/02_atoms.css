@@ -484,3 +484,256 @@
   right: 0;
   top: 40rem;
 }
+
+/* Test 1 */
+.A_NumberOfQuestion,
+.A_Question,
+.A_TestResultCount,
+.A_TestResultHeader {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 64rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.A_AnswerText {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 36rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  display: block;
+}
+
+.A_TestResultParagraph {
+  width: 60%;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 36rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  display: block;
+}
+
+.A_TestResultButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 314rem;
+  height: 55rem;
+  margin-top: 80rem;
+  padding: 0;
+  font-family: Impact;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.A_TestResultButton:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Test 2 */
+
+.A_PuzzleBoard {
+  width: 864rem;
+  height: 864rem;
+  display: grid;
+  grid-template-columns: repeat(4, 216rem);
+  grid-template-rows: repeat(4, 216rem);
+  position: relative;
+  z-index: 2;
+}
+
+.A_PuzzleCell {
+  width: 216rem;
+  height: 216rem;
+  border: 1rem solid rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+}
+
+.A_PuzzlePiece {
+  position: absolute;
+  background-repeat: no-repeat;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.A_PuzzlePiece.is-dragging {
+  cursor: grabbing;
+  z-index: 20;
+}
+
+.A_PuzzlePiece.is-locked {
+  z-index: 12;
+}
+
+.A_PuzzleBackButton,
+.A_PuzzleWinButton {
+  margin-top: 50rem;
+  margin-bottom: 50rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 314rem;
+  height: 55rem;
+  padding: 0 20rem;
+  font-family: Impact, sans-serif;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_PuzzleBackButton:hover,
+.A_PuzzleWinButton:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Test 3 */
+
+.A_TestGuessHeader {
+  display: inline-flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.A_TestGuessImage {
+  width: 440rem;
+  height: 440rem;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.A_TestGuessCheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 48rem;
+  height: 48rem;
+  background: #000000;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+
+.A_TestGuessCheckbox:checked {
+  background: #ff65a6;
+}
+
+.A_TestGuessCheckbox:hover {
+  outline: 3rem solid #ff65a6;
+}
+
+.A_TestGuessSubmit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170rem;
+  height: 55rem;
+  padding: 10rem 20rem;
+  font-family: Impact, sans-serif;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_TestGuessSubmit:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+}
+
+.A_TestGuessResultHeader {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 64rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 520rem;
+}
+
+.A_TestGuessResultText {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 36rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 0;
+  max-width: 620rem;
+}
+
+.A_TestGuessResultButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16rem;
+  margin-top: 12rem;
+}
+
+.A_TestGuessResultButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 314rem;
+  height: 55rem;
+  padding: 0 20rem;
+  font-family: Impact, sans-serif;
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_TestGuessResultButton:hover {
+  color: #ffffff;
+  background: #ff65a6;
+  transition: all 0.3s ease-in-out;
+}
