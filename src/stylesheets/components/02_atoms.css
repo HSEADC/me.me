@@ -754,24 +754,105 @@
 }
 
 .W_AboutUsLeft .A_TextBlock {
-  max-width: 1100rem;
+  max-width: 1000rem;
   margin: 0;
+  margin-top: 120rem;
+  margin-left: 30rem;
 }
 
-.M_AboutH2Reverse .A_Header2Part {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 18rem 20rem;
-  width: 100%;
+.W_AboutUsRightReverse .A_AboutTextReverse {
+  width: 560rem;
+  margin: 0 0 0 70rem;
 }
 
-.W_AboutUsLeftReverse .Q_Header2Text {
-  margin: 0;
-  line-height: 0.95;
+/* 404 */
+
+.A_404Item {
+  position: absolute;
+  opacity: 0;
+  animation: float404 6s infinite;
 }
 
-.A_AboutTextReverse {
-  max-width: 620rem;
-  margin: 0;
+.A_404Text {
+  font-family: Impact;
+  font-size: 220rem;
+  color: transparent;
+  -webkit-text-stroke: 6rem #000;
+}
+
+.A_404Img {
+  width: 120rem;
+  height: 120rem;
+  object-fit: cover;
+}
+
+@keyframes float404 {
+  0% {
+    transform: translateY(100rem) scale(0.8);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-60rem) scale(1);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-200rem) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* === ТЕКСТ === */
+
+.t1 {
+  left: 60rem;
+  top: 80rem;
+  animation-delay: 0s;
+}
+
+.t2 {
+  right: 120rem;
+  top: 40rem;
+  animation-delay: 2s;
+}
+
+.t3 {
+  left: 300rem;
+  bottom: 60rem;
+  animation-delay: 4s;
+}
+
+/* === КАРТИНКИ === */
+
+.i1 {
+  left: 200rem;
+  top: 140rem;
+  animation-delay: 0.5s;
+}
+
+.i2 {
+  right: 260rem;
+  top: 200rem;
+  animation-delay: 1s;
+}
+
+.i3 {
+  left: 500rem;
+  bottom: 120rem;
+  animation-delay: 1.5s;
+}
+
+.i4 {
+  right: 80rem;
+  bottom: 80rem;
+  animation-delay: 2s;
 }

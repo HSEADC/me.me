@@ -353,21 +353,44 @@
 }
 
 .W_AboutUsRightReverse {
+  grid-column: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 36rem;
-  grid-column: 1;
-  grid-row: 1;
-  margin-top: 260rem;
+  gap: 42rem;
+  padding-top: 100rem;
+  position: relative;
+  z-index: 3;
 }
 
 .W_AboutUsLeftReverse {
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24rem;
-  grid-column: 2;
-  grid-row: 1;
-  margin-top: 120rem;
+  justify-content: flex-start;
+  padding-top: 120rem;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+.W_AboutButtons {
+  width: 500rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 260rem;
+  margin-top: 100rem;
+}
+
+/* 404 */
+
+.W_NotFoundButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 100%;
 }

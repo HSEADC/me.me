@@ -99,12 +99,42 @@
 
 .S_AboutUsReverse {
   width: 1700rem;
-  margin: 140rem auto 0;
+  min-height: 1800rem;
+  margin: 120rem auto 0;
   display: grid;
-  grid-template-columns: 700rem 1fr;
-  column-gap: 70rem;
-  row-gap: 40rem;
+  grid-template-columns: 760rem 1fr;
+  column-gap: 90rem;
   align-items: start;
   position: relative;
-  min-height: 1500rem;
+}
+
+.S_AboutWhatToDo {
+  width: 1700rem;
+  height: 800rem;
+  display: grid;
+  grid-template-columns: 1fr 700rem;
+  margin: 180rem auto;
+  column-gap: 40rem;
+  row-gap: 60rem;
+  align-items: start;
+  position: relative;
+}
+
+/* 404 */
+
+.S_NotFound {
+  position: relative;
+  width: 1700rem;
+  height: 700rem;
+  margin: 180rem auto;
+}
+
+.S_NotFoundBackground {
+  position: absolute;
+  width: 1920rem;
+  height: 1080rem;
+  z-index: -10;
+  top: -190rem;
+  left: -140rem;
+  overflow: hidden;
 }

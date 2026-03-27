@@ -149,3 +149,18 @@
   align-items: flex-start;
   gap: 8rem;
 }
+
+.M_AboutH2Reverse {
+  width: 100%;
+}
+
+/* 404 */
+
+.M_NotFoundDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 60%;
+  text-align: center;
+}

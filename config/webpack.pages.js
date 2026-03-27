@@ -30,6 +30,7 @@ const htmlPages = [
   createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["test2"]),
   createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["test3"]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
+  createPages("./src/404.html", "./404.html", ["index"]),
 ];
 
 module.exports = htmlPages;
