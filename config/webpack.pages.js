@@ -27,6 +27,8 @@ const htmlPages = [
   createPages("./src/pages/interactives.html", "./pages/interactives.html", ["index"]),
   createPages("./src/pages/tests.html", "./pages/tests.html", ["index"]),
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", ["test1"]),
+  createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["test2"]),
+  createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["test3"]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
 ];
 

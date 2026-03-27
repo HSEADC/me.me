@@ -1,6 +1,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 38:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/338368a1915aafac98a2.webp";
+
+/***/ }),
+
 /***/ 248:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -22,6 +30,14 @@ module.exports = __webpack_require__.p + "images/1f14a30a97b2adb7d35a.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/6e51bbdab3b4c358fa47.webp";
+
+/***/ }),
+
+/***/ 722:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/648af7ab872dd7b6db76.webp";
 
 /***/ }),
 
@@ -3787,6 +3803,14 @@ module.exports = Airtable;
 
 /***/ }),
 
+/***/ 1443:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/20bbad0e69ae60c00daf.webp";
+
+/***/ }),
+
 /***/ 1542:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3832,6 +3856,22 @@ module.exports = __webpack_require__.p + "images/b431329603607ac29fa0.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/b91e63c489ca955f9d4c.webp";
+
+/***/ }),
+
+/***/ 3362:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/97f6680739adbf3524fc.webp";
+
+/***/ }),
+
+/***/ 3485:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/f387c443ca3a532818f0.webp";
 
 /***/ }),
 
@@ -3929,6 +3969,14 @@ webpackContext.id = 4357;
 
 /***/ }),
 
+/***/ 4769:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/71be205676dc9aefa3c4.webp";
+
+/***/ }),
+
 /***/ 5161:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3977,6 +4025,22 @@ module.exports = __webpack_require__.p + "images/7c17f46875ca0e0710aa.webp";
 
 /***/ }),
 
+/***/ 6060:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/54897bf9a6540ad029fd.webp";
+
+/***/ }),
+
+/***/ 7054:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2c58bd61b266a9ed7a5e.webp";
+
+/***/ }),
+
 /***/ 7187:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4009,11 +4073,65 @@ module.exports = __webpack_require__.p + "images/6a6b6452a9f1e31065cb.webp";
 
 /***/ }),
 
+/***/ 8813:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./article-1.webp": 7054,
+	"./article-10.webp": 3362,
+	"./article-2.webp": 9503,
+	"./article-3.webp": 6060,
+	"./article-4.webp": 3485,
+	"./article-5.webp": 722,
+	"./article-6.webp": 1443,
+	"./article-7.webp": 9232,
+	"./article-8.webp": 4769,
+	"./article-9.webp": 38
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 8813;
+
+/***/ }),
+
 /***/ 8919:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/aa5b27f0dc116a918621.webp";
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/fbbd0ad0935d3287ab9b.webp";
+
+/***/ }),
+
+/***/ 9503:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/de3caad69e71a0605f06.webp";
 
 /***/ }),
 
@@ -4184,6 +4302,7 @@ airtable__WEBPACK_IMPORTED_MODULE_0___default().configure({
   apiKey: token
 });
 var base = airtable__WEBPACK_IMPORTED_MODULE_0___default().base(baseId);
+var articleCoversReq = __webpack_require__(8813);
 
 // статьи по фильтрам фильтры по статьям
 
@@ -4245,6 +4364,45 @@ function getArticleOrder(url) {
 function getArticleFilterClasses(url) {
   var slug = getArticleSlug(url);
   return articleFiltersMap[slug] || [];
+}
+function getLocalArticleCover(url) {
+  var slug = getArticleSlug(url);
+  var order = slug.replace("art-", "");
+  if (!order) return "";
+  var possibleFiles = ["./article-".concat(order, ".png"), "./article-".concat(order, ".webp"), "./article-".concat(order, ".jpg"), "./article-".concat(order, ".jpeg")];
+  for (var _i = 0, _possibleFiles = possibleFiles; _i < _possibleFiles.length; _i++) {
+    var filePath = _possibleFiles[_i];
+    if (articleCoversReq.keys().includes(filePath)) {
+      return articleCoversReq(filePath);
+    }
+  }
+  return "";
+}
+function setArticleCardImage(imgDiv, airtableImage, localImage) {
+  imgDiv.style.backgroundSize = "cover";
+  imgDiv.style.backgroundPosition = "center";
+  imgDiv.style.backgroundRepeat = "no-repeat";
+  if (airtableImage) {
+    if (localImage) {
+      imgDiv.style.backgroundImage = "url(\"".concat(localImage, "\")");
+    } else {
+      imgDiv.style.backgroundImage = "url(\"".concat(airtableImage, "\")");
+    }
+    var testImage = new Image();
+    testImage.onload = function () {
+      imgDiv.style.backgroundImage = "url(\"".concat(airtableImage, "\")");
+    };
+    testImage.onerror = function () {
+      if (localImage) {
+        imgDiv.style.backgroundImage = "url(\"".concat(localImage, "\")");
+      }
+    };
+    testImage.src = airtableImage;
+    return;
+  }
+  if (localImage) {
+    imgDiv.style.backgroundImage = "url(\"".concat(localImage, "\")");
+  }
 }
 function normalizeSearchText(value) {
   return String(value || "").toLowerCase().replace(/ё/g, "е").replace(/й/g, "и").replace(/[^a-zа-я0-9\s-]/gi, " ").replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
@@ -4363,12 +4521,8 @@ function createArticleTeaserCard(article) {
   card.classList.add("A_ArticleCard");
   var imgDiv = document.createElement("div");
   imgDiv.classList.add("toned", "Q_ArticleCardImage");
-  if (image) {
-    imgDiv.style.backgroundImage = "url(\"".concat(image, "\")");
-    imgDiv.style.backgroundSize = "cover";
-    imgDiv.style.backgroundPosition = "center";
-    imgDiv.style.backgroundRepeat = "no-repeat";
-  }
+  var localImage = getLocalArticleCover(url);
+  setArticleCardImage(imgDiv, image, localImage);
   var titleEl = document.createElement("h3");
   titleEl.classList.add("Q_ArticleCardCaption");
   titleEl.textContent = title || "без названия";
