@@ -7,6 +7,11 @@
   margin-right: 400rem;
 }
 
+.A_HeaderClose,
+.W_HeaderMobileFooter {
+  display: none;
+}
+
 .A_Logo:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
