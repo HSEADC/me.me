@@ -113,7 +113,7 @@
   /* Footer */
 
   .O_Footer {
-    height: 400rem;
+    height: 200rem;
   }
 
   .W_Footer_all_links {
@@ -133,14 +133,6 @@
 
   /* Index */
 
-  .S_MainRead {
-    position: relative;
-    width: 100%;
-    height: 1100rem;
-    margin-top: 200rem;
-    gap: 72rem;
-  }
-
   .S_MainRand {
     display: flex;
     width: 100%;
@@ -151,6 +143,8 @@
     margin-top: 200rem;
   }
 
+  /* Heading */
+
   .O_MainHead {
     width: 100%;
     height: 100%;
@@ -158,21 +152,89 @@
     margin-top: 180rem;
   }
 
+  .M_MainHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 180rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .Q_ImageInHeader {
+    width: 140rem;
+    height: 140rem;
+  }
+
+  .Q_HeaderText {
+    font-size: 160rem;
+  }
+
+  /* Main Read Block */
+
+  .S_MainRead {
+    height: 1200rem;
+    margin-top: 200rem;
+  }
+
+  .M_MainH2 {
+    gap: 8rem;
+    margin-left: 64rem;
+  }
+
   .O_MainReadBlock {
-    position: relative;
-    width: 100%;
     min-height: 420rem;
     margin-bottom: 72rem;
   }
 
   .O_MainArticlesCards {
-    display: flex;
-    width: 93%;
-    justify-content: space-between;
-    align-items: center;
     height: 600rem;
-    margin: auto;
+    margin-top: 200rem;
   }
+
+  .W_MainReadLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 560rem;
+    height: 300rem;
+  }
+
+  .W_MainReadRight {
+    left: 620rem;
+    top: 0;
+    width: 1140rem;
+    height: 220rem;
+  }
+
+  .W_MainReadRight .A_TextBlock:first-child {
+    left: -80rem;
+    top: 0;
+    width: 600rem;
+  }
+
+  .W_MainReadRight .A_TextBlock:last-child {
+    right: -64rem;
+    top: 130rem;
+    width: 560rem;
+  }
+
+  .A_ButtonMainReadBlock {
+    width: 440rem;
+    height: 120rem;
+    padding: 10rem 30rem;
+    font-size: 50rem;
+    left: 80rem;
+    top: 360rem;
+  }
+
+  .A_ArticleCardIndex {
+    width: 559rem;
+    height: 663rem;
+  }
+
+  /* Main Random */
 
   .O_MainRandBlock {
     position: relative;
@@ -189,45 +251,27 @@
     width: 100%;
   }
 
-  .W_MainReadLeft {
+  .A_MainRandImage {
+    width: 700rem;
+    height: 700rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+  }
+
+  .A_ButtonMainRandBlock {
+    width: 440rem;
+    height: 120rem;
+    padding: 10rem 30rem;
+    font-size: 50rem;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 560rem;
-    height: 300rem;
-  }
-
-  .W_MainReadRight {
-    position: absolute;
-    left: 620rem;
-    top: 0;
-    width: 1140rem;
-    height: 220rem;
-  }
-
-  .W_MainReadRight .A_TextBlock {
-    position: absolute;
-    margin: 0;
-  }
-
-  .W_MainReadRight .A_TextBlock:first-child {
-    left: -100rem;
-    top: 0;
-    width: 520rem;
-  }
-
-  .W_MainReadRight .A_TextBlock:last-child {
-    right: -64rem;
-    top: 130rem;
-    width: 660rem;
+    left: 480rem;
+    top: 600rem;
   }
 
   /* Main Random */
 
   .W_MainRandLeft {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 560rem;
     height: 300rem;
   }
@@ -241,29 +285,9 @@
   }
 
   .W_MainRandRight .A_TextBlock {
-    position: absolute;
-    margin: 0;
-    width: 572rem;
+    width: 520rem;
     top: 230rem;
     right: -64rem;
-  }
-
-  .M_MainHead {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 180rem;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .M_MainH2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8rem;
-    margin-left: 64rem;
   }
 
   .A_HeaderPart {
@@ -275,124 +299,14 @@
   }
 
   .A_Button {
-    width: 314rem;
-    height: 55rem;
+    width: 440rem;
+    height: 120rem;
     padding: 10rem 30rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    border: none;
-  }
-
-  .A_Header2Part {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    padding: 0 20rem;
-    gap: 15rem;
+    font-size: 50rem;
   }
 
   .A_TextBlock {
-    color: #fff;
-    font-family: "Inter";
-    font-size: 40rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    display: block;
-  }
-
-  .A_ButtonMainReadBlock {
-    width: 314rem;
-    height: 55rem;
-    padding: 10rem 30rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    border: none;
-    position: absolute;
-    left: 80rem;
-    top: 360rem;
-  }
-
-  .A_ButtonMainReadBlock:hover {
-    color: #ffffff;
-    background: #ff65a6;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .A_ArticleCardIndex {
-    width: 469.692rem;
-    height: 557.169rem;
-    display: flex;
-    flex-direction: column;
-    gap: 40rem;
-    cursor: pointer;
-  }
-
-  .A_MainRandImage {
-    width: 700rem;
-    height: 700rem;
-    display: flex;
-    flex-direction: column;
-    gap: 40rem;
-  }
-
-  .A_ButtonMainRandBlock {
-    width: 314rem;
-    height: 55rem;
-    padding: 10rem 30rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    border: none;
-    position: absolute;
-    right: 205rem;
-    top: 410rem;
-  }
-
-  .A_ButtonMainRandBlock:hover {
-    color: #ffffff;
-    background: #ff65a6;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  /* Heading */
-
-  .Q_ImageInHeader {
-    display: inline-block;
-    width: 116rem;
-    height: 116rem;
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
-
-  .Q_HeaderText {
-    color: #fff;
-    text-align: center;
-    font-family: "Inter";
-    font-size: 128.681rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    text-transform: uppercase;
+    font-size: 48rem;
   }
 
   /* H2 */
@@ -435,28 +349,15 @@
   /* Article Cards */
 
   .Q_ArticleCardIndexImage {
-    height: 350rem;
-    width: 350rem;
-    margin-top: 62rem;
-    margin-left: 60rem;
-    z-index: 10;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 400rem;
+    width: 400rem;
+    margin-top: 90rem;
+    margin-left: 80rem;
   }
 
   .Q_ArticleCardIndexCaption {
-    width: 301.948rem;
-    color: #ff65a6;
-    text-align: center;
-    font-family: Impact;
-    font-size: 40.645rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 40.645px */
-    text-transform: lowercase;
-    margin: 0 auto;
+    width: 341.948rem;
+    font-size: 48rem;
   }
 
   .Q_RandContent {
@@ -484,5 +385,90 @@
 
   .Q_RandContent:hover::after {
     opacity: 0.7;
+  }
+
+  /* About */
+
+  .S_AboutUs {
+    width: 1700rem;
+    height: 1400rem;
+    grid-template-columns: 1fr 700rem;
+    margin: 180rem auto;
+    column-gap: 40rem;
+    row-gap: 60rem;
+  }
+
+  .S_AboutUsReverse {
+    width: 1700rem;
+    min-height: 1800rem;
+    margin: 120rem auto 0;
+    display: grid;
+    grid-template-columns: 760rem 1fr;
+    column-gap: 90rem;
+    align-items: start;
+    position: relative;
+  }
+
+  .S_AboutWhatToDo {
+    width: 1700rem;
+    height: 800rem;
+    display: grid;
+    grid-template-columns: 1fr 700rem;
+    margin: 180rem auto;
+    column-gap: 40rem;
+    row-gap: 60rem;
+    align-items: start;
+    position: relative;
+  }
+
+  /* Articles Page */
+
+  .S_ArticlesAll {
+    padding-top: 300rem;
+  }
+
+  .A_ArticlesFilter {
+    min-height: 80rem;
+    padding: 10rem 12rem;
+    font-size: 36rem;
+  }
+
+  .A_ArticleCard {
+    width: 700rem;
+    height: 800rem;
+    gap: 36rem;
+  }
+
+  /* Interactives */
+
+  .S_InteractivesPromo {
+    width: 100%;
+    height: 2000rem;
+    gap: 72rem;
+    margin-top: 200rem;
+  }
+
+  .A_InteractiveCard .A_Button {
+    width: 440rem;
+    height: 120rem;
+    padding: 10rem 30rem;
+    font-size: 50rem;
+  }
+
+  .W_InteractivesText .A_TextBlock {
+    width: 1400rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .M_AnswerText input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64rem;
+    height: 64rem;
+    background: black;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
   }
 }
