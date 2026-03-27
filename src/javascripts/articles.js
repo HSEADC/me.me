@@ -67,6 +67,8 @@ Airtable.configure({
 
 const base = Airtable.base(baseId);
 
+const articleCoversReq = require.context("../images/articles_covers", false, /^\.\/article-\d+\.(png|webp|jpg|jpeg)$/i);
+
 // статьи по фильтрам фильтры по статьям
 
 const articleFiltersMap = {
@@ -103,8 +105,7 @@ function getArticlesTeasers() {
       .then((records) => {
         records.forEach((record) => {
           const f = record.fields || {};
-          const imageUrl =
-            Array.isArray(f.images) && f.images[0] && f.images[0].url ? f.images[0].url : "";
+          const imageUrl = Array.isArray(f.images) && f.images[0] && f.images[0].url ? f.images[0].url : "";
 
           content.push({
             id: record.id,
@@ -139,6 +140,56 @@ function getArticleOrder(url) {
 function getArticleFilterClasses(url) {
   const slug = getArticleSlug(url);
   return articleFiltersMap[slug] || [];
+}
+
+function getLocalArticleCover(url) {
+  const slug = getArticleSlug(url);
+  const order = slug.replace("art-", "");
+
+  if (!order) return "";
+
+  const possibleFiles = [`./article-${order}.png`, `./article-${order}.webp`, `./article-${order}.jpg`, `./article-${order}.jpeg`];
+
+  for (const filePath of possibleFiles) {
+    if (articleCoversReq.keys().includes(filePath)) {
+      return articleCoversReq(filePath);
+    }
+  }
+
+  return "";
+}
+
+function setArticleCardImage(imgDiv, airtableImage, localImage) {
+  imgDiv.style.backgroundSize = "cover";
+  imgDiv.style.backgroundPosition = "center";
+  imgDiv.style.backgroundRepeat = "no-repeat";
+
+  if (airtableImage) {
+    if (localImage) {
+      imgDiv.style.backgroundImage = `url("${localImage}")`;
+    } else {
+      imgDiv.style.backgroundImage = `url("${airtableImage}")`;
+    }
+
+    const testImage = new Image();
+
+    testImage.onload = () => {
+      imgDiv.style.backgroundImage = `url("${airtableImage}")`;
+    };
+
+    testImage.onerror = () => {
+      if (localImage) {
+        imgDiv.style.backgroundImage = `url("${localImage}")`;
+      }
+    };
+
+    testImage.src = airtableImage;
+    return;
+  }
+
+  if (localImage) {
+    imgDiv.style.backgroundImage = `url("${localImage}")`;
+  }
 }
 
 function normalizeSearchText(value) {
@@ -301,12 +352,8 @@ function createArticleTeaserCard(article) {
   const imgDiv = document.createElement("div");
   imgDiv.classList.add("toned", "Q_ArticleCardImage");
 
-  if (image) {
-    imgDiv.style.backgroundImage = `url("${image}")`;
-    imgDiv.style.backgroundSize = "cover";
-    imgDiv.style.backgroundPosition = "center";
-    imgDiv.style.backgroundRepeat = "no-repeat";
-  }
+  const localImage = getLocalArticleCover(url);
+  setArticleCardImage(imgDiv, image, localImage);
 
   const titleEl = document.createElement("h3");
   titleEl.classList.add("Q_ArticleCardCaption");
@@ -355,9 +402,7 @@ function filterAllArticles() {
 // инлайн-картинки другой путь отдельно для статей
 
 document.addEventListener("DOMContentLoaded", () => {
-  const imageBlocks = document.querySelectorAll(
-    ".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat",
-  );
+  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
   if (!imageBlocks.length) return;
 
   const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);

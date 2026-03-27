@@ -467,3 +467,20 @@
   text-decoration: none;
   margin: 0;
 }
+
+/* Tests */
+
+.TestPage .O_InteractiveCards .A_InteractiveCardSmall:first-child {
+  left: 0;
+  top: 40rem;
+}
+
+.TestPage .O_InteractiveCards .A_InteractiveCardBig {
+  left: 560rem;
+  top: 80rem;
+}
+
+.TestPage .O_InteractiveCards .A_InteractiveCardSmall:last-child {
+  right: 0;
+  top: 40rem;
+}

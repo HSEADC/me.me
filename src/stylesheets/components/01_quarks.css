@@ -396,3 +396,17 @@
   margin: 0;
   width: 100%;
 }
+
+/* Tests */
+
+.Q_InteractiveCardPrev-4 {
+  background-image: url(../../images/interactives/Test1-Preview.webp);
+}
+
+.Q_InteractiveCardPrev-5 {
+  background-image: url(../../images/interactives/Test2-Preview.webp);
+}
+
+.Q_InteractiveCardPrev-6 {
+  background-image: url(../../images/interactives/Test3-Preview.webp);
+}
