@@ -3,7 +3,7 @@
   --Pink: #ff65a6;
   --Black: #262626;
   --Grey: #9d9d9d;
-  --Tone: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  --Tone: linear-gradient(180deg, #ff5aa3 0%, #ff65a6 50%, #ff8abc 100%);
 }
 
 html {

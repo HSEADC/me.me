@@ -1,5 +1,18 @@
 /* Main */
 
+.S_MainHeadSection {
+  width: 100%;
+  height: 971rem;
+  padding: 196rem 249rem 250rem 248rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
 .S_MainRead {
   position: relative;
   width: 100%;

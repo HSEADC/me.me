@@ -25,6 +25,16 @@
 
 /* Main */
 
+.W_MainPageContent {
+  display: flex;
+  padding-top: 96rem;
+  padding-bottom: 130rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 189rem;
+  align-self: stretch;
+}
+
 .W_MainButtons {
   display: flex;
   justify-content: space-between;

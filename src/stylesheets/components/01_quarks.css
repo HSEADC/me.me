@@ -50,6 +50,37 @@
   transition: transform 0.2s ease-in-out;
 }
 
+/* Main */
+
+.Q_BGContent {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.Q_VideoFrame {
+  position: absolute;
+  inset: 0;
+  background: var(--Tone);
+  opacity: 0.4;
+  mix-blend-mode: color;
+  z-index: 1;
+}
+
+.Q_BGSpikes {
+  position: absolute;
+  inset: 0;
+  background-image: url("../../images/videos_spikes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  pointer-events: none;
+}
+
 /* Heading */
 
 .Q_ImageInHeader {
