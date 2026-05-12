@@ -1,48 +1,6 @@
 import "../stylesheets/style.css";
 import "../javascripts/articles.js";
 
-// белый шум на фоне
-
-const canvas = document.getElementById("noise");
-const ctx = canvas.getContext("2d");
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
-function drawNoiseFrame() {
-  const w = canvas.width;
-  const h = canvas.height;
-  const imageData = ctx.createImageData(w, h);
-  const buffer = imageData.data;
-
-  for (let i = 0; i < buffer.length; i += 4) {
-    const shade = 120 + Math.random() * 130;
-
-    buffer[i] = shade;
-    buffer[i + 1] = shade;
-    buffer[i + 2] = shade;
-    buffer[i + 3] = 150;
-  }
-
-  ctx.putImageData(imageData, 0, 0);
-}
-
-let lastFrameTime = 0;
-function animate(time) {
-  if (time - lastFrameTime > 60) {
-    drawNoiseFrame();
-    lastFrameTime = time;
-  }
-
-  requestAnimationFrame(animate);
-}
-
-drawNoiseFrame();
-requestAnimationFrame(animate);
-
 // обводка на типографике
 
 document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach((el) => {

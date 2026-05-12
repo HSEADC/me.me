@@ -4249,43 +4249,6 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 
 
 
-// белый шум на фоне
-
-var canvas = document.getElementById("noise");
-var ctx = canvas.getContext("2d");
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-if (canvas && ctx) {
-  var drawNoiseFrame = function drawNoiseFrame() {
-    var w = canvas.width;
-    var h = canvas.height;
-    var imageData = ctx.createImageData(w, h);
-    var buffer = imageData.data;
-    for (var i = 0; i < buffer.length; i += 4) {
-      var shade = 120 + Math.random() * 130;
-      buffer[i] = shade;
-      buffer[i + 1] = shade;
-      buffer[i + 2] = shade;
-      buffer[i + 3] = 150;
-    }
-    ctx.putImageData(imageData, 0, 0);
-  };
-  var _animate = function animate(time) {
-    if (time - lastFrameTime > 60) {
-      drawNoiseFrame();
-      lastFrameTime = time;
-    }
-    requestAnimationFrame(_animate);
-  };
-  resizeCanvas();
-  window.addEventListener("resize", resizeCanvas);
-  var lastFrameTime = 0;
-  drawNoiseFrame();
-  requestAnimationFrame(_animate);
-}
-
 // типографика обводка фолбэк
 
 document.querySelectorAll(".txt, .hd, .nv").forEach(function (el) {

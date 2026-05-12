@@ -1,10 +1,13 @@
 /* header */
 
 .A_Logo {
-  width: 179.196rem;
-  height: 76.252rem;
-  margin-left: 90rem;
-  margin-right: 400rem;
+  width: 130.909rem;
+  height: 56rem;
+}
+
+.A_Logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .A_HeaderClose,
@@ -12,60 +15,16 @@
   display: none;
 }
 
-.A_Logo:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-.A_HeaderLink {
-  display: flex;
-  padding: 0.25rem 0.75rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-}
-
-.A_HeaderLink:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-.A_HeaderLinkCurrent {
-  color: #ff65a6 !important;
-}
-
-.A_HeaderLinkCurrent:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-.A_HeaderLinkCurrent::after {
-  -webkit-text-stroke: 25rem #fff;
-}
-
 /* Footer */
 
 .A_FooterLogo {
-  width: 179.196rem;
-  height: 76.253rem;
+  width: 169.27rem;
+  height: 72.41rem;
 }
 
 .A_FooterLogo:hover {
-  scale: 1.05;
-  transition: all 0.2s ease-in-out;
-}
-
-.A_FooterLink {
-  font-family: "Impact";
-  font-size: 40.477rem;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.A_FooterLink:hover {
-  color: #ff65a6;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* main */

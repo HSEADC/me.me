@@ -1,3 +1,11 @@
+:root {
+  --White: #ffffff;
+  --Pink: #ff65a6;
+  --Black: #262626;
+  --Grey: #9d9d9d;
+  --Tone: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
@@ -16,8 +24,7 @@ body {
   width: 100%;
   margin: 0;
   display: block;
-  background-image: url(../images/index/BackgroundBig.webp);
-  background-color: #aaaaaa;
+  background-color: var(--Black);
 }
 
 #noise {
@@ -31,7 +38,7 @@ body {
 }
 
 ::selection {
-  background-color: #ff65a6;
+  background-color: var(--Pink);
 }
 
 .hd::after {
@@ -42,12 +49,10 @@ body {
   pointer-events: none;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 28rem #000;
+  -webkit-text-stroke: 16rem var(--Black);
 }
 
-h1.hd,
-h2.hd,
-p.hd {
+.hd {
   position: relative;
   display: inline-block;
   z-index: 0;
@@ -57,7 +62,7 @@ p.hd {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  background: var(--Tone);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
@@ -80,7 +85,7 @@ p.hd {
   text-transform: inherit;
   white-space: pre-wrap;
   color: transparent;
-  -webkit-text-stroke: 40rem #000;
+  -webkit-text-stroke: 40rem var(--Black);
 }
 
 .Q_Header2Text.hd::after {
@@ -95,7 +100,7 @@ p.hd {
   text-transform: inherit;
   white-space: pre-wrap;
   color: transparent;
-  -webkit-text-stroke: 35rem #000;
+  -webkit-text-stroke: 35rem var(--Black);
 }
 
 .A_TextBlock.hd::after {
@@ -111,7 +116,7 @@ p.hd {
   white-space: pre-wrap;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 28rem #000;
+  -webkit-text-stroke: 28rem var(--Black);
 }
 
 .A_Question.hd::after {
@@ -127,12 +132,12 @@ p.hd {
   white-space: pre-wrap;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 18rem #000;
+  -webkit-text-stroke: 18rem var(--Black);
 }
 
 button:hover {
   color: #ffffff;
-  background: #ff65a6;
+  background: var(--Pink);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }

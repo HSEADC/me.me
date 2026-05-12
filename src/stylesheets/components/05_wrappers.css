@@ -1,22 +1,19 @@
 .W_Header_all_links {
-  gap: 100rem;
-  width: 100%;
-  height: 100%;
+  gap: 64rem;
   display: flex;
-  justify-content: left;
   align-items: center;
+  padding-right: 16rem;
 }
 
 .W_Header_all_links > a {
-  color: #fff;
+  color: var(--White);
   font-family: Impact;
-  font-size: 40.668rem;
+  font-size: 32rem;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
   text-decoration: none;
   text-align: right;
-  padding: 4rem 2rem;
   padding-bottom: 8rem;
 }
 
@@ -24,17 +21,6 @@
   position: relative;
   display: inline-block;
   z-index: 0;
-}
-
-/* Footer */
-
-.W_Footer_all_links {
-  width: 85%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 2rem;
-  padding-bottom: 8rem;
 }
 
 /* Main */

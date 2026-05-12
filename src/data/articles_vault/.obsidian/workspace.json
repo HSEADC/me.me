@@ -1,0 +1,978 @@
+{
+  "main": {
+    "id": "19125d537c0ccb88",
+    "type": "split",
+    "children": [
+      {
+        "id": "efa5b71c12d79681",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "94527a146c0860d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_3"
+            }
+          },
+          {
+            "id": "65d41bec942404c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_1"
+            }
+          },
+          {
+            "id": "2e4cd8475fe8f7db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_3"
+            }
+          },
+          {
+            "id": "ee4b65a72c846ecd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_4"
+            }
+          },
+          {
+            "id": "e02f751b48ca25b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_5"
+            }
+          },
+          {
+            "id": "33422899bd4d5030",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_6"
+            }
+          },
+          {
+            "id": "61f1b31ec30c9851",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_7"
+            }
+          },
+          {
+            "id": "7124d09dd01b5c77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_8"
+            }
+          },
+          {
+            "id": "53d61af495f7603c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_9.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_9"
+            }
+          },
+          {
+            "id": "aadcea0c4de3c9d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_10"
+            }
+          },
+          {
+            "id": "03a4929367a72ad4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_11"
+            }
+          },
+          {
+            "id": "219fd46f12743209",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_12.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_12"
+            }
+          },
+          {
+            "id": "ee7f13a238df08a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_13.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_13"
+            }
+          },
+          {
+            "id": "a640c12dd5d0f6d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_14.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_14"
+            }
+          },
+          {
+            "id": "1fbfd5701c650433",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_15.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_15"
+            }
+          },
+          {
+            "id": "1ad302b30b43c20f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_16.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_16"
+            }
+          },
+          {
+            "id": "2e9022a56358bede",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_17.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_17"
+            }
+          },
+          {
+            "id": "433cf7fc292f5437",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_18"
+            }
+          },
+          {
+            "id": "141e1742bf6e54f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_19.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_19"
+            }
+          },
+          {
+            "id": "509410bebfa03557",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_20.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_20"
+            }
+          },
+          {
+            "id": "1b7f96b45f62f1c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_21.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_21"
+            }
+          },
+          {
+            "id": "06ce5d89f56c353a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_22.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_22"
+            }
+          },
+          {
+            "id": "53afdfdaa4388165",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_23.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_23"
+            }
+          },
+          {
+            "id": "859c98f0a1b9c115",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_24.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_24"
+            }
+          },
+          {
+            "id": "7a266f4748c63d2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_25.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_25"
+            }
+          },
+          {
+            "id": "ee4f16bcdd578e53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_26.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_26"
+            }
+          },
+          {
+            "id": "473a50e3cef4a82f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_27.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_27"
+            }
+          },
+          {
+            "id": "cf8400abe3cd75d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_28.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_28"
+            }
+          },
+          {
+            "id": "6ffa7cc5d06bedeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_29.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_29"
+            }
+          },
+          {
+            "id": "f3f2a2fc3c21aad6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_30.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_30"
+            }
+          },
+          {
+            "id": "b563fb8f2551220d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_31.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_31"
+            }
+          },
+          {
+            "id": "c375b768eeddb5c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_32.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_32"
+            }
+          },
+          {
+            "id": "f7a308237791c1ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_33.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_33"
+            }
+          },
+          {
+            "id": "ffaf3af5e4ba7116",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_34.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_34"
+            }
+          },
+          {
+            "id": "c86189a3f2ad0676",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_35.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_35"
+            }
+          },
+          {
+            "id": "385e24f50e2aa740",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_36.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_36"
+            }
+          },
+          {
+            "id": "8460b1123fa0f4aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_37.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_37"
+            }
+          },
+          {
+            "id": "b0537c1ec8e91106",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_38.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_38"
+            }
+          },
+          {
+            "id": "fd63c8c0922e9c96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_39.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_39"
+            }
+          },
+          {
+            "id": "817747392306fd32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_40.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_40"
+            }
+          },
+          {
+            "id": "69e46cd81bb6c897",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_41.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_41"
+            }
+          },
+          {
+            "id": "9aa151482d5a6e4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_42.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_42"
+            }
+          },
+          {
+            "id": "e4513f7bcd7f6baa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_43.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_43"
+            }
+          },
+          {
+            "id": "a2db52f2ed5c6d5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_44.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_44"
+            }
+          },
+          {
+            "id": "abb856687534c1f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_45.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_45"
+            }
+          },
+          {
+            "id": "f0d657a692755631",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_46.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_46"
+            }
+          },
+          {
+            "id": "193204a92887c856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_47.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_47"
+            }
+          },
+          {
+            "id": "16cfeea0f5a7597a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_48.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_48"
+            }
+          },
+          {
+            "id": "a26929aa869a6aea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_49.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_49"
+            }
+          },
+          {
+            "id": "62c19e7922ea23b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_50.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_50"
+            }
+          },
+          {
+            "id": "9f3829badca9b771",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_52.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_52"
+            }
+          },
+          {
+            "id": "464a84410517b955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_53.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_53"
+            }
+          },
+          {
+            "id": "191367ad1fc3459c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_54.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_54"
+            }
+          },
+          {
+            "id": "2a1f8d96a663d7c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "art_5"
+            }
+          }
+        ],
+        "currentTab": 53
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4efc9fadeb06804d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fa3e037fe8eed65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31f64fb074631996",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "31da1ce8cfff0321",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "5cd36c81ec41f9af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3fa3bffc1cb33b00",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ebc7531d2e939c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74908e97470db18c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "articles/art_1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для art_1"
+            }
+          },
+          {
+            "id": "39988eb58845a7bd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "articles/art_1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из art_1"
+            }
+          },
+          {
+            "id": "d35e075bc1e01bcf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "c0806b3e551dc1bb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "f6bc69b838fc886a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "articles/art_1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура art_1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "2a1f8d96a663d7c8",
+  "lastOpenFiles": [
+    "articles/art_4.md",
+    "articles/art_5.md",
+    "articles/art_1.md",
+    "articles/art_2.md",
+    "articles/art_3.md",
+    "articles/art_54.md",
+    "Без названия.canvas",
+    "articles/art_51.md",
+    "articles/art_49.md",
+    "articles/art_24.md",
+    "articles/art_22.md",
+    "articles/art_12.md",
+    "articles/art_8.md",
+    "images/art_54/video_1.webm",
+    "images/art_54/image_1.webp",
+    "images/art_54/art-10-image-1.webp",
+    "images/art_54/art-10-video-1.webm",
+    "images/art_54/cover.webp",
+    "images/art_54/article-10.webp",
+    "articles/art_52.md",
+    "images/art_52/video_1.webm",
+    "images/art_52/image_1.webp",
+    "images/art_52/art-9-image-1.webp",
+    "images/art_52/art-9-video-1.webm",
+    "images/art_52/cover.webp",
+    "images/art_52/article-9.webp",
+    "images/art_51/image_1.webp",
+    "images/art_51/video_1.webm",
+    "images/art_51/art-8-image-1.webp",
+    "images/art_51/art-8-video-1.webm",
+    "images/art_54",
+    "images/art_53",
+    "images/art_52",
+    "images/art_51",
+    "articles/art_53.md",
+    "articles/art_50.md",
+    "articles/art_6.md",
+    "articles/art_23.md",
+    "articles/art_9.md",
+    "articles/art_11.md",
+    "articles/art_48.md",
+    "articles/art_47.md",
+    "articles/art_46.md",
+    "articles/art_45.md",
+    "articles/art_44.md",
+    "articles/art_43.md"
+  ]
+}

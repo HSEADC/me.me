@@ -1,5 +1,27 @@
 /* Header */
 
+.Q_HeaderLink {
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.Q_HeaderLink:hover,
+.Q_HeaderLinkCurrent:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.Q_HeaderLinkCurrent {
+  color: var(--Pink) !important;
+}
+
+.Q_HeaderLinkCurrent::after {
+  -webkit-text-stroke: 16rem var(--White);
+}
+
 .Q_HeaderLink > a.hd::after {
   content: attr(data-text);
   position: absolute;
@@ -7,12 +29,25 @@
   z-index: -1;
   pointer-events: none;
   color: transparent;
-  -webkit-text-stroke: 25rem #000;
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
   white-space: pre;
+}
+
+/* Footer */
+
+.Q_FooterLink {
+  font-family: "Impact";
+  font-size: 32rem;
+  color: var(--White);
+  text-decoration: none;
+}
+
+.Q_FooterLink:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Heading */
