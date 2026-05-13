@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // инлайн-картинки разные-преразные рандомно проставляющиеся
 
 document.addEventListener("DOMContentLoaded", () => {
-  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
+  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageOfPart");
   if (!imageBlocks.length) return;
 
   const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);

@@ -1,26 +1,20 @@
 /* Main */
 
-.O_MainReadBlock {
-  position: relative;
-  width: 100%;
-  min-height: 420rem;
-  margin-bottom: 72rem;
-}
-
-.O_MainArticlesCards {
+.O_ArticlesCards {
   display: flex;
-  width: 93%;
   justify-content: space-between;
   align-items: center;
-  height: 600rem;
+  height: 604rem;
   margin: auto;
+  gap: 130rem;
+  align-self: stretch;
 }
 
-.O_MainRandBlock {
-  position: relative;
-  width: 100%;
-  min-height: 420rem;
-  margin-bottom: 80rem;
+.O_BlockInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40rem;
 }
 
 /* Interactives */

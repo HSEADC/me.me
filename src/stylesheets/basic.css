@@ -100,23 +100,7 @@ body {
   text-transform: inherit;
   white-space: pre-wrap;
   color: transparent;
-  -webkit-text-stroke: 35rem var(--Black);
-}
-
-.A_TextBlock.hd::after {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  white-space: pre-wrap;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 28rem var(--Black);
+  -webkit-text-stroke: 28rem var(--Pink);
 }
 
 .A_Question.hd::after {
@@ -136,7 +120,7 @@ body {
 }
 
 button:hover {
-  color: #ffffff;
+  color: var(--White);
   background: var(--Pink);
   transition: all 0.3s ease-in-out;
   cursor: pointer;

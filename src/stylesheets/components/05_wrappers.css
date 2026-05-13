@@ -43,63 +43,13 @@
   width: 100%;
 }
 
-.W_MainReadLeft {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 560rem;
-  height: 300rem;
-}
-
-.W_MainReadRight {
-  position: absolute;
-  left: 620rem;
-  top: 0;
-  width: 1140rem;
-  height: 220rem;
-}
-
-.W_MainReadRight .A_TextBlock {
-  position: absolute;
-  margin: 0;
-}
-
-.W_MainReadRight .A_TextBlock:first-child {
-  left: -100rem;
-  top: 0;
+.W_ReadButtonLink {
+  grid-column: 2;
+  grid-row: 2;
   width: 520rem;
-}
-
-.W_MainReadRight .A_TextBlock:last-child {
-  right: -64rem;
-  top: 130rem;
-  width: 660rem;
-}
-
-/* Main Random */
-
-.W_MainRandLeft {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 560rem;
-  height: 300rem;
-}
-
-.W_MainRandRight {
-  position: absolute;
-  left: 620rem;
-  top: 0;
-  width: 1140rem;
-  height: 220rem;
-}
-
-.W_MainRandRight .A_TextBlock {
-  position: absolute;
-  margin: 0;
-  width: 572rem;
-  top: 230rem;
-  right: -64rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
 }
 
 /* Interactives */

@@ -53,6 +53,23 @@
   margin-left: 64rem;
 }
 
+.M_HeadOfRead {
+  display: grid;
+  grid-template-columns: 620rem 540rem 1fr;
+  column-gap: 80rem;
+  align-items: center;
+  width: 100%;
+  min-height: 231rem;
+}
+
+.M_BlockContent {
+  width: 700rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24rem;
+}
+
 /* Random */
 
 .M_RandomHeading {

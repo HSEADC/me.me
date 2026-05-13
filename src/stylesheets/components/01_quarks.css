@@ -98,7 +98,7 @@
   color: #fff;
   text-align: center;
   font-family: "Inter";
-  font-size: 128.681rem;
+  font-size: 128rem;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -108,10 +108,10 @@
 /* H2 */
 
 .Q_Header2Text {
-  color: #fff;
+  color: var(--White);
   text-align: center;
   font-family: "Inter";
-  font-size: 120rem;
+  font-size: 96rem;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -120,40 +120,31 @@
 
 /* Small images */
 
-.Q_ImageBigFloat {
+.Q_ImageOfPart {
   position: absolute;
-  width: 116rem;
-  height: 116rem;
+  width: 228rem;
+  height: 228rem;
   aspect-ratio: 1/1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-}
-
-.Q_ImageSmallFloat {
-  position: absolute;
-  width: 102rem;
-  height: 102rem;
-  aspect-ratio: 1/1;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
+  top: 5rem;
+  right: 64rem;
+  animation: Q_ImageOfPartFloat 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 
 /* Article Cards */
 
-.Q_ArticleCardIndexImage {
-  height: 350rem;
-  width: 350rem;
-  margin-top: 62rem;
-  margin-left: 60rem;
+.Q_ArticleImage {
+  height: 456rem;
+  width: 456rem;
   z-index: 10;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 6px solid var(--Pink);
 }
 
 .Q_IndexCardPrev-1 {
@@ -168,24 +159,24 @@
   background-image: url(../../images/articles_covers/article-1.webp);
 }
 
-.Q_ArticleCardIndexCaption {
-  width: 301.948rem;
-  color: #ff65a6;
+.Q_ArticleCaption {
+  width: 420rem;
+  height: 80rem;
+  color: var(--Pink);
   text-align: center;
   font-family: Impact;
-  font-size: 40.645rem;
+  font-size: 36rem;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 40.645px */
   text-transform: lowercase;
   margin: 0 auto;
+  padding-top: 20rem;
 }
 
 .Q_RandContent {
-  height: 500rem;
-  width: 500rem;
-  margin-top: 115rem;
-  margin-left: 100rem;
+  width: 560rem;
+  height: 560rem;
   z-index: 10;
   position: relative;
   background-position: center;
@@ -197,7 +188,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
+  background: var(--Tone);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
@@ -206,6 +197,30 @@
 
 .Q_RandContent:hover::after {
   opacity: 0.7;
+}
+
+.Q_ImageHoverFrame {
+  position: absolute;
+  left: 49%;
+  top: 47%;
+  width: 750rem;
+  height: 750rem;
+  transform: translate(-50%, -50%) scale(0.96);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("../../images/border_spikes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition:
+    opacity 0.25s ease,
+    transform 0.01s ease-in-out;
+}
+
+.A_Image:hover .Q_ImageHoverFrame {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* interactives */
