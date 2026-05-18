@@ -1,10 +1,10 @@
 import "../stylesheets/style.css";
 import "../javascripts/articles.js";
+import { applyTypographer, applyOutlineText } from "./typographer";
 
-// обводка на типографике
-
-document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach((el) => {
-  el.setAttribute("data-text", el.textContent.trim());
+document.addEventListener("DOMContentLoaded", () => {
+  applyTypographer();
+  applyOutlineText();
 });
 
 // эх конструктор эх мемов эх

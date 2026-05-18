@@ -118,11 +118,12 @@
   display: block;
 }
 
-.M_ArticlesSearchFilters {
+.M_Filters {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12rem;
+  flex-direction: column;
   align-items: flex-start;
+  gap: 36rem;
+  align-self: stretch;
 }
 
 /* Article Content */

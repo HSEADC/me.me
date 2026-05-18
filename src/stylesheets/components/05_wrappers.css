@@ -1,3 +1,46 @@
+.W_SearchContainer {
+  position: relative;
+}
+
+.C_Dropdown {
+  position: absolute;
+  top: calc(100% + 16rem);
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 12rem;
+  z-index: 9999;
+}
+
+.M_SearchResult {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 16rem 20rem;
+  background: var(--Pink);
+  border: 3rem solid var(--White);
+  text-decoration: none;
+}
+
+.A_SearchResultHeader {
+  margin: 0;
+  color: var(--White);
+  font-family: Impact;
+  font-size: 28rem;
+  line-height: 100%;
+}
+
+.A_SearchResultDescription {
+  margin: 0;
+  color: var(--White);
+  font-family: "Inter";
+  font-size: 18rem;
+  line-height: 110%;
+}
+
+/* это сверху для серчбара костыль потом уберу */
+
 .W_Header_all_links {
   gap: 64rem;
   display: flex;
@@ -117,6 +160,36 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 36rem;
+}
+
+/* ArticlesSearch */
+
+.W_SearchContent {
+  display: flex;
+  padding: 226rem 64rem 130rem 64rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 99rem;
+  align-self: stretch;
+}
+
+.W_Tags {
+  display: flex;
+  height: 69rem;
+  padding-right: 71rem;
+  align-items: flex-start;
+  gap: 24rem;
+  align-self: stretch;
+}
+
+.W_Articles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 129rem;
+  row-gap: 160rem;
+  justify-content: center;
 }
 
 /* Article Content */

@@ -1,41 +1,43 @@
-import Airtable from "airtable";
+import articles from "../data/articles.json";
 import "../stylesheets/style.css";
+import { applyTypographer, applyOutlineText } from "./typographer";
 
-// типографика обводка фолбэк
-
-document.querySelectorAll(".txt, .hd, .nv").forEach((el) => {
-  el.setAttribute("data-text", el.textContent.trim());
+document.addEventListener("DOMContentLoaded", () => {
+  applyTypographer();
+  applyOutlineText();
 });
 
-// airtable
+// обложки статей
 
-const token = "pat70c6PN6XNA8kY1.6dd7f89f94bc50a552d3db45f1c33cbafb9676f4881896b0b29e4935d6bcbae8";
-const baseId = "apptbuydEGESibGer";
-const tableName = "articles-list";
+const articleCoversReq = require.context("../images/articles", true, /cover\.(png|webp|jpg|jpeg)$/i);
 
-Airtable.configure({
-  endpointUrl: "https://api.airtable.com",
-  apiKey: token,
-});
+function getArticleCover(article) {
+  const possibleFiles = [`./${article.id}/cover.webp`, `./${article.id}/cover.png`, `./${article.id}/cover.jpg`, `./${article.id}/cover.jpeg`];
 
-const base = Airtable.base(baseId);
+  for (const filePath of possibleFiles) {
+    if (articleCoversReq.keys().includes(filePath)) {
+      return articleCoversReq(filePath);
+    }
+  }
 
-const articleCoversReq = require.context("../images/articles_covers", false, /^\.\/article-\d+\.(png|webp|jpg|jpeg)$/i);
+  return "";
+}
 
-// статьи по фильтрам фильтры по статьям
-
-const articleFiltersMap = {
-  "art-1": ["Filter-1", "Filter-2"],
-  "art-2": ["Filter-3", "Filter-4"],
-  "art-3": ["Filter-3", "Filter-5", "Filter-6"],
-  "art-4": ["Filter-1", "Filter-2", "Filter-3"],
-  "art-5": ["Filter-2", "Filter-3", "Filter-5"],
-  "art-6": ["Filter-3", "Filter-5", "Filter-7"],
-  "art-7": ["Filter-6", "Filter-7"],
-  "art-8": ["Filter-1", "Filter-2"],
-  "art-9": ["Filter-1", "Filter-2"],
-  "art-10": ["Filter-4", "Filter-6", "Filter-7"],
-};
+function getArticlesTeasers() {
+  return Promise.resolve(
+    articles
+      .slice()
+      .sort((a, b) => a.order - b.order)
+      .map((article) => ({
+        id: article.id,
+        title: article.h1 || article.title || "без названия",
+        description: article.description || "",
+        tags: Array.isArray(article.tags) ? article.tags : [],
+        cover: getArticleCover(article),
+        url: `./articles/${article.id}.html`,
+      })),
+  );
+}
 
 getArticlesTeasers()
   .then((content) => {
@@ -47,103 +49,6 @@ getArticlesTeasers()
   .catch((error) => {
     console.error("Ошибка загрузки карточек статей:", error);
   });
-
-function getArticlesTeasers() {
-  return new Promise((resolve, reject) => {
-    const content = [];
-
-    base(tableName)
-      .select({ maxRecords: 100 })
-      .firstPage()
-      .then((records) => {
-        records.forEach((record) => {
-          const f = record.fields || {};
-          const imageUrl = Array.isArray(f.images) && f.images[0] && f.images[0].url ? f.images[0].url : "";
-
-          content.push({
-            id: record.id,
-            title: f.title || "без названия",
-            description: f.description || "",
-            tags: Array.isArray(f.tags) ? f.tags : [],
-            image: imageUrl,
-            url: f.url || "#",
-          });
-        });
-
-        content.sort((a, b) => {
-          return getArticleOrder(a.url) - getArticleOrder(b.url);
-        });
-
-        resolve(content);
-      })
-      .catch((err) => reject(err));
-  });
-}
-
-function getArticleSlug(url) {
-  const match = String(url).match(/(art-\d+)\.html/i);
-  return match ? match[1].toLowerCase() : "";
-}
-
-function getArticleOrder(url) {
-  const match = String(url).match(/art-(\d+)\.html/i);
-  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
-}
-
-function getArticleFilterClasses(url) {
-  const slug = getArticleSlug(url);
-  return articleFiltersMap[slug] || [];
-}
-
-function getLocalArticleCover(url) {
-  const slug = getArticleSlug(url);
-  const order = slug.replace("art-", "");
-
-  if (!order) return "";
-
-  const possibleFiles = [`./article-${order}.png`, `./article-${order}.webp`, `./article-${order}.jpg`, `./article-${order}.jpeg`];
-
-  for (const filePath of possibleFiles) {
-    if (articleCoversReq.keys().includes(filePath)) {
-      return articleCoversReq(filePath);
-    }
-  }
-
-  return "";
-}
-
-function setArticleCardImage(imgDiv, airtableImage, localImage) {
-  imgDiv.style.backgroundSize = "cover";
-  imgDiv.style.backgroundPosition = "center";
-  imgDiv.style.backgroundRepeat = "no-repeat";
-
-  if (airtableImage) {
-    if (localImage) {
-      imgDiv.style.backgroundImage = `url("${localImage}")`;
-    } else {
-      imgDiv.style.backgroundImage = `url("${airtableImage}")`;
-    }
-
-    const testImage = new Image();
-
-    testImage.onload = () => {
-      imgDiv.style.backgroundImage = `url("${airtableImage}")`;
-    };
-
-    testImage.onerror = () => {
-      if (localImage) {
-        imgDiv.style.backgroundImage = `url("${localImage}")`;
-      }
-    };
-
-    testImage.src = airtableImage;
-    return;
-  }
-
-  if (localImage) {
-    imgDiv.style.backgroundImage = `url("${localImage}")`;
-  }
-}
 
 function normalizeSearchText(value) {
   return String(value || "")
@@ -199,7 +104,7 @@ function getTrigramSimilarity(a, b) {
 }
 
 function getActiveFilterNames() {
-  const activeTags = document.querySelectorAll(".A_ArticlesFilter.active");
+  const activeTags = document.querySelectorAll(".A_FilterTag.active");
   const selectedFilters = [];
 
   activeTags.forEach((tag) => {
@@ -218,7 +123,14 @@ function getActiveFilterNames() {
 function matchesActiveFilters(card, selectedFilters) {
   if (!selectedFilters.length) return true;
 
-  return selectedFilters.every((filterName) => card.classList.contains(filterName));
+  const cardTags = (card.dataset.tags || "").split("|").filter(Boolean);
+
+  return selectedFilters.every((filterName) => {
+    const filterEl = document.querySelector(`.A_FilterTag.${filterName}`);
+    const filterText = filterEl ? normalizeSearchText(filterEl.textContent) : normalizeSearchText(filterName);
+
+    return cardTags.includes(filterText);
+  });
 }
 
 function matchesSearchQuery(card, query) {
@@ -263,7 +175,7 @@ function matchesSearchQuery(card, query) {
 function applyArticlesFilterAndSearch() {
   const cards = document.querySelectorAll(".M_ArticleCardLink");
   const selectedFilters = getActiveFilterNames();
-  const input = document.querySelector(".Q_ArticlesSearchInput");
+  const input = document.querySelector(".Q_SearchText");
   const searchQuery = input ? input.value : "";
 
   cards.forEach((card) => {
@@ -275,7 +187,8 @@ function applyArticlesFilterAndSearch() {
 }
 
 function updateInfo(content) {
-  const root = document.querySelector(".C_ArticlesTeasers");
+  const root = document.querySelector(".W_Articles");
+
   if (!root) return;
 
   root.innerHTML = "";
@@ -286,30 +199,36 @@ function updateInfo(content) {
 }
 
 function createArticleTeaserCard(article) {
-  const { title, image, url } = article;
-  const filterClasses = getArticleFilterClasses(url);
+  const { title, cover, url, tags } = article;
 
   const link = document.createElement("a");
-  link.href = url || "#";
+  link.href = url;
   link.classList.add("M_ArticleCardLink");
-  link.classList.add(...filterClasses);
 
+  const normalizedTags = Array.isArray(tags) ? tags.map((tag) => normalizeSearchText(tag)) : [];
   const titleSearch = normalizeSearchText(title || "");
+  const fullSearch = normalizeSearchText([title, ...(tags || [])].join(" "));
 
   link.dataset.titleSearch = titleSearch;
-  link.dataset.search = titleSearch;
+  link.dataset.search = fullSearch;
+  link.dataset.tags = normalizedTags.join("|");
 
   const card = document.createElement("div");
   card.classList.add("A_ArticleCard");
 
   const imgDiv = document.createElement("div");
-  imgDiv.classList.add("toned", "Q_ArticleCardImage");
+  imgDiv.classList.add("toned", "Q_ArticleImage");
 
-  const localImage = getLocalArticleCover(url);
-  setArticleCardImage(imgDiv, image, localImage);
+  imgDiv.style.backgroundSize = "cover";
+  imgDiv.style.backgroundPosition = "center";
+  imgDiv.style.backgroundRepeat = "no-repeat";
+
+  if (cover) {
+    imgDiv.style.backgroundImage = `url("${cover}")`;
+  }
 
   const titleEl = document.createElement("h3");
-  titleEl.classList.add("Q_ArticleCardCaption");
+  titleEl.classList.add("Q_ArticleCaption");
   titleEl.textContent = title || "без названия";
 
   card.appendChild(imgDiv);
@@ -319,10 +238,10 @@ function createArticleTeaserCard(article) {
   return link;
 }
 
-// фильтрация ах фильтрация
+// фильтрация
 
 function initArticlesFilter() {
-  const tags = document.querySelectorAll(".A_ArticlesFilter");
+  const tags = document.querySelectorAll(".A_FilterTag");
 
   if (!tags.length) return;
 
@@ -335,7 +254,7 @@ function initArticlesFilter() {
 }
 
 function initArticlesSearch() {
-  const input = document.querySelector(".Q_ArticlesSearchInput");
+  const input = document.querySelector(".Q_SearchText");
 
   if (!input) return;
 
@@ -344,18 +263,11 @@ function initArticlesSearch() {
   });
 }
 
-function filterArticlesByTag() {
-  applyArticlesFilterAndSearch();
-}
-
-function filterAllArticles() {
-  applyArticlesFilterAndSearch();
-}
-
 // инлайн-картинки другой путь отдельно для статей
 
 document.addEventListener("DOMContentLoaded", () => {
   const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
+
   if (!imageBlocks.length) return;
 
   const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);

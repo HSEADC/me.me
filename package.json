@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
     "watch": "webpack --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js"
+    "build": "webpack --config config/webpack.prod.js",
+    "build:articles": "node src/javascripts/scripts/articles_build.js"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",

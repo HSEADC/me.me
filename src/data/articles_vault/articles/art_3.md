@@ -1,4 +1,4 @@
---
+---
 id: art_3
 title: Что такое chinamaxxing?
 description: Почему интерес к Китаю всё не утихает?
@@ -9,8 +9,7 @@ slug: chinamaxxing
 tags: 
 - абсурд
 - ии
-
---
+---
 
 ## откуда взялся мем?
 
