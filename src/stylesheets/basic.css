@@ -125,3 +125,9 @@ button:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+/* react basics */
+
+#app {
+  font-size: 30rem;
+}

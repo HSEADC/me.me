@@ -11,7 +11,7 @@ function createPages(template, filename, chunks) {
 const htmlPages = [
   createPages("./src/index.html", "./index.html", ["allStyles", "index", "searchVanilla", "searchData"]),
   createPages("./src/pages/about.html", "./pages/about.html", ["index"]),
-  createPages("./src/pages/articles.html", "./pages/articles.html", ["articles"]),
+  createPages("./src/pages/articles.ejs", "./pages/articles.html", ["articles"]),
   createPages("./src/pages/random.html", "./pages/random.html", ["index"]),
   createPages("./src/pages/constructor.html", "./pages/constructor.html", ["index"]),
   createPages("./src/pages/articles/art_1.html", "./pages/articles/art_1.html", ["articles"]),
@@ -41,6 +41,7 @@ const htmlPages = [
   createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["test3"]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
   createPages("./src/404.html", "./404.html", ["index"]),
+  createPages("./src/pages/react-basics.html", "./pages/react-basics.html", ["reactBasics"]),
 ];
 
 module.exports = htmlPages;
