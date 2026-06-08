@@ -109,7 +109,6 @@
 
 .Q_Header2Text {
   color: var(--White);
-  text-align: center;
   font-family: "Inter";
   font-size: 96rem;
   font-style: normal;
@@ -233,6 +232,24 @@
 .A_Image:hover .Q_ImageHoverFrame {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+}
+
+/* AboutUsPage */
+
+.Q_ImageContent {
+  width: 560rem;
+  height: 560rem;
+  z-index: 10;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Q_ImageSelf {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 /* interactives */

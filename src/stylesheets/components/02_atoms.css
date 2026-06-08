@@ -138,6 +138,15 @@
   border-color: transparent;
 }
 
+/* AboutUsPage */
+
+.A_PartOfBig {
+  display: flex;
+  align-items: center;
+  gap: 24rem;
+  align-self: stretch;
+}
+
 /* interactives */
 
 .A_InteractiveCard {

@@ -33,6 +33,50 @@
   gap: 287rem;
 }
 
+/* AboutUsPage */
+
+.S_BasicHeadSection {
+  width: 100%;
+
+  height: 971rem;
+  display: flex;
+  padding: 270rem 332rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.S_InfoSect {
+  display: flex;
+  width: 1786rem;
+  height: 606rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 135rem;
+}
+
+.S_MemSect {
+  display: flex;
+  width: 1786rem;
+  height: 608rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 177rem;
+}
+
+.S_YouSect {
+  display: flex;
+  width: 1786rem;
+  height: 606rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 213rem;
+}
+
 /* interactives */
 
 .S_InteractivesPromo {
