@@ -9,15 +9,12 @@ function initSearch(articles) {
 
   if (!input || !button || !dropdown) return;
 
-  button.disabled = true;
-
   input.addEventListener("input", () => {
     const value = input.value.toLowerCase().trim();
 
     if (value.length < 2) {
       dropdown.innerHTML = "";
       dropdown.style.display = "none";
-      button.disabled = true;
       return;
     }
 
@@ -25,7 +22,7 @@ function initSearch(articles) {
       return article.title.toLowerCase().includes(value) || article.description.toLowerCase().includes(value);
     });
 
-    button.disabled = results.length === 0;
+    button = results.length === 0;
 
     renderDropdown(results, dropdown, value);
   });

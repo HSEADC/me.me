@@ -17297,45 +17297,94 @@ if (true) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(6540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(5338);
-;// ./src/components/A_Title.jsx
-var _this = undefined;
+;// ./src/components/A_FooterLink.jsx
+
+function A_FooterLink(_ref) {
+  var href = _ref.href,
+    text = _ref.text;
+  return /*#__PURE__*/react.createElement("a", {
+    href: href,
+    className: "hd Q_FooterLink",
+    "data-text": text
+  }, text);
+}
+;// ./src/images/logo.svg
+const logo_namespaceObject = __webpack_require__.p + "images/2b5e5baf6a722d6de1a2.svg";
+;// ./src/components/A_FooterLogo.jsx
 
 
-// классовый компонент
-// export default class A_Title extends React.Component {
-//   render() {
-//     return <h2 className="A_Title">{this.props.name}</h2>;
-//   }
-// }
-
-// классический функциональный компонент
-
-// function A_Title({ name }) {
-//   return <h2 className="A_Title">{this.props.name}</h2>;
-// }
-
-// стрелочгый функциональный компонент
-
-var A_Title = function A_Title(_ref) {
-  var name = _ref.name;
-  return /*#__PURE__*/react.createElement("h2", {
-    className: "A_Title"
-  }, _this.props.name);
-};
-/* harmony default export */ const components_A_Title = (A_Title);
-;// ./src/javascripts/reactBasics.jsx
+function A_FooterLogo() {
+  return /*#__PURE__*/react.createElement("a", {
+    href: "/",
+    className: "A_FooterLogoLink"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logo_namespaceObject,
+    alt: "logo",
+    className: "A_FooterLogo"
+  }));
+}
+;// ./src/components/M_Footer.jsx
 
 
 
-var root = (0,client.createRoot)(document.querySelector("#app"));
-root.render(/*#__PURE__*/react.createElement(components_A_Title, {
-  name: "\u0438\u043D\u0444\u043E"
-}));
+function M_Footer() {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(A_FooterLink, {
+    href: "https://t.me/memememememememememememememeemem",
+    text: "\u0442\u0433-\u043A\u0430\u043D\u0430\u043B"
+  }), /*#__PURE__*/react.createElement(A_FooterLogo, null), /*#__PURE__*/react.createElement(A_FooterLink, {
+    href: "https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe",
+    text: "\u0442\u0438\u043A \u0442\u043E\u043A"
+  }));
+}
+;// ./src/javascripts/footer-react.jsx
+
+
+
+var footer = document.querySelector(".M_Footer");
+if (footer) {
+  (0,client.createRoot)(footer).render(/*#__PURE__*/react.createElement(M_Footer, null));
+}
 /******/ })()
 ;

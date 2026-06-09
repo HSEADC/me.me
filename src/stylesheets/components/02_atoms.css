@@ -15,6 +15,36 @@
   display: none;
 }
 
+.A_SearchInput {
+  display: flex;
+  width: 300rem;
+  height: 45rem;
+  padding: 20rem 23rem;
+  align-items: center;
+  gap: 10rem;
+  font-family: "Inter";
+  font-size: 24rem;
+  color: var(--Black);
+  border: none;
+}
+
+.A_SearchButton {
+  display: flex;
+  height: 45rem;
+  padding: 10rem 40rem;
+  justify-content: center;
+  align-items: center;
+  gap: 32rem;
+  color: var(--Black);
+  font-family: "Impact";
+  font-size: 32rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  border: none;
+  background-color: var(--White);
+}
+
 /* Footer */
 
 .A_FooterLogo {

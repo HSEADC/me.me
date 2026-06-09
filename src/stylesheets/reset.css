@@ -132,3 +132,9 @@ a {
 *::after {
   box-sizing: border-box;
 }
+
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+}

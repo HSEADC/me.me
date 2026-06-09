@@ -139,49 +139,60 @@ var articles = [{
 /************************************************************************/
 var __webpack_exports__ = {};
 /* harmony import */ var _search_data_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1552);
-function _readOnlyError(r) { throw new TypeError('"' + r + '" is read-only'); }
 
-initSearch(_search_data_js__WEBPACK_IMPORTED_MODULE_0__/* .articles */ .O);
-function initSearch(articles) {
+initSearchPage(_search_data_js__WEBPACK_IMPORTED_MODULE_0__/* .articles */ .O);
+function initSearchPage(articles) {
   var input = document.querySelector(".A_SearchInput");
   var button = document.querySelector(".A_SearchButton");
-  var dropdown = document.querySelector(".C_Dropdown");
-  if (!input || !button || !dropdown) return;
+  var results = document.querySelector(".C_SearchResults");
+  if (!input || !button || !results) return;
+  var params = new URLSearchParams(window.location.search);
+  var query = params.get("q") || "";
+  input.value = query;
+  renderResults(query, results, articles);
   input.addEventListener("input", function () {
     var value = input.value.toLowerCase().trim();
-    if (value.length < 2) {
-      dropdown.innerHTML = "";
-      dropdown.style.display = "none";
-      return;
-    }
-    var results = articles.filter(function (article) {
-      return article.title.toLowerCase().includes(value) || article.description.toLowerCase().includes(value);
-    });
-    results.length === 0, _readOnlyError("button");
-    renderDropdown(results, dropdown, value);
+    updateURL(value);
+    renderResults(value, results, articles);
+  });
+  button.addEventListener("click", function () {
+    var value = input.value.toLowerCase().trim();
+    updateURL(value);
+    renderResults(value, results, articles);
   });
 }
-function renderDropdown(results, dropdown, value) {
-  dropdown.innerHTML = "";
-  if (!results.length) {
-    dropdown.style.display = "none";
+function renderResults(query, results, articles) {
+  results.innerHTML = "";
+  if (query.length < 3) return;
+  var list = articles.filter(function (article) {
+    return article.title.toLowerCase().includes(query) || article.description.toLowerCase().includes(query);
+  });
+  if (list.length === 0) {
+    results.innerHTML = "<p>Ничего не найдено</p>";
     return;
   }
-  dropdown.style.display = "flex";
-  results.forEach(function (result) {
-    var item = document.createElement("a");
-    item.classList.add("M_SearchResult");
-    item.href = result.url;
-    var title = document.createElement("h5");
-    title.classList.add("A_SearchResultHeader");
-    title.textContent = result.title;
+  list.forEach(function (item) {
+    var card = document.createElement("a");
+    card.classList.add("W_IndexSectionCard");
+    card.href = item.url;
+    var header = document.createElement("h3");
+    header.classList.add("A_IndexSectionCardHeader");
+    header.innerHTML = hightlight(item.title, query);
     var description = document.createElement("p");
-    description.classList.add("A_SearchResultDescription");
-    description.textContent = result.description;
-    item.appendChild(title);
-    item.appendChild(description);
-    dropdown.appendChild(item);
+    description.classList.add("A_IndexSectionCardDescription");
+    description.innerHTML = hightlight(item.description, query);
+    card.appendChild(header);
+    card.appendChild(description);
+    results.appendChild(card);
   });
+}
+function hightlight(text, value) {
+  var regex = new RegExp("".concat(value), "gi");
+  return text.replace(regex, "<span class=\"Q_Hightlight\">".concat(value, "</span>"));
+}
+function updateURL(value) {
+  var url = "search.html?q=".concat(encodeURIComponent(value));
+  history.replaceState(null, "", url);
 }
 /******/ })()
 ;

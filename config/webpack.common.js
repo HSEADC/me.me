@@ -17,10 +17,8 @@ module.exports = {
     test2: "./src/javascripts/test2.js",
     test3: "./src/javascripts/test3.js",
     tests: "./src/javascripts/tests.js",
-    searchVanilla: "./src/javascripts/search_vanilla.js",
-    searchMolule: "./src/javascripts/search_vanilla_module.js",
-    searchData: "./src/javascripts/search_data.js",
-    reactBasics: "./src/javascripts/reactBasics.jsx",
+    headerReact: "./src/javascripts/header-react.jsx",
+    footerReact: "./src/javascripts/footer-react.jsx",
   },
   output: {
     filename: "[name].js",

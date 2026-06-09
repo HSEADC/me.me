@@ -1,7 +1,16 @@
 import React from "react";
+import M_SearchResult from "./M_SearchResult.jsx";
 
-import { M_SearchResult } from "./M_SearchResult";
+export default function C_Dropdown({ results }) {
+  if (!results.length) {
+    return <div className="C_Dropdown"></div>;
+  }
 
-// export function C_Dropdown ({items}) {
-//     return <div className='C_Dropdown'>{items.map((item,i) => <M_SearchResult item = {item key={i}}/>)}
-// }
+  return (
+    <div className="C_Dropdown" style={{ display: "flex" }}>
+      {results.map((result) => (
+        <M_SearchResult key={result.url} result={result} />
+      ))}
+    </div>
+  );
+}

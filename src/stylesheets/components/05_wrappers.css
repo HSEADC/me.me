@@ -1,5 +1,8 @@
 .W_SearchContainer {
   position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
 }
 
 .C_Dropdown {
