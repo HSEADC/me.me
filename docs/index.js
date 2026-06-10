@@ -1467,12 +1467,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var canvas = document.querySelector(".Q_ConstructorCanvas");
   if (!canvas) return;
   var ctx = canvas.getContext("2d");
-  var uploadBtn = document.querySelector(".A_ConstructorButtonUpload");
+  var uploadBtn = document.getElementById("Upload");
   var fileInput = document.querySelector(".A_ConstructorFileInput");
-  var textEl = document.querySelector(".A_ConstructorInputRow");
-  var downloadBtn = document.querySelector(".A_ConstructorButtonDownload");
-  var presetsWrap = document.querySelector(".M_ConstructorPresets");
-  var presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".A_ConstructorPreset")) : [];
+  var textInput = document.getElementById("CreateInput");
+  var downloadBtn = document.getElementById("Download");
+  var presetsWrap = document.querySelector(".W_GenImages");
+  var presetItems = presetsWrap ? Array.from(presetsWrap.querySelectorAll(".Q_GenImage")) : [];
   var W = canvas.width;
   var H = canvas.height;
   var FONT = "900 64px Arial Black, Arial, sans-serif";
@@ -1485,8 +1485,8 @@ document.addEventListener("DOMContentLoaded", function () {
   img.onerror = render;
   function getBgUrl(el) {
     var bg = window.getComputedStyle(el).backgroundImage || "";
-    var m = bg.match(/url\(["']?(.*?)["']?\)/i);
-    return m && m[1] ? m[1] : "";
+    var match = bg.match(/url\(["']?(.*?)["']?\)/i);
+    return match && match[1] ? match[1] : "";
   }
   function setImage(src, revokeObjectUrl) {
     var resolved = function () {
@@ -1496,10 +1496,10 @@ document.addEventListener("DOMContentLoaded", function () {
         return src;
       }
     }();
-    var im = new Image();
-    im.decoding = "async";
-    im.onload = function () {
-      img = im;
+    var image = new Image();
+    image.decoding = "async";
+    image.onload = function () {
+      img = image;
       render();
       if (revokeObjectUrl) {
         try {
@@ -1507,15 +1507,15 @@ document.addEventListener("DOMContentLoaded", function () {
         } catch (_) {}
       }
     };
-    im.onerror = function () {
+    image.onerror = function () {
       console.warn("[meme] image failed:", resolved);
       render();
     };
-    im.src = resolved;
+    image.src = resolved;
   }
   presetItems.forEach(function (el) {
-    var activate = function activate(e) {
-      e.preventDefault();
+    var activate = function activate(event) {
+      event.preventDefault();
       var url = getBgUrl(el);
       if (!url) {
         console.warn("[meme] preset has no background-image");
@@ -1525,8 +1525,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     el.addEventListener("click", activate);
     el.addEventListener("pointerdown", activate);
-    el.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") activate(e);
+    el.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        activate(event);
+      }
     });
   });
   if (uploadBtn && fileInput) {
@@ -1536,34 +1538,34 @@ document.addEventListener("DOMContentLoaded", function () {
     fileInput.addEventListener("change", function () {
       var file = fileInput.files && fileInput.files[0];
       if (!file) return;
-      var objUrl = URL.createObjectURL(file);
-      setImage(objUrl, true);
+      var objectUrl = URL.createObjectURL(file);
+      setImage(objectUrl, true);
       fileInput.value = "";
     });
   }
-  if (textEl) {
-    textEl.addEventListener("input", render);
+  if (textInput) {
+    textInput.addEventListener("input", render);
   }
   if (downloadBtn) {
     downloadBtn.addEventListener("click", function () {
-      var out = document.createElement("canvas");
-      out.width = W;
-      out.height = H;
-      var octx = out.getContext("2d");
-      octx.clearRect(0, 0, W, H);
-      drawCover(octx, img, W, H);
-      grayscale(octx, W, H);
-      drawText(octx, textEl ? textEl.value : "");
-      out.toBlob(function (blob) {
+      var outputCanvas = document.createElement("canvas");
+      outputCanvas.width = W;
+      outputCanvas.height = H;
+      var outputCtx = outputCanvas.getContext("2d");
+      outputCtx.clearRect(0, 0, W, H);
+      drawCover(outputCtx, img, W, H);
+      grayscale(outputCtx, W, H);
+      drawText(outputCtx, textInput ? textInput.value : "");
+      outputCanvas.toBlob(function (blob) {
         if (!blob) return;
-        var a = document.createElement("a");
-        a.href = URL.createObjectURL(blob);
-        a.download = "meme.png";
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
+        var link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "meme.png";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
         setTimeout(function () {
-          return URL.revokeObjectURL(a.href);
+          return URL.revokeObjectURL(link.href);
         }, 500);
       }, "image/png");
     });
@@ -1571,52 +1573,52 @@ document.addEventListener("DOMContentLoaded", function () {
   function render() {
     ctx.clearRect(0, 0, W, H);
     drawCover(ctx, img, W, H);
-    drawText(ctx, textEl ? textEl.value : "");
+    drawText(ctx, textInput ? textInput.value : "");
   }
-  function drawCover(c, image, w, h) {
-    c.fillStyle = "#000";
-    c.fillRect(0, 0, w, h);
+  function drawCover(context, image, width, height) {
+    context.fillStyle = "#000";
+    context.fillRect(0, 0, width, height);
     if (!image || !image.naturalWidth) return;
-    var r = Math.max(w / image.width, h / image.height);
-    var sw = w / r;
-    var sh = h / r;
-    var sx = (image.width - sw) / 2;
-    var sy = (image.height - sh) / 2;
-    c.drawImage(image, sx, sy, sw, sh, 0, 0, w, h);
+    var ratio = Math.max(width / image.width, height / image.height);
+    var sourceWidth = width / ratio;
+    var sourceHeight = height / ratio;
+    var sourceX = (image.width - sourceWidth) / 2;
+    var sourceY = (image.height - sourceHeight) / 2;
+    context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, width, height);
   }
-  function drawText(c, text) {
-    var t = (text || "").trim();
-    if (!t) return;
-    c.font = FONT;
-    c.textBaseline = "top";
-    c.lineJoin = "round";
-    c.textAlign = "center";
-    var lines = wrap(c, t, MAX_W);
-    var top = lines.slice(0, 2);
-    var bottom = lines.slice(2, 4);
-    c.lineWidth = 10;
-    c.strokeStyle = "#000";
-    c.fillStyle = "#fff";
+  function drawText(context, text) {
+    var cleanText = (text || "").trim();
+    if (!cleanText) return;
+    context.font = FONT;
+    context.textBaseline = "top";
+    context.lineJoin = "round";
+    context.textAlign = "center";
+    var lines = wrap(context, cleanText, MAX_W);
+    var topLines = lines.slice(0, 2);
+    var bottomLines = lines.slice(2, 4);
+    context.lineWidth = 10;
+    context.strokeStyle = "#000";
+    context.fillStyle = "#fff";
     var centerX = W / 2;
-    top.forEach(function (l, i) {
-      var y = TOP_Y + i * 72;
-      c.strokeText(l, centerX, y);
-      c.fillText(l, centerX, y);
+    topLines.forEach(function (line, index) {
+      var y = TOP_Y + index * 72;
+      context.strokeText(line, centerX, y);
+      context.fillText(line, centerX, y);
     });
-    bottom.forEach(function (l, i) {
-      var y = BOTTOM_Y + i * 72;
-      c.strokeText(l, centerX, y);
-      c.fillText(l, centerX, y);
+    bottomLines.forEach(function (line, index) {
+      var y = BOTTOM_Y + index * 72;
+      context.strokeText(line, centerX, y);
+      context.fillText(line, centerX, y);
     });
   }
-  function wrap(c, text, maxW) {
+  function wrap(context, text, maxWidth) {
     var words = text.split(/\s+/).filter(Boolean);
     var lines = [];
     var line = "";
     for (var i = 0; i < words.length; i++) {
-      var test = line ? line + " " + words[i] : words[i];
-      if (c.measureText(test).width <= maxW) {
-        line = test;
+      var testLine = line ? "".concat(line, " ").concat(words[i]) : words[i];
+      if (context.measureText(testLine).width <= maxWidth) {
+        line = testLine;
       } else {
         if (line) lines.push(line);
         line = words[i];
@@ -1625,16 +1627,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (line) lines.push(line);
     return lines;
   }
-  function grayscale(c, w, h) {
-    var d = c.getImageData(0, 0, w, h);
-    for (var i = 0; i < d.data.length; i += 4) {
-      var g = d.data[i] * 0.2126 + d.data[i + 1] * 0.7152 + d.data[i + 2] * 0.0722;
-      d.data[i] = d.data[i + 1] = d.data[i + 2] = g;
+  function grayscale(context, width, height) {
+    var imageData = context.getImageData(0, 0, width, height);
+    for (var i = 0; i < imageData.data.length; i += 4) {
+      var gray = imageData.data[i] * 0.2126 + imageData.data[i + 1] * 0.7152 + imageData.data[i + 2] * 0.0722;
+      imageData.data[i] = gray;
+      imageData.data[i + 1] = gray;
+      imageData.data[i + 2] = gray;
     }
-    c.putImageData(d, 0, 0);
+    context.putImageData(imageData, 0, 0);
   }
-  if (textEl && !textEl.value) {
-    textEl.value = "";
+  if (textInput && !textInput.value) {
+    textInput.value = "";
   }
   if (presetItems[0]) {
     var firstUrl = getBgUrl(presetItems[0]);
@@ -1652,84 +1656,97 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // рандомный мем уррраааа рандом
+
 document.addEventListener("DOMContentLoaded", function () {
-  var box = document.querySelector(".Q_RandContent ");
-  var btn = document.querySelector(".A_RandomPageButton");
-  if (!box) return;
-  box.style.transition = "opacity 220ms ease";
-  box.style.opacity = "1";
-  var req = __webpack_require__(7830);
-  var urls = req.keys().map(function (k) {
-    return req(k);
+  var randomImages = document.querySelectorAll(".Q_RandContent");
+  var randomButton = document.getElementById("RandomPageBtn");
+  if (!randomImages.length) return;
+  randomImages.forEach(function (image) {
+    image.style.transition = "opacity 220ms ease";
+    image.style.opacity = "1";
   });
-  if (!urls.length) {
+  var req = __webpack_require__(7830);
+  var images = req.keys().map(function (key) {
+    return req(key);
+  });
+  if (!images.length) {
     console.warn("[random] Не нашлось rnd-*.webp в src/images/random");
     return;
   }
-  var last = -1;
-  var busy = false;
-  function pickIndex() {
-    if (urls.length === 1) return 0;
-    var i = Math.floor(Math.random() * urls.length);
-    while (i === last) i = Math.floor(Math.random() * urls.length);
-    last = i;
-    return i;
+  var lastIndex = -1;
+  var isAnimating = false;
+  function getRandomIndex() {
+    if (images.length === 1) return 0;
+    var index = Math.floor(Math.random() * images.length);
+    while (index === lastIndex) {
+      index = Math.floor(Math.random() * images.length);
+    }
+    lastIndex = index;
+    return index;
   }
-  function preload(url) {
+  function preloadImage(src) {
     return new Promise(function (resolve, reject) {
-      var im = new Image();
-      im.onload = function () {
-        return resolve(url);
+      var image = new Image();
+      image.onload = function () {
+        return resolve(src);
       };
-      im.onerror = function () {
-        return reject(url);
+      image.onerror = function () {
+        return reject(src);
       };
-      im.src = url;
+      image.src = src;
     });
   }
-  function setRandom() {
-    return _setRandom.apply(this, arguments);
+  function showRandomImage() {
+    return _showRandomImage.apply(this, arguments);
   }
-  function _setRandom() {
-    _setRandom = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var url, _t;
+  function _showRandomImage() {
+    _showRandomImage = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var selectedImages, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
-            if (!busy) {
+            if (!isAnimating) {
               _context.n = 1;
               break;
             }
             return _context.a(2);
           case 1:
-            busy = true;
-            url = urls[pickIndex()];
+            isAnimating = true;
+            selectedImages = Array.from(randomImages).map(function () {
+              return images[getRandomIndex()];
+            });
             _context.p = 2;
             _context.n = 3;
-            return preload(url);
+            return Promise.all(selectedImages.map(function (imageUrl) {
+              return preloadImage(imageUrl);
+            }));
           case 3:
-            box.style.opacity = "0";
+            randomImages.forEach(function (image) {
+              image.style.opacity = "0";
+            });
             setTimeout(function () {
-              box.style.backgroundImage = "url(\"".concat(url, "\")");
-              box.style.opacity = "1";
-              busy = false;
+              randomImages.forEach(function (image, index) {
+                image.style.backgroundImage = "url(\"".concat(selectedImages[index], "\")");
+                image.style.opacity = "1";
+              });
+              isAnimating = false;
             }, 230);
             _context.n = 5;
             break;
           case 4:
             _context.p = 4;
             _t = _context.v;
-            console.warn("[random] preload failed:", url);
-            busy = false;
+            console.warn("[random] preload failed");
+            isAnimating = false;
           case 5:
             return _context.a(2);
         }
       }, _callee, null, [[2, 4]]);
     }));
-    return _setRandom.apply(this, arguments);
+    return _showRandomImage.apply(this, arguments);
   }
-  setRandom();
-  if (btn) btn.addEventListener("click", setRandom);
+  showRandomImage();
+  randomButton === null || randomButton === void 0 || randomButton.addEventListener("click", showRandomImage);
 });
 
 // инлайн-картинки разные-преразные рандомно проставляющиеся
@@ -1738,10 +1755,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageOfPart");
   if (!imageBlocks.length) return;
   var req = __webpack_require__(4357);
-  var urls = req.keys().map(function (k) {
-    return req(k);
+  var images = req.keys().map(function (key) {
+    return req(key);
   });
-  var shuffledImages = _toConsumableArray(urls).sort(function () {
+  if (!images.length) return;
+  var shuffledImages = _toConsumableArray(images).sort(function () {
     return Math.random() - 0.5;
   });
   imageBlocks.forEach(function (block, index) {
@@ -1753,7 +1771,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // МОБИЛКА
 
 document.addEventListener("DOMContentLoaded", function () {
-  var header = document.querySelector(".O_Header");
+  var header = document.querySelector(".M_Header");
   var toggle = document.querySelector(".js-menu-toggle");
   var links = document.querySelectorAll(".W_Header_all_links a");
   if (!header || !toggle) return;
