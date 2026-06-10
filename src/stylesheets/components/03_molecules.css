@@ -25,6 +25,7 @@
   height: 136rem;
   width: 100%;
   padding: 32rem 64rem;
+  margin-top: 130rem;
   background: var(--Pink);
   opacity: 0.96;
   z-index: 10;
@@ -80,6 +81,41 @@
   z-index: 2;
 }
 
+/* Inter */
+
+.M_PageCard {
+  display: flex;
+  width: 436rem;
+  height: 620rem;
+  padding: 24rem;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--White);
+}
+
+.M_GenImgBlock {
+  display: flex;
+  width: 888rem;
+  height: 519rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24rem;
+  flex-shrink: 0;
+}
+
+.M_GenTextBlock {
+  display: flex;
+  width: 888rem;
+  height: 125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24rem;
+  flex-shrink: 0;
+}
+
 /* Random */
 
 .M_RandomHeading {
@@ -110,11 +146,15 @@
   gap: 64rem;
 }
 
-.M_ConstructorInput {
-  width: 100%;
+/* Random */
+
+.M_ImageSection {
   display: flex;
-  flex-direction: column;
-  gap: 24rem;
+  width: 1731rem;
+  /* height: 450.805rem; */
+  justify-content: center;
+  align-items: center;
+  gap: 135rem;
 }
 
 /* Articles Page */

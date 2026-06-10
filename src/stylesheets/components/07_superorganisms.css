@@ -79,6 +79,15 @@
 
 /* interactives */
 
+.S_Generate {
+  display: flex;
+  width: 1792rem;
+  height: 786rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 118rem;
+}
+
 .S_InteractivesPromo {
   position: relative;
   width: 100%;

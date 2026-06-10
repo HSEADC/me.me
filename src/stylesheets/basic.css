@@ -88,7 +88,8 @@ body {
   -webkit-text-stroke: 40rem var(--Black);
 }
 
-.Q_Header2Text.hd::after {
+.Q_Header2Text.hd::after,
+.Q_CardHeader.hd::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;

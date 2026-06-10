@@ -29,33 +29,43 @@
   <body>
     <nav class="M_Header"></nav>
 
-    <section class="S_RandomAll">
-      <div class="M_RandomHeading">
-        <div class="A_HeaderPart">
-          <h1 class="hd Q_HeaderText">Рандом мем</h1>
-          <span class="Q_ImageInHeader" aria-hidden="true"></span>
-        </div>
-      </div>
-      <div class="O_RandomPageContent">
-        <div class="A_MainRandImage">
-          <div class="Q_RandContent"></div>
+    <div class="W_RandomContent">
+      <section class="S_BasicHeadSection">
+        <div class="A_Background">
+          <video class="Q_BGContent" autoplay muted loop playsinline>
+            <source src="../videos/random_bg.webm" type="video/webm" />
+          </video>
+          <div class="Q_VideoFrame"></div>
+          <div class="Q_BGSpikes"></div>
         </div>
 
-        <div class="W_RandomPageRight">
-          <div class="M_RandomPageDescription">
+        <div class="M_HeadText">
+          <div class="A_PartOfBig">
+            <span class="Q_ImageInHeader" aria-hidden="true"></span>
+            <h1 class="hd Q_HeaderText">рандом мем</h1>
+            <span class="Q_ImageInHeader" aria-hidden="true"></span>
+          </div>
+
+          <div class="A_Text">
             <p class="hd A_TextBlock">Развиваем мемную насмотренность!</p>
-            <button class="A_RandomPageButton">ещё! ещё! ещё!</button>
           </div>
         </div>
-        <span class="Float-5 Q_ImageBigFloat" aria-hidden="true"></span>
-        <span class="Float-6 Q_ImageBigFloat" aria-hidden="true"></span>
-        <span class="Float-7 Q_ImageSmallFloat" aria-hidden="true"></span>
-        <span class="Float-8 Q_ImageBigFloat" aria-hidden="true"></span>
-        <span class="Float-9 Q_ImageBigFloat" aria-hidden="true"></span>
-        <span class="Float-10 Q_ImageSmallFloat" aria-hidden="true"></span>
-        <span class="Float-11 Q_ImageBigFloat" aria-hidden="true"></span>
+      </section>
+
+      <div class="M_ImageSection">
+        <div class="A_Image">
+          <div class="Q_RandContent"></div>
+          <span class="Q_ImageHoverFrame" aria-hidden="true"></span>
+        </div>
+
+        <button id="RandomPageBtn" class="A_Button">ещё! ещё! ещё!</button>
+
+        <div class="A_Image">
+          <div class="Q_RandContent"></div>
+          <span class="Q_ImageHoverFrame" aria-hidden="true"></span>
+        </div>
       </div>
-    </section>
+    </div>
 
     <footer class="M_Footer"></footer>
   </body>

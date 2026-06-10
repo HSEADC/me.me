@@ -17487,7 +17487,7 @@ function W_SearchContainer() {
   }), /*#__PURE__*/react.createElement("button", {
     className: "A_SearchButton",
     type: "submit"
-  }, "\u041D\u0430\u0439\u0442\u0438!"), /*#__PURE__*/react.createElement(C_Dropdown, {
+  }, "\u043D\u0430\u0439\u0442\u0438!"), /*#__PURE__*/react.createElement(C_Dropdown, {
     results: results
   }));
 }

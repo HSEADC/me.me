@@ -20,21 +20,26 @@
 
 /* Interactives */
 
-.O_InteractivesDescription {
+.O_Cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 180rem;
-  width: fit-content;
-  margin: 0 auto;
+  width: 1568rem;
+  height: 625rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 130rem;
 }
 
-.O_InteractiveCards {
-  position: relative;
-  width: 1720rem;
-  height: 760rem;
-  margin: 0 auto 0;
+/* Create */
+
+.O_GenCreate {
+  display: flex;
+  width: 888rem;
+  height: 783rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 42rem;
+  flex-shrink: 0;
 }
 
 /* Random */

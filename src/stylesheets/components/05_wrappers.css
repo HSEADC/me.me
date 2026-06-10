@@ -112,43 +112,50 @@
 
 /* Interactives */
 
-.W_InteractivesText {
+.W_InterContent {
   display: flex;
-  justify-content: center;
+  padding-top: 96rem;
+  padding-bottom: 130rem;
   flex-direction: column;
-  width: 100%;
-  margin-top: 24rem;
+  align-items: center;
+  gap: 200rem;
+  align-self: stretch;
 }
 
-.W_InteractivesText .A_TextBlock {
-  width: 1200rem;
-  text-align: center;
-  margin: 0;
+/* Create */
+
+.W_CreateContent {
+  display: flex;
+  padding-top: 96rem;
+  padding-bottom: 230rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 148rem;
+  align-self: stretch;
 }
 
-.W_InteractiveCardInfo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  background: #000;
-}
-
-.A_InteractiveCardSmall .W_InteractiveCardInfo {
-  width: 350rem;
-  height: 180rem;
-  top: 300rem;
-  left: 320rem;
-}
-
-.A_InteractiveCardBig .W_InteractiveCardInfo {
-  width: 380rem;
-  height: 180rem;
-  top: 380rem;
-  left: 360rem;
+.W_GenImages {
+  width: 888rem;
+  height: 381rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 67rem;
 }
 
 /* Random */
+
+.W_RandomContent {
+  display: flex;
+  padding-top: 96rem;
+  padding-bottom: 230rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 319rem;
+  align-self: stretch;
+}
 
 .W_RandomPageRight {
   display: flex;
@@ -158,23 +165,16 @@
   height: 600rem;
 }
 
-/* constructor */
+/* Tests */
 
-.W_ConstructorLeft {
-  flex: 0 0 760rem;
+.W_TestContent {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-}
-
-.W_ConstructorRight {
-  flex: 1 1 auto;
-  max-width: 920rem;
-  display: flex;
+  padding-top: 96rem;
+  padding-bottom: 230rem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 36rem;
+  align-items: center;
+  gap: 200rem;
+  align-self: stretch;
 }
 
 /* ArticlesSearch */

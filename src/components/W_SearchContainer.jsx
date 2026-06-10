@@ -31,7 +31,7 @@ export default function W_SearchContainer() {
       <A_SearchInput value={value} onChange={setValue} />
 
       <button className="A_SearchButton" type="submit">
-        Найти!
+        найти!
       </button>
 
       <C_Dropdown results={results} />
