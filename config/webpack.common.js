@@ -19,6 +19,7 @@ module.exports = {
     tests: "./src/javascripts/tests.js",
     headerReact: "./src/javascripts/header-react.jsx",
     footerReact: "./src/javascripts/footer-react.jsx",
+    articlePage: "./src/javascripts/article_content.js",
   },
   output: {
     filename: "[name].js",
@@ -70,6 +71,12 @@ module.exports = {
         {
           from: path.resolve(__dirname, "../src/share/CNAME"),
           to: path.resolve(__dirname, "../docs"),
+        },
+
+        {
+          from: path.resolve(__dirname, "../src/images/articles"),
+          to: "images/articles",
+          noErrorOnMissing: true,
         },
       ],
     }),
