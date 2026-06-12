@@ -3,7 +3,7 @@ id: art_5
 title: бюджет статьи 30 рублей
 description: ура! узнаём рецепт дешёвой пищи  
 cover: ../images/art_5/cover.webp  
-h1: морковка 5 рублей, лук 5 рублей
+h1: морковка пять рублей, лук пять рублей
 slug: fiveroubles
 
 tags:

@@ -207,89 +207,29 @@
   justify-content: center;
 }
 
-/* Article Content */
+/* ArticleContent */
 
-.W_AtricleLeft {
-  flex: 0 0 700rem;
-  width: 760rem;
-}
-
-.W_AtricleRight {
-  flex: 1 1 auto;
-  min-width: 0;
+.W_ArticleContent {
   display: flex;
+  width: 1920rem;
+  padding: 230rem 220rem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 64rem;
-  padding-top: 6rem;
-}
-
-.W_AtricleRight > .A_ArticleTextBlock:first-of-type {
-  width: 100%;
-  max-width: 730rem;
-  margin-left: 150rem;
-}
-
-.W_AtricleRight > .A_ArticleTextBlock:last-of-type {
-  width: 100%;
-  margin-top: 44rem;
-  margin-left: 0;
-}
-
-.S_ArticleRighty .W_AtricleLeft {
-  flex: 0 0 900rem;
-  width: 900rem;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64rem;
-  padding-top: 6rem;
-}
-
-.S_ArticleRighty .W_AtricleRight {
-  flex: 0 0 560rem;
-  width: 560rem;
-}
-
-.S_ArticleRighty .W_AtricleRight:has(.A_ArticleImage) {
-  flex: 0 0 690rem;
-  width: 690rem;
-}
-
-.S_ArticleRighty .A_ArticleHeader {
-  width: 100%;
-  max-width: 680rem;
-  margin: 0;
-}
-
-.S_ArticleRighty .Q_ArticleHeader2Text {
-  width: 100%;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.S_ArticleRighty .W_AtricleLeft > .A_ArticleTextBlock:first-of-type {
-  width: 100%;
-  max-width: 700rem;
-  margin-left: 210rem;
-}
-
-.S_ArticleRighty .W_AtricleLeft > .A_ArticleTextBlock:last-of-type {
-  width: 100%;
-  max-width: 900rem;
-  margin-top: 44rem;
-  margin-left: 0;
-}
-
-.W_ArticleNavigationButtons {
-  width: 70%;
-  height: 200rem;
-  margin: 30rem auto;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 180rem;
 }
+
+.W_MainButtons {
+  display: flex;
+  width: 1415.971rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.M_ArticleHead > .W_Tags {
+  margin: 0 auto;
+}
+
+/* Test ?? */
 
 .W_TestQuestion {
   display: flex;

@@ -104,6 +104,21 @@ body {
   -webkit-text-stroke: 28rem var(--Pink);
 }
 
+.Q_Header4Text.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  color: transparent;
+  -webkit-text-stroke: 18rem var(--Pink);
+}
+
 .A_Question.hd::after {
   content: attr(data-text);
   position: absolute;

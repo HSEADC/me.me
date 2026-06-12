@@ -151,7 +151,6 @@
 .M_ImageSection {
   display: flex;
   width: 1731rem;
-  /* height: 450.805rem; */
   justify-content: center;
   align-items: center;
   gap: 135rem;
@@ -178,16 +177,25 @@
 
 /* Article Content */
 
-.M_ArticlesHeading {
-  margin: 0 auto;
+.M_ArticleHead {
   display: flex;
+  width: 986rem;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding-top: 180rem;
-  width: fit-content;
-  margin: 0 auto;
+  gap: 46rem;
+  pointer-events: none;
 }
+
+.M_ArticleText {
+  display: flex;
+  width: 662rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40rem;
+}
+
+/* test Content */
 
 .M_TestHeading {
   margin: 0 auto;
@@ -242,19 +250,6 @@
   align-items: flex-start;
   gap: 28rem;
   padding-top: 10rem;
-}
-
-/* About Us */
-
-.M_AboutH2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8rem;
-}
-
-.M_AboutH2Reverse {
-  width: 100%;
 }
 
 /* 404 */

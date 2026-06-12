@@ -1,33 +1,49 @@
 const fs = require("fs");
 const path = require("path");
 
-const rootDir = process.cwd();
+const rootDir = path.resolve(__dirname, "../../..");
 
 const vaultDir = path.join(rootDir, "src", "data", "articles_vault");
-
 const vaultArticlesDir = path.join(vaultDir, "articles");
 const vaultImagesDir = path.join(vaultDir, "images");
 
 const outputJsonPath = path.join(rootDir, "src", "data", "articles.json");
-
 const outputImagesDir = path.join(rootDir, "src", "images", "articles");
+
+const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".gif"];
+const VIDEO_EXTENSIONS = [".mp4", ".webm"];
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
-function parseFrontmatter(markdown) {
+function safeRemoveDir(dirPath) {
+  const normalizedDir = path.resolve(dirPath);
+  const normalizedOutputImagesDir = path.resolve(outputImagesDir);
+
+  if (!normalizedDir.startsWith(normalizedOutputImagesDir)) {
+    throw new Error(`Опасное удаление остановлено: ${normalizedDir}`);
+  }
+
+  if (fs.existsSync(normalizedDir)) {
+    fs.rmSync(normalizedDir, {
+      recursive: true,
+      force: true,
+    });
+  }
+}
+
+function parseFrontmatter(markdown, fileName) {
   const match = markdown.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
 
   if (!match) {
-    throw new Error("Нет frontmatter");
+    throw new Error(`Нет frontmatter в файле ${fileName}`);
   }
 
   const frontmatterText = match[1];
   const body = match[2];
 
   const data = {};
-
   const lines = frontmatterText.split(/\r?\n/);
 
   let currentArrayKey = null;
@@ -66,43 +82,114 @@ function parseFrontmatter(markdown) {
   };
 }
 
+function parseMarkdownMedia(part) {
+  const imageMatch = part.match(/^!\[(.*?)\]\((.*?)\)$/);
+
+  if (imageMatch) {
+    return {
+      type: "image",
+      alt: imageMatch[1].trim(),
+      src: imageMatch[2].trim(),
+    };
+  }
+
+  const videoMatch = part.match(/^!\[video:(.*?)\]\((.*?)\)$/i);
+
+  if (videoMatch) {
+    return {
+      type: "video",
+      alt: videoMatch[1].trim(),
+      src: videoMatch[2].trim(),
+    };
+  }
+
+  return null;
+}
+
 function parseContent(body) {
   const blocks = [];
+  const lines = body.split(/\r?\n/);
 
-  const parts = body
-    .split(/\n\s*\n/g)
-    .map((part) => part.trim())
-    .filter(Boolean);
+  let paragraphLines = [];
+  let noteLines = [];
+  let isNote = false;
 
-  for (const part of parts) {
-    if (part.startsWith("## ")) {
+  function flushParagraph() {
+    const text = paragraphLines.join("\n").trim();
+    paragraphLines = [];
+
+    if (!text) return;
+
+    const mediaBlock = parseMarkdownMedia(text);
+
+    if (mediaBlock) {
+      blocks.push(mediaBlock);
+      return;
+    }
+
+    blocks.push({
+      type: "p",
+      text: text.replace(/\n/g, " ").trim(),
+    });
+  }
+
+  function flushNote() {
+    const text = noteLines.join("\n").trim();
+    noteLines = [];
+    isNote = false;
+
+    if (!text) return;
+
+    blocks.push({
+      type: "note",
+      text: text.replace(/\n/g, " ").trim(),
+    });
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+
+    if (line.startsWith(":::note")) {
+      flushParagraph();
+      isNote = true;
+      noteLines = [];
+      continue;
+    }
+
+    if (isNote && line === ":::") {
+      flushNote();
+      continue;
+    }
+
+    if (isNote) {
+      noteLines.push(rawLine);
+      continue;
+    }
+
+    if (line.startsWith("## ")) {
+      flushParagraph();
+
       blocks.push({
         type: "h2",
-        text: part.replace(/^##\s+/, "").trim(),
+        text: line.replace(/^##\s+/, "").trim(),
       });
 
       continue;
     }
 
-    if (part.startsWith("![")) {
-      const imageMatch = part.match(/!\[(.*?)\]\((.*?)\)/);
-
-      if (imageMatch) {
-        blocks.push({
-          type: "image",
-          alt: imageMatch[1],
-          src: imageMatch[2],
-        });
-
-        continue;
-      }
+    if (!line) {
+      flushParagraph();
+      continue;
     }
 
-    blocks.push({
-      type: "p",
-      text: part.replace(/\n/g, " ").trim(),
-    });
+    paragraphLines.push(rawLine);
   }
+
+  if (isNote) {
+    flushNote();
+  }
+
+  flushParagraph();
 
   return blocks;
 }
@@ -123,13 +210,14 @@ function getMedia(articleId) {
 
   files.forEach((file) => {
     const ext = path.extname(file).toLowerCase();
+    const publicPath = `./images/articles/${articleId}/${file}`;
 
-    if ([".jpg", ".jpeg", ".png", ".webp", ".gif"].includes(ext) && !file.startsWith("cover")) {
-      media.images.push(file);
+    if (IMAGE_EXTENSIONS.includes(ext) && !file.toLowerCase().startsWith("cover")) {
+      media.images.push(publicPath);
     }
 
-    if ([".mp4", ".webm"].includes(ext)) {
-      media.videos.push(file);
+    if (VIDEO_EXTENSIONS.includes(ext)) {
+      media.videos.push(publicPath);
     }
   });
 
@@ -141,12 +229,12 @@ function getMedia(articleId) {
 
 function copyMedia(articleId) {
   const sourceDir = path.join(vaultImagesDir, articleId);
-
-  if (!fs.existsSync(sourceDir)) return;
-
   const targetDir = path.join(outputImagesDir, articleId);
 
+  safeRemoveDir(targetDir);
   ensureDir(targetDir);
+
+  if (!fs.existsSync(sourceDir)) return;
 
   const files = fs.readdirSync(sourceDir);
 
@@ -154,8 +242,20 @@ function copyMedia(articleId) {
     const sourcePath = path.join(sourceDir, file);
     const targetPath = path.join(targetDir, file);
 
-    fs.copyFileSync(sourcePath, targetPath);
+    if (fs.statSync(sourcePath).isFile()) {
+      fs.copyFileSync(sourcePath, targetPath);
+    }
   });
+}
+
+function getCoverPath(articleId, coverValue) {
+  if (!coverValue) {
+    return `./images/articles/${articleId}/cover.webp`;
+  }
+
+  const coverFileName = path.basename(coverValue.trim());
+
+  return `./images/articles/${articleId}/${coverFileName}`;
 }
 
 function getArticleOrder(id) {
@@ -168,21 +268,27 @@ function buildArticles() {
   ensureDir(path.dirname(outputJsonPath));
   ensureDir(outputImagesDir);
 
-  const files = fs.readdirSync(vaultArticlesDir).filter((file) => file.endsWith(".md"));
+  if (!fs.existsSync(vaultArticlesDir)) {
+    throw new Error(`Не найдена папка со статьями: ${vaultArticlesDir}`);
+  }
+
+  const files = fs
+    .readdirSync(vaultArticlesDir)
+    .filter((file) => file.endsWith(".md"))
+    .sort();
 
   const articles = [];
 
   files.forEach((file) => {
     const filePath = path.join(vaultArticlesDir, file);
-
     const markdown = fs.readFileSync(filePath, "utf8");
 
-    const { data, body } = parseFrontmatter(markdown);
+    const { data, body } = parseFrontmatter(markdown, file);
 
     const articleId = data.id;
 
     if (!articleId) {
-      throw new Error(`нет id тут ${file}`);
+      throw new Error(`Нет id в файле ${file}`);
     }
 
     copyMedia(articleId);
@@ -191,25 +297,15 @@ function buildArticles() {
 
     articles.push({
       id: articleId,
-
       order: getArticleOrder(articleId),
-
       title: data.title || "",
-
       h1: data.h1 || data.title || "",
-
       description: data.description || "",
-
       slug: data.slug || articleId,
-
-      cover: `./images/articles/${articleId}/cover.webp`,
-
+      cover: getCoverPath(articleId, data.cover),
       tags: Array.isArray(data.tags) ? data.tags : [],
-
       media,
-
       content: parseContent(body),
-
       url: `./pages/articles/${articleId}.html`,
     });
   });
@@ -219,6 +315,8 @@ function buildArticles() {
   fs.writeFileSync(outputJsonPath, JSON.stringify(articles, null, 2), "utf8");
 
   console.log(`ура статей собрали вот столько ${articles.length}`);
+  console.log(`json: ${outputJsonPath}`);
+  console.log(`media: ${outputImagesDir}`);
 }
 
 buildArticles();

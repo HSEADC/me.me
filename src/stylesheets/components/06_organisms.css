@@ -70,6 +70,14 @@
   gap: 40rem;
 }
 
+/* Article Content */
+
+.O_ArticleSect {
+  display: flex;
+  align-items: flex-start;
+  gap: 212rem;
+}
+
 /* Test 1 */
 
 .O_Test {

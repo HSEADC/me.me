@@ -1,13 +1,6 @@
-import "../stylesheets/style.css";
 import "../javascripts/articles.js";
-import { applyTypographer, applyOutlineText } from "./typographer";
 
-document.addEventListener("DOMContentLoaded", () => {
-  applyTypographer();
-  applyOutlineText();
-});
-
-// эх конструктор эх мемов эх
+// Constructor
 
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.querySelector(".Q_ConstructorCanvas");
@@ -256,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// рандомный мем уррраааа рандом
+// Random
 
 document.addEventListener("DOMContentLoaded", () => {
   const randomImages = document.querySelectorAll(".Q_RandContent");
@@ -339,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
   randomButton?.addEventListener("click", showRandomImage);
 });
 
-// инлайн-картинки разные-преразные рандомно проставляющиеся
+// Inlined Random
 
 document.addEventListener("DOMContentLoaded", () => {
   const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageOfPart");
@@ -360,7 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// МОБИЛКА
+// Mobile
 
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".M_Header");
