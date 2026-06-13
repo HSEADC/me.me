@@ -229,15 +229,16 @@
   margin: 0 auto;
 }
 
-/* Test ?? */
+/* Test 1 */
 
-.W_TestQuestion {
+.W_TestWhoContent {
   display: flex;
-  width: 1400rem;
+  width: 1920rem;
+  padding: 153.5rem 64rem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 48rem;
-  padding: 0 110rem;
+  justify-content: center;
+  align-items: center;
+  gap: 116rem;
 }
 
 /* Test 2 */
@@ -316,47 +317,6 @@
   align-items: flex-start;
   gap: 24rem;
   padding-top: 14rem;
-}
-
-/* About Us */
-
-.W_AboutUsLeft {
-  display: flex;
-  flex-direction: column;
-  gap: 24rem;
-}
-
-.W_AboutUsRightReverse {
-  grid-column: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 42rem;
-  padding-top: 100rem;
-  position: relative;
-  z-index: 3;
-}
-
-.W_AboutUsLeftReverse {
-  grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 120rem;
-  position: relative;
-  z-index: 4;
-  width: 100%;
-}
-
-.W_AboutButtons {
-  width: 500rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 260rem;
-  margin-top: 100rem;
 }
 
 /* 404 */

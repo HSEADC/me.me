@@ -138,43 +138,6 @@
   gap: 72rem;
 }
 
-/* About Us i hate this page */
-
-.S_AboutUs {
-  width: 1700rem;
-  height: 1400rem;
-  display: grid;
-  grid-template-columns: 1fr 700rem;
-  margin: 180rem auto;
-  column-gap: 40rem;
-  row-gap: 60rem;
-  align-items: start;
-  position: relative;
-}
-
-.S_AboutUsReverse {
-  width: 1700rem;
-  min-height: 1800rem;
-  margin: 120rem auto 0;
-  display: grid;
-  grid-template-columns: 760rem 1fr;
-  column-gap: 90rem;
-  align-items: start;
-  position: relative;
-}
-
-.S_AboutWhatToDo {
-  width: 1700rem;
-  height: 800rem;
-  display: grid;
-  grid-template-columns: 1fr 700rem;
-  margin: 180rem auto;
-  column-gap: 40rem;
-  row-gap: 60rem;
-  align-items: start;
-  position: relative;
-}
-
 /* 404 */
 
 .S_NotFound {

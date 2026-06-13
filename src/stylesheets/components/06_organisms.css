@@ -80,10 +80,22 @@
 
 /* Test 1 */
 
-.O_Test {
-  width: 100%;
-  height: 800rem;
-  padding-top: 100rem;
+.O_TestWho {
+  display: flex;
+  padding-right: 633rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 72rem;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.O_TestTextButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50rem;
 }
 
 /* Test 2 */

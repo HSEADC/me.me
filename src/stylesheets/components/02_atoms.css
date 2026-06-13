@@ -66,6 +66,7 @@
   height: 100%;
   z-index: 0;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .A_HeaderPart {
@@ -88,6 +89,7 @@
   color: var(--Black);
   background: var(--White);
   border: none;
+  z-index: 2;
 }
 
 /* H2 */
@@ -154,6 +156,7 @@
   font-weight: 500;
   line-height: 110%;
   display: block;
+  z-index: 2;
 }
 
 .A_ArticleCard {
@@ -448,84 +451,22 @@
   margin: 0;
 }
 
-/* Tests */
-
-.TestPage .O_InteractiveCards .A_InteractiveCardSmall:first-child {
-  left: 0;
-  top: 40rem;
-}
-
-.TestPage .O_InteractiveCards .A_InteractiveCardBig {
-  left: 560rem;
-  top: 80rem;
-}
-
-.TestPage .O_InteractiveCards .A_InteractiveCardSmall:last-child {
-  right: 0;
-  top: 40rem;
-}
-
 /* Test 1 */
-.A_NumberOfQuestion,
-.A_Question,
-.A_TestResultCount,
-.A_TestResultHeader {
-  color: #fff;
-  text-align: center;
-  font-family: "Inter";
-  font-size: 64rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  text-transform: uppercase;
-}
 
-.A_AnswerText {
-  color: #fff;
-  font-family: "Inter";
-  font-size: 36rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  display: block;
-}
-
-.A_TestResultParagraph {
-  width: 60%;
-  color: #fff;
-  font-family: "Inter";
-  font-size: 36rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  display: block;
-}
-
-.A_TestResultButton {
+.A_MarkedListLine {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 314rem;
-  height: 55rem;
-  margin-top: 80rem;
-  padding: 0;
-  font-family: Impact;
-  font-size: 32rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  color: #000000;
-  background: #ffffff;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
+  gap: 24rem;
 }
 
-.A_TestResultButton:hover {
+.O_TestTextButton > .A_TextBlock {
+  width: 720rem;
+}
+
+.A_Button:hover {
   color: #ffffff;
   background: #ff65a6;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 /* Test 2 */
@@ -716,33 +657,6 @@
   color: #ffffff;
   background: #ff65a6;
   transition: all 0.3s ease-in-out;
-}
-
-/* About Us */
-
-.W_AboutUsLeft .A_Header2Part {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12rem 20rem;
-  width: 100%;
-}
-
-.W_AboutUsLeft .Q_Header2Text {
-  margin-left: 0;
-  line-height: 0.95;
-}
-
-.W_AboutUsLeft .A_TextBlock {
-  max-width: 1000rem;
-  margin: 0;
-  margin-top: 120rem;
-  margin-left: 30rem;
-}
-
-.W_AboutUsRightReverse .A_AboutTextReverse {
-  width: 560rem;
-  margin: 0 0 0 70rem;
 }
 
 /* 404 */

@@ -3,7 +3,7 @@ id: art_35
 title: жизнь мемов
 description: почему раньше мемы жили годами, а сейчас умирают за неделю
 cover: ../images/art_35/cover.webp
-h1: как рождаются и умирают мемы
+h1: жизненный цикл мемов
 slug: memelifecycle
 
 tags:

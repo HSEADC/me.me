@@ -3,7 +3,7 @@ id: art_52
 title: тун тун тун сахур
 description: что это такое? у него дубинка, он опасен?
 cover: ../images/art_52/cover.webp
-h1: Тун Тун Тун Сахур и брейнрот-хаос
+h1: Тун Тун Тун Сахур
 slug: tungtungtungsahur
 
 tags: 

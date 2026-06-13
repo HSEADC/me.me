@@ -119,7 +119,7 @@ body {
   -webkit-text-stroke: 18rem var(--Pink);
 }
 
-.A_Question.hd::after {
+.Q_MarkedListText.hd::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;
@@ -132,7 +132,7 @@ body {
   white-space: pre-wrap;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 18rem var(--Black);
+  -webkit-text-stroke: 18rem var(--Pink);
 }
 
 button:hover {

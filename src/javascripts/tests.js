@@ -1,36 +1,59 @@
 let currentStage = 0;
-const checkBoxes = document.querySelectorAll("input[type = checkbox]");
+const checkBoxes = document.querySelectorAll("input[type=checkbox]");
 let resultCount = 0;
 
 function initTest(stages) {
-  const numberOfQuestion = document.querySelector(".A_NumberOfQuestion");
-  const question = document.querySelector(".A_Question");
-  const answers = document.querySelectorAll(".A_AnswerText");
+  const numberOfQuestion = document.getElementById("NumberOfQuestion");
+  const question = document.getElementById("TestQuestion");
+  const answers = document.querySelectorAll(".Q_MarkedListText");
+  const nextButton = document.getElementById("TestButton");
 
   numberOfQuestion.innerText = `${currentStage + 1}/${stages.length}`;
-
   question.innerText = stages[currentStage].question;
+  question.dataset.text = stages[currentStage].question;
 
   for (let i = 0; i < answers.length; i++) {
     answers[i].innerText = stages[currentStage].answers[i].text;
+    answers[i].dataset.text = stages[currentStage].answers[i].text;
   }
 
   for (let j = 0; j < checkBoxes.length; j++) {
     checkBoxes[j].dataset.count = stages[currentStage].answers[j].count;
+    checkBoxes[j].checked = false;
   }
 }
 
 function chooseAnswer(stages, results) {
+  const nextButton = document.getElementById("TestButton");
+
   checkBoxes.forEach((checkBox) => {
     checkBox.addEventListener("change", () => {
       if (checkBox.checked) {
-        setTimeout(() => {
-          resultCount += Number(checkBox.dataset.count);
-          updateStage(stages, results);
-          checkBox.checked = false;
-        }, 300);
+        checkBoxes.forEach((otherCheckBox) => {
+          if (otherCheckBox !== checkBox) {
+            otherCheckBox.checked = false;
+          }
+        });
       }
     });
+  });
+
+  if (!nextButton) return;
+
+  nextButton.addEventListener("click", () => {
+    const selectedCheckBox = Array.from(checkBoxes).find((checkBox) => checkBox.checked);
+
+    if (!selectedCheckBox) {
+      return;
+    }
+
+    resultCount += Number(selectedCheckBox.dataset.count);
+
+    checkBoxes.forEach((checkBox) => {
+      checkBox.checked = false;
+    });
+
+    updateStage(stages, results);
   });
 }
 
@@ -43,46 +66,51 @@ function updateStage(stages, results) {
   }
 }
 
-function showResult(results) {
-  const testContainer = document.querySelector(".O_Test");
-  testContainer.innerHTML = "";
-
-  const resultWrapper = document.createElement("div");
-  resultWrapper.classList.add("W_TestQuestion");
-
-  const resultCnt = document.createElement("p");
-  resultCnt.classList.add("A_TestResultCount", "hd");
-  resultCnt.innerText = `итого: ${resultCount}`;
-
-  const resultHeader = document.createElement("h2");
-  resultHeader.classList.add("A_TestResultHeader", "hd");
-
-  const resultParagraph = document.createElement("p");
-  resultParagraph.classList.add("A_TestResultParagraph", "hd");
-
-  const resultButton = document.createElement("a");
-  resultButton.classList.add("A_TestResultButton");
-
-  resultButton.innerText = "вернуться к тестам";
-  resultButton.href = "../tests.html";
-
-  if (resultCount == 4) {
-    resultHeader.innerText = results[0].header;
-    resultParagraph.innerText = results[0].paragraph;
-  } else if (resultCount == 3 || resultCount == 2) {
-    resultHeader.innerText = results[1].header;
-    resultParagraph.innerText = results[1].paragraph;
-  } else {
-    resultHeader.innerText = results[2].header;
-    resultParagraph.innerText = results[2].paragraph;
+function getResult(results) {
+  if (resultCount >= 4) {
+    return results[0];
   }
 
-  resultWrapper.appendChild(resultCnt);
-  resultWrapper.appendChild(resultHeader);
-  resultWrapper.appendChild(resultParagraph);
-  resultWrapper.appendChild(resultButton);
+  if (resultCount >= 2) {
+    return results[1];
+  }
 
-  testContainer.appendChild(resultWrapper);
+  return results[2];
+}
+
+function showResult(results) {
+  const testContainer = document.querySelector(".O_TestWho");
+  const result = getResult(results);
+
+  testContainer.innerHTML = "";
+
+  const resultHeaderWrapper = document.createElement("div");
+  resultHeaderWrapper.classList.add("A_H4");
+
+  const resultHeader = document.createElement("h4");
+  resultHeader.classList.add("hd", "Q_Header4Text");
+  resultHeader.innerText = result.header;
+  resultHeader.dataset.text = result.header;
+
+  const resultContent = document.createElement("div");
+  resultContent.classList.add("O_TestTextButton");
+
+  const resultParagraph = document.createElement("p");
+  resultParagraph.classList.add("A_TextBlock");
+  resultParagraph.innerText = result.paragraph;
+
+  const resultButton = document.createElement("a");
+  resultButton.classList.add("A_Button");
+  resultButton.innerText = "обратно  к тестам";
+  resultButton.href = "../tests.html";
+
+  resultHeaderWrapper.appendChild(resultHeader);
+
+  resultContent.appendChild(resultParagraph);
+  resultContent.appendChild(resultButton);
+
+  testContainer.appendChild(resultHeaderWrapper);
+  testContainer.appendChild(resultContent);
 }
 
 export { initTest, chooseAnswer };

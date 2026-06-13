@@ -3,7 +3,7 @@ id: art_50
 title: скачать обои
 description: 
 cover: ../images/art_50/cover.webp
-h1: умный человек в очках
+h1: умный человек скачать обои
 slug: smartmanahh
 
 tags: 

@@ -902,9 +902,79 @@
               "icon": "lucide-file",
               "title": "art_5"
             }
+          },
+          {
+            "id": "129e35abb8c6e05c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_45.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "art_45"
+            }
+          },
+          {
+            "id": "e004562171f65d4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_7.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "art_7"
+            }
+          },
+          {
+            "id": "d6453a9a0e09dcd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_25.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "art_25"
+            }
+          },
+          {
+            "id": "03d76a29f619a53a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_27.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "art_27"
+            }
+          },
+          {
+            "id": "e79ac1218dd28d0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/art_41.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "art_41"
+            }
           }
         ],
-        "currentTab": 63
+        "currentTab": 68
       }
     ],
     "direction": "vertical"
@@ -1066,54 +1136,54 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "9db94bd5add372de",
+  "active": "e79ac1218dd28d0c",
   "lastOpenFiles": [
+    "articles/art_43.md",
+    "articles/art_52.md",
+    "articles/art_50.md",
+    "articles/art_25.md",
+    "articles/art_35.md",
+    "articles/art_28.md",
+    "images/art_28/video_1.webm",
+    "images/art_28/video_2.webm",
+    "images/art_28/cover.webp",
+    "images/art_28/28.webp",
+    "articles/art_29.md",
+    "articles/art_27.md",
+    "images/art_27/video_1.webm",
+    "images/art_27/image_1.webp",
+    "images/art_27/cover.webp",
+    "images/art_27/e3d16c344bd6683f31e271b56ea6e21d.webp",
+    "images/art_27/27.webp",
+    "articles/art_26.md",
+    "images/art_25/video_2.webm",
+    "images/art_25/video_1.webm",
+    "images/art_25/cover.webp",
+    "images/art_25/25.webp",
+    "articles/art_24.md",
+    "articles/art_21.md",
+    "articles/art_45.md",
+    "articles/art_7.md",
+    "articles/art_8.md",
+    "articles/art_9.md",
+    "articles/art_11.md",
+    "articles/art_12.md",
     "articles/art_4.md",
     "articles/art_3.md",
     "articles/art_2.md",
     "articles/art_1.md",
-    "articles/art_42.md",
-    "images/art_42/cover.webp",
-    "images/art_42/42.webp",
-    "articles/art_43.md",
-    "articles/art_20.md",
-    "images/art_20/video_3.webm",
-    "images/art_20/Download.webm",
-    "images/art_20/video_1.webm",
-    "images/art_20/ssstik.io_@kepoin.game_1781260070318.webm",
-    "images/art_20/video_2.webm",
-    "images/art_20/ssstik.io_@alt.ale.na_1781260092257.webm",
-    "images/art_20/cover.webp",
-    "images/art_20/20.webp",
-    "articles/art_19.md",
-    "articles/art_46.md",
-    "images/art_46/video_1.webm",
-    "images/art_46/ssstik.io_@oceanscary4k_1781259190157.webm",
-    "images/art_46/video_2.webm",
-    "images/art_46/Download (1).webm",
-    "images/art_46/cover.webp",
-    "images/art_46/46 cover.webp",
-    "articles/art_44.md",
-    "articles/art_29.md",
-    "images/art_29/image_2.webp",
-    "images/art_29/image_1.webp",
-    "images/art_29/cover.webp",
-    "images/art_29/a0a2046626f03a3cc7a7a5944cafc01e.webp",
-    "articles/art_32.md",
-    "articles/art_35.md",
-    "articles/art_26.md",
-    "articles/art_47.md",
-    "articles/art_41.md",
-    "articles/art_15.md",
-    "articles/art_48.md",
-    "articles/art_50.md",
-    "articles/art_49.md",
-    "articles/art_17.md",
-    "articles/art_16.md",
-    "articles/art_18.md",
     "articles/art_14.md",
-    "articles/art_40.md",
+    "articles/art_15.md",
     "articles/art_13.md",
+    "articles/art_10.md",
+    "articles/art_6.md",
+    "images/art_21/video_2.webm",
+    "images/art_21/video_1.webm",
+    "images/art_21/Download (1).webm",
+    "images/art_21/Download.webm",
+    "images/art_21/image_1.webp",
+    "images/art_21/cover.webp",
+    "images/art_45/video_1.webm",
     "Без названия.canvas"
   ]
 }
