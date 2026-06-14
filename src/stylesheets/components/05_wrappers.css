@@ -294,10 +294,12 @@
 
 /* 404 */
 
-.W_NotFoundButton {
+.W_NotFound {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  width: 100%;
+  padding-top: 96rem;
+  width: 1920rem;
+  flex-direction: column;
+  margin-bottom: -130rem;
 }

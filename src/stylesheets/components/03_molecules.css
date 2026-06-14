@@ -233,14 +233,3 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-
-/* 404 */
-
-.M_NotFoundDescription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  width: 60%;
-  text-align: center;
-}

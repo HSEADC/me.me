@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Медиа о мемах ME.ME!</title>
+    <title>ой.. ситуация..</title>
     <meta name="title" content="Медиа о мемах ME.ME!" />
     <meta name="description" content="Старые и новые, свежие и протухшие, смешные и несмешные — мы посмотрим все! А потом ещё и обсудить успеем!" />
 
@@ -28,32 +28,46 @@
   </head>
 
   <body>
-    <section class="S_NotFound">
-      <div class="M_MainHead">
-        <div class="A_HeaderPart">
-          <h1 class="hd Q_HeaderText">ух ты...</h1>
+    <nav class="M_Header"></nav>
+
+    <div class="W_NotFound">
+      <section class="S_BasicHeadSection">
+        <div class="A_Background">
+          <video class="Q_BGContent" autoplay muted loop playsinline>
+            <source src="./videos/404_bg.webm" type="video/webm" />
+          </video>
+          <div class="Q_VideoFrame"></div>
+          <div class="Q_BGSpikes"></div>
         </div>
 
-        <div class="M_NotFoundDescription">
-          <p class="hd A_TextBlock">Похоже, страница сломалась, полистай лучше мемы</p>
-        </div>
+        <div class="M_HeadText">
+          <div class="A_PartOfBig">
+            <span class="Q_ImageInHeader" aria-hidden="true"></span>
+            <h1 class="hd Q_HeaderText">ух ты...</h1>
+            <span class="Q_ImageInHeader" aria-hidden="true"></span>
+          </div>
 
-        <div class="W_NotFoundButton">
+          <div class="A_Text">
+            <p class="hd A_TextBlock">Похоже, страница сломалась, полистай лучше мемы</p>
+          </div>
+
           <a href="./index.html">
-            <button class="A_Button">читать смеяться</button>
+            <button class="A_Button">на главную</button>
           </a>
         </div>
-      </div>
-      <div class="S_NotFoundBackground">
-        <img src="./images/404/404.svg" class="A_404Item A_404Text t1" />
-        <img src="./images/404/404.svg" class="A_404Item A_404Text t2" />
-        <img src="./images/404/404.svg" class="A_404Item A_404Text t3" />
+        <div class="С_NotFoundBackground">
+          <img src="./images/404/404.svg" class="A_404Item A_404Text t1" />
+          <img src="./images/404/404.svg" class="A_404Item A_404Text t2" />
+          <img src="./images/404/404.svg" class="A_404Item A_404Text t3" />
 
-        <img src="./images/404/404-1.webp" class="A_404Item A_404Img i1" />
-        <img src="./images/404/404-1.webp" class="A_404Item A_404Img i2" />
-        <img src="./images/404/404-2.webp" class="A_404Item A_404Img i3" />
-        <img src="./images/404/404-2.webp" class="A_404Item A_404Img i4" />
-      </div>
-    </section>
+          <img src="./images/404/404-1.webp" class="A_404Item A_404Img i1" />
+          <img src="./images/404/404-1.webp" class="A_404Item A_404Img i2" />
+          <img src="./images/404/404-2.webp" class="A_404Item A_404Img i3" />
+          <img src="./images/404/404-2.webp" class="A_404Item A_404Img i4" />
+        </div>
+      </section>
+    </div>
+
+    <footer class="M_Footer"></footer>
   </body>
 </html>

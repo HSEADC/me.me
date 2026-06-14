@@ -137,22 +137,3 @@
   padding-top: 180rem;
   gap: 72rem;
 }
-
-/* 404 */
-
-.S_NotFound {
-  position: relative;
-  width: 1700rem;
-  height: 700rem;
-  margin: 180rem auto;
-}
-
-.S_NotFoundBackground {
-  position: absolute;
-  width: 1920rem;
-  height: 1080rem;
-  z-index: -10;
-  top: -190rem;
-  left: -140rem;
-  overflow: hidden;
-}

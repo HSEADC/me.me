@@ -74,7 +74,7 @@ const htmlPages = [
   createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["allStyles", "test2", "headerReact", "footerReact"]),
   createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["allStyles", "test3", "headerReact", "footerReact"]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
-  createPages("./src/404.html", "./404.html", ["index"]),
+  createPages("./src/404.html", "./404.html", ["allStyles", "index", "headerReact", "footerReact"]),
 ];
 
 module.exports = htmlPages;

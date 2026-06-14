@@ -190,7 +190,6 @@
   display: flex;
   align-items: center;
   gap: 24rem;
-  align-self: stretch;
 }
 
 /* Inter */
@@ -545,6 +544,7 @@
   height: 384rem;
   justify-content: center;
   align-items: center;
+  border: 17rem solid var(--Pink);
 }
 
 /* 404 */
@@ -593,8 +593,6 @@
   }
 }
 
-/* === ТЕКСТ === */
-
 .t1 {
   left: 60rem;
   top: 80rem;
@@ -612,8 +610,6 @@
   bottom: 60rem;
   animation-delay: 4s;
 }
-
-/* === КАРТИНКИ === */
 
 .i1 {
   left: 200rem;
