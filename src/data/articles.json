@@ -7,10 +7,18 @@
     "description": "давайте разбираться, что это и откуда взялось",
     "slug": "nishevost",
     "cover": "./images/articles/art_1/cover.webp",
-    "tags": ["новые мемы", "для переписок"],
+    "tags": [
+      "новые мемы",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_1/image_1.webp"],
-      "videos": ["./images/articles/art_1/video_1.webm", "./images/articles/art_1/video_2.webm"]
+      "images": [
+        "./images/articles/art_1/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_1/video_1.webm",
+        "./images/articles/art_1/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -64,10 +72,18 @@
     "description": "почему интернет влюбился в цифры?",
     "slug": "7x7",
     "cover": "./images/articles/art_2/cover.webp",
-    "tags": ["новые мемы", "жизненные мемы", "абсурд"],
+    "tags": [
+      "новые мемы",
+      "жизненные мемы",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_2/video_1.webm", "./images/articles/art_2/video_2.webm", "./images/articles/art_2/video_3.webm"]
+      "videos": [
+        "./images/articles/art_2/video_1.webm",
+        "./images/articles/art_2/video_2.webm",
+        "./images/articles/art_2/video_3.webm"
+      ]
     },
     "content": [
       {
@@ -121,10 +137,18 @@
     "description": "Почему интерес к Китаю всё не утихает?",
     "slug": "chinamaxxing",
     "cover": "./images/articles/art_3/cover.webp",
-    "tags": ["абсурд", "ии"],
+    "tags": [
+      "абсурд",
+      "ии"
+    ],
     "media": {
-      "images": ["./images/articles/art_3/image_1.gif"],
-      "videos": ["./images/articles/art_3/video_1.webm", "./images/articles/art_3/video_2.webm"]
+      "images": [
+        "./images/articles/art_3/image_1.gif"
+      ],
+      "videos": [
+        "./images/articles/art_3/video_1.webm",
+        "./images/articles/art_3/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -174,10 +198,17 @@
     "description": "Почему все массово снимают бэк ту скул и вайны?",
     "slug": "2026is2016",
     "cover": "./images/articles/art_4/cover.webp",
-    "tags": ["ностальгическое", "жизненные мемы"],
+    "tags": [
+      "ностальгическое",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_4/image_1.webp"],
-      "videos": ["./images/articles/art_4/video_1.webm"]
+      "images": [
+        "./images/articles/art_4/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_4/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -219,10 +250,16 @@
     "description": "ура! узнаём рецепт дешёвой пищи",
     "slug": "fiveroubles",
     "cover": "./images/articles/art_5/cover.webp",
-    "tags": ["новые мемы", "абсурд"],
+    "tags": [
+      "новые мемы",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_5/video_1.webm", "./images/articles/art_5/video_2.webm"]
+      "videos": [
+        "./images/articles/art_5/video_1.webm",
+        "./images/articles/art_5/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -264,10 +301,18 @@
     "description": "почему в любом соке внезапно находится яблоко",
     "slug": "lubimiyapple",
     "cover": "./images/articles/art_6/cover.webp",
-    "tags": ["абсурд", "жизненные мемы"],
+    "tags": [
+      "абсурд",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_6/image_1.webp"],
-      "videos": ["./images/articles/art_6/video_1.webm", "./images/articles/art_6/video_2.webm"]
+      "images": [
+        "./images/articles/art_6/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_6/video_1.webm",
+        "./images/articles/art_6/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -321,10 +366,18 @@
     "description": "а он сейчас с нами в одной комнате",
     "slug": "whoisthat",
     "cover": "./images/articles/art_7/cover.webp",
-    "tags": ["для переписок", "абсурд", "новые мемы"],
+    "tags": [
+      "для переписок",
+      "абсурд",
+      "новые мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_7/image_1.webp"],
-      "videos": ["./images/articles/art_7/video_1.webm"]
+      "images": [
+        "./images/articles/art_7/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_7/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -366,10 +419,18 @@
     "description": "поговорим про ии мемы",
     "slug": "aimemes",
     "cover": "./images/articles/art_8/cover.webp",
-    "tags": ["ии", "абсурд"],
+    "tags": [
+      "ии",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_8/video_1.webm", "./images/articles/art_8/video_2.webm", "./images/articles/art_8/video_3.webm", "./images/articles/art_8/video_4.webm"]
+      "videos": [
+        "./images/articles/art_8/video_1.webm",
+        "./images/articles/art_8/video_2.webm",
+        "./images/articles/art_8/video_3.webm",
+        "./images/articles/art_8/video_4.webm"
+      ]
     },
     "content": [
       {
@@ -435,10 +496,19 @@
     "description": "как рейджкомиксы захватили интернет и подарили нам Trollface",
     "slug": "ragecomics",
     "cover": "./images/articles/art_9/cover.webp",
-    "tags": ["ностальгическое", "абсурд", "для переписок"],
+    "tags": [
+      "ностальгическое",
+      "абсурд",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_9/image_1.webp"],
-      "videos": ["./images/articles/art_9/video_1.webm", "./images/articles/art_9/video_2.webm"]
+      "images": [
+        "./images/articles/art_9/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_9/video_1.webm",
+        "./images/articles/art_9/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -492,10 +562,16 @@
     "description": "инопланетная бессмысленная переписка с пришельцем как мем",
     "slug": "bogosbinted",
     "cover": "./images/articles/art_10/cover.webp",
-    "tags": ["абсурд", "для переписок"],
+    "tags": [
+      "абсурд",
+      "для переписок"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_10/video_1.webm", "./images/articles/art_10/video_2.webm"]
+      "videos": [
+        "./images/articles/art_10/video_1.webm",
+        "./images/articles/art_10/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -537,10 +613,15 @@
     "description": "как бегущий скелет превратился в коллективную галлюцинацию",
     "slug": "skeletonrunning",
     "cover": "./images/articles/art_11/cover.webp",
-    "tags": ["абсурд"],
+    "tags": [
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_11/video_1.webm", "./images/articles/art_11/video_2.webm"]
+      "videos": [
+        "./images/articles/art_11/video_1.webm",
+        "./images/articles/art_11/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -582,10 +663,18 @@
     "description": "что он знает? что он кому доказать пытается?",
     "slug": "iknowbutcantprove",
     "cover": "./images/articles/art_12/cover.webp",
-    "tags": ["фильмы/сериалы", "для переписок", "жизненные мемы"],
+    "tags": [
+      "фильмы/сериалы",
+      "для переписок",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_12/image_1.webp"],
-      "videos": ["./images/articles/art_12/video_1.webm"]
+      "images": [
+        "./images/articles/art_12/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_12/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -627,10 +716,17 @@
     "description": "как криповые страшилки превратились в мем",
     "slug": "ohzrya",
     "cover": "./images/articles/art_13/cover.webp",
-    "tags": ["для переписок", "абсурд", "ностальгическое"],
+    "tags": [
+      "для переписок",
+      "абсурд",
+      "ностальгическое"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_13/video_1.webm", "./images/articles/art_13/video_2.webm"]
+      "videos": [
+        "./images/articles/art_13/video_1.webm",
+        "./images/articles/art_13/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -672,10 +768,17 @@
     "description": "что за аура? давайте узнаем, что это за статы",
     "slug": "aurafarming",
     "cover": "./images/articles/art_14/cover.webp",
-    "tags": ["новые мемы", "для переписок", "жизненные мемы"],
+    "tags": [
+      "новые мемы",
+      "для переписок",
+      "жизненные мемы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_14/video_1.webm", "./images/articles/art_14/video_2.webm"]
+      "videos": [
+        "./images/articles/art_14/video_1.webm",
+        "./images/articles/art_14/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -717,10 +820,20 @@
     "description": "мем son как реакция абсолютно на всё, вот круто",
     "slug": "sonionsonson",
     "cover": "./images/articles/art_15/cover.webp",
-    "tags": ["новые мемы", "для переписок", "абсурд", "ии"],
+    "tags": [
+      "новые мемы",
+      "для переписок",
+      "абсурд",
+      "ии"
+    ],
     "media": {
-      "images": ["./images/articles/art_15/image_1.webp"],
-      "videos": ["./images/articles/art_15/video_1.webm", "./images/articles/art_15/video_2.webm"]
+      "images": [
+        "./images/articles/art_15/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_15/video_1.webm",
+        "./images/articles/art_15/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -774,10 +887,18 @@
     "description": "как демотиваторы стали легендой мемной культуры",
     "slug": "demotivators",
     "cover": "./images/articles/art_16/cover.webp",
-    "tags": ["ностальгическое", "для переписок"],
+    "tags": [
+      "ностальгическое",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_16/image_1.webp", "./images/articles/art_16/image_2.webp"],
-      "videos": ["./images/articles/art_16/video_1.webm"]
+      "images": [
+        "./images/articles/art_16/image_1.webp",
+        "./images/articles/art_16/image_2.webp"
+      ],
+      "videos": [
+        "./images/articles/art_16/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -831,10 +952,18 @@
     "description": "что такое тотя и почему с этого смеются по итогу",
     "slug": "totr",
     "cover": "./images/articles/art_17/cover.webp",
-    "tags": ["абсурд", "для переписок"],
+    "tags": [
+      "абсурд",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_17/image_1.webp"],
-      "videos": ["./images/articles/art_17/video_1.webm", "./images/articles/art_17/video_2.webm"]
+      "images": [
+        "./images/articles/art_17/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_17/video_1.webm",
+        "./images/articles/art_17/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -888,10 +1017,18 @@
     "description": "почему немного жить в фантазиях — это нормально",
     "slug": "delulu",
     "cover": "./images/articles/art_18/cover.webp",
-    "tags": ["жизненные мемы", "для переписок"],
+    "tags": [
+      "жизненные мемы",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_18/image_1.webp"],
-      "videos": ["./images/articles/art_18/video_1.webm", "./images/articles/art_18/video_2.webm"]
+      "images": [
+        "./images/articles/art_18/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_18/video_1.webm",
+        "./images/articles/art_18/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -945,10 +1082,17 @@
     "description": "почему лучше звонить солу, и как адвокат из сериала стал мемом",
     "slug": "saulgoodman",
     "cover": "./images/articles/art_19/cover.webp",
-    "tags": ["для переписок", "фильмы/сериалы"],
+    "tags": [
+      "для переписок",
+      "фильмы/сериалы"
+    ],
     "media": {
-      "images": ["./images/articles/art_19/image_1.webp"],
-      "videos": ["./images/articles/art_19/video_1.webm"]
+      "images": [
+        "./images/articles/art_19/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_19/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -990,10 +1134,17 @@
     "description": "bakamitai, dame da ne или как грустная песня из игры превратилась мем",
     "slug": "bakamitai",
     "cover": "./images/articles/art_20/cover.webp",
-    "tags": ["ностальгическое", "абсурд"],
+    "tags": [
+      "ностальгическое",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_20/video_1.webm", "./images/articles/art_20/video_2.webm", "./images/articles/art_20/video_3.webm"]
+      "videos": [
+        "./images/articles/art_20/video_1.webm",
+        "./images/articles/art_20/video_2.webm",
+        "./images/articles/art_20/video_3.webm"
+      ]
     },
     "content": [
       {
@@ -1047,10 +1198,19 @@
     "description": "как одна из самых грустных сцен «Интерстеллара» стала мемом",
     "slug": "crying-cooper",
     "cover": "./images/articles/art_21/cover.webp",
-    "tags": ["ностальгическое", "фильмы/сериалы", "жизненные мемы"],
+    "tags": [
+      "ностальгическое",
+      "фильмы/сериалы",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_21/image_1.webp"],
-      "videos": ["./images/articles/art_21/video_1.webm", "./images/articles/art_21/video_2.webm"]
+      "images": [
+        "./images/articles/art_21/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_21/video_1.webm",
+        "./images/articles/art_21/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1104,10 +1264,17 @@
     "description": "подскажите!! кто такой данил колбасенко",
     "slug": "danilkolbasenko",
     "cover": "./images/articles/art_22/cover.webp",
-    "tags": ["абсурд", "для переписок"],
+    "tags": [
+      "абсурд",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_22/image_1.webp"],
-      "videos": ["./images/articles/art_22/video_1.webm"]
+      "images": [
+        "./images/articles/art_22/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_22/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1149,10 +1316,16 @@
     "description": "разбираемся, почему nyan cat — это отец брейнротов",
     "slug": "nyancat",
     "cover": "./images/articles/art_23/cover.webp",
-    "tags": ["ностальгическое", "абсурд"],
+    "tags": [
+      "ностальгическое",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_23/video_1.webm", "./images/articles/art_23/video_2.webm"]
+      "videos": [
+        "./images/articles/art_23/video_1.webm",
+        "./images/articles/art_23/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1194,10 +1367,17 @@
     "description": "Давайте разбираться, зачем он бьёт по столу",
     "slug": "denzelwashingtonvstable",
     "cover": "./images/articles/art_24/cover.webp",
-    "tags": ["фильмы/сериалы", "для переписок", "жизненные мемы"],
+    "tags": [
+      "фильмы/сериалы",
+      "для переписок",
+      "жизненные мемы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_24/video_1.webm", "./images/articles/art_24/video_2.webm"]
+      "videos": [
+        "./images/articles/art_24/video_1.webm",
+        "./images/articles/art_24/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1239,10 +1419,17 @@
     "description": "у этой собаки с яблоком в жизни творится тотальный экшн... надо разобраться",
     "slug": "appledog",
     "cover": "./images/articles/art_25/cover.webp",
-    "tags": ["ии", "абсурд", "новые мемы"],
+    "tags": [
+      "ии",
+      "абсурд",
+      "новые мемы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_25/video_1.webm", "./images/articles/art_25/video_2.webm"]
+      "videos": [
+        "./images/articles/art_25/video_1.webm",
+        "./images/articles/art_25/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1284,10 +1471,16 @@
     "description": "что такое думскроллинг и почему так сложно остановиться",
     "slug": "doomscrolling",
     "cover": "./images/articles/art_26/cover.webp",
-    "tags": ["жизненные мемы"],
+    "tags": [
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_26/image_1.webp"],
-      "videos": ["./images/articles/art_26/video_1.webm"]
+      "images": [
+        "./images/articles/art_26/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_26/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1329,10 +1522,18 @@
     "description": "как криво нарисованный хомяк стал универсальной эмоцией интернета",
     "slug": "almarts27hamster",
     "cover": "./images/articles/art_27/cover.webp",
-    "tags": ["новые мемы", "для переписок", "жизненные мемы"],
+    "tags": [
+      "новые мемы",
+      "для переписок",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_27/image_1.webp"],
-      "videos": ["./images/articles/art_27/video_1.webm"]
+      "images": [
+        "./images/articles/art_27/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_27/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1374,10 +1575,16 @@
     "description": "как кавер на песню из «Эйфории» превратился в мем про завышенную самооценку",
     "slug": "mounteverest",
     "cover": "./images/articles/art_28/cover.webp",
-    "tags": ["новые мемы", "для переписок"],
+    "tags": [
+      "новые мемы",
+      "для переписок"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_28/video_1.webm", "./images/articles/art_28/video_2.webm"]
+      "videos": [
+        "./images/articles/art_28/video_1.webm",
+        "./images/articles/art_28/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1419,10 +1626,19 @@
     "description": "Как Райан Гослинг стал мемом (да не умер он в конце «Драйва»!!)",
     "slug": "literallymegosling",
     "cover": "./images/articles/art_29/cover.webp",
-    "tags": ["жизненные мемы", "для переписок", "фильмы/сериалы"],
+    "tags": [
+      "жизненные мемы",
+      "для переписок",
+      "фильмы/сериалы"
+    ],
     "media": {
-      "images": ["./images/articles/art_29/image_1.webp", "./images/articles/art_29/image_2.webp"],
-      "videos": ["./images/articles/art_29/video_1.webm"]
+      "images": [
+        "./images/articles/art_29/image_1.webp",
+        "./images/articles/art_29/image_2.webp"
+      ],
+      "videos": [
+        "./images/articles/art_29/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1469,6 +1685,111 @@
     "url": "./pages/articles/art_29.html"
   },
   {
+    "id": "art_30",
+    "order": 30,
+    "title": "это не муся вроде....",
+    "h1": "муся, это ты?",
+    "description": [],
+    "slug": "musya",
+    "cover": "./images/articles/art_30/cover.webp",
+    "tags": [
+      "новые мемы",
+      "для переписок",
+      "абсурд"
+    ],
+    "media": {
+      "images": [
+        "./images/articles/art_30/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_30/video_1.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "муся, вернись домой"
+      },
+      {
+        "type": "p",
+        "text": "Мем «Муся, это ты?» появился благодаря юмористическому ролику на YouTube-канале Batek_Official. По сюжету один из героев рассказывает, что у него пропала любимая кошка Муся. Позже ему звонят по телефону, и в трубке раздаётся мяуканье. Обрадованный хозяин тут же спрашивает: «Муся, это ты? Вернись домой, я скучаю!». Однако оказывается, что звонок был всего лишь жестокой шуткой."
+      },
+      {
+        "type": "p",
+        "text": "Фраза быстро разлетелась по интернету и сначала использовалась в анимациях, ремиксах и коротких скетчах. Но настоящую популярность мем получил уже в 2026 году, когда пользователи TikTok начали использовать звук в совершенно новом контексте."
+      },
+      {
+        "type": "note",
+        "text": "Муся, это ты? Нет, это точно не Муся."
+      },
+      {
+        "type": "h2",
+        "text": "как тигр стал мусей"
+      },
+      {
+        "type": "p",
+        "text": "Самой популярной вариацией стали ролики с дикими животными. Пользователи брали фотографии тигров, леопардов, крокодилов и других грозных хищников, сидящих где-нибудь в болоте, тумане или зарослях, а поверх накладывали звук с поисками Муси. Контраст между безобидной домашней кошкой и огромным опасным зверем оказался настолько нелепым, что быстро превратился в отдельный мемный формат."
+      },
+      {
+        "type": "p",
+        "text": "Со временем Мусей начали называть вообще что угодно. Старые игрушки, изменившихся знакомых, самолёты с необычной раскраской и любые объекты, которые хотя бы отдалённо напоминали потерянную кошку. Мем постепенно ушёл в постиронию и потерял связь с оригинальным сюжетом!"
+      }
+    ],
+    "url": "./pages/articles/art_30.html"
+  },
+  {
+    "id": "art_31",
+    "order": 31,
+    "title": "ishowspeed",
+    "h1": "ishowspeed",
+    "description": "как стримерские реакции ishowspeed стали отдельным мемом",
+    "slug": "ishowspeed",
+    "cover": "./images/articles/art_31/cover.webp",
+    "tags": [
+      "для переписок",
+      "абсурд",
+      "новые мемы"
+    ],
+    "media": {
+      "images": [],
+      "videos": [
+        "./images/articles/art_31/video_1.webm",
+        "./images/articles/art_31/video_2.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "стример, которого разобрали на реакции"
+      },
+      {
+        "type": "p",
+        "text": "IShowSpeed — один из тех интернет-персонажей, которых многие знают не по полным стримам, а по нарезкам. Популярность он начал быстро набирать ещё в 2021 году благодаря игровым трансляциям, громким реакциям и очень эмоциональной манере поведения перед камерой."
+      },
+      {
+        "type": "p",
+        "text": "Со временем отдельные моменты со стримов начали жить отдельно от самого автора. Speed Dance, испуганные реакции, крики, внезапные танцы и разговоры с Talking Ben быстро разошлись по TikTok, YouTube Shorts и мемным пабликам. В итоге iShowSpeed стал постоянным источником реакционных мемов."
+      },
+      {
+        "type": "note",
+        "text": "Иногда достаточно одного выражения лица, чтобы попасть в мемы на годы!"
+      },
+      {
+        "type": "h2",
+        "text": "почему его клипы так легко становятся мемами"
+      },
+      {
+        "type": "p",
+        "text": "Главная особенность мемов с iShowSpeed — их очень просто вырывать из контекста. Он может резко удивиться, испугаться, начать танцевать или спорить с приложением Talking Ben, и этот фрагмент уже работает как готовая реакция. Поэтому его клипы часто используют не только фанаты, но и люди, которые вообще не смотрят стримы."
+      },
+      {
+        "type": "p",
+        "text": "Особенно важную роль сыграли вертикальные платформы. TikTok и YouTube Shorts идеально подходят для таких нарезок, так как зрителю не нужно знать весь стрим, достаточно увидеть одну сильную эмоцию. Так из длинных трансляций появляются короткие мемы, которые потом расходятся дальше уже как самостоятельные картинки, звуки и реакции."
+      }
+    ],
+    "url": "./pages/articles/art_31.html"
+  },
+  {
     "id": "art_32",
     "order": 32,
     "title": "ага! попались!",
@@ -1476,10 +1797,16 @@
     "description": "история самого известного троллинга",
     "slug": "rickroll",
     "cover": "./images/articles/art_32/cover.webp",
-    "tags": ["ностальгическое", "абсурд"],
+    "tags": [
+      "ностальгическое",
+      "абсурд"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_32/video_1.webm", "./images/articles/art_32/video_2.webm"]
+      "videos": [
+        "./images/articles/art_32/video_1.webm",
+        "./images/articles/art_32/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1514,6 +1841,124 @@
     "url": "./pages/articles/art_32.html"
   },
   {
+    "id": "art_33",
+    "order": 33,
+    "title": "пов вы читаете статью",
+    "h1": "POV форматы",
+    "description": "пов три буквы стали отдельным жанром тиктока",
+    "slug": "POV",
+    "cover": "./images/articles/art_33/cover.webp",
+    "tags": [
+      "ностальгическое",
+      "жизненные мемы"
+    ],
+    "media": {
+      "images": [],
+      "videos": [
+        "./images/articles/art_33/video_1.webm",
+        "./images/articles/art_33/video_2.webm",
+        "./images/articles/art_33/video_3.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "точка зрения"
+      },
+      {
+        "type": "p",
+        "text": "POV расшифровывается как point of view, то есть точка зрения. В TikTok этим словом начали обозначать ролики, где зрителя как будто помещают внутрь конкретной ситуации. Обычно видео подписывали фразой вроде «POV: ты новенький в классе» или «POV: ты случайно встретил бывшего друга», а дальше автор разыгрывал короткую сценку прямо в камеру."
+      },
+      {
+        "type": "p",
+        "text": "Формат стал особенно заметным в 2020–2021 годах, когда TikTok активно рос, а короткие ролики всё чаще превращались в мини-скетчи. В отличие от обычного видео, POV сразу задавал роль зрителю, ведь он становился участником ситуации. Именно поэтому формат быстро прижился в комедийных сценках, романтических роликах, хоррор-зарисовках и подростковых драмах."
+      },
+      {
+        "type": "h2",
+        "text": "от ролевых сценок до абсурда"
+      },
+      {
+        "type": "p",
+        "text": "Изначально POV-видео часто были почти актёрскими миниатюрами. Авторы изображали персонажей, которые обращаются к зрителю, разговаривают с ним или реагируют на его воображаемые действия. Формат вырос именно из тик токов, где пользователь получал необычную перспективу внутри конкретной сцены. Позже такие видео стали объединяться хэштегом pov и быстро превратились в отдельный мемный жанр."
+      },
+      {
+        "type": "p",
+        "text": "Со временем формат начали всё чаще использовать неправильно или специально абсурдно. Вместо настоящей «точки зрения» появлялись мега абсурдные подписи. Пользователи могли показывать не взгляд героя, а просто любую ситуацию, где подпись сама по себе становилась шуткой."
+      },
+      {
+        "type": "note",
+        "text": "В итоге POV перестал быть только способом съёмки и стал забавным форматом для мемов!"
+      },
+      {
+        "type": "h2",
+        "text": "почему формат выжил"
+      },
+      {
+        "type": "p",
+        "text": "POV оказался удобным, потому что его можно применить почти к чему угодно. Достаточно написать короткую подпись, и обычный ролик сразу получает сюжет, а зритель понимает, кем он должен быть, где находится и почему происходящее выглядит смешно или неловко. Поэтому формат пережил пик 2020–2021 годов и до сих пор периодически возвращается в новых версиях."
+      },
+      {
+        "type": "p",
+        "text": "Сейчас POV используют не только для драматичных или романтических сценок, но и для постироничных мемов, рекламных роликов, хоррор-видео и обычных бытовых ситуаций. Формат стал настолько привычным, что его уже не всегда воспринимают как отдельный тренд. Но именно с этих трёх букв для многих начиналась эпоха TikTok, где любой пользователь мог попасть в любой сценарий!"
+      }
+    ],
+    "url": "./pages/articles/art_33.html"
+  },
+  {
+    "id": "art_34",
+    "order": 34,
+    "title": "хоумлендер вздыхает",
+    "h1": "хоумлендер вздыхает",
+    "description": "как кадр из «Пацанов» стал универсальной реакцией",
+    "slug": "homelander",
+    "cover": "./images/articles/art_34/cover.webp",
+    "tags": [
+      "новые мемы",
+      "фильмы/сериалы",
+      "для переписок",
+      "жизненные мемы"
+    ],
+    "media": {
+      "images": [
+        "./images/articles/art_34/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_34/video_1.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "тот самый выдох"
+      },
+      {
+        "type": "p",
+        "text": "В 2022 году после выхода седьмой серии третьего сезона сериала «Пацаны» зрители обратили внимание на момент с Хоумлендером. По сюжету персонаж выступает перед толпой и замечает человека, которого на секунду принимает за Солдатика. Закончив речь и оказавшись за кулисами, он делает тяжёлый выдох, пытаясь справиться с напряжением."
+      },
+      {
+        "type": "p",
+        "text": "Спустя некоторое время этот фрагмент начали активно распространять в соцсетях в виде гифок и коротких видео. Пользователи быстро нашли ему десятки бытовых применений! Мем оказался удобной реакцией для любых ситуаций, когда человек долго находился в стрессе и наконец получает возможность выдохнуть."
+      },
+      {
+        "type": "note",
+        "text": "Мем стал очень универсальным, его активно используют и в тик токах, и в стикерах!"
+      },
+      {
+        "type": "h2",
+        "text": "что там дальше творилось"
+      },
+      {
+        "type": "p",
+        "text": "Со временем мем начал жить собственной жизнью. Пользователи стали редактировать оригинальный кадр, всё сильнее раздувая щёки Хоумлендера. В TikTok, X и Telegram появились версии, где лицо персонажа увеличивалось до совершенно абсурдных размеров, а сам кадр превращался в полноценный шаблон для монтажа и стикеров."
+      },
+      {
+        "type": "p",
+        "text": "При этом смысл мема почти не изменился. Как и в оригинальной сцене, его продолжают использовать для изображения усталости, нервного напряжения, облегчения или попытки сдержать эмоции. Благодаря этому короткий эпизод из «Пацанов» превратился в одну из самых узнаваемых реакций последних лет, а многочисленные редактирования сделали его ещё более заметным за пределами самого сериала."
+      }
+    ],
+    "url": "./pages/articles/art_34.html"
+  },
+  {
     "id": "art_35",
     "order": 35,
     "title": "жизнь мемов",
@@ -1521,10 +1966,17 @@
     "description": "почему раньше мемы жили годами, а сейчас умирают за неделю",
     "slug": "memelifecycle",
     "cover": "./images/articles/art_35/cover.webp",
-    "tags": ["ностальгическое"],
+    "tags": [
+      "ностальгическое"
+    ],
     "media": {
-      "images": ["./images/articles/art_35/image_1.webp"],
-      "videos": ["./images/articles/art_35/video_1.webm", "./images/articles/art_35/video_2.webm"]
+      "images": [
+        "./images/articles/art_35/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_35/video_1.webm",
+        "./images/articles/art_35/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1571,6 +2023,111 @@
     "url": "./pages/articles/art_35.html"
   },
   {
+    "id": "art_36",
+    "order": 36,
+    "title": "алло алло звонят",
+    "h1": "возьми телефон детка",
+    "description": "как фрагмент стрима Toxi$ превратился в мем",
+    "slug": "vozmitelefondetka",
+    "cover": "./images/articles/art_36/cover.webp",
+    "tags": [
+      "новые мемы",
+      "для переписок"
+    ],
+    "media": {
+      "images": [
+        "./images/articles/art_36/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_36/video_1.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "откуда взялся мем"
+      },
+      {
+        "type": "p",
+        "text": "Фраза «Возьми телефон, детка» пришла в мемы из трека Nobody рэпера Toxi$, выпущенного осенью 2025. Однако настоящая популярность настигла её только несколько месяцев спустя. В феврале 2026 года пользователи начали массово распространять фрагмент стрима, на котором музыкант сидит дома и напевает собственную песню в непринуждённой обстановке."
+      },
+      {
+        "type": "p",
+        "text": "Именно этот момент быстро разошёлся по TikTok, Telegram и другим соцсетям. Пользователи стали вырезать отдельные фразы, делать ремиксы и использовать звук в коротких роликах. Вместе с вирусным припевом популярность получили и другие фрагменты стрима, включая момент, где Токсис начинает танцевать и вместо ответа на собственный вопрос отбивает ритм пальцами."
+      },
+      {
+        "type": "note",
+        "text": "После вирусного распространения звук начал жить отдельно от оригинальной песни, конечно же!"
+      },
+      {
+        "type": "h2",
+        "text": "почему мем стал популярным"
+      },
+      {
+        "type": "p",
+        "text": "Пользователи стали использовать его в роликах про любые ситуации, связанные со звонками, сообщениями и попытками выйти на связь. Чаще всего мем появлялся в шутках про бывших партнёров, родственников, начальство или людей, которые внезапно вспоминают о вас в самый неподходящий момент."
+      },
+      {
+        "type": "p",
+        "text": "Постепенно формат расширился. Фраза стала использоваться не только буквально, но и как реакция на любые вещи, которые настойчиво напоминают о себе. Благодаря этому звук быстро превратился в универсальный шаблон, который продолжает использоваться далеко за пределами контекста оригинального трека."
+      }
+    ],
+    "url": "./pages/articles/art_36.html"
+  },
+  {
+    "id": "art_37",
+    "order": 37,
+    "title": "без суеты",
+    "h1": "не спеша",
+    "description": "пародия на ностальгические видео, которая превратилась в  брейнрот",
+    "slug": "cheremsha",
+    "cover": "./images/articles/art_37/cover.webp",
+    "tags": [
+      "ии",
+      "абсурд",
+      "новые мемы"
+    ],
+    "media": {
+      "images": [
+        "./images/articles/art_37/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_37/video_1.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "тихо, не спеша, без суеты"
+      },
+      {
+        "type": "p",
+        "text": "Весной 2026 года русскоязычный TikTok заполонили ролики, начинавшиеся со слов «В Советском Союзе...». Видео были стилизованы под советские документальные фильмы и сопровождались спокойным дикторским голосом, рассказывающим о жизни в СССР. Однако вместо реальных историй зрителей ждали всё более абсурдные сюжеты, где люди купались в ядерных реакторах, использовали стекловату в быту и решали бытовые проблемы совершенно невероятными способами."
+      },
+      {
+        "type": "p",
+        "text": "Сам мем вырос из популярности нейросетевых роликов о «советской жизни», которые активно распространялись в конце 2025 и начале 2026 года. Со временем пользователи начали пародировать однотипные сюжеты и характерный стиль повествования."
+      },
+      {
+        "type": "note",
+        "text": "Особенно быстро вирусными стали фразы вроде «тихо, не спеша, без суеты»"
+      },
+      {
+        "type": "h2",
+        "text": "черемша, стекловата и обогащённый уран"
+      },
+      {
+        "type": "p",
+        "text": "По мере развития тренда вокруг него появилась собственная мемная вселенная. В роликах начали регулярно появляться персонажи вроде Черемши, который мог заменить транспорт, отопление, лифт и практически любую вещь в стране. Компанию ему составляли Брдыщ, Сёмга и другие герои, а сами истории становились всё более сюрреалистичными."
+      },
+      {
+        "type": "p",
+        "text": "Одной из особенностей мема стало сочетание ностальгической эстетики с нейросетевой нелогичностью. Ролики использовали узнаваемые образы советской эпохи, но наполняли их абсурдными деталями и скороговорками. Благодаря этому формат быстро превратился в отдельный жанр контента, породив десятки персонажей, тысячи пародий и собственный набор мемных фраз!"
+      }
+    ],
+    "url": "./pages/articles/art_37.html"
+  },
+  {
     "id": "art_38",
     "order": 38,
     "title": "синдром главного героя",
@@ -1578,10 +2135,18 @@
     "description": "почему люди в интернете называют других главными героями?",
     "slug": "maincharactersyndrome",
     "cover": "./images/articles/art_38/cover.webp",
-    "tags": ["жизненные мемы", "для переписок"],
+    "tags": [
+      "жизненные мемы",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_38/image_1.webp"],
-      "videos": ["./images/articles/art_38/video_1.webm", "./images/articles/art_38/video_2.webm"]
+      "images": [
+        "./images/articles/art_38/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_38/video_1.webm",
+        "./images/articles/art_38/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1628,6 +2193,60 @@
     "url": "./pages/articles/art_38.html"
   },
   {
+    "id": "art_39",
+    "order": 39,
+    "title": "caramelldansen",
+    "h1": "caramelldansen",
+    "description": "как шведская песня начала нулевых получила вторую жизнь в эпоху карантина",
+    "slug": "caramelldansen",
+    "cover": "./images/articles/art_39/cover.webp",
+    "tags": [
+      "ностальгическое"
+    ],
+    "media": {
+      "images": [],
+      "videos": [
+        "./images/articles/art_39/video_1.webm",
+        "./images/articles/art_39/video_2.webm"
+      ]
+    },
+    "content": [
+      {
+        "type": "h2",
+        "text": "от аниме-мема до мега-флешмоба"
+      },
+      {
+        "type": "p",
+        "text": "В середине 2000-х пользователи ускорили трек Caramelldansen группы Caramell и наложили его на короткую зацикленную анимацию персонажей из визуальной новеллы Popotan. Так появился знаменитый танец с руками над головой, изображающими заячьи ушки."
+      },
+      {
+        "type": "p",
+        "text": "Мем быстро вышел далеко за пределы аниме-сообщества. Пользователи начали перерисовывать танец с героями других аниме, игр, фильмов и мультфильмов. К концу 2000-х Caramelldansen уже был настоящей интернет-классикой, а сам танец стал одним из самых узнаваемых символов ранней эпохи YouTube и фанатской культуры."
+      },
+      {
+        "type": "note",
+        "text": "Для многих, кстати, было большим удивлением, что песня эта исполняется на шведском языке."
+      },
+      {
+        "type": "h2",
+        "text": "карантинный рейв в четырёх стенах"
+      },
+      {
+        "type": "p",
+        "text": "Весной 2020 года мем неожиданно пережил новую волну популярности. Во время локдаунов пользователи TikTok массово начали использовать песню в роликах с домашними вечеринками и импровизированными рейвами. Популярности способствовал специальный эффект, который превращал экран в мигающий клубный стробоскоп."
+      },
+      {
+        "type": "p",
+        "text": "Формат был максимально простым: человек сидел дома с уставшим видом, а затем под первые секунды Caramelldansen резко превращал свою комнату в танцпол. Многие снимали такие видео в пижаме, спальне или за рабочим столом, подчёркивая абсурдность ситуации. На фоне всеобщей изоляции мем стал способом посмеяться над собственным заточением и хотя бы ненадолго почувствовать атмосферу вечеринки."
+      },
+      {
+        "type": "p",
+        "text": "В итоге Caramelldansen оказался одним из немногих мемов, который смог пережить сразу несколько эпох интернета. От аниме-форумов середины 2000-х до TikTok времён карантина — всё это время ускоренная шведская песня продолжала заставлять людей танцевать."
+      }
+    ],
+    "url": "./pages/articles/art_39.html"
+  },
+  {
     "id": "art_40",
     "order": 40,
     "title": "а я патрик бейтман",
@@ -1635,10 +2254,15 @@
     "description": "как герой «Американского психопата» стал мемом про ауру. а ещё и эдиты",
     "slug": "patrickbateman",
     "cover": "./images/articles/art_40/cover.webp",
-    "tags": ["фильмы/сериалы"],
+    "tags": [
+      "фильмы/сериалы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_40/video_1.webm", "./images/articles/art_40/video_2.webm"]
+      "videos": [
+        "./images/articles/art_40/video_1.webm",
+        "./images/articles/art_40/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1654,16 +2278,16 @@
         "text": "Особенно популярным стал кадр, где Бейтман делает то самое сигма-лицо. В оригинальной сцене герой сидит за ужином с Полом Алленом, а тот не узнаёт его и говорит о нём в третьем лице. Бейтман в ответ странно кривит лицо, и именно этот момент позже стал основой для Sigma Face — тикток-тренда, где пользователи повторяли его выражение как реакцию на что-то максимально уверенное, странное или «аурное»."
       },
       {
+        "type": "note",
+        "text": "В фильме Патрик нервничает, сравнивает себя с другими, бесится из-за мелочей и постоянно пытается поддерживать идеальную картинку. Но в коротких эдитах остаётся только костюм, уверенный взгляд и красивый кадр."
+      },
+      {
         "type": "h2",
         "text": "эдиты сделали своё дело"
       },
       {
         "type": "p",
         "text": "В тиктоке и рилсах Бейтмана часто используют в нарезках под фонк, замедленные треки и резкий монтаж. Там он появляется рядом с другими узнаваемыми персонажами из фильмов и сериалов, а его образ постепенно превращается не столько в героя конкретного фильма, сколько в универсальную картинку для крутого вайба."
-      },
-      {
-        "type": "note",
-        "text": "В фильме Патрик нервничает, сравнивает себя с другими, бесится из-за мелочей и постоянно пытается поддерживать идеальную картинку. Но в коротких эдитах остаётся только костюм, уверенный взгляд и красивый кадр."
       },
       {
         "type": "p",
@@ -1680,10 +2304,16 @@
     "description": "почему усталость внезапно стала красивой",
     "slug": "burnoutaesthetic",
     "cover": "./images/articles/art_41/cover.webp",
-    "tags": ["жизненные мемы"],
+    "tags": [
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_41/image_1.webp"],
-      "videos": ["./images/articles/art_41/video_1.webm"]
+      "images": [
+        "./images/articles/art_41/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_41/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1725,10 +2355,16 @@
     "description": "почему в какой-то момент интернет перестал доверять даже торту",
     "slug": "cakeorfake",
     "cover": "./images/articles/art_42/cover.webp",
-    "tags": ["абсурд", "ностальгическое"],
+    "tags": [
+      "абсурд",
+      "ностальгическое"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_42/video_1.webm", "./images/articles/art_42/video_2.webm"]
+      "videos": [
+        "./images/articles/art_42/video_1.webm",
+        "./images/articles/art_42/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1770,10 +2406,16 @@
     "description": "67, оно же six seven, ща узнаем откуда оно взялось",
     "slug": "sixseven",
     "cover": "./images/articles/art_43/cover.webp",
-    "tags": ["абсурд", "новые мемы"],
+    "tags": [
+      "абсурд",
+      "новые мемы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_43/video_1.webm", "./images/articles/art_43/video_2.webm"]
+      "videos": [
+        "./images/articles/art_43/video_1.webm",
+        "./images/articles/art_43/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1815,10 +2457,16 @@
     "description": "как Тайлер Дерден стал главным героем эдитов",
     "slug": "tylerdurden",
     "cover": "./images/articles/art_44/cover.webp",
-    "tags": ["жизненные мемы", "фильмы/сериалы"],
+    "tags": [
+      "жизненные мемы",
+      "фильмы/сериалы"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_44/video_1.webm", "./images/articles/art_44/video_2.webm"]
+      "videos": [
+        "./images/articles/art_44/video_1.webm",
+        "./images/articles/art_44/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1860,10 +2508,18 @@
     "description": "разбираемся, что там за дикий огурец",
     "slug": "wildcucumber",
     "cover": "./images/articles/art_45/cover.webp",
-    "tags": ["ИИ", "ностальгическое", "абсурд"],
+    "tags": [
+      "ИИ",
+      "ностальгическое",
+      "абсурд"
+    ],
     "media": {
-      "images": ["./images/articles/art_45/image_1.webp"],
-      "videos": ["./images/articles/art_45/video_1.webm"]
+      "images": [
+        "./images/articles/art_45/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_45/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -1905,10 +2561,15 @@
     "description": "почему стоячая вода внезапно стала мемом",
     "slug": "stillwater",
     "cover": "./images/articles/art_46/cover.webp",
-    "tags": ["ностальгическое"],
+    "tags": [
+      "ностальгическое"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_46/video_1.webm", "./images/articles/art_46/video_2.webm"]
+      "videos": [
+        "./images/articles/art_46/video_1.webm",
+        "./images/articles/art_46/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -1950,10 +2611,18 @@
     "description": "почему тикток грустит по воспоминаниям, которых никогда не существовало",
     "slug": "fakenostalgia",
     "cover": "./images/articles/art_47/cover.webp",
-    "tags": ["ностальгическое", "жизненные мемы"],
+    "tags": [
+      "ностальгическое",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_47/image_1.webp"],
-      "videos": ["./images/articles/art_47/video_1.webm", "./images/articles/art_47/video_2.webm"]
+      "images": [
+        "./images/articles/art_47/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_47/video_1.webm",
+        "./images/articles/art_47/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -2007,10 +2676,17 @@
     "description": "как домашний каракал Гоша стал легендой, Big Russian Floppa или просто Шлёпой :)",
     "slug": "bigfloppa",
     "cover": "./images/articles/art_48/cover.webp",
-    "tags": ["ностальгическое", "для переписок"],
+    "tags": [
+      "ностальгическое",
+      "для переписок"
+    ],
     "media": {
-      "images": ["./images/articles/art_48/image_1.webp"],
-      "videos": ["./images/articles/art_48/video_1.webm"]
+      "images": [
+        "./images/articles/art_48/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_48/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -2052,10 +2728,17 @@
     "description": "Что за кот в капюшоне? Что такое окак??",
     "slug": "okak",
     "cover": "./images/articles/art_49/cover.webp",
-    "tags": ["ностальгическое", "жизненные мемы"],
+    "tags": [
+      "ностальгическое",
+      "жизненные мемы"
+    ],
     "media": {
-      "images": ["./images/articles/art_49/image_1.webp"],
-      "videos": ["./images/articles/art_49/video_1.webm"]
+      "images": [
+        "./images/articles/art_49/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_49/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -2097,10 +2780,17 @@
     "description": [],
     "slug": "smartmanahh",
     "cover": "./images/articles/art_50/cover.webp",
-    "tags": ["ностальгическое", "абсурд"],
+    "tags": [
+      "ностальгическое",
+      "абсурд"
+    ],
     "media": {
-      "images": ["./images/articles/art_50/image_1.webp"],
-      "videos": ["./images/articles/art_50/video_1.webm"]
+      "images": [
+        "./images/articles/art_50/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_50/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -2142,10 +2832,17 @@
     "description": "Зачем мазать мясо маслом?",
     "slug": "buttermeatbutter",
     "cover": "./images/articles/art_51/cover.webp",
-    "tags": ["ии", "абсурд"],
+    "tags": [
+      "ии",
+      "абсурд"
+    ],
     "media": {
-      "images": ["./images/articles/art_51/image_1.webp"],
-      "videos": ["./images/articles/art_51/video_1.webm"]
+      "images": [
+        "./images/articles/art_51/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_51/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -2187,10 +2884,17 @@
     "description": "что это такое? у него дубинка, он опасен?",
     "slug": "tungtungtungsahur",
     "cover": "./images/articles/art_52/cover.webp",
-    "tags": ["ии", "абсурд"],
+    "tags": [
+      "ии",
+      "абсурд"
+    ],
     "media": {
-      "images": ["./images/articles/art_52/image_1.webp"],
-      "videos": ["./images/articles/art_52/video_1.webm"]
+      "images": [
+        "./images/articles/art_52/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_52/video_1.webm"
+      ]
     },
     "content": [
       {
@@ -2232,10 +2936,16 @@
     "description": "давайте разбираться фа что значат эти слова пепе",
     "slug": "pepeshneyne",
     "cover": "./images/articles/art_53/cover.webp",
-    "tags": ["абсурд", "для переписок"],
+    "tags": [
+      "абсурд",
+      "для переписок"
+    ],
     "media": {
       "images": [],
-      "videos": ["./images/articles/art_53/video_1.webm", "./images/articles/art_53/video_2.webm"]
+      "videos": [
+        "./images/articles/art_53/video_1.webm",
+        "./images/articles/art_53/video_2.webm"
+      ]
     },
     "content": [
       {
@@ -2277,10 +2987,18 @@
     "description": "кто ж его так расстроил? разбираемся, что и откуда!",
     "slug": "sadhamster",
     "cover": "./images/articles/art_54/cover.webp",
-    "tags": ["жизненные мемы", "для переписок", "ностальгическое"],
+    "tags": [
+      "жизненные мемы",
+      "для переписок",
+      "ностальгическое"
+    ],
     "media": {
-      "images": ["./images/articles/art_54/image_1.webp"],
-      "videos": ["./images/articles/art_54/video_1.webm"]
+      "images": [
+        "./images/articles/art_54/image_1.webp"
+      ],
+      "videos": [
+        "./images/articles/art_54/video_1.webm"
+      ]
     },
     "content": [
       {
