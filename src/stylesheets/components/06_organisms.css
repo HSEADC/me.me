@@ -110,8 +110,11 @@
 
 /* Test 3 */
 
-.O_TestGuess {
-  width: 100%;
-  min-height: 920rem;
-  padding-top: 100rem;
+.O_Test {
+  display: flex;
+  padding-left: 493rem;
+  align-items: center;
+  gap: 121rem;
+  align-self: stretch;
+  z-index: 2;
 }

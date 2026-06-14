@@ -226,20 +226,12 @@
 
 /* Test 3 */
 
-.M_TestGuessAnswerRow {
+.M_TestInfo {
   display: flex;
-  align-items: center;
-  gap: 24rem;
-  align-self: stretch;
-  cursor: pointer;
-}
-
-.M_TestGuessResultBox {
-  display: flex;
+  height: 384rem;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 28rem;
-  padding-top: 10rem;
 }
 
 /* 404 */

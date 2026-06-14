@@ -71,8 +71,8 @@ const htmlPages = [
   createPages("./src/pages/interactives.html", "./pages/interactives.html", ["allStyles", "index", "headerReact", "footerReact"]),
   createPages("./src/pages/tests.html", "./pages/tests.html", ["allStyles", "index", "headerReact", "footerReact"]),
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", ["allStyles", "test1", "headerReact", "footerReact"]),
-  createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["allStyles", "test1", "headerReact", "footerReact"]),
-  createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["allStyles", "test1", "headerReact", "footerReact"]),
+  createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["allStyles", "test2", "headerReact", "footerReact"]),
+  createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["allStyles", "test3", "headerReact", "footerReact"]),
   createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
   createPages("./src/404.html", "./404.html", ["index"]),
 ];

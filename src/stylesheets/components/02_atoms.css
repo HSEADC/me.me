@@ -539,124 +539,12 @@
 
 /* Test 3 */
 
-.A_TestGuessHeader {
-  display: inline-flex;
-  align-items: center;
-  gap: 15rem;
-}
-
-.A_TestGuessImage {
-  width: 440rem;
-  height: 440rem;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
-}
-
-.A_TestGuessCheckbox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 48rem;
-  height: 48rem;
-  background: #000000;
-  flex-shrink: 0;
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-}
-
-.A_TestGuessCheckbox:checked {
-  background: #ff65a6;
-}
-
-.A_TestGuessCheckbox:hover {
-  outline: 3rem solid #ff65a6;
-}
-
-.A_TestGuessSubmit {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 170rem;
-  height: 55rem;
-  padding: 10rem 20rem;
-  font-family: Impact, sans-serif;
-  font-size: 32rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  color: #000000;
-  background: #ffffff;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.A_TestGuessSubmit:hover {
-  color: #ffffff;
-  background: #ff65a6;
-  transition: all 0.3s ease-in-out;
-}
-
-.A_TestGuessResultHeader {
-  color: #fff;
-  font-family: "Inter";
-  font-size: 64rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-  max-width: 520rem;
-}
-
-.A_TestGuessResultText {
-  color: #fff;
-  font-family: "Inter";
-  font-size: 36rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  margin: 0;
-  max-width: 620rem;
-}
-
-.A_TestGuessResultButtons {
+.A_TestImage {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16rem;
-  margin-top: 12rem;
-}
-
-.A_TestGuessResultButton {
-  display: inline-flex;
-  align-items: center;
+  width: 384rem;
+  height: 384rem;
   justify-content: center;
-  width: 314rem;
-  height: 55rem;
-  padding: 0 20rem;
-  font-family: Impact, sans-serif;
-  font-size: 32rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  color: #000000;
-  background: #ffffff;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.A_TestGuessResultButton:hover {
-  color: #ffffff;
-  background: #ff65a6;
-  transition: all 0.3s ease-in-out;
+  align-items: center;
 }
 
 /* 404 */

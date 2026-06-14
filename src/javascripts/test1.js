@@ -65,5 +65,10 @@ const results = [
   },
 ];
 
-initTest(stages);
-chooseAnswer(stages, results);
+const testQuestion = document.getElementById("TestQuestion");
+const numberOfQuestion = document.getElementById("NumberOfQuestion");
+
+if (testQuestion && numberOfQuestion) {
+  initTest(stages);
+  chooseAnswer(stages, results);
+}
