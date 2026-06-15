@@ -5,45 +5,6 @@
   border: none;
 }
 
-.C_Dropdown {
-  position: absolute;
-  top: calc(100% + 16rem);
-  left: 0;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  gap: 12rem;
-  z-index: 9999;
-}
-
-.M_SearchResult {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
-  padding: 16rem 20rem;
-  background: var(--Pink);
-  border: 3rem solid var(--White);
-  text-decoration: none;
-}
-
-.A_SearchResultHeader {
-  margin: 0;
-  color: var(--White);
-  font-family: Impact;
-  font-size: 28rem;
-  line-height: 100%;
-}
-
-.A_SearchResultDescription {
-  margin: 0;
-  color: var(--White);
-  font-family: "Inter";
-  font-size: 18rem;
-  line-height: 110%;
-}
-
-/* это сверху для серчбара костыль потом уберу */
-
 .W_Header_all_links {
   gap: 64rem;
   display: flex;
@@ -290,4 +251,16 @@
   width: 1920rem;
   flex-direction: column;
   margin-bottom: -130rem;
+}
+
+/* SearchPage */
+
+.W_SearchPage {
+  display: flex;
+  width: 1920rem;
+  padding-top: 196rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 117rem;
 }

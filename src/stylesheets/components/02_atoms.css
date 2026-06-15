@@ -431,25 +431,6 @@
   background: var(--Pink);
 }
 
-.A_ArticlesButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 314rem;
-  height: 55rem;
-  padding: 10rem 30rem;
-  font-family: Impact, sans-serif;
-  font-size: 32rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  color: rgb(0, 0, 0);
-  background: #ffffff;
-  border: none;
-  text-decoration: none;
-  margin: 0;
-}
-
 /* Test 1 */
 
 .A_MarkedListLine {
@@ -489,6 +470,30 @@
   justify-content: center;
   align-items: center;
   border: 17rem solid var(--Pink);
+}
+
+/* SearchBar */
+
+.A_SearchResultHeader {
+  margin: 0;
+  color: var(--White);
+  font-family: "Impact";
+  font-size: 36rem;
+  line-height: 110%;
+}
+
+.A_SearchResultDescription {
+  margin: 0;
+  color: var(--White);
+  font-family: "Inter";
+  font-size: 24rem;
+  line-height: 110%;
+}
+
+/* Search Page */
+
+.W_SearchPage > .A_H2 {
+  align-items: center;
 }
 
 /* 404 */

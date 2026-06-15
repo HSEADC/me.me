@@ -25,3 +25,29 @@
   z-index: -10;
   overflow: hidden;
 }
+
+/* SearchBar */
+
+.C_Dropdown {
+  position: absolute;
+  top: calc(100% + 10rem);
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 12rem;
+  z-index: 9999;
+}
+
+/* Search Page */
+
+.C_SearchResults {
+  display: flex;
+  align-self: stretch;
+  row-gap: 42rem;
+  column-gap: 64rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}

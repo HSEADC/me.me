@@ -23,7 +23,7 @@ export default function W_SearchContainer() {
 
     if (normalizedValue.length < 2) return;
 
-    window.location.href = `/me.me/search.html?q=${encodeURIComponent(normalizedValue)}`;
+    window.location.href = `https://mememedia.adc.ac/search.html?q=${encodeURIComponent(normalizedValue)}`;
   }
 
   return (

@@ -20,6 +20,7 @@ module.exports = {
     headerReact: "./src/javascripts/header-react.jsx",
     footerReact: "./src/javascripts/footer-react.jsx",
     articlePage: "./src/javascripts/article_content.js",
+    searchReact: "./src/javascripts/search-react.jsx",
   },
   output: {
     filename: "[name].js",

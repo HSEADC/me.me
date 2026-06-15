@@ -118,36 +118,6 @@
 
 /* Random */
 
-.M_RandomHeading {
-  margin: 0 auto;
-}
-
-.M_RandomPageDescription {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64rem;
-  padding: 200rem 120rem;
-  margin-left: 500rem;
-  width: 720rem;
-  height: 500rem;
-}
-
-/* Constructor */
-
-.M_ConstructorHeading {
-  margin: 0 auto;
-}
-
-.M_ConstructorPresets {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64rem;
-}
-
-/* Random */
-
 .M_ImageSection {
   display: flex;
   width: 1731rem;
@@ -232,6 +202,34 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+/* SearchBar */
+
+.M_SearchResult {
+  display: flex;
+  flex-direction: column;
+  gap: 19rem;
+  padding: 20rem 16rem 25rem 16rem;
+  background: var(--Pink);
+  border: 3rem solid var(--White);
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+/* Search Page */
+
+.C_SearchResults > .M_SearchResult {
+  width: 862rem;
+  height: 252rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 20rem;
+  align-items: center;
 }
 
 /* Styleguide */
