@@ -233,3 +233,12 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+/* Styleguide */
+
+.M_StyleguideHead {
+  display: flex;
+  width: 995.844rem;
+  flex-direction: column;
+  align-items: flex-start;
+}

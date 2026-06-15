@@ -634,3 +634,12 @@
   bottom: 80rem;
   animation-delay: 2s;
 }
+
+/* Styleguide */
+
+.A_StyleguideLogo {
+  width: 995.844rem;
+  height: 426rem;
+  position: relative;
+  margin-top: -96rem;
+}

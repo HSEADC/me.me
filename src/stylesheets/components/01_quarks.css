@@ -103,6 +103,7 @@
   font-weight: 500;
   line-height: 110%;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 /* H2 */

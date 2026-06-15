@@ -11,7 +11,6 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./src/javascripts/index.js",
-    styleguide: "./src/javascripts/styleguide.js",
     articles: "./src/javascripts/articles.js",
     allStyles: "./src/javascripts/allStyles.js",
     test1: "./src/javascripts/test1.js",

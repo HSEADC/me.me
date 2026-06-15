@@ -17492,7 +17492,7 @@ function W_SearchContainer() {
   }));
 }
 ;// ./src/images/logo.svg
-const logo_namespaceObject = __webpack_require__.p + "images/2b5e5baf6a722d6de1a2.svg";
+const logo_namespaceObject = __webpack_require__.p + "images/6100c3e03ad15cf012b8.svg";
 ;// ./src/javascripts/header-react.jsx
 
 
