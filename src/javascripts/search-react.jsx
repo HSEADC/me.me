@@ -105,11 +105,7 @@ function goToSearchPage(query) {
 
   if (!normalizedQuery) return;
 
-  const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-
-  const basePath = isLocalhost ? "" : "/me.me";
-
-  window.location.href = `${basePath}/search.html?q=${encodeURIComponent(normalizedQuery)}`;
+  window.location.href = `https://mememedia.adc.ac/search.html?q=${encodeURIComponent(normalizedQuery)}`;
 }
 
 function initSearchPage() {
