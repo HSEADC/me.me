@@ -375,9 +375,7 @@ function renderResults(query) {
 function goToSearchPage(query) {
   var normalizedQuery = query.trim();
   if (!normalizedQuery) return;
-  var isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-  var basePath = isLocalhost ? "" : "/me.me";
-  window.location.href = "".concat(basePath, "/search.html?q=").concat(encodeURIComponent(normalizedQuery));
+  window.location.href = "https://mememedia.adc.ac/search.html?q=".concat(encodeURIComponent(normalizedQuery));
 }
 function initSearchPage() {
   if (searchInput) {
