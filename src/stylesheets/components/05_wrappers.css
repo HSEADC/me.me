@@ -252,30 +252,18 @@
   gap: 136rem;
 }
 
-/* Test 2 */
+/* Puzzle */
 
-.W_PuzzleGame {
-  width: 1700rem;
+.W_PuzzleContent {
+  position: relative;
   display: flex;
+  padding: 230rem 64rem 180rem;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  padding-bottom: 140rem;
-  box-sizing: border-box;
-}
-
-.W_PuzzleBoardZone {
-  width: 1700rem;
-  min-height: 1120rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.W_PuzzlePiecesLayer {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
+  gap: 79rem;
+  align-self: stretch;
+  min-height: 1150rem;
+  overflow: hidden;
 }
 
 /* Test 3 */

@@ -17351,7 +17351,7 @@ function A_FooterLink(_ref) {
   }, text);
 }
 ;// ./src/images/logo.svg
-const logo_namespaceObject = __webpack_require__.p + "images/6100c3e03ad15cf012b8.svg";
+const logo_namespaceObject = __webpack_require__.p + "images/2697fa2250f2c768d0ea.svg";
 ;// ./src/components/A_FooterLogo.jsx
 
 

@@ -28,47 +28,43 @@
   <body>
     <nav class="M_Header"></nav>
 
-    <div class="M_TestHeading">
-      <div class="A_HeaderPart">
-        <span class="Q_ImageInHeader" aria-hidden="true"></span>
-        <h1 class="hd Q_HeaderText">собери</h1>
-        <span class="Q_ImageInHeader" aria-hidden="true"></span>
-        <h1 class="hd Q_HeaderText">мем</h1>
-        <span class="Q_ImageInHeader" aria-hidden="true"></span>
+    <div class="W_PuzzleContent">
+      <div class="A_H2">
+        <h2 class="hd Q_Header2Text">ого! пазл!</h2>
+      </div>
+
+      <div class="A_Puzzle">
+        <div class="Q_PartPuzzle" data-row="0" data-col="0"></div>
+        <div class="Q_PartPuzzle" data-row="0" data-col="1"></div>
+        <div class="Q_PartPuzzle" data-row="0" data-col="2"></div>
+        <div class="Q_PartPuzzle" data-row="0" data-col="3"></div>
+
+        <div class="Q_PartPuzzle" data-row="1" data-col="0"></div>
+        <div class="Q_PartPuzzle" data-row="1" data-col="1"></div>
+        <div class="Q_PartPuzzle" data-row="1" data-col="2"></div>
+        <div class="Q_PartPuzzle" data-row="1" data-col="3"></div>
+
+        <div class="Q_PartPuzzle" data-row="2" data-col="0"></div>
+        <div class="Q_PartPuzzle" data-row="2" data-col="1"></div>
+        <div class="Q_PartPuzzle" data-row="2" data-col="2"></div>
+        <div class="Q_PartPuzzle" data-row="2" data-col="3"></div>
+
+        <div class="Q_PartPuzzle" data-row="3" data-col="0"></div>
+        <div class="Q_PartPuzzle" data-row="3" data-col="1"></div>
+        <div class="Q_PartPuzzle" data-row="3" data-col="2"></div>
+        <div class="Q_PartPuzzle" data-row="3" data-col="3"></div>
+      </div>
+      <div class="C_PuzzlePieces"></div>
+      <div class="W_MainButtons">
+        <a href="../tests.html">
+          <button class="A_Button">обратно к тестам</button>
+        </a>
+        <button id="Upload" class="A_Button">
+          <span class="Q_ArrowUp"></span>
+          <span class="Q_UploadText">загрузить фото</span>
+        </button>
       </div>
     </div>
-
-    <section class="O_PuzzleGame">
-      <div class="W_PuzzleGame">
-        <div class="W_PuzzleBoardZone">
-          <div class="A_PuzzleBoard" id="puzzle-board">
-            <div class="A_PuzzleCell" data-row="0" data-col="0"></div>
-            <div class="A_PuzzleCell" data-row="0" data-col="1"></div>
-            <div class="A_PuzzleCell" data-row="0" data-col="2"></div>
-            <div class="A_PuzzleCell" data-row="0" data-col="3"></div>
-
-            <div class="A_PuzzleCell" data-row="1" data-col="0"></div>
-            <div class="A_PuzzleCell" data-row="1" data-col="1"></div>
-            <div class="A_PuzzleCell" data-row="1" data-col="2"></div>
-            <div class="A_PuzzleCell" data-row="1" data-col="3"></div>
-
-            <div class="A_PuzzleCell" data-row="2" data-col="0"></div>
-            <div class="A_PuzzleCell" data-row="2" data-col="1"></div>
-            <div class="A_PuzzleCell" data-row="2" data-col="2"></div>
-            <div class="A_PuzzleCell" data-row="2" data-col="3"></div>
-
-            <div class="A_PuzzleCell" data-row="3" data-col="0"></div>
-            <div class="A_PuzzleCell" data-row="3" data-col="1"></div>
-            <div class="A_PuzzleCell" data-row="3" data-col="2"></div>
-            <div class="A_PuzzleCell" data-row="3" data-col="3"></div>
-          </div>
-
-          <div class="W_PuzzlePiecesLayer" id="puzzle-pieces-layer"></div>
-        </div>
-
-        <a href="../tests.html" class="A_PuzzleBackButton">вернуться к тестам</a>
-      </div>
-    </section>
 
     <footer class="M_Footer"></footer>
   </body>

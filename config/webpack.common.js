@@ -14,7 +14,7 @@ module.exports = {
     articles: "./src/javascripts/articles.js",
     allStyles: "./src/javascripts/allStyles.js",
     test1: "./src/javascripts/test1.js",
-    test2: "./src/javascripts/test2.js",
+    puzzle: "./src/javascripts/puzzle.js",
     test3: "./src/javascripts/test3.js",
     tests: "./src/javascripts/tests.js",
     headerReact: "./src/javascripts/header-react.jsx",

@@ -1,61 +1,30 @@
 console.clear();
 
-import "../stylesheets/style.css";
 import puzzleImage from "../images/tests/jigsaw.webp";
 
-// обводка
-
-function syncOutlinedText() {
-  document.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart, .A_PuzzleBackButton, .A_PuzzleWinButton").forEach((el) => {
-    el.setAttribute("data-text", el.textContent.trim());
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  syncOutlinedText();
-
-  const observer = new MutationObserver(() => {
-    syncOutlinedText();
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-    characterData: true,
-  });
-});
-
-// инлайн-картинки
-
-function applyInlineHeaderImages() {
-  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
-  if (!imageBlocks.length) return;
-
-  const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
-  const urls = req.keys().map((key) => req(key));
-  const shuffledImages = [...urls].sort(() => Math.random() - 0.5);
-
-  imageBlocks.forEach((block, index) => {
-    const imageUrl = shuffledImages[index % shuffledImages.length];
-    block.style.backgroundImage = `url("${imageUrl}")`;
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  applyInlineHeaderImages();
-});
-
-// пазл
-
 const PUZZLE_SIZE = 4;
-const BOARD_SIZE = 864;
-const PIECE_SIZE = BOARD_SIZE / PUZZLE_SIZE; // 216
 const SNAP_RADIUS = 110;
 
-const board = document.getElementById("puzzle-board");
-const piecesLayer = document.getElementById("puzzle-pieces-layer");
-const cells = Array.from(document.querySelectorAll(".A_PuzzleCell"));
-const pieces = [];
+const board = document.querySelector(".A_Puzzle");
+const piecesLayer = document.querySelector(".C_PuzzlePieces");
+const cells = Array.from(document.querySelectorAll(".Q_PartPuzzle"));
+const uploadButton = document.getElementById("Upload");
+const mainButtons = document.querySelector(".W_MainButtons");
+const heading = document.querySelector(".Q_Header2Text");
+
+let pieces = [];
+let currentImage = puzzleImage;
+let uploadedImageUrl = null;
+
+function getPuzzleMetrics() {
+  const boardRect = board.getBoundingClientRect();
+  const pieceSize = boardRect.width / PUZZLE_SIZE;
+
+  return {
+    boardSize: boardRect.width,
+    pieceSize,
+  };
+}
 
 function createPiecesData() {
   const data = [];
@@ -69,18 +38,20 @@ function createPiecesData() {
   return data.sort(() => Math.random() - 0.5);
 }
 
-function createPiece(row, col) {
+function createPiece(row, col, imageUrl) {
   const piece = document.createElement("div");
-  piece.classList.add("A_PuzzlePiece");
+  const metrics = getPuzzleMetrics();
+
+  piece.classList.add("Q_PuzzlePiece");
   piece.dataset.row = String(row);
   piece.dataset.col = String(col);
   piece.dataset.locked = "false";
 
-  piece.style.width = `${PIECE_SIZE}rem`;
-  piece.style.height = `${PIECE_SIZE}rem`;
-  piece.style.backgroundImage = `url("${puzzleImage}")`;
-  piece.style.backgroundSize = `${BOARD_SIZE}rem ${BOARD_SIZE}rem`;
-  piece.style.backgroundPosition = `-${col * PIECE_SIZE}rem -${row * PIECE_SIZE}rem`;
+  piece.style.width = `${metrics.pieceSize}px`;
+  piece.style.height = `${metrics.pieceSize}px`;
+  piece.style.backgroundImage = `url("${imageUrl}")`;
+  piece.style.backgroundSize = `${metrics.boardSize}px ${metrics.boardSize}px`;
+  piece.style.backgroundPosition = `-${col * metrics.pieceSize}px -${row * metrics.pieceSize}px`;
 
   return piece;
 }
@@ -88,42 +59,37 @@ function createPiece(row, col) {
 function placePiecesAroundBoard(puzzlePieces) {
   const boardRect = board.getBoundingClientRect();
   const layerRect = piecesLayer.getBoundingClientRect();
+  const metrics = getPuzzleMetrics();
 
-  const leftAreaWidth = Math.max(220, boardRect.left - layerRect.left - 24);
-  const rightAreaStart = boardRect.left - layerRect.left + boardRect.width + 24;
+  const pieceSize = metrics.pieceSize;
+  const gap = Math.max(8, pieceSize * 0.12);
 
-  const leftCols = 2;
-  const rightCols = 2;
-  const leftGapX = 12;
-  const rightGapX = 12;
-  const gapY = 12;
+  const boardLeft = boardRect.left - layerRect.left;
+  const boardTop = boardRect.top - layerRect.top;
+  const boardRight = boardLeft + boardRect.width;
+  const boardHeight = boardRect.height;
 
-  const leftBaseX = Math.max(12, leftAreaWidth - leftCols * PIECE_SIZE - leftGapX);
-  const rightBaseX = rightAreaStart;
-  const topStart = 24;
+  const leftAreaWidth = boardLeft;
+  const rightAreaWidth = layerRect.width - boardRight;
+
+  const leftCols = leftAreaWidth >= pieceSize * 2 + gap * 3 ? 2 : 1;
+  const rightCols = rightAreaWidth >= pieceSize * 2 + gap * 3 ? 2 : 1;
+
+  const leftBaseX = Math.max(gap, boardLeft - leftCols * pieceSize - leftCols * gap);
+  const rightBaseX = Math.min(boardRight + gap, layerRect.width - rightCols * pieceSize - gap);
 
   puzzlePieces.forEach((piece, index) => {
-    let x = 0;
-    let y = 0;
+    const isLeft = index < 8;
+    const localIndex = isLeft ? index : index - 8;
+    const cols = isLeft ? leftCols : rightCols;
 
-    if (index < 8) {
-      const localIndex = index;
-      const col = localIndex % leftCols;
-      const row = Math.floor(localIndex / leftCols);
+    const col = localIndex % cols;
+    const row = Math.floor(localIndex / cols);
+    const rows = Math.ceil(8 / cols);
 
-      x = leftBaseX + col * (PIECE_SIZE + leftGapX);
-      y = topStart + row * (PIECE_SIZE + gapY);
-    } else {
-      const localIndex = index - 8;
-      const col = localIndex % rightCols;
-      const row = Math.floor(localIndex / rightCols);
-
-      x = rightBaseX + col * (PIECE_SIZE + rightGapX);
-      y = topStart + row * (PIECE_SIZE + gapY);
-
-      const maxRightX = layerRect.width - PIECE_SIZE - 12;
-      if (x > maxRightX) x = maxRightX;
-    }
+    const x = (isLeft ? leftBaseX : rightBaseX) + col * (pieceSize + gap);
+    const yStep = rows > 1 ? (boardHeight - pieceSize) / (rows - 1) : 0;
+    const y = boardTop + row * yStep;
 
     piece.dataset.startX = String(x);
     piece.dataset.startY = String(y);
@@ -184,23 +150,51 @@ function snapPieceToCell(piece, cell) {
 
   piece.style.left = `${x}px`;
   piece.style.top = `${y}px`;
+
   piece.dataset.locked = "true";
   piece.dataset.placedRow = String(cell.dataset.row);
   piece.dataset.placedCol = String(cell.dataset.col);
+
   piece.classList.add("is-locked");
+}
+
+function showRestartButton() {
+  const existingRestartButton = document.getElementById("RestartPuzzle");
+
+  if (existingRestartButton) return;
+
+  const restartButton = document.createElement("button");
+
+  restartButton.id = "RestartPuzzle";
+  restartButton.classList.add("A_Button");
+  restartButton.innerText = "начать заново";
+
+  restartButton.addEventListener("click", () => {
+    resetPuzzle(currentImage);
+  });
+
+  mainButtons.insertBefore(restartButton, uploadButton);
+}
+
+function hideRestartButton() {
+  const restartButton = document.getElementById("RestartPuzzle");
+
+  if (restartButton) {
+    restartButton.remove();
+  }
 }
 
 function checkWin() {
   const allLocked = pieces.every((piece) => piece.dataset.locked === "true");
+
   if (!allLocked) return;
 
-  const existingButton = document.querySelector(".A_PuzzleWinButton");
-  if (existingButton) return;
+  if (heading) {
+    heading.innerText = "УРА! ПАЗЛ СОБРАН!";
+    heading.dataset.text = "УРА! ПАЗЛ СОБРАН!";
+  }
 
-  const resultButton = document.createElement("a");
-  resultButton.classList.add("A_PuzzleWinButton");
-  resultButton.href = "../tests.html";
-  resultButton.setAttribute("data-text", resultButton.textContent.trim());
+  showRestartButton();
 }
 
 function makePieceDraggable(piece) {
@@ -213,6 +207,7 @@ function makePieceDraggable(piece) {
     event.preventDefault();
 
     const rect = piece.getBoundingClientRect();
+
     shiftX = event.clientX - rect.left;
     shiftY = event.clientY - rect.top;
 
@@ -224,14 +219,16 @@ function makePieceDraggable(piece) {
 
   function onPointerMove(event) {
     const layerRect = piecesLayer.getBoundingClientRect();
+    const metrics = getPuzzleMetrics();
+    const pieceSize = metrics.pieceSize;
 
     let x = event.clientX - layerRect.left - shiftX;
     let y = event.clientY - layerRect.top - shiftY;
 
     const minX = 0;
     const minY = 0;
-    const maxX = layerRect.width - PIECE_SIZE;
-    const maxY = layerRect.height - PIECE_SIZE;
+    const maxX = layerRect.width - pieceSize;
+    const maxY = layerRect.height - pieceSize;
 
     if (x < minX) x = minX;
     if (y < minY) y = minY;
@@ -259,13 +256,25 @@ function makePieceDraggable(piece) {
   piece.addEventListener("pointerdown", onPointerDown);
 }
 
-function initPuzzle() {
+function resetPuzzle(imageUrl) {
   if (!board || !piecesLayer) return;
+
+  currentImage = imageUrl;
+  pieces = [];
+  piecesLayer.innerHTML = "";
+
+  hideRestartButton();
+
+  if (heading) {
+    heading.innerText = "ого! пазл!";
+    heading.dataset.text = "ого! пазл!";
+  }
 
   const piecesData = createPiecesData();
 
   piecesData.forEach((pieceData) => {
-    const piece = createPiece(pieceData.row, pieceData.col);
+    const piece = createPiece(pieceData.row, pieceData.col, currentImage);
+
     pieces.push(piece);
     makePieceDraggable(piece);
   });
@@ -273,6 +282,43 @@ function initPuzzle() {
   requestAnimationFrame(() => {
     placePiecesAroundBoard(pieces);
   });
+}
+
+function initUploadButton() {
+  if (!uploadButton) return;
+
+  const fileInput = document.createElement("input");
+
+  fileInput.type = "file";
+  fileInput.accept = "image/*";
+  fileInput.style.display = "none";
+
+  document.body.appendChild(fileInput);
+
+  uploadButton.addEventListener("click", () => {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+
+    if (!file) return;
+
+    if (uploadedImageUrl) {
+      URL.revokeObjectURL(uploadedImageUrl);
+    }
+
+    uploadedImageUrl = URL.createObjectURL(file);
+
+    resetPuzzle(uploadedImageUrl);
+
+    fileInput.value = "";
+  });
+}
+
+function initPuzzle() {
+  resetPuzzle(puzzleImage);
+  initUploadButton();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
