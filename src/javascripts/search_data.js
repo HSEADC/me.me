@@ -224,7 +224,7 @@ export const searchItems = [
   },
   {
     title: "муся, это ты?",
-    description: "",
+    description: "кто такая муся?",
     url: "/pages/articles/art_30.html",
     type: "статья",
   },
@@ -344,7 +344,7 @@ export const searchItems = [
   },
   {
     title: "умный человек скачать обои",
-    description: "",
+    description: "что это было? какой умный человек?",
     url: "/pages/articles/art_50.html",
     type: "статья",
   },
