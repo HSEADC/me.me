@@ -180,7 +180,7 @@ function applyArticlesFilterAndSearch() {
 }
 
 function updateInfo(content) {
-  const root = document.querySelector(".W_Articles");
+  const root = document.querySelector(".C_Articles");
 
   if (!root) return;
 
@@ -192,7 +192,7 @@ function updateInfo(content) {
 }
 
 function createArticleTeaserCard(article) {
-  const { title, cover, url, tags } = article;
+  const { title, description, cover, url, tags } = article;
 
   const link = document.createElement("a");
   link.href = url;
@@ -200,7 +200,8 @@ function createArticleTeaserCard(article) {
 
   const normalizedTags = Array.isArray(tags) ? tags.map((tag) => normalizeSearchText(tag)) : [];
   const titleSearch = normalizeSearchText(title || "");
-  const fullSearch = normalizeSearchText([title, ...(tags || [])].join(" "));
+  const descriptionSearch = normalizeSearchText(description || "");
+  const fullSearch = normalizeSearchText([title, description, ...(tags || [])].join(" "));
 
   link.dataset.titleSearch = titleSearch;
   link.dataset.search = fullSearch;
@@ -220,11 +221,26 @@ function createArticleTeaserCard(article) {
     imgDiv.style.backgroundImage = `url("${cover}")`;
   }
 
+  const popup = document.createElement("div");
+  popup.classList.add("M_ArticleCardPopup");
+
+  const popupText = document.createElement("p");
+  popupText.classList.add("A_TextBlock");
+  popupText.textContent = Array.isArray(description) ? "" : description || "";
+
+  popup.appendChild(popupText);
+
+  card.addEventListener("mousemove", (event) => {
+    popup.style.left = `${event.clientX + 40}px`;
+    popup.style.top = `${event.clientY + 40}px`;
+  });
+
   const titleEl = document.createElement("h3");
   titleEl.classList.add("Q_ArticleCaption");
   titleEl.textContent = title || "без названия";
 
   card.appendChild(imgDiv);
+  card.appendChild(popup);
   card.appendChild(titleEl);
   link.appendChild(card);
 
@@ -255,22 +271,3 @@ function initArticlesSearch() {
     applyArticlesFilterAndSearch();
   });
 }
-
-// инлайн-картинки другой путь отдельно для статей
-
-document.addEventListener("DOMContentLoaded", () => {
-  const imageBlocks = document.querySelectorAll(".Q_ImageInHeader, .Q_ImageBigFloat, .Q_ImageSmallFloat");
-
-  if (!imageBlocks.length) return;
-
-  const req = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
-
-  const urls = req.keys().map((k) => req(k));
-
-  const shuffledImages = [...urls].sort(() => Math.random() - 0.5);
-
-  imageBlocks.forEach((block, index) => {
-    const imageUrl = shuffledImages[index % shuffledImages.length];
-    block.style.backgroundImage = `url("${imageUrl}")`;
-  });
-});

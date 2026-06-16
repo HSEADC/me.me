@@ -145,6 +145,34 @@
   align-self: stretch;
 }
 
+.M_ArticleCardPopup {
+  position: fixed;
+  width: 360rem;
+  min-height: 160rem;
+  padding: 24rem;
+  background: var(--Pink);
+  border: 4rem solid var(--White);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  left: 0;
+  top: 0;
+}
+
+.M_ArticleCardPopup .A_TextBlock {
+  font-size: 28rem;
+  line-height: 110%;
+  color: var(--White);
+  margin: 0;
+  text-align: left;
+}
+
+.A_ArticleCard:hover .M_ArticleCardPopup {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Article Content */
 
 .M_ArticleHead {
