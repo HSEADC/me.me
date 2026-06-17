@@ -235,7 +235,7 @@ function createArticleTeaserCard(article) {
     popup.style.top = `${event.clientY + 40}px`;
   });
 
-  const titleEl = document.createElement("h3");
+  const titleEl = document.createElement("p");
   titleEl.classList.add("Q_ArticleCaption");
   titleEl.textContent = title || "без названия";
 

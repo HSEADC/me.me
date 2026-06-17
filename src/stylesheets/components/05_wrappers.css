@@ -255,3 +255,63 @@
   align-items: center;
   gap: 117rem;
 }
+
+/* Styleguide */
+
+.W_StyleguideTextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32rem;
+}
+
+.W_StyleguideContent {
+  display: flex;
+  width: 1341rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 200rem;
+  flex-shrink: 0;
+}
+
+.W_LogosGood {
+  display: flex;
+  align-items: center;
+  gap: 97rem;
+  align-self: stretch;
+}
+
+.W_LogosBad {
+  display: flex;
+  width: 1243rem;
+  height: 244rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42rem;
+}
+
+.W_AllLogosBad {
+  display: flex;
+  align-items: center;
+  gap: 81rem;
+  align-self: stretch;
+}
+
+.W_ColorsAll {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  align-self: stretch;
+}
+
+.W_FontsContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 216rem;
+}
+
+.W_PhotosAll {
+  display: flex;
+  align-items: center;
+  gap: 80rem;
+}

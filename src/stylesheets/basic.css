@@ -104,7 +104,8 @@ body {
   -webkit-text-stroke: 28rem var(--Pink);
 }
 
-.Q_Header4Text.hd::after {
+.Q_Header4Text.hd::after,
+.Q_Header4Styleguide.hd::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;
@@ -140,6 +141,22 @@ button:hover {
   background: var(--Pink);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.Q_ExampleHeaderText.hd::after,
+.Q_ExampleHeader3Text.hd::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  color: transparent;
+  -webkit-text-stroke: 22rem #000000;
 }
 
 /* react basics */

@@ -108,3 +108,14 @@
   align-self: stretch;
   z-index: 2;
 }
+
+/* Styleguide */
+
+.O_Content {
+  display: flex;
+  width: 1792rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 202rem;
+  margin: 0 auto;
+}

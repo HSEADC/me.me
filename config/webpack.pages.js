@@ -73,7 +73,7 @@ const htmlPages = [
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html", ["allStyles", "test1", "headerReact", "footerReact"]),
   createPages("./src/pages/tests/test2.html", "./pages/tests/test2.html", ["allStyles", "puzzle", "headerReact", "footerReact"]),
   createPages("./src/pages/tests/test3.html", "./pages/tests/test3.html", ["allStyles", "test3", "headerReact", "footerReact"]),
-  createPages("./src/styleguide.html", "./styleguide.html", ["allStyles"]),
+  createPages("./src/styleguide.html", "./styleguide.html", ["allStyles", "footerReact"]),
   createPages("./src/404.html", "./404.html", ["allStyles", "headerReact", "footerReact"]),
   createPages("./src/search.html", "./search.html", ["allStyles", "headerReact", "footerReact", "searchReact"]),
 ];

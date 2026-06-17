@@ -62,3 +62,20 @@
   align-content: center;
   justify-content: center;
 }
+
+/* Styleguide */
+
+.C_StyleguideNav {
+  position: sticky;
+  top: 80rem;
+  display: flex;
+  width: 160rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32rem;
+  flex-shrink: 0;
+  height: fit-content;
+  align-self: flex-start;
+  z-index: 20;
+}

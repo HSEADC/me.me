@@ -625,7 +625,7 @@ function createArticleTeaserCard(article) {
     popup.style.left = "".concat(event.clientX + 40, "px");
     popup.style.top = "".concat(event.clientY + 40, "px");
   });
-  var titleEl = document.createElement("h3");
+  var titleEl = document.createElement("p");
   titleEl.classList.add("Q_ArticleCaption");
   titleEl.textContent = title || "без названия";
   card.appendChild(imgDiv);

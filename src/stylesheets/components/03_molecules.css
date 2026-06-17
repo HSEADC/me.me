@@ -268,3 +268,35 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+.M_BrandAboutSect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50rem;
+}
+
+.M_LogoSect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42rem;
+}
+
+.M_LogoSectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 54rem;
+  align-self: stretch;
+}
+
+.M_ColorsSect,
+.M_FontSect,
+.M_GridSect,
+.M_PhotoSect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42rem;
+}
