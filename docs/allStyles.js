@@ -329,7 +329,11 @@ function applyTypographer() {
   });
 }
 function typographText(text) {
-  return text.replace(/\s-\s/g, " — ").replace(/\s—\s+(это|то|не|и|а|но)\s+/gi, " \u2014\xA0$1\xA0").replace(/,\s+(а|но|и)\s+(не)\s+/gi, ",\xA0$1\xA0$2\xA0").replace(/(^|[\s(«"„“])([а-яё]{1,2}|без|для|или|над|под|при|про|что|как|это|все|уже|ещё|еще)\s+/gi, "$1$2\xA0");
+  return String(text || "").replace(/&nbsp;/g, " ").replace(/\u00A0/g, " ").replace(/\s-\s/g, " — ").replace(/([^\s])\s+—\s+/g, "$1\xA0\u2014 ").replace(/(^|[\s(«"„“])((?:(?:в|к|с|у|о|а|и|но|да|во|ко|со|об|от|до|за|из|по|на|над|под|при|про|без|для|не|ни|же|ли|бы|то|что|как|это)\s+)+)(?=[а-яёa-z0-9])/gi, function (match, before, chain) {
+    return before + chain.trim().replace(/\s+/g, "\xA0") + "\xA0";
+  }).replace(/(—\s+)((?:(?:это|то|не|и|а|но|как|что)\s+)+)(?=[а-яёa-z0-9])/gi, function (match, dash, chain) {
+    return dash + chain.trim().replace(/\s+/g, "\xA0") + "\xA0";
+  });
 }
 ;// ./src/javascripts/allStyles.js
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
