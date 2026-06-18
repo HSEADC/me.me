@@ -329,7 +329,7 @@ function applyTypographer() {
   });
 }
 function typographText(text) {
-  return text.replace(/\s-\s/g, " — ").replace(/(^|\s)(в|во|на|к|ко|с|со|у|о|об|от|до|за|из|по|и|а|но|не|ни|же|ли|бы|то)\s+/gi, "$1$2\xA0");
+  return text.replace(/\s-\s/g, " — ").replace(/\s—\s+(это|то|не|и|а|но)\s+/gi, " \u2014\xA0$1\xA0").replace(/,\s+(а|но|и)\s+(не)\s+/gi, ",\xA0$1\xA0$2\xA0").replace(/(^|[\s(«"„“])([а-яё]{1,2}|без|для|или|над|под|при|про|что|как|это|все|уже|ещё|еще)\s+/gi, "$1$2\xA0");
 }
 ;// ./src/javascripts/allStyles.js
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }

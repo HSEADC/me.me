@@ -497,6 +497,12 @@
   align-items: center;
 }
 
+.A_SearchResNothing {
+  display: inline-flex;
+  align-items: center;
+  gap: 50rem;
+}
+
 /* 404 */
 
 .A_404Item {

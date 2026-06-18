@@ -17535,7 +17535,34 @@ function W_ArticlePage() {
     nextArticle: nextArticle
   }));
 }
+;// ./src/javascripts/typographer.js
+// обводка на типографике
+
+function applyOutlineText() {
+  var root = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  root.querySelectorAll(".txt, .hd, .nv, .A_HeaderPart").forEach(function (el) {
+    el.setAttribute("data-text", el.textContent.trim());
+  });
+}
+
+// типограф
+
+function applyTypographer() {
+  var root = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  var paragraphs = root.querySelectorAll("p");
+  paragraphs.forEach(function (paragraph) {
+    paragraph.childNodes.forEach(function (node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        node.textContent = typographText(node.textContent);
+      }
+    });
+  });
+}
+function typographText(text) {
+  return text.replace(/\s-\s/g, " — ").replace(/\s—\s+(это|то|не|и|а|но)\s+/gi, " \u2014\xA0$1\xA0").replace(/,\s+(а|но|и)\s+(не)\s+/gi, ",\xA0$1\xA0$2\xA0").replace(/(^|[\s(«"„“])([а-яё]{1,2}|без|для|или|над|под|при|про|что|как|это|все|уже|ещё|еще)\s+/gi, "$1$2\xA0");
+}
 ;// ./src/javascripts/article_content.js
+
 
 
 
@@ -17544,6 +17571,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!container) return;
   var root = (0,client.createRoot)(container);
   root.render(/*#__PURE__*/react.createElement(W_ArticlePage, null));
+  requestAnimationFrame(function () {
+    applyTypographer();
+    applyOutlineText();
+    setTimeout(function () {
+      applyTypographer();
+      applyOutlineText();
+    }, 100);
+  });
 });
 /******/ })()
 ;

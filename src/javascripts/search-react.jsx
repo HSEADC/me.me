@@ -89,9 +89,27 @@ function renderResults(query) {
   }
 
   if (results.length === 0) {
-    resultsContainer.innerHTML = `
-      <p class="A_TextBlock">Ничего не нашлось :(</p>
-    `;
+    const nothingBlock = document.createElement("div");
+    nothingBlock.classList.add("A_SearchResNothing");
+
+    const titleWrapper = document.createElement("div");
+    titleWrapper.classList.add("A_H4");
+
+    const title = document.createElement("h4");
+    title.classList.add("hd", "Q_Header4Text");
+    title.textContent = "Ничего не нашлось :(";
+
+    const image = document.createElement("span");
+    image.classList.add("toned", "Q_ImageOfPart");
+    image.setAttribute("aria-hidden", "true");
+
+    titleWrapper.appendChild(title);
+    titleWrapper.appendChild(image);
+
+    nothingBlock.appendChild(titleWrapper);
+
+    resultsContainer.appendChild(nothingBlock);
+
     return;
   }
 

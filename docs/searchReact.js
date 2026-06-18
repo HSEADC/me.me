@@ -365,7 +365,20 @@ function renderResults(query) {
     return;
   }
   if (results.length === 0) {
-    resultsContainer.innerHTML = "\n      <p class=\"A_TextBlock\">\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0448\u043B\u043E\u0441\u044C :(</p>\n    ";
+    var nothingBlock = document.createElement("div");
+    nothingBlock.classList.add("A_SearchResNothing");
+    var titleWrapper = document.createElement("div");
+    titleWrapper.classList.add("A_H4");
+    var _title = document.createElement("h4");
+    _title.classList.add("hd", "Q_Header4Text");
+    _title.textContent = "Ничего не нашлось :(";
+    var image = document.createElement("span");
+    image.classList.add("toned", "Q_ImageOfPart");
+    image.setAttribute("aria-hidden", "true");
+    titleWrapper.appendChild(_title);
+    titleWrapper.appendChild(image);
+    nothingBlock.appendChild(titleWrapper);
+    resultsContainer.appendChild(nothingBlock);
     return;
   }
   results.forEach(function (result) {
