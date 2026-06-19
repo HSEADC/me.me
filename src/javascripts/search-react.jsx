@@ -1,5 +1,8 @@
 import { searchItems } from "./search_data.js";
 
+const inlinedImagesReq = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
+const inlinedImages = inlinedImagesReq.keys().map((key) => inlinedImagesReq(key));
+
 const searchInput = document.querySelector(".Q_SearchText");
 const resultsContainer = document.querySelector(".C_SearchResults");
 const title = document.querySelector(".Q_Header2Text");
@@ -7,6 +10,13 @@ const queryTitle = document.querySelector(".Q_Header2Query");
 
 const params = new URLSearchParams(window.location.search);
 const queryFromUrl = params.get("q") || "";
+
+function setRandomInlinedImage(element) {
+  if (!element || !inlinedImages.length) return;
+
+  const randomIndex = Math.floor(Math.random() * inlinedImages.length);
+  element.style.backgroundImage = `url("${inlinedImages[randomIndex]}")`;
+}
 
 function normalizeText(text) {
   return String(text || "")
@@ -101,8 +111,10 @@ function renderResults(query) {
     title.dataset.text = "Ничего не нашлось :(";
 
     const image = document.createElement("span");
-    image.classList.add("toned", "Q_ImageInHeader");
+    image.classList.add("Q_ImageInHeader");
     image.setAttribute("aria-hidden", "true");
+
+    setRandomInlinedImage(image);
 
     titleWrapper.appendChild(title);
     titleWrapper.appendChild(image);
