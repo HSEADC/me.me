@@ -1,4 +1,41 @@
-import "../javascripts/articles.js";
+import articles from "../data/articles.json";
+
+// Articles Cards Index Description
+
+document.addEventListener("DOMContentLoaded", () => {
+  const indexCards = document.querySelectorAll(".O_ArticlesCards a");
+
+  if (!indexCards.length) return;
+
+  indexCards.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const articleIdMatch = href.match(/art_\d+/);
+    const articleId = articleIdMatch ? articleIdMatch[0] : "";
+
+    const article = articles.find((item) => item.id === articleId);
+
+    if (!article || !article.description) return;
+
+    const card = link.querySelector(".A_ArticleCard");
+
+    if (!card) return;
+
+    const popup = document.createElement("div");
+    popup.classList.add("M_ArticleCardPopup");
+
+    const popupText = document.createElement("p");
+    popupText.classList.add("A_TextBlock");
+    popupText.textContent = article.description;
+
+    popup.appendChild(popupText);
+    card.appendChild(popup);
+
+    card.addEventListener("mousemove", (event) => {
+      popup.style.left = `${event.clientX + 40}px`;
+      popup.style.top = `${event.clientY + 40}px`;
+    });
+  });
+});
 
 // Constructor
 

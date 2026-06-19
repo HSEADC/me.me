@@ -1,8 +1,18 @@
 import articles from "../data/articles.json";
 
-// обложки статей
+// Articles Cards
 
 const articleCoversReq = require.context("../images/articles", true, /cover\.(png|webp|jpg|jpeg)$/i);
+
+const inlinedImagesReq = require.context("../images/inlined", false, /^\.\/inlined-\d+\.webp$/i);
+const inlinedImages = inlinedImagesReq.keys().map((key) => inlinedImagesReq(key));
+
+function setRandomInlinedImage(element) {
+  if (!element || !inlinedImages.length) return;
+
+  const randomIndex = Math.floor(Math.random() * inlinedImages.length);
+  element.style.backgroundImage = `url("${inlinedImages[randomIndex]}")`;
+}
 
 function getArticleCover(article) {
   const possibleFiles = [`./${article.id}/cover.webp`, `./${article.id}/cover.png`, `./${article.id}/cover.jpg`, `./${article.id}/cover.jpeg`];
@@ -165,6 +175,50 @@ function matchesSearchQuery(card, query) {
   return similarity >= 0.32;
 }
 
+function createNothingFoundBlock() {
+  const nothingBlock = document.createElement("div");
+  nothingBlock.classList.add("A_SearchResNothing");
+
+  const titleWrapper = document.createElement("div");
+  titleWrapper.classList.add("A_H4");
+
+  const title = document.createElement("h4");
+  title.classList.add("hd", "Q_Header4Text");
+  title.textContent = "Ничего не нашлось :(";
+  title.dataset.text = "Ничего не нашлось :(";
+
+  const image = document.createElement("span");
+  image.classList.add("Q_ImageInHeader");
+  image.setAttribute("aria-hidden", "true");
+
+  setRandomInlinedImage(image);
+
+  titleWrapper.appendChild(title);
+  titleWrapper.appendChild(image);
+  nothingBlock.appendChild(titleWrapper);
+
+  return nothingBlock;
+}
+
+function renderNothingFoundIfNeeded() {
+  const root = document.querySelector(".C_Articles");
+
+  if (!root) return;
+
+  const oldNothingBlock = root.querySelector(".A_SearchResNothing");
+
+  if (oldNothingBlock) {
+    oldNothingBlock.remove();
+  }
+
+  const cards = Array.from(root.querySelectorAll(".M_ArticleCardLink"));
+  const hasVisibleCards = cards.some((card) => card.style.display !== "none");
+
+  if (!hasVisibleCards) {
+    root.appendChild(createNothingFoundBlock());
+  }
+}
+
 function applyArticlesFilterAndSearch() {
   const cards = document.querySelectorAll(".M_ArticleCardLink");
   const selectedFilters = getActiveFilterNames();
@@ -177,6 +231,8 @@ function applyArticlesFilterAndSearch() {
 
     card.style.display = filtersMatch && searchMatch ? "" : "none";
   });
+
+  renderNothingFoundIfNeeded();
 }
 
 function updateInfo(content) {
@@ -200,7 +256,6 @@ function createArticleTeaserCard(article) {
 
   const normalizedTags = Array.isArray(tags) ? tags.map((tag) => normalizeSearchText(tag)) : [];
   const titleSearch = normalizeSearchText(title || "");
-  const descriptionSearch = normalizeSearchText(description || "");
   const fullSearch = normalizeSearchText([title, description, ...(tags || [])].join(" "));
 
   link.dataset.titleSearch = titleSearch;
@@ -247,7 +302,7 @@ function createArticleTeaserCard(article) {
   return link;
 }
 
-// фильтрация
+// Filter Tags
 
 function initArticlesFilter() {
   const tags = document.querySelectorAll(".A_FilterTag");

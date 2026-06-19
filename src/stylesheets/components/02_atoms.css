@@ -500,13 +500,12 @@
 .A_SearchResNothing {
   display: inline-flex;
   align-items: center;
-  gap: 50rem;
 }
 
 .A_SearchResNothing .A_H4 {
   display: inline-flex;
   align-items: center;
-  gap: 15rem;
+  gap: 50rem;
   position: relative;
 }
 

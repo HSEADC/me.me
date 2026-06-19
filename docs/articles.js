@@ -17,11 +17,27 @@ module.exports = __webpack_require__.p + "images/2d00c25d1f6a401a248c.webp";
 
 /***/ }),
 
+/***/ 248:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/238a27873a673bc44a50.webp";
+
+/***/ }),
+
 /***/ 288:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/54897bf9a6540ad029fd.webp";
+
+/***/ }),
+
+/***/ 478:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1f14a30a97b2adb7d35a.webp";
 
 /***/ }),
 
@@ -38,6 +54,14 @@ module.exports = __webpack_require__.p + "images/7073f79822f40f0ada8f.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/65becf98c6e96c37eb77.webp";
+
+/***/ }),
+
+/***/ 712:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6e51bbdab3b4c358fa47.webp";
 
 /***/ }),
 
@@ -65,6 +89,14 @@ module.exports = __webpack_require__.p + "images/6c9c7dc771a5b7722b1e.webp";
 
 /***/ }),
 
+/***/ 1542:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/e282a71d80c4bfb61634.webp";
+
+/***/ }),
+
 /***/ 1676:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -78,6 +110,14 @@ module.exports = __webpack_require__.p + "images/338368a1915aafac98a2.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/2c58bd61b266a9ed7a5e.webp";
+
+/***/ }),
+
+/***/ 1763:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4e17b7931f9544474185.webp";
 
 /***/ }),
 
@@ -121,6 +161,14 @@ module.exports = __webpack_require__.p + "images/97ba3ffc3b9d5da30ef1.webp";
 
 /***/ }),
 
+/***/ 2290:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/351ac147c1da4a6a8f78.webp";
+
+/***/ }),
+
 /***/ 2416:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -161,11 +209,35 @@ module.exports = __webpack_require__.p + "images/29f9d139a110d82616e4.webp";
 
 /***/ }),
 
+/***/ 2784:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/c2018354c4483de531fe.webp";
+
+/***/ }),
+
+/***/ 3066:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/90a31fb31867de19cd4f.webp";
+
+/***/ }),
+
 /***/ 3099:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/ddd838aafb60be3aa894.webp";
+
+/***/ }),
+
+/***/ 3103:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/18fa2acc935344ed3d81.webp";
 
 /***/ }),
 
@@ -177,6 +249,22 @@ module.exports = __webpack_require__.p + "images/9462147691f12604475c.webp";
 
 /***/ }),
 
+/***/ 3252:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b431329603607ac29fa0.webp";
+
+/***/ }),
+
+/***/ 3355:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/b91e63c489ca955f9d4c.webp";
+
+/***/ }),
+
 /***/ 3462:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -185,11 +273,27 @@ module.exports = __webpack_require__.p + "images/9be000426fa5c5fa3446.webp";
 
 /***/ }),
 
+/***/ 3617:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/57c9f72acdfdee621664.webp";
+
+/***/ }),
+
 /***/ 3660:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/047064629cbefa90f2dd.webp";
+
+/***/ }),
+
+/***/ 3727:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/984ddecb13cd99df1a01.webp";
 
 /***/ }),
 
@@ -217,11 +321,97 @@ module.exports = __webpack_require__.p + "images/dc5daffa521c101092f0.webp";
 
 /***/ }),
 
+/***/ 4205:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2a6cb5cad88c6bd6f8c3.webp";
+
+/***/ }),
+
+/***/ 4263:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/541853868941a952f8f0.webp";
+
+/***/ }),
+
+/***/ 4357:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./inlined-1.webp": 248,
+	"./inlined-10.webp": 1763,
+	"./inlined-11.webp": 7187,
+	"./inlined-12.webp": 2290,
+	"./inlined-13.webp": 4205,
+	"./inlined-14.webp": 3103,
+	"./inlined-15.webp": 3727,
+	"./inlined-16.webp": 478,
+	"./inlined-17.webp": 5161,
+	"./inlined-18.webp": 5416,
+	"./inlined-19.webp": 3355,
+	"./inlined-2.webp": 7701,
+	"./inlined-20.webp": 5435,
+	"./inlined-21.webp": 712,
+	"./inlined-22.webp": 7237,
+	"./inlined-23.webp": 3066,
+	"./inlined-24.webp": 4263,
+	"./inlined-25.webp": 3252,
+	"./inlined-26.webp": 3617,
+	"./inlined-3.webp": 9850,
+	"./inlined-4.webp": 8919,
+	"./inlined-5.webp": 5908,
+	"./inlined-6.webp": 5169,
+	"./inlined-7.webp": 1542,
+	"./inlined-8.webp": 8547,
+	"./inlined-9.webp": 2784
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 4357;
+
+/***/ }),
+
 /***/ 4896:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/e0449320ab8a23212e41.webp";
+
+/***/ }),
+
+/***/ 5161:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/a361a3663193e87a3290.webp";
+
+/***/ }),
+
+/***/ 5169:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/71cdf0f3b8ca3deeaf93.webp";
 
 /***/ }),
 
@@ -233,11 +423,27 @@ module.exports = __webpack_require__.p + "images/475db595dd115601a91d.webp";
 
 /***/ }),
 
+/***/ 5416:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/17f2adaafd75c5b019ab.webp";
+
+/***/ }),
+
 /***/ 5418:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/31a9b7f09c90a847cc9f.webp";
+
+/***/ }),
+
+/***/ 5435:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2ec2bf70dd350e2f2c3a.webp";
 
 /***/ }),
 
@@ -278,6 +484,14 @@ module.exports = __webpack_require__.p + "images/bcce1c3075324c6c4229.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/05fd80256332fa407ea3.webp";
+
+/***/ }),
+
+/***/ 5908:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/7c17f46875ca0e0710aa.webp";
 
 /***/ }),
 
@@ -419,6 +633,22 @@ webpackContext.id = 6757;
 
 /***/ }),
 
+/***/ 7187:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/01a0aee8d93dad52e608.webp";
+
+/***/ }),
+
+/***/ 7237:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/42ba1c357524a99d6190.webp";
+
+/***/ }),
+
 /***/ 7426:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -432,6 +662,14 @@ module.exports = __webpack_require__.p + "images/b6239330884b36be9e92.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/7eb35d2b6caf601f22a1.webp";
+
+/***/ }),
+
+/***/ 7701:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cc36c4d545d9dcfd6f65.webp";
 
 /***/ }),
 
@@ -483,6 +721,22 @@ module.exports = __webpack_require__.p + "images/9c1dab1dc706837fcfc8.webp";
 
 /***/ }),
 
+/***/ 8547:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6a6b6452a9f1e31065cb.webp";
+
+/***/ }),
+
+/***/ 8919:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/aa5b27f0dc116a918621.webp";
+
+/***/ }),
+
 /***/ 8979:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -512,6 +766,14 @@ module.exports = __webpack_require__.p + "images/775f13e9c479f60001fc.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/5ed8cf312676590b2238.webp";
+
+/***/ }),
+
+/***/ 9850:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1ac444997a3a309d0376.webp";
 
 /***/ })
 
@@ -568,9 +830,18 @@ function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
-// обложки статей
+// Articles Cards
 
 var articleCoversReq = __webpack_require__(6757);
+var inlinedImagesReq = __webpack_require__(4357);
+var inlinedImages = inlinedImagesReq.keys().map(function (key) {
+  return inlinedImagesReq(key);
+});
+function setRandomInlinedImage(element) {
+  if (!element || !inlinedImages.length) return;
+  var randomIndex = Math.floor(Math.random() * inlinedImages.length);
+  element.style.backgroundImage = "url(\"".concat(inlinedImages[randomIndex], "\")");
+}
 function getArticleCover(article) {
   var possibleFiles = ["./".concat(article.id, "/cover.webp"), "./".concat(article.id, "/cover.png"), "./".concat(article.id, "/cover.jpg"), "./".concat(article.id, "/cover.jpeg")];
   for (var _i = 0, _possibleFiles = possibleFiles; _i < _possibleFiles.length; _i++) {
@@ -687,6 +958,39 @@ function matchesSearchQuery(card, query) {
   }
   return similarity >= 0.32;
 }
+function createNothingFoundBlock() {
+  var nothingBlock = document.createElement("div");
+  nothingBlock.classList.add("A_SearchResNothing");
+  var titleWrapper = document.createElement("div");
+  titleWrapper.classList.add("A_H4");
+  var title = document.createElement("h4");
+  title.classList.add("hd", "Q_Header4Text");
+  title.textContent = "Ничего не нашлось :(";
+  title.dataset.text = "Ничего не нашлось :(";
+  var image = document.createElement("span");
+  image.classList.add("Q_ImageInHeader");
+  image.setAttribute("aria-hidden", "true");
+  setRandomInlinedImage(image);
+  titleWrapper.appendChild(title);
+  titleWrapper.appendChild(image);
+  nothingBlock.appendChild(titleWrapper);
+  return nothingBlock;
+}
+function renderNothingFoundIfNeeded() {
+  var root = document.querySelector(".C_Articles");
+  if (!root) return;
+  var oldNothingBlock = root.querySelector(".A_SearchResNothing");
+  if (oldNothingBlock) {
+    oldNothingBlock.remove();
+  }
+  var cards = Array.from(root.querySelectorAll(".M_ArticleCardLink"));
+  var hasVisibleCards = cards.some(function (card) {
+    return card.style.display !== "none";
+  });
+  if (!hasVisibleCards) {
+    root.appendChild(createNothingFoundBlock());
+  }
+}
 function applyArticlesFilterAndSearch() {
   var cards = document.querySelectorAll(".M_ArticleCardLink");
   var selectedFilters = getActiveFilterNames();
@@ -697,6 +1001,7 @@ function applyArticlesFilterAndSearch() {
     var searchMatch = matchesSearchQuery(card, searchQuery);
     card.style.display = filtersMatch && searchMatch ? "" : "none";
   });
+  renderNothingFoundIfNeeded();
 }
 function updateInfo(content) {
   var root = document.querySelector(".C_Articles");
@@ -719,7 +1024,6 @@ function createArticleTeaserCard(article) {
     return normalizeSearchText(tag);
   }) : [];
   var titleSearch = normalizeSearchText(title || "");
-  var descriptionSearch = normalizeSearchText(description || "");
   var fullSearch = normalizeSearchText([title, description].concat(_toConsumableArray(tags || [])).join(" "));
   link.dataset.titleSearch = titleSearch;
   link.dataset.search = fullSearch;
@@ -754,7 +1058,7 @@ function createArticleTeaserCard(article) {
   return link;
 }
 
-// фильтрация
+// Filter Tags
 
 function initArticlesFilter() {
   var tags = document.querySelectorAll(".A_FilterTag");
