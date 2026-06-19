@@ -372,8 +372,9 @@ function renderResults(query) {
     var _title = document.createElement("h4");
     _title.classList.add("hd", "Q_Header4Text");
     _title.textContent = "Ничего не нашлось :(";
+    _title.dataset.text = "Ничего не нашлось :(";
     var image = document.createElement("span");
-    image.classList.add("toned", "Q_ImageOfPart");
+    image.classList.add("toned", "Q_ImageInHeader");
     image.setAttribute("aria-hidden", "true");
     titleWrapper.appendChild(_title);
     titleWrapper.appendChild(image);
