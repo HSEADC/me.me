@@ -5,29 +5,8 @@
   border: none;
 }
 
-.W_Header_all_links {
-  gap: 64rem;
-  display: flex;
-  align-items: center;
-  padding-right: 16rem;
-}
-
-.W_Header_all_links > a {
-  color: var(--White);
-  font-family: Impact;
-  font-size: 32rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-  text-decoration: none;
-  text-align: right;
-  padding-bottom: 8rem;
-}
-
-.W_Header_all_links > a.hd {
-  position: relative;
-  display: inline-block;
-  z-index: 0;
+.W_HeaderMobileFooter {
+  display: none;
 }
 
 /* Main */

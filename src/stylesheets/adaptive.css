@@ -1,293 +1,496 @@
-@media (max-width: 1500px) {
-  .W_PuzzleGame {
-    width: 100%;
-    padding: 0 24rem 140rem;
-  }
-
-  .W_PuzzleBoardZone {
-    width: 100%;
-    min-height: 1180rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .W_PuzzleBoardZone {
-    min-height: 1280rem;
-  }
-
-  .A_PuzzleBackButton,
-  .A_PuzzleWinButton {
-    margin-top: 90rem;
-    margin-bottom: 100rem;
-  }
-}
-
 @media (max-width: 440px) {
-  /* navbar */
+  /* 01_Quarks */
 
-  .O_Header {
-    width: 100%;
-    height: 200rem;
-    padding: 64rem 80rem;
-    background: transparent !important;
-    justify-content: flex-start;
-    opacity: 1;
-    z-index: 2000;
+  .M_Footer > .Q_FooterLink {
+    display: none;
   }
 
-  .A_LogoLink {
-    z-index: 2100;
-    width: 500rem;
-    height: 212.75rem;
-  }
-
-  .A_Logo {
-    width: 500rem;
-    height: 212.75rem;
-    margin: 0;
-  }
-
-  .W_Header_all_links {
-    position: fixed;
+  .Q_BGContent {
+    position: absolute;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #ff65a5f1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 34rem;
-    padding: 140rem 90rem 180rem;
-    box-sizing: border-box;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      transform 0.35s ease,
-      opacity 0.35s ease;
-    z-index: 2090;
-  }
-
-  .W_Header_all_links {
-    justify-content: flex-start;
-  }
-
-  .W_Header_all_links > a:first-child {
-    margin-top: 240rem;
-  }
-
-  .W_Header_all_links > a {
-    font-size: 128rem;
-    line-height: 0.95;
-    padding: 0;
-    text-align: left;
-    margin-top: 64rem;
-  }
-
-  .W_Header_all_links > a h3 {
-    margin: 0;
-  }
-
-  .O_Header.is-open .W_Header_all_links {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .O_Header.is-open .W_HeaderMobileFooter {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .O_Header.is-open .A_HeaderClose {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .O_Header.is-open .A_LogoLink {
-    z-index: 2101;
-  }
-
-  /* Footer */
-
-  .O_Footer {
-    height: 200rem;
-  }
-
-  .W_Footer_all_links {
-    padding: 4rem 2rem;
-    padding-bottom: 8rem;
-    width: 70%;
-  }
-
-  .A_FooterLogo {
-    width: 400rem;
-    height: 170rem;
-  }
-
-  .A_FooterLink {
-    font-size: 64rem;
-  }
-
-  /* Index */
-
-  .S_MainRand {
-    display: flex;
     width: 100%;
-    height: 850rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 72rem;
-    margin-top: 200rem;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .Q_VideoFrame {
+    position: absolute;
+    inset: 0;
+    background: var(--Tone);
+    opacity: 0.4;
+    mix-blend-mode: color;
+    z-index: 1;
+  }
+
+  .Q_BGSpikes {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
   }
 
   /* Heading */
 
-  .O_MainHead {
-    width: 100%;
-    height: 100%;
-    gap: 1.25rem;
-    margin-top: 180rem;
-  }
-
-  .M_MainHead {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 180rem;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
   .Q_ImageInHeader {
-    width: 140rem;
-    height: 140rem;
+    display: inline-block;
+    width: 116rem;
+    height: 116rem;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
   }
 
   .Q_HeaderText {
-    font-size: 160rem;
+    font-size: 46rem;
   }
 
-  /* Main Read Block */
-
-  .S_MainRead {
-    height: 1200rem;
-    margin-top: 200rem;
+  .Q_Header2Text {
+    font-size: 38rem;
   }
 
-  .M_MainH2 {
-    gap: 8rem;
-    margin-left: 64rem;
+  .Q_Header3Text {
+    font-size: 32rem;
   }
 
-  .O_MainReadBlock {
-    min-height: 420rem;
-    margin-bottom: 72rem;
+  /* H4 */
+
+  .Q_Header4Text {
+    font-size: 32rem;
   }
 
-  .O_MainArticlesCards {
-    height: 600rem;
-    margin-top: 200rem;
-  }
+  /* Small images */
 
-  .W_MainReadLeft {
+  .Q_ImageOfPart {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 560rem;
-    height: 300rem;
+    width: 228rem;
+    height: 228rem;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    top: 5rem;
+    right: 64rem;
+    animation: Q_ImageOfPartFloat 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
   }
 
-  .W_MainReadRight {
-    left: 620rem;
-    top: 0;
-    width: 1140rem;
-    height: 220rem;
+  /* Article Cards */
+
+  .Q_ArticleImage {
+    height: 242rem;
+    width: 242rem;
+    z-index: 10;
+    border: 3rem solid var(--Pink);
   }
 
-  .W_MainReadRight .A_TextBlock:first-child {
-    left: -80rem;
-    top: 0;
-    width: 600rem;
+  .Q_ArticleCaption {
+    width: 230rem;
+    height: 42rem;
+    font-size: 19rem;
+    padding-top: 10rem;
   }
 
-  .W_MainReadRight .A_TextBlock:last-child {
-    right: -64rem;
-    top: 130rem;
-    width: 560rem;
+  .Q_RandContent {
+    width: 230rem;
+    height: 230rem;
   }
 
-  .A_ButtonMainReadBlock {
-    width: 440rem;
-    height: 120rem;
-    padding: 10rem 30rem;
-    font-size: 50rem;
-    left: 80rem;
-    top: 360rem;
+  .Q_ImageHoverFrame {
+    display: none;
   }
 
-  .A_ArticleCardIndex {
-    width: 559rem;
-    height: 663rem;
+  .Q_ImageContent {
+    width: 230rem;
+    height: 230rem;
   }
 
-  /* Main Random */
-
-  .O_MainRandBlock {
-    position: relative;
-    width: 100%;
-    min-height: 420rem;
-    margin-bottom: 80rem;
-  }
-
-  .W_MainButtons {
+  .Q_CardImage {
     display: flex;
-    justify-content: space-between;
+    width: 388rem;
+    height: 388rem;
+    justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    flex-shrink: 0;
+    border: 5rem solid var(--Pink);
+    position: relative;
+  }
+
+  .Q_CardHeader {
+    color: var(--White);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 44.696rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  .Q_CardCaption {
+    color: var(--Pink);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    width: 320rem;
+  }
+
+  /* Constructor */
+
+  .Q_GenText {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--White);
+    font-family: "Impact";
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .Q_ConstructorCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #000;
+    filter: grayscale(1);
+  }
+
+  .Q_ArrowDown,
+  .Q_ArrowUp {
+    width: 22rem;
+    height: 22rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 10rem;
+  }
+
+  /* Articles Page */
+
+  .Q_ArticleCardImage {
+    width: 500rem;
+    height: 500rem;
+    margin-top: 110rem;
+    margin-left: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .Q_ArticleCardCaption {
+    width: 560rem;
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ff65a6;
+    font-family: Impact;
+    font-size: 48rem;
+    line-height: 1;
+    text-transform: lowercase;
+    margin: 0;
+  }
+
+  .Q_CloseFilter {
+    display: flex;
+    width: 40rem;
+    height: 40rem;
+    padding: 10rem 10rem 9rem 9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10rem;
+  }
+
+  .Q_FilterText {
+    display: block;
+    color: inherit;
+  }
+
+  .Q_CloseFilter {
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+    transform: translateY(-50%);
+    width: 32rem;
+    height: 32rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .Q_CloseFilter {
+    transition: none !important;
+  }
+
+  .Q_SearchText {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--White);
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    line-height: 110%;
+    width: 100%;
+    height: 100%;
+    text-transform: lowercase;
+    padding-top: 12rem;
+  }
+
+  .Q_SearchText::placeholder {
+    color: var(--Grey);
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    line-height: 100%;
+    text-transform: lowercase;
+    padding-top: 12rem;
+  }
+
+  .Q_SearchText:focus,
+  .Q_SearchText:active,
+  .Q_SearchText:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  /* Article Content */
+
+  .Q_ArticleImageContent {
+    width: 500rem;
+    aspect-ratio: 1/1;
+    margin-top: 128rem;
+  }
+
+  .Q_ArticleVideo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .Q_ArticleHeader2Text {
+    color: #fff;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 64rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+  .Q_ArticleHeader2Text {
+    margin: 0;
     width: 100%;
   }
 
-  .A_MainRandImage {
-    width: 700rem;
-    height: 700rem;
+  /* Test 1 */
+
+  .Q_MarkedListText {
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 40rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    z-index: 2;
+  }
+
+  /* Puzzle */
+
+  .Q_PartPuzzle {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid var(--Pink);
+    box-sizing: border-box;
+  }
+
+  .Q_PuzzlePiece {
+    position: absolute;
+    background-repeat: no-repeat;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    z-index: 10;
+    box-sizing: border-box;
+    pointer-events: auto;
+  }
+
+  .Q_PuzzlePiece.is-dragging {
+    cursor: grabbing;
+    z-index: 20;
+  }
+
+  .Q_PuzzlePiece.is-locked {
+    z-index: 12;
+    cursor: auto;
+  }
+
+  /* Styleguide */
+
+  .Q_Header4Styleguide {
+    color: var(--White);
+    font-family: "Impact";
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .Q_Header4Styleguide:hover {
+    opacity: 0.7;
+  }
+
+  .Q_Color {
+    height: 210rem;
+    align-self: stretch;
+    aspect-ratio: 1 / 1;
+  }
+
+  .Q_White {
+    background: var(--White);
+  }
+
+  .Q_Pink {
+    background: var(--Pink);
+  }
+
+  .Q_Black {
+    background: var(--Black);
+    border: 6rem solid #000;
+  }
+
+  .Q_ColorName {
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 20rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+  }
+
+  .Q_ExampleHeaderText {
+    color: var(--White);
+    font-size: 80rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 80px */
+    text-transform: uppercase;
+    font-family: "Inter";
+  }
+
+  .Q_ExampleHeader3Text {
+    color: var(--White);
+    font-family: "Impact";
+    font-size: 64rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 70.4px */
+  }
+
+  .Q_ScreenPhoto {
+    width: 891rem;
+    height: 523rem;
+    aspect-ratio: 46/27;
+    border: 7rem solid #000;
+  }
+
+  .Q_PhotoExample {
+    width: 270rem;
+    height: 270rem;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* 02_Atoms */
+
+  .M_Header > .A_LogoLink,
+  .M_Header > .A_HeaderBurger {
+    position: relative;
+    z-index: 2100;
+  }
+
+  .A_Logo {
+    width: 104.406rem;
+    height: 44.662rem;
+  }
+
+  .A_HeaderBurger {
     display: flex;
-    flex-direction: column;
-    gap: 40rem;
+    width: 40rem;
+    height: 40rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
-  .A_ButtonMainRandBlock {
-    width: 440rem;
-    height: 120rem;
-    padding: 10rem 30rem;
-    font-size: 50rem;
+  .A_HeaderBurger img {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .A_SearchInput {
+    display: flex;
+    width: 300rem;
+    height: 45rem;
+    padding: 20rem 23rem;
+    align-items: center;
+    gap: 10rem;
+    font-family: "Inter";
+    font-size: 24rem;
+    color: var(--Black);
+    border: none;
+  }
+
+  .A_SearchButton {
+    display: flex;
+    height: 45rem;
+    padding: 10rem 40rem;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+    color: var(--Black);
+    font-family: "Impact";
+    font-size: 28rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    border: none;
+    background-color: var(--White);
+  }
+
+  /* Footer */
+
+  .A_FooterLogo {
+    width: 169.27rem;
+    height: 72.41rem;
+  }
+
+  .A_Background {
     position: absolute;
-    left: 480rem;
-    top: 600rem;
-  }
-
-  /* Main Random */
-
-  .W_MainRandLeft {
-    width: 560rem;
-    height: 300rem;
-  }
-
-  .W_MainRandRight {
-    position: absolute;
-    left: 620rem;
-    top: 0;
-    width: 1140rem;
-    height: 220rem;
-  }
-
-  .W_MainRandRight .A_TextBlock {
-    width: 520rem;
-    top: 230rem;
-    right: -64rem;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
   }
 
   .A_HeaderPart {
@@ -299,176 +502,1509 @@
   }
 
   .A_Button {
-    width: 440rem;
-    height: 120rem;
+    width: 314rem;
+    height: 55rem;
     padding: 10rem 30rem;
-    font-size: 50rem;
-  }
-
-  .A_TextBlock {
-    font-size: 48rem;
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--Black);
+    background: var(--White);
+    border: none;
+    z-index: 2;
   }
 
   /* H2 */
 
-  .Q_Header2Text {
-    color: #fff;
-    text-align: center;
+  .A_H2 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* H3 */
+
+  .A_H3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  /* H4 */
+
+  .A_H4 {
+    display: flex;
+    padding: 0 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .A_MainReadHeading {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .A_MainReadText {
+    color: var(--White);
     font-family: "Inter";
-    font-size: 120rem;
+    font-size: 36rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    text-transform: uppercase;
-  }
-
-  /* Small images */
-
-  .Q_ImageBigFloat {
-    position: absolute;
-    width: 116rem;
-    height: 116rem;
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
-
-  .Q_ImageSmallFloat {
-    position: absolute;
-    width: 102rem;
-    height: 102rem;
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
-
-  /* Article Cards */
-
-  .Q_ArticleCardIndexImage {
-    height: 400rem;
-    width: 400rem;
-    margin-top: 90rem;
-    margin-left: 80rem;
-  }
-
-  .Q_ArticleCardIndexCaption {
-    width: 341.948rem;
-    font-size: 48rem;
-  }
-
-  .Q_RandContent {
-    height: 500rem;
-    width: 500rem;
-    margin-top: 115rem;
-    margin-left: 100rem;
-    z-index: 10;
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    width: 620rem;
+    align-self: start;
+    margin-left: -320rem;
+    margin-top: 10rem;
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 3;
   }
 
-  .Q_RandContent::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgb(255, 0, 162), rgb(255, 96, 197));
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    mix-blend-mode: color;
+  .A_TextBlock {
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 36rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    display: block;
+    z-index: 2;
   }
 
-  .Q_RandContent:hover::after {
-    opacity: 0.7;
-  }
-
-  /* About */
-
-  .S_AboutUs {
-    width: 1700rem;
-    height: 1400rem;
-    grid-template-columns: 1fr 700rem;
-    margin: 180rem auto;
-    column-gap: 40rem;
-    row-gap: 60rem;
-  }
-
-  .S_AboutUsReverse {
-    width: 1700rem;
-    min-height: 1800rem;
-    margin: 120rem auto 0;
-    display: grid;
-    grid-template-columns: 760rem 1fr;
-    column-gap: 90rem;
-    align-items: start;
+  .A_ArticleCard {
+    display: flex;
+    width: 504.015rem;
+    padding: 24rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    background-color: var(--White);
+    cursor: pointer;
     position: relative;
   }
 
-  .S_AboutWhatToDo {
-    width: 1700rem;
-    height: 800rem;
-    display: grid;
-    grid-template-columns: 1fr 700rem;
-    margin: 180rem auto;
-    column-gap: 40rem;
-    row-gap: 60rem;
-    align-items: start;
+  .A_Image {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 17rem solid var(--Pink);
+    box-sizing: border-box;
+    transition: border-color 0.25s ease;
+  }
+
+  .A_Image:hover {
+    border-color: transparent;
+  }
+
+  /* AboutUsPage */
+
+  .A_PartOfBig {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+  }
+
+  /* Inter */
+
+  .A_Text {
+    display: flex;
+    width: 1229rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    text-align: center;
+  }
+
+  .A_CardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24rem;
+    margin-top: -52rem;
+  }
+
+  .A_CardButton {
+    display: flex;
+    padding: 10rem 40rem;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+    width: 240rem;
+    height: 55rem;
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--White);
+    background: var(--Pink);
+    border: none;
+  }
+
+  .A_CardButton:hover {
+    color: var(--Pink);
+    background: var(--White);
+    border: 4rem solid var(--Pink);
+  }
+
+  /* Create */
+
+  .A_FrameGenerateImg {
+    display: flex;
+    width: 786rem;
+    height: 786rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 5rem solid var(--Pink);
+    background: var(--Black);
+  }
+
+  /* Random */
+
+  .A_RandomPageButton {
+    width: 314rem;
+    height: 55rem;
+    padding: 10rem 30rem;
+    font-family: Impact;
+    font-size: 32rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: none;
+  }
+
+  /* Constructor */
+
+  .A_ConstructorPreview {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4rem solid #ff65a6;
+    background: #000000;
+  }
+
+  .Q_GenImage {
+    width: 150rem;
+    height: 150rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    filter: grayscale(1);
+    flex: 0 0 150rem;
+  }
+
+  .Q_GenImage:hover {
+    outline: 3rem solid #fff;
+  }
+
+  .A_GenInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+  }
+
+  .Q_GenInputRow {
+    width: 100%;
+    height: 64rem;
+    padding: 0 20rem;
+    box-sizing: border-box;
+    border: 3rem solid #ff65a6;
+    background: #fff;
+    color: #000;
+    font-family: "Inter";
+    font-size: 30rem;
+    outline: none;
+  }
+
+  .A_ConstructorInputRow::placeholder {
+    color: #555;
   }
 
   /* Articles Page */
 
-  .S_ArticlesAll {
-    padding-top: 300rem;
-  }
-
-  .A_ArticlesFilter {
-    min-height: 80rem;
+  .A_FilterTag {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 55rem;
     padding: 10rem 12rem;
-    font-size: 36rem;
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    font-family: Impact, sans-serif;
+    font-size: 32rem;
+    font-weight: 400;
+    line-height: 0.9;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: auto;
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 
-  .A_ArticleCard {
-    width: 700rem;
-    height: 800rem;
-    gap: 36rem;
+  .A_FilterTag.active {
+    background: #ff5f95;
+    color: #ffffff;
+    padding-right: 64rem;
   }
 
-  /* Interactives */
-
-  .S_InteractivesPromo {
-    width: 100%;
-    height: 2000rem;
-    gap: 72rem;
-    margin-top: 200rem;
+  .A_FilterTag.active .Q_CloseFilter {
+    opacity: 1;
   }
 
-  .A_InteractiveCard .A_Button {
-    width: 440rem;
-    height: 120rem;
-    padding: 10rem 30rem;
-    font-size: 50rem;
+  .A_FilterTag {
+    transition: none !important;
   }
 
-  .W_InteractivesText .A_TextBlock {
-    width: 1400rem;
-    text-align: center;
+  .A_ArticlesSearchBar {
+    width: 1748rem;
+    height: 185rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 99rem;
+  }
+
+  /* Article Content */
+
+  .A_ArticleTextBlock {
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .A_Video {
+    display: flex;
+    width: 554rem;
+    padding: 25rem 25rem 25.295rem 25rem;
+    background: var(--Pink);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .A_Interrupt {
+    display: flex;
+    padding: 32rem 40rem;
+    align-items: center;
+    gap: 10rem;
+    align-self: stretch;
+    background: var(--Pink);
+  }
+
+  /* Test 1 */
+
+  .A_MarkedListLine {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+  }
+
+  .O_TestTextButton > .A_TextBlock {
+    width: 720rem;
+  }
+
+  .A_Button:hover {
+    color: #ffffff;
+    background: #ff65a6;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Test 2 */
+
+  .A_Puzzle {
+    width: min(864rem, 46vw);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Test 3 */
+
+  .A_TestImage {
+    display: flex;
+    width: 384rem;
+    height: 384rem;
+    justify-content: center;
+    align-items: center;
+    border: 17rem solid var(--Pink);
+  }
+
+  /* SearchBar */
+
+  .A_SearchResultHeader {
     margin: 0;
+    color: var(--White);
+    font-family: "Impact";
+    font-size: 36rem;
+    line-height: 110%;
   }
 
-  .M_AnswerText input[type="checkbox"] {
+  .A_SearchResultDescription {
+    margin: 0;
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 24rem;
+    line-height: 110%;
+  }
+
+  /* Search Page */
+
+  .W_SearchPage > .A_H2 {
+    align-items: center;
+  }
+
+  .A_SearchResNothing {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .A_SearchResNothing .A_H4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 50rem;
+    position: relative;
+  }
+
+  /* 404 */
+
+  .A_404Item {
+    position: absolute;
+    opacity: 0;
+    animation: float404 6s infinite;
+  }
+
+  .A_404Text {
+    font-family: Impact;
+    font-size: 220rem;
+    color: transparent;
+    -webkit-text-stroke: 6rem #000;
+  }
+
+  .A_404Img {
+    width: 120rem;
+    height: 120rem;
+    object-fit: cover;
+  }
+
+  @keyframes float404 {
+    0% {
+      transform: translateY(100rem) scale(0.8);
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(-60rem) scale(1);
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-200rem) scale(1.1);
+      opacity: 0;
+    }
+  }
+
+  .t1 {
+    left: 60rem;
+    top: 80rem;
+    animation-delay: 0s;
+  }
+
+  .t2 {
+    right: 120rem;
+    top: 40rem;
+    animation-delay: 2s;
+  }
+
+  .t3 {
+    left: 300rem;
+    bottom: 60rem;
+    animation-delay: 4s;
+  }
+
+  .i1 {
+    left: 200rem;
+    top: 140rem;
+    animation-delay: 0.5s;
+  }
+
+  .i2 {
+    right: 260rem;
+    top: 200rem;
+    animation-delay: 1s;
+  }
+
+  .i3 {
+    left: 500rem;
+    bottom: 120rem;
+    animation-delay: 1.5s;
+  }
+
+  .i4 {
+    right: 80rem;
+    bottom: 80rem;
+    animation-delay: 2s;
+  }
+
+  /* Styleguide */
+
+  .A_StyleguideLogo {
+    width: 995.844rem;
+    height: 426rem;
+    position: relative;
+    margin-top: -96rem;
+  }
+
+  .A_TextAll {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90rem;
+    align-self: stretch;
+  }
+
+  .A_LogoGood {
+    width: 581.333rem;
+    height: 248.681rem;
+  }
+
+  .A_LogoBad {
+    width: 360rem;
+    height: 154rem;
+  }
+
+  .A_ColorExample {
+    display: flex;
+    width: 210rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16rem;
+  }
+
+  .A_StyleguideTextBlock {
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    max-width: 700rem;
+  }
+
+  .A_FontDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24rem;
+  }
+
+  /* 03_Molecules */
+
+  .M_Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2500;
+
+    height: 55rem;
+    padding: 5rem 16rem;
+    max-width: 100vw;
+  }
+
+  /* Footer */
+
+  .M_Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    height: 136rem;
+    width: 100%;
+    padding: 32rem 64rem;
+    margin-top: 130rem;
+    background: var(--Pink);
+    opacity: 0.96;
+    z-index: 10;
+    position: relative;
+    bottom: 0;
+  }
+
+  /* Main */
+
+  .M_MainHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .M_MainH2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    margin-left: 64rem;
+  }
+
+  .M_HeadOfRead {
+    display: grid;
+    grid-template-columns: 620rem 540rem 1fr;
+    column-gap: 80rem;
+    align-items: center;
+    width: 100%;
+    min-height: 231rem;
+  }
+
+  .M_BlockContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24rem;
+  }
+
+  /* AboutUsPage */
+
+  .M_HeadText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56rem;
+    z-index: 2;
+  }
+
+  /* Inter */
+
+  .M_PageCard {
+    display: flex;
+    width: 436rem;
+    height: 620rem;
+    padding: 24rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--White);
+  }
+
+  .M_GenImgBlock {
+    display: flex;
+    width: 888rem;
+    height: 519rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24rem;
+    flex-shrink: 0;
+  }
+
+  .M_GenTextBlock {
+    display: flex;
+    width: 888rem;
+    height: 125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24rem;
+    flex-shrink: 0;
+  }
+
+  /* Random */
+
+  .M_ImageSection {
+    display: flex;
+    width: 1731rem;
+    justify-content: center;
+    align-items: center;
+    gap: 135rem;
+  }
+
+  /* Articles Page */
+
+  .M_ArticlesPageHeading {
+    margin: 0 auto;
+  }
+
+  .M_ArticleCardLink {
+    text-decoration: none;
+    display: block;
+  }
+
+  .M_Filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36rem;
+    align-self: stretch;
+  }
+
+  .M_ArticleCardPopup {
+    position: fixed;
+    width: 360rem;
+    min-height: 160rem;
+    padding: 24rem;
+    background: var(--Pink);
+    border: 4rem solid var(--White);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+    left: 0;
+    top: 0;
+  }
+
+  .M_ArticleCardPopup .A_TextBlock {
+    font-size: 28rem;
+    line-height: 110%;
+    color: var(--White);
+    margin: 0;
+    text-align: left;
+  }
+
+  .A_ArticleCard:hover .M_ArticleCardPopup {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Article Content */
+
+  .M_ArticleHead {
+    display: flex;
+    width: 986rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 46rem;
+    pointer-events: none;
+  }
+
+  .M_ArticleText {
+    display: flex;
+    width: 662rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40rem;
+  }
+
+  /* Test 1 */
+
+  .M_MarkedList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20rem;
+    align-self: stretch;
+  }
+
+  .M_MarkedList input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    width: 64rem;
-    height: 64rem;
+    width: 48rem;
+    height: 48rem;
     background: black;
     flex-shrink: 0;
     position: relative;
     cursor: pointer;
+  }
+
+  .M_MarkedList input[type="checkbox"]:checked {
+    background: #ff65a6;
+  }
+
+  .M_MarkedList input[type="checkbox"]:hover {
+    outline: 3rem solid #ff65a6;
+  }
+
+  /* Test 3 */
+
+  .M_TestInfo {
+    display: flex;
+    height: 384rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* SearchBar */
+
+  .M_SearchResult {
+    display: flex;
+    flex-direction: column;
+    gap: 19rem;
+    padding: 20rem 16rem 25rem 16rem;
+    background: var(--Pink);
+    border: 3rem solid var(--White);
+    text-decoration: none;
+    align-items: flex-start;
+  }
+
+  /* Search Page */
+
+  .C_SearchResults > .M_SearchResult {
+    width: 862rem;
+    height: 252rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 20rem;
+    align-items: center;
+  }
+
+  /* Styleguide */
+
+  .M_StyleguideHead {
+    display: flex;
+    width: 995.844rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .M_BrandAboutSect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50rem;
+  }
+
+  .M_LogoSect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42rem;
+  }
+
+  .M_LogoSectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 54rem;
+    align-self: stretch;
+  }
+
+  .M_ColorsSect,
+  .M_FontSect,
+  .M_GridSect,
+  .M_PhotoSect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42rem;
+  }
+
+  /* 04_Collections */
+
+  .C_HeaderLinks {
+    display: none;
+  }
+
+  .C_HeaderLinks.is-open {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 88rem 16rem 27rem;
+    box-sizing: border-box;
+    background: var(--Pink);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24rem;
+    overflow: hidden;
+  }
+
+  .C_HeaderLinks.is-open .W_SearchContainer {
+    order: 1;
+    width: 100%;
+  }
+
+  .C_HeaderLinks.is-open > a {
+    order: 2;
+    font-size: 48rem;
+    text-align: left;
+  }
+
+  .C_HeaderLinks.is-open .W_HeaderMobileFooter {
+    order: 3;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .C_HeaderLinks > a.hd {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  /* Articles */
+
+  .C_Articles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 129rem;
+    row-gap: 160rem;
+    justify-content: center;
+  }
+
+  /* Test 3 */
+
+  .C_TestGuessAnswer {
+    width: 100%;
+  }
+
+  /* Puzzle */
+
+  .C_PuzzlePieces {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    margin-top: 360rem;
+    pointer-events: none;
+  }
+
+  /* 404 */
+
+  .С_NotFoundBackground {
+    position: absolute;
+    width: 1920rem;
+    height: 1080rem;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  /* SearchBar */
+  .C_HeaderLinks.is-open .C_Dropdown {
+    display: none !important;
+  }
+
+  .C_HeaderLinks.is-open .Q_FooterLink {
+    font-size: 24rem;
+    line-height: 100%;
+  }
+
+  .C_HeaderLinks.is-open .W_HeaderMobileFooter {
+    order: 3;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+  }
+
+  /* Search Page */
+
+  .C_SearchResults {
+    display: flex;
+    align-self: stretch;
+    row-gap: 42rem;
+    column-gap: 64rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* Styleguide */
+
+  .C_StyleguideNav {
+    position: sticky;
+    top: 80rem;
+    display: flex;
+    width: 160rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32rem;
+    flex-shrink: 0;
+    height: fit-content;
+    align-self: flex-start;
+    z-index: 20;
+  }
+
+  /* 05_Wrappers */
+
+  .W_SearchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  /* Main */
+
+  .W_MainPageContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 130rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 189rem;
+    align-self: stretch;
+  }
+
+  .W_MainButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .W_ReadButtonLink {
+    grid-column: 2;
+    grid-row: 2;
+    width: 520rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+  }
+
+  /* AbousUsPage */
+
+  .W_AboutContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 130rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 216rem;
+    align-self: stretch;
+  }
+
+  /* Interactives */
+
+  .W_InterContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 130rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 200rem;
+    align-self: stretch;
+  }
+
+  /* Create */
+
+  .W_CreateContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 230rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 148rem;
+    align-self: stretch;
+  }
+
+  .W_GenImages {
+    width: 888rem;
+    height: 381rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 67rem;
+  }
+
+  /* Random */
+
+  .W_RandomContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 230rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 319rem;
+    align-self: stretch;
+  }
+
+  .W_RandomPageRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 620rem;
+    height: 600rem;
+  }
+
+  /* ArticlesSearch */
+
+  .W_SearchContent {
+    display: flex;
+    padding: 226rem 64rem 130rem 64rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 99rem;
+    align-self: stretch;
+  }
+
+  .W_Tags {
+    display: flex;
+    height: 69rem;
+    padding-right: 71rem;
+    align-items: flex-start;
+    gap: 24rem;
+    align-self: stretch;
+  }
+
+  /* ArticleContent */
+
+  .W_ArticleContent {
+    display: flex;
+    width: 1920rem;
+    padding: 230rem 220rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 180rem;
+  }
+
+  .W_MainButtons {
+    display: flex;
+    width: 1415.971rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .M_ArticleHead > .W_Tags {
+    margin: 0 auto;
+  }
+
+  /* Tests */
+
+  .W_TestsContent {
+    display: flex;
+    padding-top: 96rem;
+    padding-bottom: 230rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 200rem;
+    align-self: stretch;
+  }
+
+  /* Test 1 */
+
+  .W_TestWhoContent {
+    display: flex;
+    width: 1920rem;
+    padding: 153.5rem 64rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 116rem;
+  }
+
+  .W_TestContent {
+    display: flex;
+    width: 1920rem;
+    height: 938rem;
+    padding-top: 96rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 136rem;
+  }
+
+  /* Puzzle */
+
+  .W_PuzzleContent {
+    position: relative;
+    display: flex;
+    padding: 230rem 64rem 180rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 79rem;
+    align-self: stretch;
+    min-height: 1150rem;
+    overflow: hidden;
+  }
+
+  /* Test 3 */
+
+  .W_ButtonsBox {
+    display: flex;
+    width: 387rem;
+    height: 130rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20rem;
+    flex-shrink: 0;
+  }
+
+  /* 404 */
+
+  .W_NotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96rem;
+    width: 1920rem;
+    flex-direction: column;
+    margin-bottom: -130rem;
+  }
+
+  /* SearchPage */
+
+  .W_SearchPage {
+    display: flex;
+    width: 1920rem;
+    padding-top: 196rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 117rem;
+  }
+
+  /* Styleguide */
+
+  .W_StyleguideTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32rem;
+  }
+
+  .W_StyleguideContent {
+    display: flex;
+    width: 1341rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 200rem;
+    flex-shrink: 0;
+  }
+
+  .W_LogosGood {
+    display: flex;
+    align-items: center;
+    gap: 97rem;
+    align-self: stretch;
+  }
+
+  .W_LogosBad {
+    display: flex;
+    width: 1243rem;
+    height: 244rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42rem;
+  }
+
+  .W_AllLogosBad {
+    display: flex;
+    align-items: center;
+    gap: 81rem;
+    align-self: stretch;
+  }
+
+  .W_ColorsAll {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    align-self: stretch;
+  }
+
+  .W_FontsContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 216rem;
+  }
+
+  .W_PhotosAll {
+    display: flex;
+    align-items: center;
+    gap: 80rem;
+  }
+
+  /* 06_Organisms */
+
+  /* Main */
+
+  .O_ArticlesCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 604rem;
+    margin: auto;
+    gap: 130rem;
+    align-self: stretch;
+  }
+
+  .O_BlockInfo {
+    width: 831rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40rem;
+  }
+
+  /* Interactives */
+
+  .O_Cards {
+    display: flex;
+    width: 1568rem;
+    height: 625rem;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 130rem;
+  }
+
+  /* Create */
+
+  .O_GenCreate {
+    display: flex;
+    width: 888rem;
+    height: 783rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 42rem;
+    flex-shrink: 0;
+  }
+
+  /* Random */
+
+  .O_RandomPageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Constructor */
+
+  .O_ConstructorContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1760rem;
+    gap: 130rem;
+  }
+
+  /* Articles Page */
+
+  .O_ArticlesSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem;
+  }
+
+  /* Article Content */
+
+  .O_ArticleSect {
+    display: flex;
+    align-items: flex-start;
+    gap: 212rem;
+  }
+
+  /* Test 1 */
+
+  .O_TestWho {
+    display: flex;
+    padding-right: 633rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 72rem;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+
+  .O_TestTextButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50rem;
+  }
+
+  /* Test 3 */
+
+  .O_Test {
+    display: flex;
+    padding-left: 493rem;
+    align-items: center;
+    gap: 121rem;
+    align-self: stretch;
+    z-index: 2;
+  }
+
+  /* Styleguide */
+
+  .O_Content {
+    display: flex;
+    width: 1792rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 202rem;
+    margin: 0 auto;
+  }
+
+  /* 07_Supreorganisms */
+
+  /* Main */
+
+  .S_MainHeadSection {
+    width: 100%;
+    height: 971rem;
+    padding: 196rem 249rem 250rem 248rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .S_ArticlesSection {
+    display: flex;
+    width: 1795rem;
+    max-width: calc(100% - 128rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 110rem;
+    position: relative;
+  }
+
+  .S_RandomSection {
+    display: flex;
+    width: 408rem;
+    max-width: calc(100% - 128rem);
+    height: 606rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 287rem;
+  }
+
+  /* AboutUsPage */
+
+  .S_BasicHeadSection {
+    width: 100%;
+
+    height: 971rem;
+    display: flex;
+    padding: 270rem 332rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    align-self: stretch;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .S_InfoSect {
+    display: flex;
+    width: 1786rem;
+    height: 606rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 135rem;
+  }
+
+  .S_MemSect {
+    display: flex;
+    width: 1786rem;
+    height: 608rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 177rem;
+  }
+
+  .S_YouSect {
+    display: flex;
+    width: 1786rem;
+    height: 606rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 213rem;
+  }
+
+  /* interactives */
+
+  .S_Generate {
+    display: flex;
+    width: 1792rem;
+    height: 786rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 118rem;
+  }
+
+  .S_InteractivesPromo {
+    position: relative;
+    width: 100%;
+    height: 1300rem;
+    gap: 72rem;
+  }
+
+  /* Random */
+
+  .S_RandomAll {
+    display: flex;
+    width: 1800rem;
+    height: 1100rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100rem;
+    padding-top: 180rem;
+    margin: auto;
+    position: relative;
   }
 }

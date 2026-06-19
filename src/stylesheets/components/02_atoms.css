@@ -10,8 +10,7 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.A_HeaderClose,
-.W_HeaderMobileFooter {
+.A_HeaderBurger {
   display: none;
 }
 

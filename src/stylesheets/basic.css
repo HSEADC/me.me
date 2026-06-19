@@ -19,6 +19,18 @@ html {
   }
 }
 
+@media (max-width: 440px) {
+  html {
+    font-size: calc(100vw / 440);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;
   width: 100%;

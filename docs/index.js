@@ -1116,26 +1116,6 @@ document.addEventListener("DOMContentLoaded", function () {
   showRandomImage();
   randomButton === null || randomButton === void 0 || randomButton.addEventListener("click", showRandomImage);
 });
-
-// Mobile
-
-document.addEventListener("DOMContentLoaded", function () {
-  var header = document.querySelector(".M_Header");
-  var toggle = document.querySelector(".js-menu-toggle");
-  var links = document.querySelectorAll(".W_Header_all_links a");
-  if (!header || !toggle) return;
-  toggle.addEventListener("click", function (event) {
-    if (window.innerWidth <= 768) {
-      event.preventDefault();
-      header.classList.toggle("is-open");
-    }
-  });
-  links.forEach(function (link) {
-    link.addEventListener("click", function () {
-      header.classList.remove("is-open");
-    });
-  });
-});
 })();
 
 /******/ })()

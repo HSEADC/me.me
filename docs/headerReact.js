@@ -17313,26 +17313,30 @@ var client = __webpack_require__(5338);
 
 function A_HeaderLink(_ref) {
   var text = _ref.text,
-    url = _ref.url;
+    url = _ref.url,
+    onClick = _ref.onClick;
   var currentPath = window.location.pathname;
   var linkPath = new URL(url, window.location.origin).pathname;
   var isCurrent = currentPath === linkPath;
   return /*#__PURE__*/react.createElement("a", {
     href: url,
     className: "hd ".concat(isCurrent ? "Q_HeaderLinkCurrent" : "Q_HeaderLink"),
-    "data-text": text
+    "data-text": text,
+    onClick: onClick
   }, /*#__PURE__*/react.createElement("h3", null, text));
 }
 ;// ./src/components/C_HeaderLinks.jsx
 
 
 function C_HeaderLinks(_ref) {
-  var menu = _ref.menu;
+  var menu = _ref.menu,
+    onLinkClick = _ref.onLinkClick;
   return /*#__PURE__*/react.createElement(react.Fragment, null, menu.map(function (item) {
     return /*#__PURE__*/react.createElement(A_HeaderLink, {
       key: item.url,
       text: item.text,
-      url: item.url
+      url: item.url,
+      onClick: onLinkClick
     });
   }));
 }
@@ -17738,7 +17742,19 @@ function W_SearchContainer() {
 }
 ;// ./src/images/logo.svg
 const logo_namespaceObject = __webpack_require__.p + "images/2697fa2250f2c768d0ea.svg";
+;// ./src/images/BurgerIcon.svg
+const BurgerIcon_namespaceObject = __webpack_require__.p + "images/7aee40d56985676687d6.svg";
+;// ./src/images/BurgerClose.svg
+const BurgerClose_namespaceObject = __webpack_require__.p + "images/17eb446fe25ed921a196.svg";
 ;// ./src/javascripts/header-react.jsx
+function header_react_slicedToArray(r, e) { return header_react_arrayWithHoles(r) || header_react_iterableToArrayLimit(r, e) || header_react_unsupportedIterableToArray(r, e) || header_react_nonIterableRest(); }
+function header_react_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function header_react_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return header_react_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? header_react_arrayLikeToArray(r, a) : void 0; } }
+function header_react_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function header_react_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function header_react_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
 
 
 
@@ -17758,18 +17774,52 @@ var menu = [{
   url: "/pages/interactives.html"
 }];
 function M_Header() {
+  var _useState = (0,react.useState)(false),
+    _useState2 = header_react_slicedToArray(_useState, 2),
+    isMenuOpen = _useState2[0],
+    setIsMenuOpen = _useState2[1];
+  function toggleMenu() {
+    setIsMenuOpen(function (prev) {
+      var next = !prev;
+      document.body.style.overflow = next ? "hidden" : "";
+      return next;
+    });
+  }
+  function closeMenu() {
+    document.body.style.overflow = "";
+    setIsMenuOpen(false);
+  }
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("a", {
     href: "/",
-    className: "A_LogoLink js-menu-toggle"
+    className: "A_LogoLink"
   }, /*#__PURE__*/react.createElement("img", {
     src: logo_namespaceObject,
     className: "A_Logo",
     alt: "ME.ME"
+  })), /*#__PURE__*/react.createElement("button", {
+    className: "A_HeaderBurger",
+    type: "button",
+    "aria-label": isMenuOpen ? "Закрыть меню" : "Открыть меню",
+    onClick: toggleMenu
+  }, /*#__PURE__*/react.createElement("img", {
+    src: isMenuOpen ? BurgerClose_namespaceObject : BurgerIcon_namespaceObject,
+    alt: ""
   })), /*#__PURE__*/react.createElement("div", {
-    className: "W_Header_all_links"
+    className: "C_HeaderLinks ".concat(isMenuOpen ? "is-open" : "")
   }, /*#__PURE__*/react.createElement(C_HeaderLinks, {
-    menu: menu
-  }), /*#__PURE__*/react.createElement(W_SearchContainer, null)));
+    menu: menu,
+    onLinkClick: closeMenu
+  }), /*#__PURE__*/react.createElement(W_SearchContainer, null), /*#__PURE__*/react.createElement("div", {
+    className: "W_HeaderMobileFooter"
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe",
+    className: "hd Q_FooterLink",
+    "data-text": "\u043D\u0430\u0448 \u0442\u0438\u043A-\u0442\u043E\u043A"
+  }, "\u043D\u0430\u0448 \u0442\u0438\u043A-\u0442\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
+    href: "https://t.me/memememememememememememememeemem",
+    className: "hd Q_FooterLink",
+    "data-text": "\u043D\u0430\u0448 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C"
+  }, "\u043D\u0430\u0448 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C"))));
 }
 var header = document.querySelector(".M_Header");
 if (header) {

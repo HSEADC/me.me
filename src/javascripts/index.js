@@ -368,26 +368,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   randomButton?.addEventListener("click", showRandomImage);
 });
-
-// Mobile
-
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".M_Header");
-  const toggle = document.querySelector(".js-menu-toggle");
-  const links = document.querySelectorAll(".W_Header_all_links a");
-
-  if (!header || !toggle) return;
-
-  toggle.addEventListener("click", (event) => {
-    if (window.innerWidth <= 768) {
-      event.preventDefault();
-      header.classList.toggle("is-open");
-    }
-  });
-
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      header.classList.remove("is-open");
-    });
-  });
-});

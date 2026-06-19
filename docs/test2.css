@@ -1427,13 +1427,13 @@ button:hover {
   line-height: 110%;
   margin: 0;
 }
-.W_Header_all_links {
+.C_HeaderLinks {
   align-items: center;
   display: flex;
   gap: 64rem;
   padding-right: 16rem;
 }
-.W_Header_all_links > a {
+.C_HeaderLinks > a {
   color: var(--White);
   font-family: Impact;
   font-size: 32rem;
@@ -1444,7 +1444,7 @@ button:hover {
   text-align: right;
   text-decoration: none;
 }
-.W_Header_all_links > a.hd {
+.C_HeaderLinks > a.hd {
   display: inline-block;
   position: relative;
   z-index: 0;
@@ -1872,7 +1872,7 @@ button:hover {
   .A_Logo {
     margin: 0;
   }
-  .W_Header_all_links {
+  .C_HeaderLinks {
     align-items: flex-start;
     background: #ff65a5f1;
     box-sizing: border-box;
@@ -1893,21 +1893,21 @@ button:hover {
     width: 100vw;
     z-index: 2090;
   }
-  .W_Header_all_links > a:first-child {
+  .C_HeaderLinks > a:first-child {
     margin-top: 240rem;
   }
-  .W_Header_all_links > a {
+  .C_HeaderLinks > a {
     font-size: 128rem;
     line-height: 0.95;
     margin-top: 64rem;
     padding: 0;
     text-align: left;
   }
-  .W_Header_all_links > a h3 {
+  .C_HeaderLinks > a h3 {
     margin: 0;
   }
   .O_Header.is-open .W_HeaderMobileFooter,
-  .O_Header.is-open .W_Header_all_links {
+  .O_Header.is-open .C_HeaderLinks {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
