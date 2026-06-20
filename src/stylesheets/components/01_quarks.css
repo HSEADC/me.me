@@ -372,21 +372,6 @@
   margin: 0;
 }
 
-.Q_CloseFilter {
-  display: flex;
-  width: 40rem;
-  height: 40rem;
-  padding: 10rem 10rem 9rem 9rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10rem;
-  background-image: url(../../images/index/CloseButton.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  cursor: pointer;
-}
-
 .Q_FilterText {
   display: block;
   color: inherit;
@@ -405,9 +390,6 @@
   background-position: center;
   opacity: 0;
   pointer-events: none;
-}
-
-.Q_CloseFilter {
   transition: none !important;
 }
 

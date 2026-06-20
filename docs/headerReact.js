@@ -17743,9 +17743,9 @@ function W_SearchContainer() {
 ;// ./src/images/logo.svg
 const logo_namespaceObject = __webpack_require__.p + "images/2697fa2250f2c768d0ea.svg";
 ;// ./src/images/BurgerIcon.svg
-const BurgerIcon_namespaceObject = __webpack_require__.p + "images/7aee40d56985676687d6.svg";
+const BurgerIcon_namespaceObject = __webpack_require__.p + "images/4cff3b1024e11542e048.svg";
 ;// ./src/images/BurgerClose.svg
-const BurgerClose_namespaceObject = __webpack_require__.p + "images/17eb446fe25ed921a196.svg";
+const BurgerClose_namespaceObject = __webpack_require__.p + "images/cb390527f632f37019c5.svg";
 ;// ./src/javascripts/header-react.jsx
 function header_react_slicedToArray(r, e) { return header_react_arrayWithHoles(r) || header_react_iterableToArrayLimit(r, e) || header_react_unsupportedIterableToArray(r, e) || header_react_nonIterableRest(); }
 function header_react_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }

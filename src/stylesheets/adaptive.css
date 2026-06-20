@@ -76,8 +76,12 @@
   .Q_ArticleImage {
     height: 242rem;
     width: 242rem;
-    z-index: 10;
     border: 3rem solid var(--Pink);
+  }
+
+  .C_Articles .Q_ArticleImage {
+    width: 330rem;
+    height: 330rem;
   }
 
   .Q_ArticleCaption {
@@ -85,6 +89,12 @@
     height: 42rem;
     font-size: 19rem;
     padding-top: 10rem;
+  }
+
+  .C_Articles .Q_ArticleCaption {
+    width: 330rem;
+    height: 42rem;
+    font-size: 24rem;
   }
 
   .Q_RandContent {
@@ -100,6 +110,8 @@
     width: 230rem;
     height: 230rem;
   }
+
+  /* интерактиви */
 
   .Q_CardImage {
     display: flex;
@@ -197,51 +209,14 @@
 
   .Q_CloseFilter {
     display: flex;
-    width: 40rem;
-    height: 40rem;
-    padding: 10rem 10rem 9rem 9rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10rem;
-  }
-
-  .Q_FilterText {
-    display: block;
-    color: inherit;
-  }
-
-  .Q_CloseFilter {
-    position: absolute;
-    top: 50%;
-    right: 8rem;
-    transform: translateY(-50%);
-    width: 32rem;
-    height: 32rem;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .Q_CloseFilter {
-    transition: none !important;
+    width: 28rem;
+    height: 28rem;
+    padding: 6rem;
   }
 
   .Q_SearchText {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    color: var(--White);
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    line-height: 110%;
-    width: 100%;
-    height: 100%;
-    text-transform: lowercase;
-    padding-top: 12rem;
+    font-size: 24rem;
+    padding-top: 16rem;
   }
 
   .Q_SearchText::placeholder {
@@ -252,14 +227,6 @@
     line-height: 100%;
     text-transform: lowercase;
     padding-top: 12rem;
-  }
-
-  .Q_SearchText:focus,
-  .Q_SearchText:active,
-  .Q_SearchText:focus-visible {
-    outline: none;
-    box-shadow: none;
-    border: none;
   }
 
   /* Article Content */
@@ -354,14 +321,6 @@
     height: 210rem;
     align-self: stretch;
     aspect-ratio: 1 / 1;
-  }
-
-  .Q_White {
-    background: var(--White);
-  }
-
-  .Q_Pink {
-    background: var(--Pink);
   }
 
   .Q_Black {
@@ -541,8 +500,16 @@
     gap: 10.635rem;
   }
 
+  .C_Articles .A_ArticleCard {
+    width: 378rem;
+    height: 428rem;
+    padding: 24rem;
+    gap: 24rem;
+  }
+
   .A_Image {
     border: 8rem solid var(--Pink);
+    align-self: center;
   }
 
   .A_Image:hover {
@@ -686,30 +653,45 @@
   /* Articles Page */
 
   .A_FilterTag {
-    position: relative;
-    display: inline-flex;
+    min-height: 40rem;
+    padding: 8rem;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 55rem;
-    padding: 10rem 12rem;
-    border: none;
-    background: #ffffff;
-    color: #000000;
-    font-family: Impact, sans-serif;
-    font-size: 32rem;
-    font-weight: 400;
-    line-height: 0.9;
-    cursor: pointer;
-    box-sizing: border-box;
-    width: auto;
-    flex: 0 0 auto;
-    white-space: nowrap;
+    gap: 2rem;
+    font-size: 20rem;
   }
 
   .A_FilterTag.active {
     background: #ff5f95;
     color: #ffffff;
-    padding-right: 64rem;
+    padding-right: 40rem;
+  }
+
+  .Filter-1 {
+    order: 1;
+  }
+
+  .Filter-2 {
+    order: 3;
+  }
+
+  .Filter-3 {
+    order: 5;
+  }
+
+  .Filter-4 {
+    order: 7;
+  }
+
+  .Filter-5 {
+    order: 4;
+  }
+
+  .Filter-6 {
+    order: 6;
+  }
+
+  .Filter-7 {
+    order: 2;
   }
 
   .A_FilterTag.active .Q_CloseFilter {
@@ -721,12 +703,10 @@
   }
 
   .A_ArticlesSearchBar {
-    width: 1748rem;
-    height: 185rem;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 99rem;
+    width: 420rem;
+    height: 83rem;
+    padding: 0 48rem;
+    background-image: url(../images/Mobile_SearchFrame.svg);
   }
 
   /* Article Content */
@@ -1102,11 +1082,10 @@
   }
 
   .M_Filters {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 36rem;
-    align-self: stretch;
+    width: 403rem;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
   }
 
   .M_ArticleCardPopup {
@@ -1317,12 +1296,9 @@
   /* Articles */
 
   .C_Articles {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 129rem;
-    row-gap: 160rem;
-    justify-content: center;
+    width: 408rem;
+    column-gap: 0;
+    row-gap: 32rem;
   }
 
   /* Test 3 */
@@ -1451,16 +1427,11 @@
     margin-top: 20rem;
   }
 
-  /* AbousUsPage */
-
   .W_AboutContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 130rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 216rem;
-    align-self: stretch;
+    width: 440rem;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 52rem;
   }
 
   /* Interactives */
@@ -1518,25 +1489,26 @@
     height: 600rem;
   }
 
-  /* ArticlesSearch */
-
   .W_SearchContent {
-    display: flex;
-    padding: 226rem 64rem 130rem 64rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 99rem;
-    align-self: stretch;
+    margin-top: 48rem;
+    width: 440rem;
+    padding: 24rem 0;
+    gap: 32rem;
+  }
+
+  .W_SearchContent > .A_H2 > .Q_Header2Text {
+    text-align: center;
   }
 
   .W_Tags {
-    display: flex;
-    height: 69rem;
-    padding-right: 71rem;
-    align-items: flex-start;
-    gap: 24rem;
-    align-self: stretch;
+    width: 418rem;
+    height: 240rem;
+    padding: 12rem;
+    align-items: center;
+    align-content: center;
+    gap: 12rem;
+    flex-wrap: wrap;
+    margin-left: 12rem;
   }
 
   /* ArticleContent */
@@ -1862,55 +1834,40 @@
 
   .S_RandomSection .A_Image {
     order: 2;
-    align-self: center;
   }
-
-  .S_RandomSection .O_BlockInfo {
-    order: 1;
-  }
-
-  /* AboutUsPage */
 
   .S_BasicHeadSection {
-    width: 100%;
-
-    height: 971rem;
-    display: flex;
-    padding: 270rem 332rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    align-self: stretch;
-    overflow: hidden;
-    position: relative;
+    width: 440rem;
+    height: 843rem;
+    padding: 191rem 14rem;
   }
 
   .S_InfoSect {
-    display: flex;
-    width: 1786rem;
+    flex-direction: column;
+    width: 408rem;
     height: 606rem;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 135rem;
+    gap: 32rem;
   }
 
   .S_MemSect {
-    display: flex;
-    width: 1786rem;
-    height: 608rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 177rem;
+    width: 408rem;
+    height: 518rem;
+    flex-direction: column;
+    gap: 32rem;
+    justify-content: center;
+  }
+
+  .S_MemSect .A_Image {
+    order: 2;
   }
 
   .S_YouSect {
     display: flex;
-    width: 1786rem;
-    height: 606rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 213rem;
+    flex-direction: column;
+    width: 408rem;
+    height: 546rem;
+    gap: 32rem;
   }
 
   /* interactives */
