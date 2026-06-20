@@ -1,4 +1,29 @@
 @media (max-width: 440px) {
+  /* Basic */
+
+  .Q_HeaderText.hd::after {
+    -webkit-text-stroke: 20rem var(--Black);
+  }
+
+  .Q_Header2Text.hd::after,
+  .Q_CardHeader.hd::after {
+    -webkit-text-stroke: 16rem var(--Pink);
+  }
+
+  .Q_Header4Text.hd::after,
+  .Q_Header4Styleguide.hd::after {
+    -webkit-text-stroke: 14rem var(--Pink);
+  }
+
+  .Q_MarkedListText.hd::after {
+    -webkit-text-stroke: 14rem var(--Pink);
+  }
+
+  .Q_ExampleHeaderText.hd::after,
+  .Q_ExampleHeader3Text.hd::after {
+    -webkit-text-stroke: 16rem #000000;
+  }
+
   /* 01_Quarks */
 
   .M_Footer > .Q_FooterLink {
@@ -6,45 +31,26 @@
   }
 
   .Q_BGContent {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    width: 440rem;
+    height: 843rem;
     object-fit: cover;
-    opacity: 0.4;
-  }
-
-  .Q_VideoFrame {
-    position: absolute;
-    inset: 0;
-    background: var(--Tone);
-    opacity: 0.4;
-    mix-blend-mode: color;
-    z-index: 1;
   }
 
   .Q_BGSpikes {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
+    background-image: url("../images/mobile_videos_spikes.svg");
   }
 
-  /* Heading */
+  .A_HeaderPart > .Q_ImageInHeader {
+    display: none;
+  }
 
   .Q_ImageInHeader {
-    display: inline-block;
-    width: 116rem;
-    height: 116rem;
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
+    width: 48rem;
+    height: 48rem;
   }
 
   .Q_HeaderText {
-    font-size: 46rem;
+    font-size: 42rem;
   }
 
   .Q_Header2Text {
@@ -55,29 +61,17 @@
     font-size: 32rem;
   }
 
-  /* H4 */
-
   .Q_Header4Text {
     font-size: 32rem;
   }
 
-  /* Small images */
-
   .Q_ImageOfPart {
-    position: absolute;
-    width: 228rem;
-    height: 228rem;
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    top: 5rem;
-    right: 64rem;
-    animation: Q_ImageOfPartFloat 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    grid-column: 2;
+    grid-row: 1;
+    width: 76rem;
+    height: 76rem;
+    margin-right: 6rem;
   }
-
-  /* Article Cards */
 
   .Q_ArticleImage {
     height: 242rem;
@@ -94,8 +88,8 @@
   }
 
   .Q_RandContent {
-    width: 230rem;
-    height: 230rem;
+    width: 232rem;
+    height: 232rem;
   }
 
   .Q_ImageHoverFrame {
@@ -453,14 +447,11 @@
   }
 
   .A_SearchButton {
-    display: flex;
     height: 40rem;
     padding: 10rem 24rem;
     gap: 32rem;
     font-size: 24rem;
   }
-
-  /* Footer */
 
   .A_FooterLogo {
     width: 104.406rem;
@@ -486,18 +477,11 @@
   }
 
   .A_Button {
-    width: 314rem;
-    height: 55rem;
-    padding: 10rem 30rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: var(--Black);
-    background: var(--White);
-    border: none;
-    z-index: 2;
+    width: 224rem;
+    height: 40rem;
+    padding: 10rem 24rem;
+    gap: 24rem;
+    font-size: 24rem;
   }
 
   /* H2 */
@@ -532,61 +516,33 @@
 
   .A_MainReadHeading {
     grid-column: 1;
-    grid-row: 1 / 3;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-row: 1;
+    margin: 0;
   }
 
   .A_MainReadText {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 36rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    display: block;
-    grid-column: 2;
-    grid-row: 1;
-    width: 620rem;
-    align-self: start;
-    margin-left: -320rem;
-    margin-top: 10rem;
-    position: relative;
-    z-index: 3;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    font-size: 20rem;
+    width: 404rem;
+    margin: 0;
+    padding: 0;
+    font-size: 20rem;
   }
 
   .A_TextBlock {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 36rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    display: block;
-    z-index: 2;
+    font-size: 20rem;
   }
 
   .A_ArticleCard {
-    display: flex;
-    width: 504.015rem;
-    padding: 24rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 20rem;
-    background-color: var(--White);
-    cursor: pointer;
-    position: relative;
+    width: 268rem;
+    height: 322rem;
+    padding: 12.762rem;
+    gap: 10.635rem;
   }
 
   .A_Image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 17rem solid var(--Pink);
-    box-sizing: border-box;
-    transition: border-color 0.25s ease;
+    border: 8rem solid var(--Pink);
   }
 
   .A_Image:hover {
@@ -1049,14 +1005,7 @@
   /* Main */
 
   .M_MainHead {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    z-index: 3;
+    width: 409rem;
   }
 
   .M_MainH2 {
@@ -1069,18 +1018,20 @@
 
   .M_HeadOfRead {
     display: grid;
-    grid-template-columns: 620rem 540rem 1fr;
-    column-gap: 80rem;
-    align-items: center;
-    width: 100%;
-    min-height: 231rem;
+    grid-template-columns: 304rem 76rem;
+    grid-template-rows: auto auto auto;
+    column-gap: 24rem;
+    row-gap: 24rem;
+    align-items: start;
+    width: 404rem;
+    min-height: auto;
+    margin: 0 auto;
   }
 
   .M_BlockContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24rem;
+    gap: 22rem;
+    align-self: stretch;
+    max-width: 408rem;
   }
 
   /* AboutUsPage */
@@ -1461,32 +1412,42 @@
     border: none;
   }
 
-  /* Main */
-
   .W_MainPageContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 130rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 189rem;
-    align-self: stretch;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 48rem;
   }
 
   .W_MainButtons {
-    display: flex;
+    gap: 64rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 2%;
+    width: 404rem;
+  }
+
+  .M_MainHead > .W_MainButtons {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-top: 48rem;
+    gap: 64rem;
+    align-items: stretch;
+  }
+
+  .M_MainHead > .W_MainButtons > a:first-child {
+    align-self: flex-start;
+  }
+
+  .M_MainHead > .W_MainButtons > a:last-child {
+    align-self: flex-end;
   }
 
   .W_ReadButtonLink {
-    grid-column: 2;
-    grid-row: 2;
-    width: 520rem;
-    display: flex;
-    justify-content: center;
+    grid-column: 1 / 3;
+    grid-row: 3;
+    width: fit-content;
+    justify-content: flex-start;
     margin-top: 20rem;
   }
 
@@ -1587,13 +1548,6 @@
     flex-direction: column;
     align-items: center;
     gap: 180rem;
-  }
-
-  .W_MainButtons {
-    display: flex;
-    width: 1415.971rem;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .M_ArticleHead > .W_Tags {
@@ -1752,17 +1706,28 @@
   /* Main */
 
   .O_ArticlesCards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 604rem;
-    margin: auto;
-    gap: 130rem;
-    align-self: stretch;
+    height: 324rem;
+    gap: 24rem;
+    width: 408rem;
+    margin-left: 16rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .O_ArticlesCards > a {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    text-decoration: none;
+  }
+
+  .O_ArticlesCards::-webkit-scrollbar {
+    display: none;
   }
 
   .O_BlockInfo {
-    width: 831rem;
+    width: 408rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1873,39 +1838,35 @@
 
   /* 07_Supreorganisms */
 
-  /* Main */
-
   .S_MainHeadSection {
-    width: 100%;
-    height: 971rem;
-    padding: 196rem 249rem 250rem 248rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    position: relative;
-    overflow: hidden;
+    width: 440rem;
+    height: 843rem;
+    padding: 191rem 14rem;
+    justify-content: space-between;
   }
 
   .S_ArticlesSection {
-    display: flex;
-    width: 1795rem;
-    max-width: calc(100% - 128rem);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 110rem;
-    position: relative;
+    width: 440rem;
+    max-width: 100%;
+    justify-content: center;
+    gap: 24rem;
   }
 
   .S_RandomSection {
-    display: flex;
     width: 408rem;
-    max-width: calc(100% - 128rem);
-    height: 606rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 287rem;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 96rem;
+  }
+
+  .S_RandomSection .A_Image {
+    order: 2;
+    align-self: center;
+  }
+
+  .S_RandomSection .O_BlockInfo {
+    order: 1;
   }
 
   /* AboutUsPage */
