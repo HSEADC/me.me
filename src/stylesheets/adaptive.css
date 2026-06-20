@@ -119,36 +119,18 @@
   /* интерактиви */
 
   .Q_CardImage {
-    display: flex;
-    width: 388rem;
-    height: 388rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border: 5rem solid var(--Pink);
-    position: relative;
+    width: 330rem;
+    height: 330rem;
+    border: 3rem solid var(--Pink);
   }
 
   .Q_CardHeader {
-    color: var(--White);
-    text-align: center;
-    font-family: "Inter";
-    font-size: 44.696rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    text-transform: uppercase;
+    font-size: 38rem;
   }
 
   .Q_CardCaption {
-    color: var(--Pink);
-    text-align: center;
-    font-family: "Inter";
-    font-size: 24rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    width: 320rem;
+    font-size: 20rem;
+    width: 300rem;
   }
 
   /* Constructor */
@@ -521,50 +503,25 @@
   .A_PartOfBig {
     display: flex;
     align-items: center;
-    gap: 24rem;
+    gap: 12rem;
   }
 
   /* Inter */
 
   .A_Text {
-    display: flex;
-    width: 1229rem;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    text-align: center;
-  }
-
-  .A_CardInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24rem;
-    margin-top: -52rem;
+    width: 430rem;
   }
 
   .A_CardButton {
-    display: flex;
-    padding: 10rem 40rem;
-    justify-content: center;
-    align-items: center;
+    padding: 10rem 24rem;
     gap: 32rem;
-    width: 240rem;
-    height: 55rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: var(--White);
-    background: var(--Pink);
-    border: none;
+    width: 170rem;
+    height: 40rem;
+    font-size: 24rem;
   }
 
   .A_CardButton:hover {
-    color: var(--Pink);
-    background: var(--White);
-    border: 4rem solid var(--Pink);
+    border: 3rem solid var(--Pink);
   }
 
   /* Create */
@@ -1002,28 +959,10 @@
     max-width: 408rem;
   }
 
-  /* AboutUsPage */
-
-  .M_HeadText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 56rem;
-    z-index: 2;
-  }
-
-  /* Inter */
-
   .M_PageCard {
-    display: flex;
-    width: 436rem;
-    height: 620rem;
-    padding: 24rem;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    background-color: var(--White);
+    width: 378rem;
+    height: 550rem;
+    margin: 0 auto;
   }
 
   .M_GenImgBlock {
@@ -1048,14 +987,11 @@
     flex-shrink: 0;
   }
 
-  /* Random */
-
   .M_ImageSection {
-    display: flex;
-    width: 1731rem;
-    justify-content: center;
-    align-items: center;
-    gap: 135rem;
+    width: 408rem;
+    flex-direction: column;
+    padding-top: 24rem;
+    gap: 48rem;
   }
 
   /* Articles Page */
@@ -1405,13 +1341,10 @@
   /* Interactives */
 
   .W_InterContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 130rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 200rem;
-    align-self: stretch;
+    width: 440rem;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 48rem;
   }
 
   /* Create */
@@ -1437,16 +1370,11 @@
     gap: 67rem;
   }
 
-  /* Random */
-
   .W_RandomContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 230rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 319rem;
-    align-self: stretch;
+    width: 440rem;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 48rem;
   }
 
   .W_RandomPageRight {
@@ -1494,13 +1422,10 @@
   /* Tests */
 
   .W_TestsContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 230rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 200rem;
-    align-self: stretch;
+    width: 440rem;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 48rem;
   }
 
   /* Test 1 */
@@ -1671,15 +1596,12 @@
     gap: 40rem;
   }
 
-  /* Interactives */
-
   .O_Cards {
-    display: flex;
-    width: 1568rem;
-    height: 625rem;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 130rem;
+    width: 408rem;
+    height: 1746rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48rem;
   }
 
   /* Create */
