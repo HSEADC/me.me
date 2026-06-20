@@ -103,7 +103,12 @@
   }
 
   .Q_ImageHoverFrame {
-    display: none;
+    background-image: none;
+    border: 8rem solid var(--Pink);
+    width: 106%;
+    height: 106%;
+    top: 50%;
+    left: 50%;
   }
 
   .Q_ImageContent {
@@ -220,19 +225,14 @@
   }
 
   .Q_SearchText::placeholder {
-    color: var(--Grey);
-    font-family: Impact;
     font-size: 32rem;
-    font-style: normal;
-    line-height: 100%;
-    text-transform: lowercase;
     padding-top: 12rem;
   }
 
   /* Article Content */
 
   .Q_ArticleImageContent {
-    width: 500rem;
+    width: 232rem;
     aspect-ratio: 1/1;
     margin-top: 128rem;
   }
@@ -438,7 +438,7 @@
   .A_Button {
     width: 224rem;
     height: 40rem;
-    padding: 10rem 24rem;
+    padding: 1rem 24rem;
     gap: 24rem;
     font-size: 24rem;
   }
@@ -712,32 +712,20 @@
   /* Article Content */
 
   .A_ArticleTextBlock {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 24rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
+    font-size: 20rem;
   }
 
   .A_Video {
-    display: flex;
-    width: 554rem;
-    padding: 25rem 25rem 25.295rem 25rem;
-    background: var(--Pink);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    width: 360rem;
+    padding: 12rem;
+    margin: 0 auto;
   }
 
   .A_Interrupt {
-    display: flex;
-    padding: 32rem 40rem;
-    align-items: center;
-    gap: 10rem;
-    align-self: stretch;
-    background: var(--Pink);
+    max-width: 406rem;
+    padding: 8rem;
+    gap: 6rem;
+    margin: 0 auto;
   }
 
   /* Test 1 */
@@ -1089,50 +1077,18 @@
   }
 
   .M_ArticleCardPopup {
-    position: fixed;
-    width: 360rem;
-    min-height: 160rem;
-    padding: 24rem;
-    background: var(--Pink);
-    border: 4rem solid var(--White);
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s ease;
-    left: 0;
-    top: 0;
-  }
-
-  .M_ArticleCardPopup .A_TextBlock {
-    font-size: 28rem;
-    line-height: 110%;
-    color: var(--White);
-    margin: 0;
-    text-align: left;
-  }
-
-  .A_ArticleCard:hover .M_ArticleCardPopup {
-    opacity: 1;
-    transform: translateY(0);
+    display: none;
   }
 
   /* Article Content */
 
   .M_ArticleHead {
-    display: flex;
-    width: 986rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 46rem;
-    pointer-events: none;
+    width: 408rem;
+    gap: 32rem;
   }
 
   .M_ArticleText {
-    display: flex;
-    width: 662rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    width: 408rem;
     gap: 40rem;
   }
 
@@ -1394,6 +1350,18 @@
     gap: 48rem;
   }
 
+  .W_ArticleContent > .W_MainButtons {
+    gap: 32rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 404rem;
+  }
+
+  .W_ArticleContent > .W_MainButtons .A_Button {
+    width: 320rem;
+  }
+
   .W_MainButtons {
     gap: 64rem;
     justify-content: space-between;
@@ -1492,12 +1460,18 @@
   .W_SearchContent {
     margin-top: 48rem;
     width: 440rem;
+    max-width: 100vw;
     padding: 24rem 0;
     gap: 32rem;
   }
 
   .W_SearchContent > .A_H2 > .Q_Header2Text {
     text-align: center;
+  }
+
+  .M_ArticleHead > .W_Tags {
+    margin: 0 auto;
+    max-height: 120rem;
   }
 
   .W_Tags {
@@ -1508,22 +1482,13 @@
     align-content: center;
     gap: 12rem;
     flex-wrap: wrap;
-    margin-left: 12rem;
   }
-
-  /* ArticleContent */
 
   .W_ArticleContent {
-    display: flex;
-    width: 1920rem;
-    padding: 230rem 220rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 180rem;
-  }
-
-  .M_ArticleHead > .W_Tags {
-    margin: 0 auto;
+    width: 440rem;
+    padding: 48rem 0;
+    gap: 48rem;
+    margin-top: 48rem;
   }
 
   /* Tests */
@@ -1749,8 +1714,6 @@
     gap: 130rem;
   }
 
-  /* Articles Page */
-
   .O_ArticlesSearch {
     display: flex;
     flex-direction: column;
@@ -1758,12 +1721,9 @@
     gap: 40rem;
   }
 
-  /* Article Content */
-
   .O_ArticleSect {
-    display: flex;
-    align-items: flex-start;
-    gap: 212rem;
+    gap: 32rem;
+    flex-direction: column;
   }
 
   /* Test 1 */
