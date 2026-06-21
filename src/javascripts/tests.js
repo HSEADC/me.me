@@ -286,6 +286,14 @@ function showImageTestAnswer(stages, isCorrect) {
   buttonsBox.appendChild(nextButton);
   buttonsBox.appendChild(backButton);
 
+  const isMobile = window.matchMedia("(max-width: 440px)").matches;
+
+  buttonsBox.appendChild(nextButton);
+
+  if (!isMobile) {
+    buttonsBox.appendChild(backButton);
+  }
+
   imageWrapper.appendChild(testImage);
   imageWrapper.appendChild(imageFrame);
 
@@ -296,6 +304,13 @@ function showImageTestAnswer(stages, isCorrect) {
   testInfo.appendChild(buttonsBox);
 
   resultContent.appendChild(testInfo);
+
+  testContainer.appendChild(imageWrapper);
+  testContainer.appendChild(resultContent);
+
+  if (isMobile) {
+    testContainer.appendChild(backButton);
+  }
 
   testContainer.appendChild(imageWrapper);
   testContainer.appendChild(resultContent);

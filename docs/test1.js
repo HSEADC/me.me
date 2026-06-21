@@ -232,6 +232,11 @@ function showImageTestAnswer(stages, isCorrect) {
   buttonsBox.classList.add("W_ButtonsBox");
   buttonsBox.appendChild(nextButton);
   buttonsBox.appendChild(backButton);
+  var isMobile = window.matchMedia("(max-width: 440px)").matches;
+  buttonsBox.appendChild(nextButton);
+  if (!isMobile) {
+    buttonsBox.appendChild(backButton);
+  }
   imageWrapper.appendChild(testImage);
   imageWrapper.appendChild(imageFrame);
   resultHeaderWrapper.appendChild(resultHeader);
@@ -239,6 +244,11 @@ function showImageTestAnswer(stages, isCorrect) {
   testInfo.appendChild(resultParagraph);
   testInfo.appendChild(buttonsBox);
   resultContent.appendChild(testInfo);
+  testContainer.appendChild(imageWrapper);
+  testContainer.appendChild(resultContent);
+  if (isMobile) {
+    testContainer.appendChild(backButton);
+  }
   testContainer.appendChild(imageWrapper);
   testContainer.appendChild(resultContent);
 }

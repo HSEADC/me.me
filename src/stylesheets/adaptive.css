@@ -793,14 +793,15 @@
     outline: none;
   }
 
-  /* Test 3 */
-
   .M_TestInfo {
     display: flex;
+    max-width: 408rem;
     height: 200rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 24rem;
+    padding: 0 92rem;
   }
 
   /* SearchBar */
@@ -919,8 +920,6 @@
     width: 100%;
   }
 
-  /* Puzzle */
-
   .C_PuzzlePieces {
     width: 408rem;
     height: 384rem;
@@ -930,8 +929,6 @@
     overflow: visible;
   }
 
-  /* 404 */
-
   .С_NotFoundBackground {
     position: absolute;
     width: 440rem;
@@ -940,7 +937,6 @@
     overflow: hidden;
   }
 
-  /* SearchBar */
   .C_HeaderLinks.is-open .C_Dropdown {
     display: none !important;
   }
@@ -1123,6 +1119,7 @@
     width: 440rem;
     padding: 196rem 0;
     gap: 48rem;
+    min-height: 900rem;
   }
 
   .W_TestWhoContent .Q_BGContent,
@@ -1131,20 +1128,23 @@
   }
 
   .W_TestContent {
-    width: 408rem;
-    padding: 96rem 0 0 0;
-    gap: 48rem;
-    height: 880rem;
-    margin: 0 auto;
+    width: 440rem;
+    padding: 196rem 0;
+    gap: 16rem;
+    min-height: 900rem;
   }
 
-  /* Puzzle */
+  .W_TestContent .O_Test > .A_Button {
+    width: 276rem;
+    padding: 8rem 48rem;
+    margin: 0 auto;
+    order: -1;
+  }
 
   .W_PuzzleContent {
     width: 440rem;
     padding: 96rem 16rem 48rem;
     gap: 32rem;
-    /* min-height: auto; */
   }
 
   .W_PuzzleContent > .W_MainButtons {
@@ -1161,16 +1161,19 @@
 
   /* Test 3 */
 
-  .W_ButtonsBox {
-    display: flex;
-    width: 387rem;
-    height: 130rem;
-    padding-right: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20rem;
-    flex-shrink: 0;
+  .W_TestContent .W_ButtonsBox {
+    width: 276rem;
+    height: auto;
+    min-height: 96rem;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    gap: 16rem;
+  }
+
+  .W_ButtonsBox > .A_Button {
+    width: 276rem;
+    padding: 8rem 48rem;
   }
 
   .W_NotFound {
@@ -1298,7 +1301,7 @@
   .O_Test {
     flex-direction: column;
     padding: 0;
-    gap: 48rem;
+    gap: 20rem;
   }
 
   .O_Content {
@@ -1367,8 +1370,6 @@
     height: 546rem;
     gap: 32rem;
   }
-
-  /* interactives */
 
   .S_Generate {
     width: 100%;
