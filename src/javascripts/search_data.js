@@ -164,7 +164,7 @@ export const searchItems = [
   },
   {
     title: "bakamitai",
-    description: "bakamitai, dame da ne или как грустная песня из игры превратилась мем",
+    description: "dame da ne или как грустная песня превратилась мем",
     url: "/pages/articles/art_20.html",
     type: "статья",
   },
@@ -194,7 +194,7 @@ export const searchItems = [
   },
   {
     title: "собака и яблоко",
-    description: "у этой собаки с яблоком в жизни творится тотальный экшн... надо разобраться",
+    description: "у этой собаки с яблоком в жизни творится тотальный экшн...",
     url: "/pages/articles/art_25.html",
     type: "статья",
   },
@@ -278,13 +278,13 @@ export const searchItems = [
   },
   {
     title: "caramelldansen",
-    description: "как шведская песня начала нулевых получила вторую жизнь в эпоху карантина",
+    description: "как шведская песня начала нулевых форсилась в эпоху карантина",
     url: "/pages/articles/art_39.html",
     type: "статья",
   },
   {
     title: "сигма",
-    description: "как герой «Американского психопата» стал мемом про ауру. а ещё и эдиты",
+    description: "как герой «Американского психопата» стал мемом про ауру",
     url: "/pages/articles/art_40.html",
     type: "статья",
   },
@@ -332,7 +332,7 @@ export const searchItems = [
   },
   {
     title: "большой шлёпа",
-    description: "как домашний каракал Гоша стал легендой, Big Russian Floppa или просто Шлёпой :)",
+    description: "как домашний каракал Гоша стал легендой или просто Шлёпой :)",
     url: "/pages/articles/art_48.html",
     type: "статья",
   },
@@ -343,8 +343,8 @@ export const searchItems = [
     type: "статья",
   },
   {
-    title: "умный человек скачать обои",
-    description: "что это было? какой умный человек?",
+    title: "умный человек",
+    description: "скачать обои? какой умный человек?",
     url: "/pages/articles/art_50.html",
     type: "статья",
   },
