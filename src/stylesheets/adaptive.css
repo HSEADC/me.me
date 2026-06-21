@@ -604,10 +604,14 @@
     line-height: 110%;
   }
 
-  /* Search Page */
-
   .W_SearchPage > .A_H2 {
     align-items: center;
+    margin: 0 auto;
+    width: 300rem;
+  }
+
+  .W_SearchPage > .Q_Header2Text {
+    text-align: center;
   }
 
   .A_SearchResNothing {
@@ -622,8 +626,6 @@
     position: relative;
   }
 
-  /* 404 */
-
   .A_404Text {
     font-size: 120rem;
   }
@@ -633,8 +635,6 @@
     height: 120rem;
     object-fit: cover;
   }
-
-  /* Styleguide */
 
   .A_StyleguideLogo {
     width: 409rem;
@@ -685,8 +685,6 @@
     max-width: 100vw;
   }
 
-  /* Footer */
-
   .M_Footer {
     height: 55rem;
     width: 100%;
@@ -694,8 +692,6 @@
     margin-top: 36rem;
     justify-content: center;
   }
-
-  /* Main */
 
   .M_MainHead {
     width: 409rem;
@@ -750,8 +746,6 @@
     gap: 48rem;
   }
 
-  /* Articles Page */
-
   .M_ArticlesPageHeading {
     margin: 0 auto;
   }
@@ -771,8 +765,6 @@
   .M_ArticleCardPopup {
     display: none;
   }
-
-  /* Article Content */
 
   .M_ArticleHead {
     width: 408rem;
@@ -804,8 +796,6 @@
     padding: 0 92rem;
   }
 
-  /* SearchBar */
-
   .M_SearchResult {
     display: flex;
     flex-direction: column;
@@ -820,16 +810,10 @@
   /* Search Page */
 
   .C_SearchResults > .M_SearchResult {
-    width: 862rem;
-    height: 252rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-    gap: 20rem;
-    align-items: center;
+    width: 406rem;
+    height: 148rem;
+    padding: 18rem 14rem;
+    gap: 16rem;
   }
 
   /* Styleguide */
@@ -959,14 +943,7 @@
   /* Search Page */
 
   .C_SearchResults {
-    display: flex;
-    align-self: stretch;
-    row-gap: 42rem;
-    column-gap: 64rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    column-gap: 32rem;
   }
 
   .C_StyleguideNav {
@@ -1183,16 +1160,10 @@
     margin-bottom: -32rem;
   }
 
-  /* SearchPage */
-
   .W_SearchPage {
-    display: flex;
-    width: 1920rem;
-    padding-top: 196rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 117rem;
+    width: 440rem;
+    padding-top: 96rem;
+    gap: 16rem;
   }
 
   .W_StyleguideTextBlock {
