@@ -42,25 +42,6 @@
   flex-shrink: 0;
 }
 
-/* Random */
-
-.O_RandomPageContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Constructor */
-
-.O_ConstructorContent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1760rem;
-  gap: 130rem;
-}
-
 /* Articles Page */
 
 .O_ArticlesSearch {

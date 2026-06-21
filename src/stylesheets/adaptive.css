@@ -50,7 +50,7 @@
   }
 
   .Q_HeaderText {
-    font-size: 42rem;
+    font-size: 40rem;
   }
 
   .Q_Header2Text {
@@ -136,34 +136,33 @@
   /* Constructor */
 
   .Q_GenText {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    color: var(--White);
-    font-family: "Impact";
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-  }
-
-  .Q_ConstructorCanvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: #000;
-    filter: grayscale(1);
+    text-align: center;
+    width: 280rem;
+    margin: 0 auto;
   }
 
   .Q_ArrowDown,
   .Q_ArrowUp {
-    width: 22rem;
-    height: 22rem;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-right: 10rem;
+    margin-right: 4rem;
+  }
+
+  #Upload,
+  #Download {
+    width: 240rem;
+    min-height: 40rem;
+  }
+
+  .Q_GenImage {
+    width: 117.333rem;
+    height: 117.333rem;
+  }
+
+  .Q_GenInputRow {
+    width: 100%;
+    max-width: 408rem;
+    height: 46rem;
+    padding: 12rem 14rem;
+    font-size: 20rem;
   }
 
   /* Articles Page */
@@ -524,33 +523,12 @@
     border: 3rem solid var(--Pink);
   }
 
-  /* Create */
-
   .A_FrameGenerateImg {
-    display: flex;
-    width: 786rem;
-    height: 786rem;
-    justify-content: center;
-    align-items: center;
+    width: 380rem;
+    height: 380rem;
+    border: 3rem solid var(--Pink);
+    margin: 0 auto;
     flex-shrink: 0;
-    border: 5rem solid var(--Pink);
-    background: var(--Black);
-  }
-
-  /* Random */
-
-  .A_RandomPageButton {
-    width: 314rem;
-    height: 55rem;
-    padding: 10rem 30rem;
-    font-family: Impact;
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    border: none;
   }
 
   /* Constructor */
@@ -568,39 +546,11 @@
     background: #000000;
   }
 
-  .Q_GenImage {
-    width: 150rem;
-    height: 150rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    filter: grayscale(1);
-    flex: 0 0 150rem;
-  }
-
-  .Q_GenImage:hover {
-    outline: 3rem solid #fff;
-  }
-
   .A_GenInput {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24rem;
-  }
-
-  .Q_GenInputRow {
-    width: 100%;
-    height: 64rem;
-    padding: 0 20rem;
-    box-sizing: border-box;
-    border: 3rem solid #ff65a6;
-    background: #fff;
-    color: #000;
-    font-family: "Inter";
-    font-size: 30rem;
-    outline: none;
   }
 
   .A_ConstructorInputRow::placeholder {
@@ -965,26 +915,14 @@
     margin: 0 auto;
   }
 
-  .M_GenImgBlock {
-    display: flex;
-    width: 888rem;
-    height: 519rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24rem;
-    flex-shrink: 0;
-  }
-
+  .M_GenImgBlock,
   .M_GenTextBlock {
-    display: flex;
-    width: 888rem;
-    height: 125rem;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 24rem;
-    flex-shrink: 0;
   }
 
   .M_ImageSection {
@@ -1347,27 +1285,24 @@
     gap: 48rem;
   }
 
-  /* Create */
-
   .W_CreateContent {
-    display: flex;
-    padding-top: 96rem;
-    padding-bottom: 230rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 148rem;
-    align-self: stretch;
+    width: 440rem;
+    padding-top: 48rem;
+    padding-bottom: 48rem;
+    gap: 48rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: auto;
   }
 
   .W_GenImages {
-    width: 888rem;
-    height: 381rem;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 67rem;
+    width: 264rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 117.333rem);
+    grid-auto-rows: 117.333rem;
+    gap: 28rem;
+    justify-content: center;
   }
 
   .W_RandomContent {
@@ -1604,36 +1539,13 @@
     gap: 48rem;
   }
 
-  /* Create */
-
   .O_GenCreate {
-    display: flex;
-    width: 888rem;
-    height: 783rem;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 42rem;
-    flex-shrink: 0;
-  }
-
-  /* Random */
-
-  .O_RandomPageContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  /* Constructor */
-
-  .O_ConstructorContent {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    max-width: 1760rem;
-    gap: 130rem;
+    max-width: 408rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
   }
 
   .O_ArticlesSearch {
@@ -1755,32 +1667,14 @@
   /* interactives */
 
   .S_Generate {
-    display: flex;
-    width: 1792rem;
-    height: 786rem;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 118rem;
-  }
-
-  .S_InteractivesPromo {
-    position: relative;
     width: 100%;
-    height: 1300rem;
-    gap: 72rem;
-  }
-
-  /* Random */
-
-  .S_RandomAll {
-    display: flex;
-    width: 1800rem;
-    height: 1100rem;
+    max-width: 408rem;
+    height: auto;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 100rem;
-    padding-top: 180rem;
-    margin: auto;
-    position: relative;
+    align-items: center;
+    gap: 32rem;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
