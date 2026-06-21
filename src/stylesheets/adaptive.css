@@ -202,15 +202,13 @@
 
   .Q_SearchText {
     font-size: 24rem;
-    padding-top: 16rem;
+    padding-top: 8rem;
   }
 
   .Q_SearchText::placeholder {
     font-size: 32rem;
     padding-top: 12rem;
   }
-
-  /* Article Content */
 
   .Q_ArticleImageContent {
     width: 232rem;
@@ -590,7 +588,7 @@
     width: 300rem;
   }
 
-  .W_SearchPage > .A_H2 > .Q_Header2Text {
+  .W_SearchPage .Q_Header2Text {
     text-align: center;
   }
 
