@@ -326,7 +326,7 @@ export const searchItems = [
   },
   {
     title: "fake nostalgia",
-    description: "почему тикток грустит по воспоминаниям, которых никогда не существовало",
+    description: "почему мы грустим по тому, чего не было",
     url: "/pages/articles/art_47.html",
     type: "статья",
   },
