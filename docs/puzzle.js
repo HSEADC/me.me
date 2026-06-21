@@ -69,6 +69,25 @@ function placePiecesAroundBoard(puzzlePieces) {
   var metrics = getPuzzleMetrics();
   var pieceSize = metrics.pieceSize;
   var gap = Math.max(8, pieceSize * 0.12);
+  var isMobile = window.matchMedia("(max-width: 440px)").matches;
+  if (isMobile) {
+    var cols = 4;
+    var mobileGap = Math.max(8, pieceSize * 0.12);
+    var totalWidth = cols * pieceSize + (cols - 1) * mobileGap;
+    var startX = Math.max(0, (layerRect.width - totalWidth) / 2);
+    puzzlePieces.forEach(function (piece, index) {
+      var col = index % cols;
+      var row = Math.floor(index / cols);
+      var x = startX + col * (pieceSize + mobileGap);
+      var y = row * (pieceSize + mobileGap);
+      piece.dataset.startX = String(x);
+      piece.dataset.startY = String(y);
+      piece.style.left = "".concat(x, "px");
+      piece.style.top = "".concat(y, "px");
+      piecesLayer.appendChild(piece);
+    });
+    return;
+  }
   var boardLeft = boardRect.left - layerRect.left;
   var boardTop = boardRect.top - layerRect.top;
   var boardRight = boardLeft + boardRect.width;
@@ -187,6 +206,10 @@ function makePieceDraggable(piece) {
     var y = event.clientY - layerRect.top - shiftY;
     var minX = 0;
     var minY = 0;
+    if (window.matchMedia("(max-width: 440px)").matches) {
+      var boardRect = board.getBoundingClientRect();
+      minY = boardRect.top - layerRect.top;
+    }
     var maxX = layerRect.width - pieceSize;
     var maxY = layerRect.height - pieceSize;
     if (x < minX) x = minX;

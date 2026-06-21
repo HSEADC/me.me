@@ -62,7 +62,7 @@
   }
 
   .Q_Header4Text {
-    font-size: 32rem;
+    font-size: 28rem;
   }
 
   .Q_ImageOfPart {
@@ -239,63 +239,8 @@
     width: 100%;
   }
 
-  /* Test 1 */
-
   .Q_MarkedListText {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 40rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    z-index: 2;
-  }
-
-  /* Puzzle */
-
-  .Q_PartPuzzle {
-    width: 100%;
-    height: 100%;
-    border: 1rem solid var(--Pink);
-    box-sizing: border-box;
-  }
-
-  .Q_PuzzlePiece {
-    position: absolute;
-    background-repeat: no-repeat;
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
-    z-index: 10;
-    box-sizing: border-box;
-    pointer-events: auto;
-  }
-
-  .Q_PuzzlePiece.is-dragging {
-    cursor: grabbing;
-    z-index: 20;
-  }
-
-  .Q_PuzzlePiece.is-locked {
-    z-index: 12;
-    cursor: auto;
-  }
-
-  /* Styleguide */
-
-  .Q_Header4Styleguide {
-    color: var(--White);
-    font-family: "Impact";
-    font-size: 32rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .Q_Header4Styleguide:hover {
-    opacity: 0.7;
+    font-size: 28rem;
   }
 
   .Q_Color {
@@ -604,16 +549,18 @@
     margin: 0 auto;
   }
 
-  /* Test 1 */
-
   .A_MarkedListLine {
-    display: flex;
-    align-items: center;
-    gap: 24rem;
+    gap: 20rem;
   }
 
   .O_TestTextButton > .A_TextBlock {
-    width: 720rem;
+    width: 300rem;
+  }
+
+  .O_TestTextButton > .A_Button {
+    width: 276rem;
+    padding: 8rem 48rem;
+    margin: 0 auto;
   }
 
   .A_Button:hover {
@@ -622,16 +569,10 @@
     transition: all 0.3s ease-in-out;
   }
 
-  /* Test 2 */
-
   .A_Puzzle {
-    width: min(864rem, 46vw);
-    aspect-ratio: 1 / 1;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    position: relative;
-    z-index: 2;
+    width: min(400rem, 100vw);
+    width: 360rem;
+    height: 360rem;
   }
 
   /* Test 3 */
@@ -843,40 +784,20 @@
     gap: 40rem;
   }
 
-  /* Test 1 */
-
-  .M_MarkedList {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20rem;
-    align-self: stretch;
-  }
-
   .M_MarkedList input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 48rem;
-    height: 48rem;
-    background: black;
-    flex-shrink: 0;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .M_MarkedList input[type="checkbox"]:checked {
-    background: #ff65a6;
+    width: 32rem;
+    height: 32rem;
   }
 
   .M_MarkedList input[type="checkbox"]:hover {
-    outline: 3rem solid #ff65a6;
+    outline: none;
   }
 
   /* Test 3 */
 
   .M_TestInfo {
     display: flex;
-    height: 384rem;
+    height: 200rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -1001,13 +922,12 @@
   /* Puzzle */
 
   .C_PuzzlePieces {
-    position: absolute;
-    inset: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    margin-top: 360rem;
-    pointer-events: none;
+    width: 408rem;
+    height: 384rem;
+    position: relative;
+    inset: auto;
+    margin-top: 0;
+    overflow: visible;
   }
 
   /* 404 */
@@ -1052,8 +972,6 @@
     align-content: center;
     justify-content: center;
   }
-
-  /* Styleguide */
 
   .C_StyleguideNav {
     display: none;
@@ -1126,8 +1044,6 @@
     gap: 52rem;
   }
 
-  /* Interactives */
-
   .W_InterContent {
     width: 440rem;
     padding-top: 48rem;
@@ -1196,8 +1112,6 @@
     margin-top: 48rem;
   }
 
-  /* Tests */
-
   .W_TestsContent {
     width: 440rem;
     padding-top: 48rem;
@@ -1205,41 +1119,44 @@
     gap: 48rem;
   }
 
-  /* Test 1 */
-
   .W_TestWhoContent {
-    display: flex;
-    width: 1920rem;
-    padding: 153.5rem 64rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 116rem;
+    width: 440rem;
+    padding: 196rem 0;
+    gap: 48rem;
+  }
+
+  .W_TestWhoContent .Q_BGContent,
+  .W_TestContent .Q_BGContent {
+    height: 953rem;
   }
 
   .W_TestContent {
-    display: flex;
-    width: 1920rem;
-    height: 938rem;
-    padding-top: 96rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 136rem;
+    width: 408rem;
+    padding: 96rem 0 0 0;
+    gap: 48rem;
+    height: 880rem;
+    margin: 0 auto;
   }
 
   /* Puzzle */
 
   .W_PuzzleContent {
-    position: relative;
-    display: flex;
-    padding: 230rem 64rem 180rem;
+    width: 440rem;
+    padding: 96rem 16rem 48rem;
+    gap: 32rem;
+    /* min-height: auto; */
+  }
+
+  .W_PuzzleContent > .W_MainButtons {
+    width: 300rem;
+    min-height: 160rem;
     flex-direction: column;
-    align-items: center;
-    gap: 79rem;
-    align-self: stretch;
-    min-height: 1150rem;
-    overflow: hidden;
+    gap: 20rem;
+    margin: 0 auto;
+  }
+
+  .W_PuzzleContent > .W_MainButtons .A_Button {
+    width: 240rem;
   }
 
   /* Test 3 */
@@ -1255,8 +1172,6 @@
     gap: 20rem;
     flex-shrink: 0;
   }
-
-  /* 404 */
 
   .W_NotFound {
     padding-top: 48rem;
@@ -1276,8 +1191,6 @@
     align-items: center;
     gap: 117rem;
   }
-
-  /* Styleguide */
 
   .W_StyleguideTextBlock {
     gap: 24rem;
@@ -1375,38 +1288,18 @@
     flex-direction: column;
   }
 
-  /* Test 1 */
-
   .O_TestWho {
-    display: flex;
-    padding-right: 633rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 72rem;
-    flex-shrink: 0;
-    align-self: stretch;
+    width: 408rem;
+    padding: 2rem;
+    gap: 48rem;
+    margin: 0 auto;
   }
-
-  .O_TestTextButton {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50rem;
-  }
-
-  /* Test 3 */
 
   .O_Test {
-    display: flex;
-    padding-left: 493rem;
-    align-items: center;
-    gap: 121rem;
-    align-self: stretch;
-    z-index: 2;
+    flex-direction: column;
+    padding: 0;
+    gap: 48rem;
   }
-
-  /* Styleguide */
 
   .O_Content {
     width: 408rem;
