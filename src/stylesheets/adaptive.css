@@ -575,8 +575,6 @@
     height: 360rem;
   }
 
-  /* Test 3 */
-
   .A_TestImage {
     display: flex;
     width: 384rem;
@@ -586,31 +584,13 @@
     border: 17rem solid var(--Pink);
   }
 
-  /* SearchBar */
-
-  .A_SearchResultHeader {
-    margin: 0;
-    color: var(--White);
-    font-family: "Impact";
-    font-size: 36rem;
-    line-height: 110%;
-  }
-
-  .A_SearchResultDescription {
-    margin: 0;
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 24rem;
-    line-height: 110%;
-  }
-
   .W_SearchPage > .A_H2 {
     align-items: center;
     margin: 0 auto;
     width: 300rem;
   }
 
-  .W_SearchPage .Q_Header2Text {
+  .W_SearchPage > .A_H2 > .Q_Header2Text {
     text-align: center;
   }
 
