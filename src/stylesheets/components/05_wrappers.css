@@ -97,14 +97,6 @@
   align-self: stretch;
 }
 
-.W_RandomPageRight {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 620rem;
-  height: 600rem;
-}
-
 /* ArticlesSearch */
 
 .W_SearchContent {

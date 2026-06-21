@@ -21,7 +21,7 @@
 
   .Q_ExampleHeaderText.hd::after,
   .Q_ExampleHeader3Text.hd::after {
-    -webkit-text-stroke: 16rem #000000;
+    -webkit-text-stroke: 12rem #000000;
   }
 
   /* 01_Quarks */
@@ -299,54 +299,23 @@
   }
 
   .Q_Color {
-    height: 210rem;
-    align-self: stretch;
-    aspect-ratio: 1 / 1;
-  }
-
-  .Q_Black {
-    background: var(--Black);
-    border: 6rem solid #000;
-  }
-
-  .Q_ColorName {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 20rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 22px */
+    height: 129rem;
   }
 
   .Q_ExampleHeaderText {
-    color: var(--White);
-    font-size: 80rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%; /* 80px */
-    text-transform: uppercase;
-    font-family: "Inter";
-  }
-
-  .Q_ExampleHeader3Text {
-    color: var(--White);
-    font-family: "Impact";
-    font-size: 64rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 70.4px */
+    font-size: 58.247rem;
   }
 
   .Q_ScreenPhoto {
-    width: 891rem;
-    height: 523rem;
-    aspect-ratio: 46/27;
-    border: 7rem solid #000;
+    width: 408rem;
+    height: 239.801rem;
+    aspect-ratio: 114/67;
+    border: 3rem solid #000;
   }
 
   .Q_PhotoExample {
-    width: 270rem;
-    height: 270rem;
+    width: 115.249rem;
+    height: 115.249rem;
     aspect-ratio: 1 / 1;
   }
 
@@ -714,17 +683,8 @@
 
   /* 404 */
 
-  .A_404Item {
-    position: absolute;
-    opacity: 0;
-    animation: float404 6s infinite;
-  }
-
   .A_404Text {
-    font-family: Impact;
-    font-size: 220rem;
-    color: transparent;
-    -webkit-text-stroke: 6rem #000;
+    font-size: 120rem;
   }
 
   .A_404Img {
@@ -733,124 +693,41 @@
     object-fit: cover;
   }
 
-  @keyframes float404 {
-    0% {
-      transform: translateY(100rem) scale(0.8);
-      opacity: 0;
-    }
-
-    20% {
-      opacity: 1;
-    }
-
-    50% {
-      transform: translateY(-60rem) scale(1);
-      opacity: 1;
-    }
-
-    80% {
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateY(-200rem) scale(1.1);
-      opacity: 0;
-    }
-  }
-
-  .t1 {
-    left: 60rem;
-    top: 80rem;
-    animation-delay: 0s;
-  }
-
-  .t2 {
-    right: 120rem;
-    top: 40rem;
-    animation-delay: 2s;
-  }
-
-  .t3 {
-    left: 300rem;
-    bottom: 60rem;
-    animation-delay: 4s;
-  }
-
-  .i1 {
-    left: 200rem;
-    top: 140rem;
-    animation-delay: 0.5s;
-  }
-
-  .i2 {
-    right: 260rem;
-    top: 200rem;
-    animation-delay: 1s;
-  }
-
-  .i3 {
-    left: 500rem;
-    bottom: 120rem;
-    animation-delay: 1.5s;
-  }
-
-  .i4 {
-    right: 80rem;
-    bottom: 80rem;
-    animation-delay: 2s;
-  }
-
   /* Styleguide */
 
   .A_StyleguideLogo {
-    width: 995.844rem;
-    height: 426rem;
-    position: relative;
-    margin-top: -96rem;
+    width: 409rem;
+    height: 174.961rem;
+    margin-top: -36rem;
   }
 
   .A_TextAll {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 90rem;
-    align-self: stretch;
+    flex-direction: column;
+    gap: 32rem;
   }
 
   .A_LogoGood {
-    width: 581.333rem;
-    height: 248.681rem;
+    width: 190.816rem;
+    height: 81.627rem;
   }
 
   .A_LogoBad {
-    width: 360rem;
-    height: 154rem;
+    width: 118.494rem;
+    height: 50.549rem;
   }
 
   .A_ColorExample {
-    display: flex;
-    width: 210rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16rem;
+    width: 129rem;
+    gap: 8rem;
   }
 
   .A_StyleguideTextBlock {
-    color: var(--White);
-    font-family: "Inter";
-    font-size: 24rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    max-width: 700rem;
+    font-size: 20rem;
+    max-width: 408rem;
   }
 
   .A_FontDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24rem;
+    gap: 16rem;
   }
 
   /* 03_Molecules */
@@ -1036,42 +913,26 @@
   /* Styleguide */
 
   .M_StyleguideHead {
-    display: flex;
-    width: 995.844rem;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 400rem;
   }
 
   .M_BrandAboutSect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50rem;
+    gap: 32rem;
   }
 
   .M_LogoSect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 42rem;
+    gap: 32rem;
   }
 
   .M_LogoSectContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 54rem;
-    align-self: stretch;
+    gap: 18rem;
   }
 
   .M_ColorsSect,
   .M_FontSect,
   .M_GridSect,
   .M_PhotoSect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 42rem;
+    gap: 32rem;
   }
 
   /* 04_Collections */
@@ -1153,8 +1014,8 @@
 
   .С_NotFoundBackground {
     position: absolute;
-    width: 1920rem;
-    height: 1080rem;
+    width: 440rem;
+    height: 843rem;
     z-index: -10;
     overflow: hidden;
   }
@@ -1195,18 +1056,7 @@
   /* Styleguide */
 
   .C_StyleguideNav {
-    position: sticky;
-    top: 80rem;
-    display: flex;
-    width: 160rem;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 32rem;
-    flex-shrink: 0;
-    height: fit-content;
-    align-self: flex-start;
-    z-index: 20;
+    display: none;
   }
 
   /* 05_Wrappers */
@@ -1312,14 +1162,6 @@
     gap: 48rem;
   }
 
-  .W_RandomPageRight {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 620rem;
-    height: 600rem;
-  }
-
   .W_SearchContent {
     margin-top: 48rem;
     width: 440rem;
@@ -1417,13 +1259,10 @@
   /* 404 */
 
   .W_NotFound {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 96rem;
-    width: 1920rem;
-    flex-direction: column;
-    margin-bottom: -130rem;
+    padding-top: 48rem;
+    width: 440rem;
+    height: auto;
+    margin-bottom: -32rem;
   }
 
   /* SearchPage */
@@ -1441,66 +1280,42 @@
   /* Styleguide */
 
   .W_StyleguideTextBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32rem;
+    gap: 24rem;
   }
 
   .W_StyleguideContent {
-    display: flex;
-    width: 1341rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 200rem;
-    flex-shrink: 0;
+    width: 408rem;
+    gap: 72rem;
   }
 
   .W_LogosGood {
-    display: flex;
-    align-items: center;
-    gap: 97rem;
-    align-self: stretch;
+    gap: 32rem;
   }
 
   .W_LogosBad {
-    display: flex;
-    width: 1243rem;
-    height: 244rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 42rem;
+    width: 408rem;
+    height: 96rem;
+    gap: 24rem;
   }
 
   .W_AllLogosBad {
-    display: flex;
-    align-items: center;
-    gap: 81rem;
-    align-self: stretch;
+    gap: 24rem;
   }
 
   .W_ColorsAll {
-    display: flex;
-    align-items: center;
-    gap: 16rem;
-    align-self: stretch;
+    gap: 8rem;
   }
 
   .W_FontsContent {
-    display: flex;
-    align-items: flex-start;
-    gap: 216rem;
+    flex-direction: column;
+    gap: 32rem;
   }
 
   .W_PhotosAll {
-    display: flex;
-    align-items: center;
-    gap: 80rem;
+    gap: 34.14rem;
   }
 
   /* 06_Organisms */
-
-  /* Main */
 
   .O_ArticlesCards {
     height: 324rem;
@@ -1594,12 +1409,8 @@
   /* Styleguide */
 
   .O_Content {
-    display: flex;
-    width: 1792rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 202rem;
-    margin: 0 auto;
+    width: 408rem;
+    padding-top: 120rem;
   }
 
   /* 07_Supreorganisms */
