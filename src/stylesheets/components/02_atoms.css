@@ -250,19 +250,6 @@
 
 /* Constructor */
 
-.A_ConstructorPreview {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4rem solid #ff65a6;
-  background: #000000;
-}
-
 .Preset-1 {
   background-image: url("../../images/constructor/preset-1.webp");
 }
@@ -300,10 +287,6 @@
   display: flex;
   flex-direction: column;
   gap: 24rem;
-}
-
-.A_ConstructorInputRow::placeholder {
-  color: #555;
 }
 
 /* Articles Page */
@@ -365,6 +348,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+}
+
+#interview {
+  width: 480rem;
 }
 
 .A_Video {
@@ -506,31 +493,6 @@
   width: 120rem;
   height: 120rem;
   object-fit: cover;
-}
-
-@keyframes float404 {
-  0% {
-    transform: translateY(100rem) scale(0.8);
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(-60rem) scale(1);
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(-200rem) scale(1.1);
-    opacity: 0;
-  }
 }
 
 .t1 {

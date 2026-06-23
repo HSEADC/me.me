@@ -161,19 +161,6 @@
     font-size: 20rem;
   }
 
-  .Q_ArticleCardImage {
-    width: 500rem;
-    height: 500rem;
-    margin-top: 110rem;
-    margin-left: 16rem;
-  }
-
-  .Q_ArticleCardCaption {
-    width: 560rem;
-    height: 80rem;
-    font-size: 48rem;
-  }
-
   .Q_CloseFilter {
     width: 28rem;
     height: 28rem;
@@ -188,16 +175,6 @@
   .Q_SearchText::placeholder {
     font-size: 32rem;
     padding-top: 6rem;
-  }
-
-  .Q_ArticleImageContent {
-    width: 232rem;
-    aspect-ratio: 1/1;
-    margin-top: 128rem;
-  }
-
-  .Q_ArticleHeader2Text {
-    font-size: 64rem;
   }
 
   .Q_MarkedListText {
@@ -362,28 +339,11 @@
     flex-shrink: 0;
   }
 
-  .A_ConstructorPreview {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4rem solid #ff65a6;
-    background: #000000;
-  }
-
   .A_GenInput {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24rem;
-  }
-
-  .A_ConstructorInputRow::placeholder {
-    color: #555;
   }
 
   /* Articles Page */
@@ -451,6 +411,10 @@
     font-size: 20rem;
   }
 
+  #interview {
+    width: 360rem;
+  }
+
   .A_Video {
     width: 360rem;
     padding: 12rem;
@@ -494,7 +458,6 @@
   }
 
   .A_Puzzle {
-    width: min(400rem, 100vw);
     width: 360rem;
     height: 360rem;
   }
@@ -601,14 +564,6 @@
     width: 409rem;
   }
 
-  .M_MainH2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8rem;
-    margin-left: 64rem;
-  }
-
   .M_HeadOfRead {
     display: grid;
     grid-template-columns: 304rem 76rem;
@@ -648,10 +603,6 @@
     flex-direction: column;
     padding-top: 24rem;
     gap: 48rem;
-  }
-
-  .M_ArticlesPageHeading {
-    margin: 0 auto;
   }
 
   .M_ArticleCardLink {
@@ -800,12 +751,6 @@
     width: 408rem;
     column-gap: 0;
     row-gap: 32rem;
-  }
-
-  /* Test 3 */
-
-  .C_TestGuessAnswer {
-    width: 100%;
   }
 
   .C_PuzzlePieces {
@@ -1153,13 +1098,6 @@
     justify-content: center;
     align-items: center;
     gap: 32rem;
-  }
-
-  .O_ArticlesSearch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40rem;
   }
 
   .O_ArticleSect {

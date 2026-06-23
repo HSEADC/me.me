@@ -46,14 +46,6 @@
   z-index: 3;
 }
 
-.M_MainH2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8rem;
-  margin-left: 64rem;
-}
-
 .M_HeadOfRead {
   display: grid;
   grid-template-columns: 620rem 540rem 1fr;
@@ -127,10 +119,6 @@
 }
 
 /* Articles Page */
-
-.M_ArticlesPageHeading {
-  margin: 0 auto;
-}
 
 .M_ArticleCardLink {
   text-decoration: none;

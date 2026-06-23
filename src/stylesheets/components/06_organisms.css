@@ -42,15 +42,6 @@
   flex-shrink: 0;
 }
 
-/* Articles Page */
-
-.O_ArticlesSearch {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40rem;
-}
-
 /* Article Content */
 
 .O_ArticleSect {

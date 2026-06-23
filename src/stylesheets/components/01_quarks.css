@@ -373,32 +373,6 @@
 }
 /* Articles Page */
 
-.Q_ArticleCardImage {
-  width: 500rem;
-  height: 500rem;
-  margin-top: 110rem;
-  margin-left: 16rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.Q_ArticleCardCaption {
-  width: 560rem;
-  height: 80rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ff65a6;
-  font-family: Impact;
-  font-size: 48rem;
-  line-height: 1;
-  text-transform: lowercase;
-  margin: 0;
-}
-
 .Q_FilterText {
   display: block;
   color: inherit;
@@ -459,31 +433,10 @@
 
 /* Article Content */
 
-.Q_ArticleImageContent {
-  width: 500rem;
-  aspect-ratio: 1/1;
-  margin-top: 128rem;
-}
-
 .Q_ArticleVideo {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.Q_ArticleHeader2Text {
-  color: #fff;
-  text-align: center;
-  font-family: "Inter";
-  font-size: 64rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  text-transform: uppercase;
-}
-.Q_ArticleHeader2Text {
-  margin: 0;
-  width: 100%;
 }
 
 /* Test 1 */
