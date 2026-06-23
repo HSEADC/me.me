@@ -17341,7 +17341,7 @@ function A_FooterLogo() {
 
 function M_Footer() {
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(A_FooterLink, {
-    href: "https://t.me/memememememememememememememeemem",
+    href: "https://t.me/TyTxuxuxaxa",
     text: "\u0442\u0433-\u043A\u0430\u043D\u0430\u043B"
   }), /*#__PURE__*/react.createElement(A_FooterLogo, null), /*#__PURE__*/react.createElement(A_FooterLink, {
     href: "https://www.tiktok.com/@me.me.media?_r=1&_t=ZM-92T5yGjtwEe",

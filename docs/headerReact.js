@@ -17816,7 +17816,7 @@ function M_Header() {
     className: "hd Q_FooterLink",
     "data-text": "\u043D\u0430\u0448 \u0442\u0438\u043A-\u0442\u043E\u043A"
   }, "\u043D\u0430\u0448 \u0442\u0438\u043A-\u0442\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
-    href: "https://t.me/memememememememememememememeemem",
+    href: "https://t.me/TyTxuxuxaxa",
     className: "hd Q_FooterLink",
     "data-text": "\u043D\u0430\u0448 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C"
   }, "\u043D\u0430\u0448 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C"))));

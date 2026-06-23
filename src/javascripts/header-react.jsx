@@ -63,7 +63,7 @@ function M_Header() {
             наш тик-ток
           </a>
 
-          <a href="https://t.me/memememememememememememememeemem" className="hd Q_FooterLink" data-text="наш телеграм">
+          <a href="https://t.me/TyTxuxuxaxa" className="hd Q_FooterLink" data-text="наш телеграм">
             наш телеграм
           </a>
         </div>

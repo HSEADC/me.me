@@ -6,7 +6,7 @@ import A_FooterLogo from "./A_FooterLogo.jsx";
 export default function M_Footer() {
   return (
     <>
-      <A_FooterLink href="https://t.me/memememememememememememememeemem" text="тг-канал" />
+      <A_FooterLink href="https://t.me/TyTxuxuxaxa" text="тг-канал" />
 
       <A_FooterLogo />
 
