@@ -21,6 +21,7 @@ module.exports = {
     footerReact: "./src/javascripts/footer-react.jsx",
     articlePage: "./src/javascripts/article_content.js",
     searchReact: "./src/javascripts/search-react.jsx",
+    interview: "./src/javascripts/interview.js",
   },
   output: {
     filename: "[name].js",

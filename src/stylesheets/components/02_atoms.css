@@ -378,6 +378,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --plyr-color-main: var(--Pink);
+  --plyr-video-control-color: var(--White);
+  --plyr-video-background: var(--Black);
+  --plyr-control-radius: 0;
+  --plyr-font-family: "Inter", sans-serif;
+  --plyr-badge-background: var(--Pink);
+  --plyr-range-fill-background: var(--Pink);
+}
+
+.plyr__control--overlaid {
+  width: 80rem !important;
+  height: 80rem !important;
+  padding: 24rem 24rem 24rem 30rem !important;
+}
+
+.W_MainPageContent .A_Interrupt {
+  width: 1795rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
 .A_Interrupt {
   display: flex;
   padding: 32rem 40rem;

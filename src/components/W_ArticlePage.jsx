@@ -125,10 +125,23 @@ function A_ArticleImage({ src }) {
   );
 }
 
+import { useEffect, useRef } from "react";
+import Plyr from "plyr";
+
 function A_ArticleVideo({ src }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      new Plyr(videoRef.current, {
+        controls: ["play-large", "play", "progress", "mute", "fullscreen"],
+      });
+    }
+  }, []);
+
   return (
     <div className="A_Video">
-      <video className="Q_ArticleVideo" src={getFixedPath(src)} autoPlay muted loop playsInline></video>
+      <video ref={videoRef} className="Q_ArticleVideo" src={getFixedPath(src)} controls loop playsInline></video>
     </div>
   );
 }

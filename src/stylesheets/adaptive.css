@@ -457,6 +457,15 @@
     margin: 0 auto;
   }
 
+  .W_MainPageContent .A_Interrupt {
+    width: 408rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
   .A_Interrupt {
     max-width: 406rem;
     padding: 8rem;
